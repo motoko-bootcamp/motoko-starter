@@ -1,0 +1,53 @@
+# Day 3️⃣
+## 🎯 Goals of the day 
+- Understand that mutable state cannot be shared between actors.
+- Getting familiar with more advanced types: Optional & Generic types.
+- Getting familiar with more advanced data structures: `HashMap`&`TrieMap`.
+- Understand the concept of `Principal` and the context for understanding identity on the Internet Computer:
+    - Digital signatures
+    - Messages
+    - The principal is derived from the PK.
+- Understand how to interact with a canister from the front end:
+    - Agent & Packages
+    - Actor
+    - The Candid files to JS
+    - Calling the actor
+## 📚 Resources used
+- Motoko Book: 
+    - Chapter 5: Interacting with a canister.
+        - From a frontend.
+    - Chapter 8: Storing data in our first data structures.
+        - `HashMap`
+        - `TrieMap`
+    - Chapter 9: Non-primitives Types.
+        - Arrays.
+        - Mutable arrays.
+        - Iterators.
+    - Chapter 10: Advanced types.
+        - Optional types.
+        - Generic types.
+        - Recursive types.
+        - Shared types.
+    - Chapter 12: Identity on the Internet Computer
+        - Digital signatures.
+        - Messages.
+        - The concept of Principal.
+        - PEM File.
+        - Accessing the message & the caller.
+        - The `Principal` type in Motoko.
+        - The Anonymous principal.
+- Lectures:
+    - Lecture 1: [HashMap & CRUD](https://www.youtube.com/watch?v=jMmex4Sxhqg)
+    - Lecture 2: [How to interact with your canister using JavaScript?](https://www.youtube.com/watch?v=LRGGyvGnT18)
+- Challenges: 20 to 30. [TODO: ADD LINK]
+- Project 3: The Motoko Bootcamp Student Wall.
+## 📔 Planning of the day
+- 8-9AM: Mentorship session.
+- 9-10AM: Read the Motoko Book.
+- 10-11AM: Lecture 1.
+- 11-12AM: Coding challenges.
+- 12AM-1PM: Lunch break 🥪
+- 1PM-2PM: Lecture 2.
+- 2PM-3PM: Coding challenges.
+- 3PM-4PM: Project.
+- 4PM-5PM: Mentorship session. 

@@ -1,0 +1,48 @@
+# Day 1️⃣
+## 🎯 Goals of the day 
+- Understand what is a canister and how it relates to the concept of an actor.
+- Understand the concept of cycles & being able to top-up a canister.
+- Understand the difference between update & query calls.
+- Being comfortable deploying, managing and interacting with canisters through `dfx`.
+- Understand what is Candid & how to use the Candid UI to interact with your API.
+- Understand that Motoko is a typed language and become familiar with the basic types: `Nat`, `Int` & `Bool`.
+- Understand the differences between `let` & `var`.
+- Complete related coding challenges.
+- Complete the project of the day.
+## 📚 Resources used
+- Motoko Book: 
+    - Chapter 1: Fundamental concepts.
+        - What is a canister?
+        - The actor model.
+        - Update & Query calls.
+    - Chapter 2: Common programming concepts. 
+        - Variables & Mutability.
+        - Types.
+        - Functions.
+        - Comments.
+    - Chapter 3: Primitive Types in Motoko.
+        - `Nat`
+        - `Int`
+        - `Bool`
+    - Chapter 4: Candid the language of the Internet Computer.
+        - Why do we need Candid? 
+        - What is an IDL?
+        - The Candid file (`.did`)
+    - Chapter 5: Interacting with a canister.
+        - From the CLI: using `dfx`.
+        - From the Candid UI.
+- Lectures:
+    - [Overview of a repository](https://www.youtube.com/watch?v=wHLprUTVPPA).
+    - [How to use `dfx` to deploy canisters?](https://www.youtube.com/watch?v=wtKpMjzOLvQ)
+- Challenges: 1 to 10. 
+- Daily project: The Motoko Bootcamp Supercalculator.
+## 📔 Planning of the day (Workday: 8AM-5PM)
+- 8-9AM: Review of the GitHub repository.
+- 9-10AM: Motoko Bootcamp Kick-off event.
+- 10-11AM: Speed networking A.
+- 11-12AM: Read through Chapter 1-6.
+- Lunch break 🥪
+- 1PM-2PM: Coding challenges.
+- 2PM-3PM: Lecture 1.
+- 3PM-4PM: Project.
+- 4PM-5PM: Lecture 2.

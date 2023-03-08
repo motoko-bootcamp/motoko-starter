@@ -10,7 +10,7 @@ Motoko Starter is an event that provides an intense week of learning about the I
 During the week, you will work on different projects. <br/> Every project will be  be deployed on the Internet Computer and you’ll quickly learn how it feels to build and deploy your own projects.
 ### 🍻 Connect 
 Throughout the week you will participate in different activities such as mentorship hours, networking session and games that will help you connect with people in the ecosystem and unlock access to opportunities. The most important aspect of the Bootcamp is to create creating meaningful connections.
-### 🌱 Choose your pace
+### 🌱 Your pace
 The Bootcamp is a recurring event that is hosted every 3 months, we strongly advise that you participate in the next edition. <br/>
 However, <b> the educational resources can be used at anytime </b> - everything you need is here for free. 
 ## Overview
@@ -40,26 +40,23 @@ For each day, you will find a list of 10 challenges:
 
 You will also find [solutions](/challenges/solutions/SOLUTION.MD) for all those challenges, but make sure that you only look at them once you've spent enough time!
 ### 🏗️ Projects
-Projects will help you build up your confidence. You will be provided with instructions and a starting codebase. You will then have to write the rest of the code yourself.
-
+Projects will help you build confidence and practictal skills. You will be provided with instructions and a starting codebase to complete. 
 You'll work on 4 different projects:
 - The Calculator.
 - The Student Wall.
 - The Bootcamp Diploma.
 - The Motoko Token.
 
-Additionaly, if you participate in a running edition of Motoko Bootcamp, you'll have to build an additional project that will only be revealed during the Bootcamp! 
-## 📆  Past & upcoming editions
-1. Motoko Bootcamp 2022 (Past)
-    - Dates: March 5-12th 2022.
-    - Location: Fully online.
-2. Motoko Bootcamp 2023 - Winter Edition (Past)
-    - Dates: January 16-22nd 2023.
-    - Location: Porto 🇵🇹
-3. Motoko Bootcamp 2023 - Spring Edition  (Upcoming)
-    - Dates: May 8-14th 2023.
-    - Location: Miami 🇺🇸
-## 🎓 Graduation 
+If you join a current edition of the Motoko Bootcamp for running, you will be required to construct an extra project that will only be disclosed during the week. 🤫 
+#   Upcoming edition
+Join us for the next edition of Motoko Starter. You can follow online from anywhere in the world or meet us at the physical edition. 
+- 📆 May 8-14th 2023.
+- 🇺🇸  Miami 
+<br/> 
+<p align="center">  <a style="font-weight: bold; font-size:xx-large;" href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Sign up </a> </p>
+
+# Going beyond
+## 🎓 Graduation
 WIP
 ## 👦 Join our community
 - [Join our Discord](https://discord.gg/JS9g2ahtDs).
