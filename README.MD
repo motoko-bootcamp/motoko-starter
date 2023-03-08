@@ -53,7 +53,7 @@ Join us for the next edition of Motoko Starter. You can follow online from anywh
 - 📆 May 8-14th 2023.
 - 🇺🇸  Miami 
 <br/> 
-<p align="center">  <a style="font-weight: bold; font-size:xx-large;" href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Sign up </a> </p>
+<h2 align="center" style="font-size:xx-large;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Sign up </a> </h2>
 
 # Going beyond
 ## 🎓 Graduation
