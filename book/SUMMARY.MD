@@ -1,6 +1,7 @@
 # Chapters
 ## Introduction
 - Installation & prerequesites.
+- Motoko Playground
 ## Chapter 1: Fundamental Concepts
 - What is a canister?
 - WebAssembly and why do we need Motoko?
