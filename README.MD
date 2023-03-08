@@ -52,8 +52,7 @@ If you join a current edition of the Motoko Bootcamp for running, you will be re
 Join us for the next edition of Motoko Starter. You can follow online from anywhere in the world or meet us at the physical edition. 
 - 📆 May 8-14th 2023.
 - 🇺🇸  Miami 
-<br/> 
-<h2 align="center" style="font-size:xx-large;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Sign up </a> </h2>
+<h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Sign up </a> </h3>
 
 # Going beyond
 ## 🎓 Graduation
