@@ -1,5 +1,5 @@
 # Chapter 5: Interacting with a canister
-In this chapter, we will experiment different ways to interact with a canister. To illustrate those interactions we will deploy a canister called `Counter` and experiment with the differnet ways to call `Counter`. <br/> 
+In this chapter, we will experiment different ways to interact with a canister. To illustrate those interactions we will deploy a canister called `Counter` and experiment with it. <br/> 
 ## Prequesites
 Make sure that you have  `dfx` installed.
 ```motoko
@@ -219,5 +219,8 @@ While the command-line can be very practical, there's also an easier way to call
 ```
 [TODO : FINISH SECTION]
 ## Using a frontend with the JavaScript Agent
+WIP
 ## ICScan & ICDashboard
+WIP
 ## Agents 
+WIP

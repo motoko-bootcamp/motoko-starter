@@ -31,9 +31,15 @@
 - From the CLI: using `dfx`.
 - From the Candid UI.
 - From a frontend.
-## Chapter 6: The Motoko Base library 
+## Chapter 6: Modules
 - What is it and how do you use it?
+- The base library.
 - How to find the documentation & the source code?
+- Module types
+- Creating our custom type.
+- Adding public functions.
+- Classes.
+- Using tools to manage modules: Vessel & MOPS.
 ## Chapter 7: Debugging in Motoko.
 - The `Debug` module.
 ## Chapter 8: Storing data in our first data structures.
