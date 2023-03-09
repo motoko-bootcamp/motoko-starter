@@ -1,4 +1,10 @@
 # Motoko Starter: 7 days to get started on the Internet Computer 🏁 
+##   Upcoming edition
+Join us for the next edition of Motoko Starter. You can follow online from anywhere in the world or meet us at the physical edition. 
+- 📆 May 8-14th 2023.
+- 🇺🇸  Miami 
+<h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Sign up </a> </h3>
+
 ## Introduction
 Welcome to the most awesome Bootcamp 👋 <br/>
 We believe that 7 days is all it should take to change your life. <br/>
@@ -48,12 +54,6 @@ You'll work on 4 different projects:
 - The Motoko Token.
 
 If you join a current edition of the Motoko Bootcamp for running, you will be required to construct an extra project that will only be disclosed during the week. 🤫 
-#   Upcoming edition
-Join us for the next edition of Motoko Starter. You can follow online from anywhere in the world or meet us at the physical edition. 
-- 📆 May 8-14th 2023.
-- 🇺🇸  Miami 
-<h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Sign up </a> </h3>
-
 # Going beyond
 ## 🎓 Graduation
 WIP
