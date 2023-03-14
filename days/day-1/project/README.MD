@@ -14,24 +14,20 @@ actor {
     see: shared query () -> async Float;
     power: shared (x : Float) -> async Float;
     sqrt: shared () -> async Float;
-    max: shared (x : Float) -> async Float;
     floor: shared () -> async Int;
 };
 ```
 ## 📒 Steps
-- Step 1️⃣: Define a mutable variable called `counter` of type `Float` that will be used to store the result of the most recent calculation.
-- Step 2️⃣: Implement the following functions:
-    - `add`, which accepts a value `x` of type `Float` and performs addition.
-    - `sub`, which accepts a value `x` of type `Float` and performs subtraction.
-    - `mul`, which accepts a value `x` of type `Float` and performs multiplication.
-    - `div`, which accepts a value `x` of type `Float` and performs division. Make sure to guard against division by 0.
-    - `reset`, which reset the value of  `counter` by setting its value to zero.
-- Step 3️⃣: Implement a `query` function `see` that returns the value of `counter`.
-- Step 4️⃣: Implement the following functions:
-    - `power`, which accepts a value `x` of type `Float` and
-    - `sqrt`, which accepts a value `x` of type `Float` and
-    - `max` , which accepts a value `x` of type `Float` and
-    - `floor`, which returns 
-- Step 5️⃣: Deploy the canister on the Internet Computer.
+1. Define a mutable variable called `counter` of type `Float` that will be used to store the result of the most recent calculation.
+2. Implement `add`, which accepts a value `x` of type `Float` and performs addition. 
+3. Implement `sub`, which accepts a value `x` of type `Float` and performs subtraction.
+4. Implement `mul`, which accepts a value `x` of type `Float` and performs multiplication.
+5. Implement `div`, which accepts a value `x` of type `Float` and performs division. Make sure to guard against division by 0.
+6. Implement `reset`, which reset the value of  `counter` by setting its value to zero.
+7. Implement a `query` function `see` that returns the value of `counter`.
+8. Implement `power`, which accepts a value `x` of type `Float` and returns the value of `counter` to the power of `x`.
+9. Implement `sqrt`, which accepts a value `x` of type `Float` and returns the square root of `counter`.
+11. Implement `floor`, which returns the largest integer less than or equal to `counter`.
+12. Deploy the `Calculator` on the Internet Computer.
 ## Verification
 WIP
