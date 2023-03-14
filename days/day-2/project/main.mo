@@ -12,7 +12,7 @@ actor StudentWall {
         content: Content;
     };
 
-    let studentWall : Buffer.Buffer<Message> = Buffer.Buffer<Message>(10);
+    let wall : Buffer.Buffer<Message> = Buffer.Buffer<Message>(10);
 
 
 
