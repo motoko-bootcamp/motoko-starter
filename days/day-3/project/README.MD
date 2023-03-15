@@ -1,58 +1,52 @@
-# Motoko encyclopedia 📓
+# Student wall 🎨
 ## 🧑‍🏫 Requirements 
-Your task is to develop a collaborative encyclopedia or wiki for a decentralized autonomous organization DAO focused on education. This encyclopedia will be a platform for students, teachers, and the broader community to share knowledge, insights, and resources.
-
-The encyclopedia should allow any member to contribute to the wiki, but it should also incorporate a mechanism for content moderation to ensure the accuracy and quality of the content. Finally, a reputation system will be implemented to incentivize members to contribute quality content and moderate the wiki. Members can earn reputation points for their contributions, which can be used to give them more influence in the DAO.
+Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the school community. <br/>
+Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other.
+This wall will be the go-to destination for students looking to get the latest scoop on what's happening in the school community. 
 ## 📺 Interface
+Your canister should implement the following interface:
 ```motoko
 actor {
-    // Contributors 
-    addContributor: shared (name : Text) -> async Result.Result<(), Text>;
-    getContributor: shared query (p : Principal) -> async Result.Result<Contributor, Text>;
-    updateContributor: shared (name : Text) -> async Result.Result<(), Text>;
-    deleteContributor: shared () -> async Result.Result<(), Text>;
-
-    // Content
-    addContent: shared (c : Content) -> async Result.Result<(), Text>;
-    getContent: shared query (id : Nat) -> async Result.Result<Content, Text>;
-    updateContent: shared (id : Nat, c : Content) -> async Result.Result<(), Text>;
-    deleteContent: shared (id : Nat) -> async Result.Result<(), Text>;
-
-    // Voting
-    upVote: shared (id : Nat) -> async Result.Result<(), Text>;
-    downVote: shared (id : Nat) -> async Result.Result<(), Text>;
-
-    //Moderation system
-    moderateContent(id : Nat, c : Content) -> async Result.Result<(), Text>;
-
-}
-```
-## 📒 Steps
-1. Define a new record type `Contributor`, that represents a contributor to the encyclopedia. A contributor has a `name` field of type `Text`, and a `reputation` field of type `Int` that represents the contributor's reputation.
-2. Define a variable called `contributors`. This variable is a key/value store (`HashMap` or `TrieMap`)  where the keys are of type `Principal` and the values of type `Contributors`.
-3. Implement `addContributor`, which accepts a name of type `Text`, adds the caller to the key/value store. All contributors start with a reputation score of 0. This function returns an error message wrapped in `Err` if the contributor is already stored.
-4. Implement the query function `getContributor`, which accepts `p` of type `Principal` and returns the corresponding contributor wrapped in Ok. This function returns an error message wrapped in `Err` if the contributor doesn't exist.
-5. Implement `deleteContributor`, which delete the caller from the key/value store. This function returns an error message wrapped in `Err` if the contributor is not found.
-We define the type `Content` as follows:
-```motoko
-public type Content = {
-    title : Text;
-    body : Text;
-    comments :  [Text];
-    upvote: Nat;
-    downvote: Nat;
-    creator : Principal;
+    write: shared (c : Content) -> async Nat;
+    clean: shared (messageId : Nat) -> async Result.Result<(), Text>;
+    vote: shared (messageId : Nat, answerId : Nat) -> async Result.Result<(), Text>;
+    getMessage: shared query (messageId : Nat) -> async Result.Result<Message, Text>;
+    getAllMessages : shared query () -> async [Message];
+    getAllImages : shared query () -> async [Blob];
+    getAllSurveys : shared query () -> async [Survey];
 };
 ```
-6. Similar to previous steps, implement `addContent`, `editContent`, `removeContent` & `getContent`. In step 6, only the creator of a content is able to modify it. 
-7. Implement `upVote`, which accepts an `id` of type `Nat` and adds one upvote to the content and one reputation points to the contributor who added the corresponding content. The function should return a value of type `Result.Result<(), Text>` that corresponds to an error message if the `id` is invalid.
-8. Implement `downVote`, which accepts an `id` of type `Nat` and add one downvote to the content and remove one reputation points to the contributor who added the corresponding content. The function should return a value of type `Result.Result<(), Text>` that corresponds to an error message if the `id` is invalid.
-9. Implement `moderateContent`, which accepts a tupple composed of `id` of type `Nat` and `c` of type `Content`. This function will perfom two checks:
-- Has the content more downvotes than upvotes?
-- Has the creator of this content less reputation point that the caller? 
-If both checks are passed, then the content can be replaced by the new one. In other cases, this function returns an adapted error message wrapped in `Err`.
-10. Implement the necessary code in `pre_upgrade` and `post_upgrade` to retain the state of this canister through upgrades.
+## 📒 Steps
+We define a variant type called `Content` that represents the content of messages that can be published on the wall.
+```motoko
+public type Content = {
+    #Text: Text;
+    #Image: Blob;
+};
+```
+1. Define a new record type called `Message`. A message of type `Message` contains a field `id` of type `Nat` and a field `content` of type `Content`. 
+2. Define a variable called `wall` of type `Buffer` that will be used for storing messages.
+3. Implement `write`, which accepts a content `c` of type `Content`, creates a message from the content, adds the message to the wall and returns the id of the message. The id of the message should corresponds to the index of the message in `wall`. 
+4. Implement `clean`, which accepts an id of type `Nat` and removes the corresponding message from the wall. `clean` will returns a value of type `Result.Result<(),Text>` that corresponds to an error message if the message corresponding to the id doesn't exist.  
+
+We define new types:
+- `Answer` is a tupple type that represents a choice in a survey. Each answer contains a `Text` field that describes the answer, and a var Nat field that represents the number of times the answer has been selected by respondents. 
+```motoko
+type Answer = (Text, var Nat);
+``` 
+- `Survey` is a record type that represents a survey. Each survey contains a `title` field that describes the survey, and a `answers` field that is an array of `Answer` objects, each representing a possible answer in the survey.
+```motoko
+type Survey = {
+    title : Text;
+    answers : [Answer];
+};
+``` 
+5. Modify the variant type `Content` to include `Survey`. 
+6. Implement `vote`, which accepts `messageId` of type `Nat` and `answerId` of type `Nat`, and updates the corresponding answer `count` in the survey associated with the message. This function will return a value of type `Result.Result<(), Text>` that corresponds to an error message if either the `messageId` or `answerId` is invalid.
+7. Implement the query function `getMessage`, which accepts `messageId` of type `Nat` and returns the message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an Err result.
+8. Implement the query function `getAllMessages`, which returns the list of all messages. 
+9. Implement the query function `getAllImages`, which returns the list of all images that have been added to the wall. 
+10. Implement the query function `getAllSurveys`, which returns the list of all surveys that have been added to the wall. To accomplish this, you can iterate over all the messages on the wall and add any surveys to a new list. Then, return this list of surveys.
+
 ## Verification
 WIP
-
-

@@ -1,52 +1,43 @@
-# Student wall 🎨
+# Homework diary 📔
 ## 🧑‍🏫 Requirements 
-Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the school community. <br/>
-Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other.
-This wall will be the go-to destination for students looking to get the latest scoop on what's happening in the school community. 
+Your task is to create a collaborative homework diary. The homework diary will allow students to create, edit, delete, and view their homework tasks.
 ## 📺 Interface
-Your canister should implement the following interface:
 ```motoko
 actor {
-    write: shared (c : Content) -> async Nat;
-    clean: shared (messageId : Nat) -> async Result.Result<(), Text>;
-    vote: shared (messageId : Nat, answerId : Nat) -> async Result.Result<(), Text>;
-    getMessage: shared query (messageId : Nat) -> async Result.Result<Message, Text>;
-    getAllMessages : shared query () -> async [Message];
-    getAllImages : shared query () -> async [Blob];
-    getAllSurveys : shared query () -> async [Survey];
-};
+    // Add a new homework task
+    addHomework: shared (title: Text, description: Text, dueDate: Int) -> async Nat;
+
+    // Get a specific homework task by id
+    getHomework: shared query (id: Nat) -> async Result.Result<Homework, Text>;
+
+    // Update a homework task's title, description, and/or due date
+    updateHomework: shared (id: Nat, title: Text, description: Text, dueDate: Int) -> async Result.Result<(), Text>;
+
+    // Mark a homework task as completed or not completed
+    setCompleted: shared (id: Nat, completed: Bool) -> async Result.Result<(), Text>;
+
+    // Delete a homework task by id
+    deleteHomework: shared (id: Nat) -> async Result.Result<(), Text>;
+
+    // Get the list of all homework tasks
+    getAllHomework: shared query () -> async [Homework];
+
+    // Get the list of pending (not completed) homework tasks
+    getPendingHomework: shared query () -> async [Homework];
+
+    // Search for homework tasks based on a search term
+    searchHomework: shared query (searchTerm: Text) -> async [Homework];
+}
 ```
 ## 📒 Steps
-We define a variant type called `Content` that represents the content of messages that can be published on the wall.
-```motoko
-public type Content = {
-    #Text: Text;
-    #Image: Blob;
-};
-```
-1. Define a new record type called `Message`. A message of type `Message` contains a field `id` of type `Nat` and a field `content` of type `Content`. 
-2. Define a variable called `wall` of type `Buffer` that will be used for storing messages.
-3. Implement `write`, which accepts a content `c` of type `Content`, creates a message from the content, adds the message to the wall and returns the id of the message. The id of the message should corresponds to the index of the message in `wall`. 
-4. Implement `clean`, which accepts an id of type `Nat` and removes the corresponding message from the wall. `clean` will returns a value of type `Result.Result<(),Text>` that corresponds to an error message if the message corresponding to the id doesn't exist.  
-
-We define new types:
-- `Answer` is a tupple type that represents a choice in a survey. Each answer contains a `Text` field that describes the answer, and a var Nat field that represents the number of times the answer has been selected by respondents. 
-```motoko
-type Answer = (Text, var Nat);
-``` 
-- `Survey` is a record type that represents a survey. Each survey contains a `title` field that describes the survey, and a `answers` field that is an array of `Answer` objects, each representing a possible answer in the survey.
-```motoko
-type Survey = {
-    title : Text;
-    answers : [Answer];
-};
-``` 
-5. Modify the variant type `Content` to include `Survey`. 
-6. Implement `vote`, which accepts `messageId` of type `Nat` and `answerId` of type `Nat`, and updates the corresponding answer `count` in the survey associated with the message. This function will return a value of type `Result.Result<(), Text>` that corresponds to an error message if either the `messageId` or `answerId` is invalid.
-7. Implement the query function `getMessage`, which accepts `messageId` of type `Nat` and returns the message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an Err result.
-8. Implement the query function `getAllMessages`, which returns the list of all messages. 
-9. Implement the query function `getAllImages`, which returns the list of all images that have been added to the wall. 
-10. Implement the query function `getAllSurveys`, which returns the list of all surveys that have been added to the wall. To accomplish this, you can iterate over all the messages on the wall and add any surveys to a new list. Then, return this list of surveys.
-
-## Verification
-WIP
+We import the type `Time` for the `Time` library. 
+1. Define a record type `Homework` that represents a homework task. A Homework has a title field of type `Text`, a description field of type `Text`, a dueDate field of type `Time`, and a completed field of type `Bool`.
+2. Define a variable called `homeworkDiary` that will be used to store the homework tasks. Use a suitable data structure (such as `Buffer` or `Array`) for this variable.
+3. Implement `createHomework`, which accepts a homework of type `Homework`, adds the homework to the `homeworkDiary`, and returns the id of the homework. The id should correspond to the index of the homework in `homeworkDiary`.
+4. Implement `getHomework`, which accepts a homeworkId of type Nat, and returns the corresponding homework wrapped in an Ok result. If the homeworkId is invalid, the function should return an error message wrapped in an `Err` result.
+5. Implement `updateHomework`, which accepts a homeworkId of type `Nat` and a homework of type `Homework`, updates the corresponding homework in `homeworkDiary`, and returns a unit value wrapped in an `Ok` result. If the homeworkId is invalid, the function should return an error message wrapped in an `Err` result.
+6. Implement `deleteHomework`, which accepts a `homeworkId` of type `Nat`, removes the corresponding homework from the `homeworkDiary`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
+7. Implement `getAllHomework`, which returns the list of all homework tasks in `homeworkDiary`.
+8. Implement `markAsComplete`, which accepts a homeworkId of type `Nat`, updates the completed field of the corresponding homework to `true`, and returns a unit value wrapped in an `Ok result`. If the homeworkId is invalid, the function should return an error message wrapped in an Err result.
+9. Implement a `getPendingHomework` query function that returns the list of all pending (not completed) homework tasks in `homeworkDiary`. This function should filter the tasks based on their completed field.
+10. Implement a `searchHomework` query function that accepts a `searchTerm` of type `Text` and returns a list of homework tasks that have the given `searchTerm` in their `title` or `description`.

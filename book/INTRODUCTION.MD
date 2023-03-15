@@ -1,1 +1,1 @@
-# Chapter 7: Debugging in Motoko.
+# Introduction
