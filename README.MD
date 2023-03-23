@@ -2,23 +2,19 @@
 ## Upcoming edition
 ### 📆 May 8-14th 2023
 ### 🇺🇸  Miami 
-### Particiapte in the next edition of Motoko Starter. You can follow online from anywhere in the world or join us at the physical edition. 
+### Participate in the next edition of Motoko Starter. You can follow online from anywhere in the world or join us at the physical edition. 
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
-
 ## Introduction
 Welcome to the most awesome Bootcamp 👋 <br/>
-We believe that 7 days is all it should take to change your life. <br/>
-Learn Motoko, get started on the Internet Computer and meet others builders - <b> all in one week </b>. 
-You can [follow online](https://discord.gg/JS9g2ahtDs) from anywhere in the world or join us for the frequent physical editions. 
+We believe that 7 days is all it should take to change your life. Learn Motoko, get started on the Internet Computer and meet others builders - <b> all in one week </b>. 
 ### 📚 Learn 
-Motoko Starter is an event that provides an intense week of learning about the Internet Computer and Motoko. You will attend lectures, solve challenges, and build your first project. We will introduce you to all the fundamental concepts you need in order to become start building on the Internet Computer.
+Motoko, the Internet Computer, canisters, Web3, DAOs... at the end of the well you'll master all the fundamental concepts you need in order to start building on the Internet Computer.
 ### 👷 Build 
-During the week, you will work on different projects. <br/> Every project will be  be deployed on the Internet Computer and you’ll quickly learn how it feels to build and deploy your own projects.
+During the week, you will work on different projects. Every project will be  be deployed live and you’ll quickly learn how it feels to build and deploy your own projects.
 ### 🍻 Connect 
-Throughout the week you will participate in different activities such as mentorship hours, networking session and games that will help you connect with people in the ecosystem and unlock access to opportunities. The most important aspect of the Bootcamp is to create creating meaningful connections.
+Throughout the week you will participate in different activities such as mentorship hours, networking session and games sessions that will help you connect with people in the ecosystem and unlock access to opportunities. 
 ### 🌱 Your pace
-The Bootcamp is a recurring event that is hosted every 3 months, we strongly advise that you participate in the next edition. <br/>
-However, <b> the educational resources can be used at anytime </b> - everything you need is here for free. 
+The educational resources can be used at **anytime** </b> - everything you need is here for free. 
 ## Overview
 The Bootcamps is divided in 7 days. 
 ### 📜 Daily guides
