@@ -73,7 +73,47 @@ WIP
     - [All motoko keywords](https://internetcomputer.org/docs/current/motoko/main/language-manual#keywords)
 - Respect [Motoko style guidelines](https://internetcomputer.org/docs/current/motoko/main/style#:~:text=Motoko%20requires%20that%20all%20expressions,ignore%20when%20it's%20not%20needed.&text=Motoko%20allows%20to%20omit%20the,evaluates%20to%20its%20last%20expression.) for all code samples.
 ## Todo
-- [ ] Create & add illustrations missings.
-- [ ] Complete the `TODO` section.
-- [ ] Add introduction to each day and backstory.
-- [ ] Grammar & orthograph verification.
+### General
+- [] Add introduction for each day, backstory and context to each chapter.
+- [] Create and add missing illustrations.
+- [] Improve the README.
+- [] Verify styling rules & 
+### Chapter 1
+- [] Complete section on cycles.
+- [] Review.
+### Chapter 2
+- [] Finish section on functions.
+- [] Finish sectin of control flow.
+- [] Review.
+### Chapter 3
+- [] Finish section on Blob.
+- [] Finish section on Nat8.
+- [] Finish section on Unit type.
+### Chapter 4
+- [] Add recap information (?)
+### Chapter 5
+- [] Complete section on frontend with JavaScript.
+- [] Complete section on ICScan & ICDashboard.
+- [] Complete section on agents.
+### Chapter 6
+- [] Complete section on Experimental libraries.
+### Chapter 7
+- [] Complete section on Trap.
+### Chapter 8
+### Chapter 9
+### Chapter 10
+### Chapter 11
+### Chapter 12
+### Chapter 13
+### Chapter 14
+### Chapter 15
+### Chapter 16
+### Chapter 17
+### Chapter 18
+### Chapter 19
+### Chapter 20
+### Chapter 21
+### Chapter 22
+### Chapter 23
+### Chapter 24
+### Chapter 25

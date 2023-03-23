@@ -1,6 +1,6 @@
 # Chapter 1: Fundamental concepts.
 ##  What is a canister?
-There is one word you absolutely cannot forget from this entire week. Are you ready for it? 
+There is one word you absolutely need to master from this entire week. Are you ready for it? 
 It's... 🥁... **CANISTER**! 
 
 The Internet Computer is a platform that hosts a large number of applications, all of those applications run smoothly within special containers called **canisters**. 
