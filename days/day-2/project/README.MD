@@ -25,7 +25,7 @@ actor {
     // Get the list of pending (not completed) homework tasks
     getPendingHomework: shared query () -> async [Homework];
 
-    // Search for homework tasks based on a search term
+    // Search for homework tasks based on a search terms
     searchHomework: shared query (searchTerm: Text) -> async [Homework];
 }
 ```
