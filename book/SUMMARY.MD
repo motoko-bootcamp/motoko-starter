@@ -129,7 +129,6 @@
 - Current DAOs and their limitations.
 - From smart contracts to canisters.
 - How can we trust a canister?
-- Overview of the biggest DAO on the Internet Computer: the NNS.
 ## Appendix 3: A new chapter in digital identity: Internet Identity.
 - Username & passwords.
 - Login with BigTech
@@ -138,12 +137,12 @@
 - Canister signature
 - How does Internet Identity work?
 - The issue with Cross-dApp communication.
-## Appendix 4: Handling payments on the Internet Computer.
+## Appendix 4: Overview of the biggest DAO on the Internet Computer.
+## Appendix 5: Handling payments on the Internet Computer.
 - The ICP Ledger.
 - The ICRC_1 standard.
 - The Invoice canister (depreceated?)
-## Appendix 5: Unlocking the power of NFTs on the Internet Computer
+## Appendix 6: Unlocking the power of NFTs on the Internet Computer
 - Current NFTs and their limitations.
 - From smart contracts to canisters.
 - New possibilities for NFTs.
-## Appendix 6: A guide to multi-canister scaling
