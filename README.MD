@@ -65,6 +65,7 @@ WIP
 - [ ] Verify styling rules & ortograph.
 - [ ] Add source code for each lecture.
 - [ ] Add feedback form for each day.
+- [ ] Cut lecture to not include the Q/A part but hold it live.
 ### Chapter 1
 - [ ] Complete section on cycles.
 - [ ] Review.
