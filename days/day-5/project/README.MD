@@ -1,1 +1,1 @@
-# School token
+# The Bootcamp diploma 🎓

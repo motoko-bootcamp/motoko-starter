@@ -19,26 +19,25 @@ The educational resources can be used at **anytime** </b> - everything you need 
 The Bootcamps is divided in 7 days. 
 ### 📜 Daily guides
 For each day, you will find a dedicated guide - those guides will be your companions to navigate through all the available resources and challenges.
-- Day 1️⃣ 
-- Day 2️⃣ 
-- Day 3️⃣ 
-- Day 4️⃣ 
-- Day 5️⃣ 
-- Day 6️⃣ 
-- Day 7️⃣
+- [Day 1️⃣](./days/day-1/README.MD) 
+- [Day 2️⃣](./days/day-2/README.MD) 
+- [Day 3️⃣](./days/day-3/README.MD) 
+- [Day 4️⃣](./days/day-4/README.MD) 
+- [Day 5️⃣](./days/day-5/README.MD) 
+- [Day 6️⃣](./days/day-6/README.MD) 
+- [Day 7️⃣](./days/day-7/README.MD) 
 ### 🍿 Lectures
 Each lecture is approximately one hour long and covers a dedicated topic. It was held live by one of the Motoko Bootcamp mentors.
 You can consult the [list of all lectures on the dedicated page](./lectures/LECTURES.MD).
 ### 🏗️ Projects 
-Projects will help you build confidence and practictal skills. You will be provided with instructions and a starting codebase to complete. 
+Projects will help you build confidence and practical skills. You will be provided with instructions and a starting codebase to complete. 
 You will work on 5 different projects:
-- The Calculator ➕
-- The Homework diary 📔
-- The Student wall 🎨
-- The Motoko encyclopedia 📓
-- The Bootcamp diploma 🎓
-
-WIP
+- [The Calculator ➕](./days/day-1/project/README.MD)
+- [The Homework diary 📔](./days/day-2/project/README.MD)
+- [The Student wall 🎨](./days/day-3/project/README.MD)
+- [The Motoko encyclopedia 📓](./days/day-4/project/README.MD)
+- [The Bootcamp diploma 🎓](./days//day-5/project/README.MD)
+- Final project: WIP
 ## 🎓 Graduation
 WIP
 ## 👦 Join our community
@@ -59,9 +58,13 @@ WIP
 ## Todo
 ### General
 - [ ] Add introduction for each day, backstory and context to each chapter.
+- [ ] Add a FAQ.
+- [ ] Add a troubleshooting guide.
 - [ ] Create and add missing illustrations.
 - [ ] Improve the README.
-- [ ] Verify styling rules & 
+- [ ] Verify styling rules & ortograph.
+- [ ] Add source code for each lecture.
+- [ ] Add feedback form for each day.
 ### Chapter 1
 - [ ] Complete section on cycles.
 - [ ] Review.
