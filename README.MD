@@ -29,28 +29,16 @@ For each day, you will find a dedicated guide - those guides will be your compan
 ### 🍿 Lectures
 Each lecture is approximately one hour long and covers a dedicated topic. It was held live by one of the Motoko Bootcamp mentors.
 You can consult the [list of all lectures on the dedicated page](./lectures/LECTURES.MD).
-### 🧑‍💻 Challenges 
-Challenges are designed to help you practice on the subjets covered by the lectures and guides as well as become familiar with the Motoko syntax. Challenges can be questions or coding exercices.
-For each day, you will find a list of 10 challenges:
-- Challenges for day 1️⃣ 
-- Challenges for day 2️⃣ 
-- Challenges for day 3️⃣
-- Challenges for day 4️⃣ 
-- Challenges for day 5️⃣ 
-- Challenges for day 6️⃣ 
-- Challenges for day 7️⃣
-
-You will also find [solutions](/challenges/solutions/SOLUTION.MD) for all those challenges, but make sure that you only look at them once you've spent enough time!
-### 🏗️ Projects
+### 🏗️ Projects 
 Projects will help you build confidence and practictal skills. You will be provided with instructions and a starting codebase to complete. 
-You'll work on 4 different projects:
-- The Calculator.
-- The Student Wall.
-- The Bootcamp Diploma.
-- The Motoko Token.
+You will work on 5 different projects:
+- The Calculator ➕
+- The Homework diary 📔
+- The Student wall 🎨
+- The Motoko encyclopedia 📓
+- The Bootcamp diploma 🎓
 
-If you join a current edition of the Motoko Bootcamp for running, you will be required to construct an extra project that will only be disclosed during the week. 🤫 
-# Going beyond
+WIP
 ## 🎓 Graduation
 WIP
 ## 👦 Join our community
@@ -70,31 +58,31 @@ WIP
 - Respect [Motoko style guidelines](https://internetcomputer.org/docs/current/motoko/main/style#:~:text=Motoko%20requires%20that%20all%20expressions,ignore%20when%20it's%20not%20needed.&text=Motoko%20allows%20to%20omit%20the,evaluates%20to%20its%20last%20expression.) for all code samples.
 ## Todo
 ### General
-- [] Add introduction for each day, backstory and context to each chapter.
-- [] Create and add missing illustrations.
-- [] Improve the README.
-- [] Verify styling rules & 
+- [ ] Add introduction for each day, backstory and context to each chapter.
+- [ ] Create and add missing illustrations.
+- [ ] Improve the README.
+- [ ] Verify styling rules & 
 ### Chapter 1
-- [] Complete section on cycles.
-- [] Review.
+- [ ] Complete section on cycles.
+- [ ] Review.
 ### Chapter 2
-- [] Finish section on functions.
-- [] Finish sectin of control flow.
-- [] Review.
+- [ ] Finish section on functions.
+- [ ] Finish sectin of control flow.
+- [ ] Review.
 ### Chapter 3
-- [] Finish section on Blob.
-- [] Finish section on Nat8.
-- [] Finish section on Unit type.
+- [ ] Finish section on Blob.
+- [ ] Finish section on Nat8.
+- [ ] Finish section on Unit type.
 ### Chapter 4
-- [] Add recap information (?)
+- [ ] Add recap information (?)
 ### Chapter 5
-- [] Complete section on frontend with JavaScript.
-- [] Complete section on ICScan & ICDashboard.
-- [] Complete section on agents.
+- [ ] Complete section on frontend with JavaScript.
+- [ ] Complete section on ICScan & ICDashboard.
+- [ ] Complete section on agents.
 ### Chapter 6
-- [] Complete section on Experimental libraries.
+- [ ] Complete section on Experimental libraries.
 ### Chapter 7
-- [] Complete section on Trap.
+- [ ] Complete section on Trap.
 ### Chapter 8
 ### Chapter 9
 ### Chapter 10
