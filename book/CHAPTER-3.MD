@@ -1,8 +1,11 @@
 # Chapter 3: Primitive Types in Motoko.
 <p align="center"> <img src="./assets/chapter-3/motoko_primitives_types.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> A few primitive types</p>
+
+## Introduction 
 Primitive types are fundamental core data types that are not composed of more fundamental types.
 
+Primitive types do not need to be imported before they can be used in type annotation. However, the Base Library does have modules for each primitive type to perform common tasks, like converting between the data types, transforming the data types, comparing the data types and other functionality.
 ## 🔢 Nat
 `Nat` is used for **unbounded** natural numbers (1,2,3,4,...♾️). By default all positive whole numbers are casted to `Nat`.
 ```motoko
@@ -114,7 +117,7 @@ In Motoko, strings can be written surrounded by double quotes `"`
 ```motoko
 "Hello Motoko Bootcamp!"
 ```
-The type for string is `Text` (pretty easy to remember).
+The type for string is `Text`.
 ```motoko
 let welcomePhrase : Text = "Hello Motoko Bootcamp!";
 ```
@@ -200,10 +203,42 @@ let n = 2;  // Automatically casted to type Nat
 ```motoko
 1e16 + 1.0 != 1e16 // => false
 ```
-## Blob.
-WIP
-## Nat8, Nat16, Nat32, Nat64, Int8, Int16, Int32, Int64.
-WIP
-## Unit type
+## 🎛️ Bounded types
+Motoko provides support for bounded types which are integer types with fixed precision. These bounded types can be useful for several reasons:
+
+- Memory efficiency: Bounded types allow you to know exactly how much memory your data will occupy.
+- Exact sizing: When you know that an API returns an exact number, you can use bounded types to ensure that the - returned number is represented accurately.
+- Execution efficiency: If you know that your numbers require 64-bit arithmetic, using `Nat64` is more efficient than using `Nat`.
+- Bitwise arithmetic: Bounded types make it easier to perform bitwise operations such as `<<` or `XOR` on binary data.
+
+### Nat8, Nat16, Nat32 and Nat64
+There are four natural types supported in Motoko: `Nat8`, `Nat16`, `Nat32`, and `Nat64`.
+
+The number in the type name specifies the number of bits in the type representation. For example, `Nat32` represents a 32-bit natural number.
+
+To declare a bounded variable, you must specify the type explicitly to avoid it being automatically cast to a regular `Nat`:
+```motoko
+let n : Nat32 = 1;
+```
+In contrast, if you declare a variable without specifying its type, it will default to a regular `Nat`
+```motoko
+let n = 1; // Will be casted to Nat automatically
+```
+### Int8, Int16, Int32, and Int64
+Motoko also supports integer types, including `Int8`, `Int16`, `Int32`, and `Int64`. Bounded integer types behave similarly to bounded natural types, except they support negative values. The number in the type name specifies the number of bits in the type representation. For example, `Int32` represents a 32-bit integer:
+```motoko
+let i : Int32 = -1;
+```
+
+## 🤖 Blob.
+`Blob` stands for Binary Large Object. The `Blob` type represents an immutable sequence of bytes: they are immutable, iterable, but not indexable and can be empty. <br/>
+
+Byte sequences are also often represented as `[Nat8]`, i.e. an array of bytes, but this representation is currently much less compact than `Blob`, taking 4 physical bytes to represent each logical byte in the sequence.
+If you would like to manipulate Blobs, it is recommended that you convert `Blobs` to `[var Nat8]` or `Buffer<Nat8>`, do the manipulation, then convert back.
+
+## 🫙 Unit type
 The last type we will mention in this chapter is the unit type `()`. This type is also called the empty tuple type. It's useful in several places, for example in functions to indicate that a function does not return any specific type.<br/>
 WIP
+
+## The base library and primitive types.
+Primitive types do not need to be imported before they can be used in type annotation. But the Base Library does have modules for each primitive type to perform common tasks, like converting between the data types, transforming the data types, comparing the data types and other functionality.

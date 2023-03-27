@@ -8,7 +8,7 @@
 Welcome to the most awesome Bootcamp 👋 <br/>
 We believe that 7 days is all it should take to change your life. Learn Motoko, get started on the Internet Computer and meet others builders - <b> all in one week </b>. 
 ### 📚 Learn 
-Motoko, the Internet Computer, canisters, Web3, DAOs... at the end of the well you'll master all the fundamental concepts you need in order to start building on the Internet Computer.
+**Motoko**, the **Internet Computer**, **canisters**, **Web3**, **DAOs**... at the end of the well you'll master all the fundamental concepts needeed in order to start building on the Internet Computer.
 ### 👷 Build 
 During the week, you will work on different projects. Every project will be  be deployed live and you’ll quickly learn how it feels to build and deploy your own projects.
 ### 🍻 Connect 
@@ -70,8 +70,8 @@ WIP
 - [x] Complete section on cycles.
 - [ ] Review.
 ### Chapter 2
-- [ ] Finish section on functions.
-- [ ] Finish sectin of control flow.
+- [x] Finish section on functions.
+- [x] Finish section of control flow.
 - [ ] Review.
 ### Chapter 3
 - [ ] Finish section on Blob.

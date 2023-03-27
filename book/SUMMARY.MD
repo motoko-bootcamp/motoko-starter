@@ -84,14 +84,14 @@
 - Importing from another canister (locally)
 - Importing from another canister (mainnet)
 - Async values.
+- Atomicity & commit point.
 ## Chapter 15: Breaking down advanced concepts.
 - Orthogonal persistence.
 - Structural typing.
-- Atomicity & commit point.
 ## Chapter 16: Playing with time in Motoko.
--`Time`
--`Timer` 
--`Heartbeat`.
+- `Time`
+- `Timer` 
+- `Heartbeat`
 ## Chapter 17: Upgrading a canister.
 - Stable memory vs Heap memory.
 - Stable variables.
@@ -137,7 +137,7 @@
 - Canister signature
 - How does Internet Identity work?
 - The issue with Cross-dApp communication.
-## Appendix 4: Overview of the biggest DAO on the Internet Computer.
+## Appendix 4: Overview of the biggest DAO on the Internet Computer: the NNS.
 ## Appendix 5: Handling payments on the Internet Computer.
 - The ICP Ledger.
 - The ICRC_1 standard.
