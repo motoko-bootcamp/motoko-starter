@@ -7,7 +7,7 @@
 - Getting familiar with primitive types in Motoko: `Text`, `Char` , `Float` & `Blob`.
 - Getting familiar with simple data structures in Motoko: `Array` , `List` & `Buffer`.
 - Getting familiar with more advanced types: Tuples, Object (custom) & variants.
-- Overview of the biggest DAO on the Internet Computer: the NNS.
+- Overview of the biggest DAO on the Internet Computer: the **NNS**.
 ## 📚 Resources used
 - Motoko Book:
     - Chapter 1: Fundamental concepts.

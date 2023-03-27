@@ -67,7 +67,7 @@ WIP
 - [ ] Add feedback form for each day.
 - [ ] Cut lecture to not include the Q/A part but hold it live.
 ### Chapter 1
-- [ ] Complete section on cycles.
+- [x] Complete section on cycles.
 - [ ] Review.
 ### Chapter 2
 - [ ] Finish section on functions.

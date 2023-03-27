@@ -33,7 +33,6 @@ If we zoom inside, a canister is composed of:
 <p align="center"> What is <b> WebAssembly </b>? <p>
 WebAssembly is a low-level binary format for executing code in multitude environments (browsers, cloud platform, smart devices, virtual machine..). The main benefits of using WebAssembly are:
 
-
 - **WebAssembly** supports code written in multiple languages (C, C++, Rust, Motoko) making it a versatile solution for developers.
 
 - **WebAssembly** code is portable and can run on almost any device. You write it once and you can run it everywhere!
@@ -180,6 +179,26 @@ actor {
 
 The `query` keyword tells us that `readMessage` function is only for reading information. On the other hand, `readMessage` can update the state (we don't need to add the `update` keyword as it is assumed by default). 
 
-> We have deployed the previous actor on the Internet Computer - and you can access <a href="https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=rhjue-eaaaa-aaaaj-qazra-cai" target="_blank"> his API. </a> Try the interface and test the speed difference between `changeMessage` & `readMessage`. Have fun and leave a kind message for the next student! 
+> We have deployed the previous actor on the Internet Computer - and you can access <a href="https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=rhjue-eaaaa-aaaaj-qazra-cai" target="_blank"> his API. </a> Try the interface and test the speed difference between `changeMessage` & `readMessage`. Have fun and leave a kind message for the next student.
 ## Fuel on the Internet Computer: cycles.
-WIP
+To pay for computation & storage costs canisters have to be loaded with **cycles**.
+Each canister has it’s own **cycle** balance - this can be thought of as the battery life of a **canister**. 
+**Cycles** can be obtained by burning **ICPs**.
+
+<p align="center"> <img src="./assets/chapter-1/cycles_burned.gif" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> When processing a new message, cycles are deducted from the canister's balance and burned.</p>
+
+Unlike **gas** on **Ethereum**, **cycles** on the **Internet Computer** are not paid by the user. This means you can interact with canisters and browse websites without paying anything. This is known as the **reverse-gas model** and is a major improvement for the user's experience as it eliminates the need for creating wallets, holding tokens, and paying high fees.
+
+Cycles are measured in trillions (T), which is equivalent to 1,000,000,000,000 or 10^12. One trillion cycles always cost 1 XDR, which is a currency based on market exchange rates that represents a basket of major currencies. As of now, 1 XDR is equal to $1.34. The price of cycles is not affected by the price of ICP tokens. Instead, the conversion rate of ICP tokens to cycles is constantly adjusted by monitoring the price of ICP.
+
+Each operation perfomed on the network has a cost attached to it:
+- Creating a canister.
+- Executing an update message.
+- Executing an inter-canister call.
+- Storing data.
+- Performing an HTTPS outcall.
+- Computing a threshold ECDSA signature.
+
+The cost of those operations also depends on the subnet in which they are performed and the **replication factor** of this subnet. The replication factor corresponds to the number of nodes in a subnet, which can range from 13 to 40.
+## Ressources and links
