@@ -1,0 +1,13 @@
+{
+    "canisters": {
+      "factorial": {
+        "main": "src/factorial.mo"
+      },
+      "only_timestamp": {
+        "main": "src/factorial_only_timestamp.mo"
+      },
+      "timestamp_counter": {
+        "main": "src/factorial_timestamp_counter.mo"
+      }
+    }
+  }

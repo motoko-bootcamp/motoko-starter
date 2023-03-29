@@ -1,20 +1,20 @@
 # Chapters
 ## Introduction
 - Installation & prerequesites.
-- Motoko Playground
+- Motoko Playground.
 ## Chapter 1: Fundamental Concepts
 - What is a canister?
 - WebAssembly and why do we need Motoko?
 - The actor model.
 - Update vs Query.
 - Fuel on the Internet Computer: cycles.
-## Chapter 2: Common programming concepts.
+## Chapter 2: Common programming concepts. (MB)
 - Variables & Mutability.
 - Types.
 - Functions.
 - Comments.
 - Control flow.
-## Chapter 3: Primitive Types in Motoko.
+## Chapter 3: Primitive Types in Motoko. (MB)
 - `Nat`.
 - `Int`.
 - `Bool`.
@@ -27,45 +27,31 @@
 - Why do we need Candid? 
 - What is an IDL?
 - The Candid file (`.did`).
-## Chapter 5: Interacting with a canister
-- From the CLI: using `dfx`.
-- From the Candid UI.
-- From a frontend.
-## Chapter 6: Modules
-- What is it and how do you use it?
-- The base library.
-- How to find the documentation & the source code?
-- Module types
-- Creating our custom type.
-- Adding public functions.
-- Classes.
-- Using tools to manage modules: Vessel & MOPS.
-## Chapter 7: Debugging in Motoko.
-- The `Debug` module.
-## Chapter 8: Storing data in our first data structures.
+## Chapter 5: Modules and the Base library (MB)
+## Chapter 6: Storing data in our first data structures. (MB)
 - `Array`.
 - `Buffer`.
 - `List`.
 - `HashMap`.
 - `TrieMap`.
-## Chapter 9: Non-primitives Types.
+## Chapter 7: Non-primitives Types. (MB)
 - Tuples.
 - Records.
 - Variants.
 - Arrays.
 - Mutable Arrays.
 - Iterators.
-## Chapter 10: Advanced Types.
+## Chapter 8: Advanced Types. (MB)
 - Optional types.
 - Generic types.
 - Recursive types.
 - Shared types.
-## Chapter 11: Handling errors.
+## Chapter 9: Handling errors.
 - The `Result` type.
 - The `Error` type.
 - Trap. 
 - Try/Catch.
-## Chapter 12: Identity on the Internet Computer.
+## Chapter 10: Identity on the Internet Computer.
 - Digital signatures.
 - Messages.
 - The concept of Principal.
@@ -73,26 +59,14 @@
 - Accessing the message & the caller.
 - The `Principal` type in Motoko.
 - The Anonymous principal.
-## Chapter 13: Managing modules in Motoko.
-- Module types
-- Creating our custom type.
-- Adding public functions.
-- Classes.
-- Using tools to manage modules: Vessel & MOPS.
-## Chapter 14: Intercanister calls.
+## Chapter 11: Intercanister calls.
 - Calling an actor by reference.
-- Importing from another canister (locally)
-- Importing from another canister (mainnet)
+- Importing from another canister 
+    - Locally
+    - Mainnet
 - Async values.
 - Atomicity & commit point.
-## Chapter 15: Breaking down advanced concepts.
-- Orthogonal persistence.
-- Structural typing.
-## Chapter 16: Playing with time in Motoko.
-- `Time`
-- `Timer` 
-- `Heartbeat`
-## Chapter 17: Upgrading a canister.
+## Chapter 12: Upgrading a canister.
 - Stable memory vs Heap memory.
 - Stable variables.
 - Stable types.
@@ -101,6 +75,10 @@
 - Stable type signature.
 - Metadata section.
 - Verifying upgrade compatibility.
+## Chapter 12: Playing with time in Motoko.
+- `Time`
+- `Timer` 
+- `Heartbeat`
 ## Chapter 18: Stable data structures.
 - RB TRee
 - Tree
@@ -114,15 +92,6 @@
 ## Chapter 21: Binary operations in Motoko
 - Bounded types.
 - Binary operations.
-## Chapter 22: HTTP Request to access a canister through a browser.
-- Difference between HTTP request & HTTP outcalls.
-- What are boundary nodes?
-- The asset canister or creating your own canister that handles HTTP requests.
-- What is the difference between ic0.app & raw.ic0.app?
-- HTTP Request in Motoko.
-## Chapter 23: HTTP Outcalls.
-## Chapter 24: Threshold ECDSA.
-## Chapter 25: Bitcoin Integration.
 # Appendices
 ## Appendix 1: Deploying & managing canisters.
 ## Appendix 2: Unlocking the power of DAOs with canisters.
@@ -141,8 +110,15 @@
 ## Appendix 5: Handling payments on the Internet Computer.
 - The ICP Ledger.
 - The ICRC_1 standard.
-- The Invoice canister (depreceated?)
 ## Appendix 6: Unlocking the power of NFTs on the Internet Computer
 - Current NFTs and their limitations.
 - From smart contracts to canisters.
 - New possibilities for NFTs.
+## Appendix 7: Debugging and testing with Motoko.
+## Appendix 8: Common security issues and best practices.
+## Appendix 9: HTTP Request to access a canister through a browser.
+- Difference between HTTP request & HTTP outcalls.
+- What are boundary nodes?
+- The asset canister or creating your own canister that handles HTTP requests.
+- What is the difference between ic0.app & raw.ic0.app?
+- HTTP Request in Motoko.

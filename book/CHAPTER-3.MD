@@ -237,8 +237,4 @@ Byte sequences are also often represented as `[Nat8]`, i.e. an array of bytes, b
 If you would like to manipulate Blobs, it is recommended that you convert `Blobs` to `[var Nat8]` or `Buffer<Nat8>`, do the manipulation, then convert back.
 
 ## 🫙 Unit type
-The last type we will mention in this chapter is the unit type `()`. This type is also called the empty tuple type. It's useful in several places, for example in functions to indicate that a function does not return any specific type.<br/>
-WIP
-
-## The base library and primitive types.
-Primitive types do not need to be imported before they can be used in type annotation. But the Base Library does have modules for each primitive type to perform common tasks, like converting between the data types, transforming the data types, comparing the data types and other functionality.
+The last type we will mention in this chapter is the unit type `()`. This type is also called the empty tuple type. It's useful in several places, for example in functions to indicate that a function does not return any specific type. WIP

@@ -1,4 +1,4 @@
-## 🧠 Network Nervous System (NNS)
+## Appendix 4: Network Nervous System (NNS)
 <p align="center"> <img src="assets/appendix-4/nns_home.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> Home page of the NNS</p>
 

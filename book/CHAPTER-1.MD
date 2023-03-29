@@ -17,7 +17,6 @@ The Internet Computer is a platform that hosts a large number of applications, a
 <p align="center"> <img src="./assets/chapter-1/oc_message.png" height="600px" style="border: 1px solid black;"/> </p>
 <p align="center"> OpenChat is a decentralized messaging application built on the Internet Computer. </p>
 
-
 ## WebAssembly
 Before we move on to Motoko - we actually need to explain another term: **WebAssembly**.
 
@@ -201,4 +200,4 @@ Each operation perfomed on the network has a cost attached to it:
 - Computing a threshold ECDSA signature.
 
 The cost of those operations also depends on the subnet in which they are performed and the **replication factor** of this subnet. The replication factor corresponds to the number of nodes in a subnet, which can range from 13 to 40.
-## Ressources and links
+## Resources and links

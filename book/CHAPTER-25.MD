@@ -1,1 +1,0 @@
-# Chapter 25: Bitcoin Integration.

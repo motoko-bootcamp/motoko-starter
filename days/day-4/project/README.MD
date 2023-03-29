@@ -1,8 +1,15 @@
 # Motoko encyclopedia 📓
-## 🧑‍🏫 Requirements 
-Your task is to develop a collaborative encyclopedia or wiki for a decentralized autonomous organization DAO focused on education. This encyclopedia will be a platform for students, teachers, and the broader community to share knowledge, insights, and resources.
+On the fourth day , you find yourself amazed by the depth of knowledge and unique experiences each student brings to the table. During a study session, you notice that a fellow student is struggling to understand a specific Motoko concept (`do?`). Eager to help, you explain the concept, and they quickly grasp it. ✅
 
-The encyclopedia should allow any member to contribute to the wiki, but it should also incorporate a mechanism for content moderation to ensure the accuracy and quality of the content. Finally, a reputation system will be implemented to incentivize members to contribute quality content and moderate the wiki. Members can earn reputation points for their contributions, which can be used to give them more influence in the DAO.
+That night, as you lay in bed, you can't help but think about the exchange you had with your classmate. You realize that if there were a hub where students could share their expertise and insights, the learning experience at Motoko School could be even more enriching and efficient for everyone... 💭
+
+The next day, you gather a group of interested students and propose the idea of creating a collaborative Motoko Encyclopedia, a digital knowledge base where students can contribute articles, tutorials, and examples to help each other better understand the complexities of the Internet Computer. 
+
+Excited by the idea, your peers quickly jump on board, and together you form a team to bring the **Motoko Encyclopedia** to life. Built on the Internet Computer, the decentralized and transparent platform encourages collaboration and ensures that the collective wisdom is preserved and accessible to all.
+## 🧑‍🏫 Requirements 
+Your task is to develop a collaborative encyclopedia or wiki for the school. This encyclopedia will be a platform for students, teachers, and the broader community to share knowledge, insights, and resources.
+
+The encyclopedia should allow any member to contribute to the wiki, but it should also incorporate a mechanism for content moderation to ensure the accuracy and quality of the content. Finally, a reputation system will be implemented to incentivize members to contribute quality content and moderate the wiki. Members can earn reputation points for their contributions, which can be used to give them more influence in the organisation.
 ## 📺 Interface
 ```motoko
 actor {
@@ -52,7 +59,4 @@ public type Content = {
 - Has the creator of this content less reputation point that the caller? 
 If both checks are passed, then the content can be replaced by the new one. In other cases, this function returns an adapted error message wrapped in `Err`.
 10. Implement the necessary code in `pre_upgrade` and `post_upgrade` to retain the state of this canister through upgrades.
-## Verification
-WIP
-
-
+11. Deploy the encyclopedia on the Internet Computer.

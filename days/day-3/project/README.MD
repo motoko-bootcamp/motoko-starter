@@ -1,7 +1,18 @@
 # Student wall 🎨
+It was your third day at Motoko School, and you were determined to start making some good friends. <br/>
+Being a big fan of music, you thought organizing a little music concert could be a great way to meet other like-minded students. 🎶
+
+As you wandered the halls during lunchtime, you overheard two students discussing how they wished there was a better way to stay informed about school events and activities. They complained about how they had missed out on attending the previous year's [ICP Community Conference](https://twitter.com/icp_cc) because they weren't aware of it in time, and how they were determined not to let that happen again this year. 💪
+
+This sparked an idea in your mind.  <br/>
+
+What if you could create a digital platform where students share upcoming events and activities. It would be the perfect way to advertise your music concert and help other students stay informed about everything happening on campus. 📅
+
+You quickly shared your idea with the two students and they loved it. They introduced you to a few others who were also interested in the idea, and before you knew it, you had a group of motivated students ready to bring your idea to life. 🚀
+
+You all gathered in the computer lab and began brainstorming the features of your student wall. You wanted it to be more than just a bulletin board, so you came up with the idea to include images and surveys as well. You divided the work and got started coding.
 ## 🧑‍🏫 Requirements 
-Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the school community. <br/>
-Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other.
+Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the School community. Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other. 
 This wall will be the go-to destination for students looking to get the latest scoop on what's happening in the school community. 
 ## 📺 Interface
 Your canister should implement the following interface:
@@ -47,6 +58,4 @@ type Survey = {
 8. Implement the query function `getAllMessages`, which returns the list of all messages. 
 9. Implement the query function `getAllImages`, which returns the list of all images that have been added to the wall. 
 10. Implement the query function `getAllSurveys`, which returns the list of all surveys that have been added to the wall. To accomplish this, you can iterate over all the messages on the wall and add any surveys to a new list. Then, return this list of surveys.
-
-## Verification
-WIP
+11. Deploy the student wall on the Internet Computer.

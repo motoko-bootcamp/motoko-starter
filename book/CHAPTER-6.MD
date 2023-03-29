@@ -1,25 +1,39 @@
-# Chapter 6: Modules and the Base library
-## 👋 Introduction
-Up until now, we have only covered basic operations that are pre-built into the language such as additions, subtractions, and concatenation. To execute more intricate operations, we need to import and utilize modules, particularly those found in the Base library.
+# Chapter 6: Debugging in Motoko.
+**Debug** is a module that provides utility functions for debugging and printing informations. 
+[See the documentation page](https://internetcomputer.org/docs/current/motoko/main/base/Debug).
 
-Modules, are a grouping of named variables, functions, types that collectively serve a specific purpose. Modules aid us in organizing our code. Ordinarily, a module is defined in its own distinct source file, which can be imported into another Motoko file.
-## Modules 🧩
-Read [this section]() from the Motoko Book.
-## The Base library 📚
-The Base library is a set of modules that provide functions for commonly used types (such as `Bool`, `Nat`, `Int`, `Text` and more..).
+## Print
+```motoko
+func print(text : Text)
+```
+`Debug.print()` will print text to the output stream (i.e your terminal).
+```motoko
+import Debug "mo:base/Debug";
+actor {
+    Debug.print("Hello!");
+};
+```
+<p align="center"> <img src="./assets/chapter-7/debug_print.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> The text will be printed in the same tab that is running your replica. Make sure to check out the correct place!</p>
 
-The source code for this library is available on GitHub and is maintained by engineers from the DFINITY foundation and community members.
-Each module has its own documentation page, where you can learn about the available functions. For example, here is the documentation page for the `Nat` module.
+> Unfortunately, `print` can only be used locally. On the mainnet or when using Motoko Playground there is no concept of output stream so `Debug.print` has no effect.
 
-<p align="center"> <img src="./assets/chapter-6/base_library_nat.png" width="800px" style="border: 2px solid black;"></p>
-<p align="center">  </p>
-
-> The source code is meant to understand how a specific module was written, whereas the documentation is meant to understand how you can use a module.
-## Importing from the Base library
-Read [this section](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/base-library.html#importing-from-the-base-library) from the Motoko Book.
-## Primitive types and the Base library.
-Read [this section](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/base-library/primitive-types.html) from the Motoko Book.
-## Experimental libraries
-WIP
-## Resources and links
+`Debug.print()` only accepts a value of type `Text` as input. If you have any  object, you can use the `debug_show` command to automatically convert it to `Text`. 
+```motoko
+let array : [Nat] = [19, 8, 2, 5];
+Debug.print(debug_show(array));
+```
+You can also use convertion functions
+```motoko
+import Nat "mo:base/Nat";
+import Debug "mo:base/Debug";
+actor {
+    let n : Nat = 5;
+    Debug.print(Nat.toText(n));
+}
+```
+## Trap
+```motoko
+func trap(errorMessage : Text) : None
+```
 WIP

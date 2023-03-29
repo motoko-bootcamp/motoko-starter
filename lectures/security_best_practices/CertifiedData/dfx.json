@@ -1,0 +1,7 @@
+{
+    "canisters": {
+      "certified_data": {
+        "main": "src/certified_data.mo"
+      }
+    }
+  }

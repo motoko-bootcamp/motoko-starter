@@ -1,0 +1,10 @@
+{
+    "canisters": {
+      "random_no_reseed": {
+        "main": "src/random_no_reseed.mo"
+      },
+      "random_reseed": {
+        "main": "src/random_reseed.mo"
+      }
+    }
+  }

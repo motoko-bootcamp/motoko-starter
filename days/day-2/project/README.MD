@@ -1,6 +1,18 @@
 # Homework diary 📔
+On the second day at school, you and your classmates find yourselves diving into your first collaborative assignment. Though working together is stimulating, the challenge of managing responsibilities and progress for each team member becomes quickly apparent... 😩 <br/>
+
+During a lunch break, your group brainstorms solutions for a better system to organize the tasks and assignments. <br/>
+
+One of your classmates proposes the idea of creating a homework diary on the famous **Joogle Cloud**, where each member can update tasks and monitor progress. The group quickly agrees and starts building the diary. As you observe the project taking shape, you notice a sly smile forming on the face of one student. 😼 <br/>
+
+The next day, you discover that this cunning student has exploited their access to the API keys, altering the diary to mark all their homework as completed. 🫢 <br/>
+
+Shocked and disappointment spread through the group, and you realize that the centralized solution has failed to provide the transparency and security you all craved for. 
+
+Determined to find a better way, the group gathers once more, and you share the idea of building the collaborative homework diary on the **Internet Computer**. <br/>
+Your classmates' eyes light up as they understand the potential of a decentralized platform to foster transparency, unity, and trust among your classmates. 🫂
 ## 🧑‍🏫 Requirements 
-Your task is to create a collaborative homework diary. The homework diary will allow students to create, edit, delete, and view their homework tasks.
+Your task is to create a collaborative homework diary, implement as a canister. The homework diary will allow students to create, edit, delete, and view their homework tasks.
 ## 📺 Interface
 ```motoko
 actor {
@@ -41,3 +53,4 @@ We import the type `Time` for the `Time` library.
 8. Implement `markAsComplete`, which accepts a homeworkId of type `Nat`, updates the completed field of the corresponding homework to `true`, and returns a unit value wrapped in an `Ok result`. If the homeworkId is invalid, the function should return an error message wrapped in an Err result.
 9. Implement a `getPendingHomework` query function that returns the list of all pending (not completed) homework tasks in `homeworkDiary`. This function should filter the tasks based on their completed field.
 10. Implement a `searchHomework` query function that accepts a `searchTerm` of type `Text` and returns a list of homework tasks that have the given `searchTerm` in their `title` or `description`.
+11. Deploy the howework diary on the Internet Computer.

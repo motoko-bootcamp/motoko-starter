@@ -1,0 +1,19 @@
+{
+  "canisters": {
+    "DEX": {
+      "main": "src/DEX/main.mo",
+      "type": "motoko"
+    },
+    "SimpleLedger": {
+      "main": "src/SimpleLedger/main.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

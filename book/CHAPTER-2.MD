@@ -1,5 +1,5 @@
 # Chapter 2: Common programming concepts.
-## Variables
+## 📦 Variables 
 A variable is a value that has an arbitrary name, defined by a declaration. <br/>
 In Motoko, variables can be declared using either `let` or `var` keyword, followed by the assignment operator `=`
 
@@ -14,8 +14,7 @@ var n = 1;
 n := 2;
 ```
 
-The syntax convention is to use `lowerCamelCase` for variable names & 
-to use spaces around the `=` sign. Also, a variable declaration ends with a semicolon `;` Whenever you declare a variable don't forget to end the declaration with `;` otherwise Motoko will complain.
+The syntax convention is to use `lowerCamelCase` for variable names and to use spaces around the `=` sign. Also, a variable declaration ends with a semicolon `;` Whenever you declare a variable don't forget to end the declaration with `;` otherwise Motoko will complain.
 
 If we try the following code:
 ```motoko
@@ -24,7 +23,6 @@ n := 2;
 ```
 
 An attempt is made to reassign a value to an immutable variable - that's why an error will occur. The specific error message will be `type error [M0073], expected mutable assignment target`. This  message indicates that the variable being reassigned is immutable and cannot be changed.
-
 ## Types
 The **Motoko** language places a strong emphasis on types and is more strict in enforcing them compared to other general-purpose languages like **JavaScript** or **Python**. This strictness serves a purpose, as it helps prevent errors and issues. 
 
@@ -42,7 +40,7 @@ You can generally omit the type declaration - the **Motoko** compiler will autom
 let age = 20;   // Will be assigned type Nat
 ```
 > For the duration of the Bootcamp it is recommended to keep all type declarations to make things clearer, especially if you are new to typed languages.
-## Comments.
+## 💬 Comments.
 A one-line comment is written by starting the line with `//`.
 ```motoko
 // Hello! It is recommended to use comments to make your code more readable.
@@ -54,8 +52,7 @@ A comment can span into multiple lines, in that case you'll need to add `//` on 
 //  In those cases 
 //  You can use more than one line
 ```
-## Functions.
-### Introduction
+## ⚙️ Functions
 This section focuses solely on functions that are defined within the body of an actor using the `actor {}` syntax. Any function that is outside the `actor {}` syntax will be covered in future chapters.
 ### A simple example
 To introduce functions - let's look at an example: here is an actor that is responsible to keep track of a  counter. 
@@ -83,7 +80,7 @@ To declare a function in Motoko, you must specify the types of the arguments and
 > You might be wondering why the return type for the `setCount` function is `async Nat` instead of simply `Nat`? <br/> The term `async` stands for asynchronous, which means that in the **Actor model** we discussed earlier, canisters or actors communicate with each other asynchronously. When one canister sends a request to another (or when a user calls a function), there will be a brief waiting period before the caller receives a response. <br/> 
 Asynchronous programming allows you to run your code in a non-blocking manner. The `async Nat` return type for the `setCount` function indicates that the caller must wait for a few moments before receiving the return value. Eventually, the response will be a value of type `Nat`, but with a delay due to the asynchronous nature of the communication between canisters. **All public functions declared in the body of an actor must be of return type `async`**. 
 
-### Function body and return
+### Body and return
 - The curly brackets `{}` are used for the function body. The body of the function is a set of instructions executed when the function is being called.
 In our example, for `setCount` we have 2 instructions:
 1. Assign the value of `count` to the value of `n`. 
@@ -125,7 +122,7 @@ actor {
 
 > We can remove the `private` keyword , a function declaration defaults to a private function in Motoko unless declared otherwise (i.e unless declared `public`).
 
-## Control flow.
+## 🕹️ Control flow.
 Control flow refers to the order in which a program is executed and the order that it follows. It decides which statements, instructions or function calls are executed and in what order, based on conditions or decisions made during the run time. <br/>
 
 We discuss three common control flow constructs in Motoko: `if else` expressions, `loops` expressions and `switch` expressions.
@@ -258,4 +255,4 @@ switch(day) {
 };
 ```
 In this example, we defined a variant type `Day`, declared a variable `day` with that type, and then used it as input in our `switch` expression. The switch expression is a powerful control flow construct that allows for pattern matching, providing a concise and readable way to handle multiple cases based on the input value.
-## Resources and links
+## 🔗 Resources and links

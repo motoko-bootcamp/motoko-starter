@@ -8,7 +8,7 @@
 Welcome to the most awesome Bootcamp 👋 <br/>
 We believe that 7 days is all it should take to change your life. Learn Motoko, get started on the Internet Computer and meet others builders - <b> all in one week </b>. 
 ### 📚 Learn 
-**Motoko**, the **Internet Computer**, **canisters**, **Web3**, **DAOs**... at the end of the well you'll master all the fundamental concepts needeed in order to start building on the Internet Computer.
+**Motoko**, the **Internet Computer**, **canisters**, **Web3**, **DAOs**... at the end of the week you'll master all the fundamental concepts needeed in order to start building on the Internet Computer.
 ### 👷 Build 
 During the week, you will work on different projects. Every project will be  be deployed live and you’ll quickly learn how it feels to build and deploy your own projects.
 ### 🍻 Connect 
@@ -31,13 +31,13 @@ Each lecture is approximately one hour long and covers a dedicated topic. It was
 You can consult the [list of all lectures on the dedicated page](./lectures/LECTURES.MD).
 ### 🏗️ Projects 
 Projects will help you build confidence and practical skills. You will be provided with instructions and a starting codebase to complete. 
-You will work on 5 different projects:
+You will work on 6 different projects:
 - [The Calculator ➕](./days/day-1/project/README.MD)
 - [The Homework diary 📔](./days/day-2/project/README.MD)
 - [The Student wall 🎨](./days/day-3/project/README.MD)
 - [The Motoko encyclopedia 📓](./days/day-4/project/README.MD)
 - [The Bootcamp diploma 🎓](./days//day-5/project/README.MD)
-- Final project: WIP
+- [The verifier 🧑‍🏫](./days/day-6/project/README.MD)
 ## 🎓 Graduation
 WIP
 ## 👦 Join our community
@@ -66,42 +66,45 @@ WIP
 - [ ] Add source code for each lecture.
 - [ ] Add feedback form for each day.
 - [ ] Cut lecture to not include the Q/A part but hold it live.
-### Chapter 1
+### Book
+#### Chapter 1
 - [x] Complete section on cycles.
 - [ ] Review.
-### Chapter 2
+#### Chapter 2
 - [x] Finish section on functions.
 - [x] Finish section of control flow.
 - [ ] Review.
-### Chapter 3
-- [ ] Finish section on Blob.
-- [ ] Finish section on Nat8.
+#### Chapter 3
+- [x] Finish section on Blob.
+- [x] Finish section on Nat8.
 - [ ] Finish section on Unit type.
-### Chapter 4
-- [ ] Add recap information (?)
-### Chapter 5
-- [ ] Complete section on frontend with JavaScript.
-- [ ] Complete section on ICScan & ICDashboard.
-- [ ] Complete section on agents.
-### Chapter 6
+- [ ] Review.
+#### Chapter 4
+- [ ] Review.
+#### Chapter 5
+- [ ] Delete
+#### Chapter 6
 - [ ] Complete section on Experimental libraries.
-### Chapter 7
+- [ ] Review.
+#### Chapter 7
 - [ ] Complete section on Trap.
-### Chapter 8
-### Chapter 9
-### Chapter 10
-### Chapter 11
-### Chapter 12
-### Chapter 13
-### Chapter 14
-### Chapter 15
-### Chapter 16
-### Chapter 17
-### Chapter 18
-### Chapter 19
-### Chapter 20
-### Chapter 21
-### Chapter 22
-### Chapter 23
-### Chapter 24
-### Chapter 25
+- [ ] Review.
+#### Chapter 8
+#### Chapter 9
+#### Chapter 10
+#### Chapter 11
+#### Chapter 12
+#### Chapter 13
+#### Chapter 14
+#### Chapter 15
+#### Chapter 16
+#### Chapter 17
+#### Chapter 18
+#### Chapter 19
+#### Chapter 20
+#### Chapter 21
+#### Chapter 22
+## Lectures
+WIP
+## Projects
+WIP
