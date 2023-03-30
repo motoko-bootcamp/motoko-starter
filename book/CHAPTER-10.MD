@@ -1,56 +1,58 @@
-# Chapter 10: Advanced Types.
-## ? Optional types
-WIP
-## 👤 Generic Type
-A generic type, usually written as `T`, allows you to write functions and code that can adapt to different types. When we talk about `T`, it refers to **whatever type you want**. This means that you can create a single function or class that can handle multiple types of inputs or data, without having to write separate code for each type.
-
-Let's imagine that we have a task at hand - to determine if the size of an array is even or not. We're going to write a function called `isArrayEven` that takes an array as an input and returns a `Bool` value indicating whether the size of that array is even or not.
+# Chapter 10: Identity on the Internet Computer.
+## The concept of Principal.
+A principal is a public identifier used to identify entities that can interact with the Internet Computer. These entities are either users or canisters. We distinguish different types of principals
+- **Self-authenticating ids** (User): for an user, a principal is directly derived from it's public key. For instance, you can read the principal of your `dfx` identity. These Principals are 29 bytes long.
 ```motoko
-public func isArrayEven(array : [Nat]) : async Bool {
-    let size = array.size();
-    if(size % 2 == 0){
-        return true;
-    } else {
-        return false;
+$ dfx identity get-principal
+2ujkt-fujau-bunuv-gt4b6-2s27j-cv5qi-kddkp-jl7m4-wdj3e-bqdrt-qqe
+```
+- **Opaque ids** (Canister): for a canister, the principal is the canister ID. The ID is automatically determined when the canister is created based on the subnet the canister is in and the number of canisters already deployed.
+- **Anonymous id** (Anonymous): is the default caller used when an unauthenticated user calls functions. For instance, if you need to present information from a canister on a webpage before the user logs in, you would call functions to fetch the information, and your canister would recognize the caller as the Anonymous id because the user's Principal is unknown until they log in.
+
+> There actually exist [two other types of principals](https://internetcomputer.org/docs/current/references/ic-interface-spec#id-classes) which you will never encounter. Those are used internally by the protocol or reserved for future potential usages. 
+
+Principals in Motoko are a primitive type called `Principal`. 
+## Accessign the user principal
+Within your actor, you can access the principal of the person calling your function by adding the `shared (message)` syntax. This keyword needs to be placed immediately before the `func` keyword and after the `public` keyword. This allows you the inspect the message. 
+The message as a property `caller` that you can access by using `message.caller`. This property corresponds to the principal of the entity (user or canister) calling the function.
+
+> Message is a special object that is available to all `public shared functions`. As of today, it is only used for accessing the `caller` property but it might have other use cases in the future.
+
+```motoko
+actor {
+
+    public shared (message) func returnCallerPrincipal() : async Principal {
+        let p = message.caller;
+        return p;
     };
 };
 ```
-This function works as intended, but is limited to arrays filled with `Nat`. So, what if we want to check the size of an array filled with `Text` or `Int`? <br>
-One approach would be to create a separate function for each possible type: 
-- `isArrayEvenNat`
-- `isArrayEvenText`
-- `isArrayEvenInt` 
+Principals have a textual representation. We can convert a `Principal` to his textual representation by using `Principal.toText()` from the [Principal module](https://internetcomputer.org/docs/current/motoko/main/base/Principal). Alternatively, we can get a `Principal` from his textual representation by using `Principal.fromText()`.
 
-As you can imagine, this quickly becomes hard to manage and maintain. A better solution is to utilize the power of generics. With generics, we can write a single function that works for any type of array. It's a more elegant and efficient way to solve the problem. So, let's embrace our new friend - generics - and make our code more dynamic and flexible!
 ```motoko
-func isArrayEven<T>(array : [T]) : Bool {
-    let size = array.size();
-    if(size % 2 == 0){
-        return true;
-    } else {
-        return false;
+let p : Principal = message.caller;
+let textualRepresentation : Text = Principal.toText(p); // => "un4fu-tqaaa-aaaab-qadjq-cai"
+let standardRepresentation : Principal = Principal.fromText(textualRepresentation); 
+```
+
+It can be useful to know if the caller is authenticated or not. There is dedicated function `Principal.isAnonymous` that returns a `Bool` indicating if the user is anonymous or not. 
+```motoko
+let p : Principal = message.caller;
+let isAnonymous : Bool = Principal.isAnonymous(p);
+if(isAnonymous){
+    return ("Sorry only authenticated users can access this app!");
+};
+```
+> The textual representation of the anonymous principal is `2vxsx-fae`. Make sure to remember it as you will often come accross it.
+
+One last tip! We can use object destructuring to directly access the caller on a message - that allows for a shorter syntax. 
+```motoko
+actor {
+
+    public shared ({ caller }) func returnCallerPrincipal() : async Principal {
+        return caller;
     };
 };
 ```
-Notice `<T>` following the name of the function. It means that this function now depends on the type of `T`. We need to specify the type of `T` when we want to use the function.
-```motoko
-let array : [Nat] = [1,2,3,4];
-let bool : Boolean = isArrayEvent<Nat>(array); // Replace T with the actual type when you use the function. 
-```
-
-We've  already used generics when playing with `Buffer` & `Array` without talking about it. 
-- The type `Buffer<T>` is a generic class and we need to provide a type when creating a new buffer.
-    ```motoko
-    let b = Buffer.Buffer<Nat>(2);
-    ```
-
-- `Array.append<T>` is a generic function and we need to provide the type of the elements of the arrays we are concatening.
-    ```motoko
-    let array1 = [1, 2, 3];
-    let array2 = [4, 5, 6];
-    Array.append<Nat>(array1, array2) // [1, 2, 3, 4, 5, 6];
-    ```
-## Recursive types.
-WIP
-## Shared types.
-WIP
+## The Anonymous principal.
+## PEM File.

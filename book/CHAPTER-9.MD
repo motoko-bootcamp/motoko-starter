@@ -1,118 +1,58 @@
-# Chapter 9: Non-primitives Types.
-## 👯 Tuples
-Tuples are basic units that can encompass multiple elements. While the elements can vary in data type, once declared, the number and type of elements in a tuple cannot be altered. For instance, you could make a tuple that holds a student's name, age & favorite programming language.
+# Chapter 9: Handling errors.
+## 🚥 The `Result` type.
+The `Result` type is extremly useful in Motoko to handle errors, it is defined as a variant type. 
 ```motoko
-type Student = (Text, Nat, Text);
-let me : Student  = ("Bob Smith", 25, "Motoko");
+type Result<Ok, Err> = {#ok : Ok; #err : Err}
 ```
-In more complex situations, we would create our own object with named fields, making it more readable. 
+It can be used by importing the [Result library](https://internetcomputer.org/docs/current/motoko/main/base/Result). 
+The generics `Ok` and `Err` can be used to customize the types you want to return to return in case of success or error. 
+Let's imagine the following situation: we want to create a `Result` type that indicates whether a student graduate or not. 
+- If the student graduate we return the score of the student.
+- If the student fails we return a variant that indicate the reason for failure (score too low, absent, cheating...).
 
-The empty tuple type `()` is called the `unit` type. It is usually used as return type for function that returns nothing. 
- 
 ```motoko
-public func print(t : Text) : async () {
-    Debug.print(t);
+type Score = Nat; // The score of a student. 
+type ExamFailed = {
+    #ScoreTooLow : Nat;     //  The score of the student. 
+    #Absent;    //  One reason for failing an exam.
+    #Cheated;   //  Another one.
 };
+type ExamResult = Result.Result<Score, ExamFailed>;
 ```
-## 🎨 Objects
-Objects are more readable than tuples since each field has a name. The  different fields are also each assigned a type which cannot be modified once declared.  
- Let's define an object called `student`, which contains 4 fields: 
- - name which is a `Text` indicating the name of the student.
- - age which is a `Nat` indicating the age of the student.
- - favoriteLanguage which is a `Text` indicating the favorite programming language of the student.
- - graduate which is a `Bool` indicating if the students has already graduated from the Motoko Bootcamp. 
-
+It is common to use a variant type for `Err`. It enables a more granular control over the different types of errors and facilitate pattern matching.
 ```motoko
-let student = {
-    name = "John";
-    age = 35;
-    favoriteLanguage: "Motoko":
-    graduate : true;
-};
-```
-Similar to other variables in Motoko, objects can be mutable or immutable. The object we've just defined is immutable, once the fields have been assigned a value they cannot be modified. 
-
-```motoko
-let student = {
-    name = "John";
-    age = 35;
-    favoriteLanguage: "Motoko":
-    graduate : true;
-};
-student.age += 1;  
-```
-This code will throw an error `expected mutable assignment target`.
-
-To create an object that can be modified, we must use the `var` keyword in the field definition. Let's modify the previous example so that only the student's age can be changed, while the other fields remain constant.
-```motoko
-let student = {
-    name = "John";
-    var age = 35;
-    favoriteLanguage: "Motoko":
-    graduate : true;
-};
-student.age += 1; 
-```
-Objects are often assigned types. In this case we need to create **custom type**.  Let's define a type called `Student` which corresponds the object we've previously created. 
-```motoko
-type Student = {
-    name : Text;
-    age : Nat;
-    favoriteLanguage : Text;
-    graduate : Bool;
-};
-```
-
-## 🌈 Variants
-A variant allows you to create a type that contains different cases. A value from the variant type represents one value that is exactly one of the given cases, or tags. Let's define a variant type for a `Vehicle` which can be either a car, a moto or a plane.
-
-```motoko
-type Vehicle = {
-    #Car;
-    #Moto;
-    #Plane;
-};
-```
-Each tag can be associated it's own custom type. 
-```motoko
-type Car = { make : Text; model : Text; year : Nat; color: Text };
-type Moto = { make : Text; model : Text; year : Nat; type : Text };
-type Plane = { make : Text; model : Text; year : Nat; seats : Nat };
-
-type Vehicle = {
-    #Car : Car;
-    #Moto : Moto;
-    #Plane : Plane;
-};
-```
-
-Variants are often used with `switch/case`, which allows to perform control flow on a variant object. 
-```motoko
-public func start(v : Vehicle) : async Text {
-    switch(v){
-        case(#Car(car)){
-            // We can access the car object. For instance we can access the make field by using car.make
-            let make = car.age;
-            return("Vroom 🏎️");
+func sendMessageToStudent(result : ExamResult) : Text {
+    switch(result) {
+        case(#ok(score)){
+            return ("Congrats 🎉 - you have graduated with a score of : " # Nat.toText(score));
         };
-        case(#Moto(m)){
-            // We can give the object any name that is convenient. In this case we can access the type by using m.type.
-            let type = m.type;
-              return("Roar 🏍️");
-        };
-        case(#Plane(x)){
-            // Here we go again.. we can access the number of seats by using x.seats
-            let seats = x.seats;
-             return("Whoosh 🛫");
+        case(#err(failure)){
+            switch(failure){
+                (#ScoreTooLow(score)){
+                    return ("Unfortunately your score is below requirements. Next time you'll graduate! You had a score of : " # Nat.toText(score));};
+                };
+                case(#Absent){
+                    return ("You were absent at the exam. Please schedule another time.");
+                };
+                case(#Cheated){
+                    return("Cheating is a short-term gain that leads to long-term pain");
+                };
+            };
         };
     };
 };
 ```
-
-Variants are extremly used and helpful! 
-## Arrays
-WIP
-## Mutable Arrays
-WIP
-## Iterators
-WIP
+`Result` is used for errors that are generally expected in your program and where you want to return something. In case of an unexpected and unrecoverable error you should `trap` your code. 
+The best way to do so if to use the `Debug.trap()` method from the [Debug library](https://internetcomputer.org/docs/current/motoko/main/base/Debug) which allows you to pass an error message along the `trap`.
+```motoko
+func trap(errorMessage : Text) : None
+```
+Trapping can also be caused by `assert(false)`. Assertions allow you to conditionally trap when some Boolean test fails to hold, but continue execution otherwise.
+```motoko
+let n = 38;
+assert n % 2 == 0; // traps when n not even
+assert(false);  // always traps
+```
+## The `Error` type.
+## Trap. 
+## Try/Catch.

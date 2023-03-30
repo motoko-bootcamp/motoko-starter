@@ -68,42 +68,67 @@ WIP
 - [ ] Cut lecture to not include the Q/A part but hold it live.
 ### Book
 #### Chapter 1
-- [x] Complete section on cycles.
+- [x] Section on cycles.
 - [ ] Review.
 #### Chapter 2
-- [x] Finish section on functions.
+- [x] Section on functions.
 - [x] Finish section of control flow.
 - [ ] Review.
 #### Chapter 3
-- [x] Finish section on Blob.
-- [x] Finish section on Nat8.
-- [ ] Finish section on Unit type.
+- [x] Section on Blob.
+- [x] Section on Nat8.
+- [ ] Section on Unit type.
 - [ ] Review.
 #### Chapter 4
 - [ ] Review.
 #### Chapter 5
-- [ ] Delete
+- [ ] Review.
 #### Chapter 6
-- [ ] Complete section on Experimental libraries.
+- [ ] Section on Experimental libraries.
 - [ ] Review.
 #### Chapter 7
-- [ ] Complete section on Trap.
+- [ ] Section on Arrays.
+- [ ] Section on Mutable Arrays.
+- [ ] Section on Iterators.
 - [ ] Review.
 #### Chapter 8
+- [ ] Section on Optional types.
+- [ ] Section on Recursive types
+- [ ] Section on Shared types.
+- [ ] Review
 #### Chapter 9
+- [ ] Section on Error type.
+- [ ] Section on Trap.
+- [ ] Section on Try/Catch.
+- [ ] Review
 #### Chapter 10
+- [ ] Section on Anonymous principal.
+- [ ] Section on PEM File
+- [ ] Review
 #### Chapter 11
+- [ ] Section on async values.
+- [ ] Section on calling an actor by reference.
+- [ ] Section on importing another canister.
+- [ ] Section on commit point and rollbacks.
+- [ ] Review.
 #### Chapter 12
+- [ ] Review
 #### Chapter 13
+- [ ] Section on RB Tree.
+- [ ] Section on Tree.
+- [ ] Section on converting a non-stable type to stable.
+- [ ] Review
 #### Chapter 14
+- [ ] Review
 #### Chapter 15
+- [ ] Review
 #### Chapter 16
+- [ ] Section on Actor Classes.
+- [ ] Section on the management canister
+- [ ] Section on a canister factory.
+- [ ] Review
 #### Chapter 17
-#### Chapter 18
-#### Chapter 19
-#### Chapter 20
-#### Chapter 21
-#### Chapter 22
+- [ ] Review
 ## Lectures
 WIP
 ## Projects

@@ -75,21 +75,22 @@
 - Stable type signature.
 - Metadata section.
 - Verifying upgrade compatibility.
-## Chapter 12: Playing with time in Motoko.
-- `Time`
-- `Timer` 
-- `Heartbeat`
-## Chapter 18: Stable data structures.
+## Chapter 13: Stable data structures.
 - RB TRee
 - Tree
 - Converting a non-stable type to stable.
-## Chapter 19: Managing multiple canisters with actor classes.
-- Actor classes.
-- Creating a canister factory.
-## Chapter 20: Randomness.
+## Chapter 14: Playing with time.
+- `Time`
+- `Timer` 
+- `Heartbeat`
+## Chapter 15: Mastering randomnes.
 - The issue when dealing with randomness in a deterministic system.
 - The `Random` library in Motoko and how to use it.
-## Chapter 21: Binary operations in Motoko
+## Chapter 16: Managing multiple canisters with actor classes.
+- Actor classes.
+- The management canister.
+- Creating a canister factory.
+## Chapter 17: Binary operations in Motoko.
 - Bounded types.
 - Binary operations.
 # Appendices

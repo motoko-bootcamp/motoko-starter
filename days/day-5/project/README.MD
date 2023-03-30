@@ -8,7 +8,7 @@ At the same time, you overhear a conversation about the school's financial strug
 Inspired by the alumni stories, you envision a digital token that connects the past, present, and future of the Motoko School – the MotoCoin. This token would allow alumni and other investors to invest in the school's future while supporting its present needs. 🌱
 
 You share your idea with a group of enthusiastic students, and together, you begin working tirelessly to bring MotoCoin to life. Built on the Internet Computer, following the latest ICRC standard, the Motoko Coin would be a decentralized and transparent ledger enabling investors, students, contributors to contribute to the school's growth and success.
-## Introduction
+
 
 ## 🧑‍🏫 Requirements 
 Your task is to create a ledger for a token that can be used as a currency for the school. The ledger is implemented as a canister and must follow the [ICRC_1](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/internet-computer-standards/icrc1.html) standard.

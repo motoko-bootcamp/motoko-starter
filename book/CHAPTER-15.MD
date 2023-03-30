@@ -1,4 +1,3 @@
-# Chapter 15: Breaking down advanced concepts.
-## Orthogonal persistence.
-## Structural typing.
-## Atomicity & commit point.
+# Chapter 15: Mastering randomnes.
+## The issue when dealing with randomness in a deterministic system.
+## The `Random` library in Motoko and how to use it.
