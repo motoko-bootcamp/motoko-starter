@@ -76,8 +76,8 @@
 - Metadata section.
 - Verifying upgrade compatibility.
 ## Chapter 13: Stable data structures.
+- Trie
 - RB TRee
-- Tree
 - Converting a non-stable type to stable.
 ## Chapter 14: Playing with time.
 - `Time`

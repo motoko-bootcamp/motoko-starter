@@ -1,8 +1,9 @@
-# Chapter 6: Debugging in Motoko.
+# Appendix 7: Debugging and testing with Motoko.
+## Debugging
 **Debug** is a module that provides utility functions for debugging and printing informations. 
 [See the documentation page](https://internetcomputer.org/docs/current/motoko/main/base/Debug).
 
-## Print
+### Print
 ```motoko
 func print(text : Text)
 ```
@@ -32,7 +33,7 @@ actor {
     Debug.print(Nat.toText(n));
 }
 ```
-## Trap
+### Trap
 ```motoko
 func trap(errorMessage : Text) : None
 ```

@@ -1,4 +1,4 @@
 ## Chapter 13: Stable data structures.
+## Trie
 ## RB TRee
-## Tree
 ## Converting a non-stable type to stable.
