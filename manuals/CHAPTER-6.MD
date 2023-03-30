@@ -1,4 +1,4 @@
-# Chapter 8: Storing data in data structures.
+# Chapter 6: Storing data in data structures.
 ## 🗃️ Array
 In Motoko, an array of type `Array` is a group of **similar** elements (i.e same type) that are stored together. To create an array, one must specify the types of elements that the array will contain. 
 For instance, here is how to create an array that will hold `Nat`.
