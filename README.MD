@@ -36,7 +36,7 @@ You will work on 6 different projects:
 - [The Homework diary 📔](./days/day-2/project/README.MD)
 - [The Student wall 🎨](./days/day-3/project/README.MD)
 - [The Motoko encyclopedia 📓](./days/day-4/project/README.MD)
-- [The Bootcamp diploma 🎓](./days//day-5/project/README.MD)
+- [MotoCoin 🪙](./days//day-5/project/README.MD)
 - [The verifier 🧑‍🏫](./days/day-6/project/README.MD)
 ## 🎓 Graduation
 WIP
