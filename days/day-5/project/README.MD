@@ -1,4 +1,4 @@
-# MotoCoin 💸
+# MotoCoin 🪙
 As your first week at the prestigious [Motoko School](https://twitter.com/MotokoSchool) comes to an end, you're in awe of the wealth of knowledge and collaborative spirit that surrounds you. The school is a hub of innovation and creativity, drawing the brightest minds from around the world to master the art of building on the Internet Computer. 
 
 One evening, while exploring the school's virtual library, you stumble upon a hidden section filled with stories of the school's successful alumni. You're fascinated by their accomplishments, yet you notice a common theme: many have built incredible wealth, but only a few have given back to the school. 
