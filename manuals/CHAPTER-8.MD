@@ -1,4 +1,4 @@
-# Chapter 10: Advanced Types.
+# Chapter 8: Advanced Types.
 ## ? Optional types
 WIP
 ## 👤 Generic Type
