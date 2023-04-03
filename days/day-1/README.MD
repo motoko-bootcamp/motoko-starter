@@ -22,6 +22,10 @@ This your very first day and it will be intense but take the opportunity to bond
     - [Bool](../../manuals/CHAPTER-3.MD#🚦-bool)
     - [Float](../../manuals/CHAPTER-3.MD#float)
 - Read [Chapter 4: Candid the language of the Internet Computer](../../manuals/CHAPTER-4.MD) in full.
+- Read [Appendix 1: Deploying & managing canisters](../../manuals/appendix/APPENDIX-1.MD#)
+    - [Generating a project](../../manuals/appendix/APPENDIX-1.MD#generating-the-project)
+    - [Using the terminal](../../manuals/appendix/APPENDIX-1.MD#using-the-terminal)
+    - [Using the Candid UI](../../manuals/appendix/APPENDIX-1.MD#using-the-candid-ui)
 - Complete the [project of the day](./project/README.MD).
 ## 🎯 Learning objectives
 > **Before you finish your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <br/> <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>

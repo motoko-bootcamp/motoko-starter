@@ -17,8 +17,11 @@ Today, we're diving into a bit more into the **Motoko** language with two dedica
     - [Text](../../manuals/CHAPTER-3.MD#💬-text)
     - [Char](../../manuals/CHAPTER-3.MD#🔤-char)
     - [Unit type](../../manuals/CHAPTER-3.MD#🫙-unit-type)
-- Read [Chapter 5: Modules and the Base library](../../manuals/CHAPTER-5.MD) in full.
+- Read [Chapter 5: Modules and the Base library](../../manuals/CHAPTER-5.MD)
 - Read [Chapter 6: Storing data in data structures](../../manuals/CHAPTER-6.MD) in full.
+    - [Array](../../manuals/CHAPTER-6.MD#🗃️-array)
+    - [Buffer](../../manuals/CHAPTER-6.MD#🥞-buffer)
+    - [List](../../manuals/CHAPTER-6.MD#list)
 - Read [Chapter 7: Non-primitives types](../../manuals/CHAPTER-7.MD).
     - [Tuples](../../manuals/CHAPTER-7.MD#👯-tuples)
     - [Objects](../../manuals/CHAPTER-7.MD#🎨-objects)
