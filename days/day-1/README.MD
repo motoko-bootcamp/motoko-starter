@@ -11,10 +11,16 @@ This your very first day and it will be intense but take the opportunity to bond
 | Motoko: variables, types, loops and functions. |  <a href="https://twitter.com/tedreinhardt" target="_blank"> Ted  </a> | This lecture explores the fundamentals of the Motoko language, including variables, types, functions, and loops.
 ##  🧭 Tasks of the day
 > Use this list as a guide for your day, it contains all the material that you need to read and the challenges you need to tackle.
-- Read [Chapter 1](../../manuals/CHAPTER-1.MD). 
-- Read [Chapter 2](../../manuals/CHAPTER-2.MD).
-- Read [Chapter 3](../../manuals/CHAPTER-3.MD).
-- Read [Chapter 4](../../manuals/CHAPTER-4.MD).
+- Read [Chapter 1 : Fundamental concepts](../../manuals/CHAPTER-1.MD).
+- Read [Chapter 2: Common programming concepts](../../manuals/CHAPTER-2.MD).
+    - [Variables](../../manuals/CHAPTER-2.MD#📦-variables)
+    - [Comments](../../manuals/CHAPTER-2.MD#💬-comments)
+    - [Functions](../../manuals/CHAPTER-2.MD#⚙️-functions)
+- Read [Chapter 3: Primitive Types in Motoko](../../manuals/CHAPTER-3.MD).
+    - [Nat](../../manuals/CHAPTER-3.MD#🔢-nat)
+    - [Int](../../manuals/CHAPTER-3.MD#➖-int)
+    - [Bool](../../manuals/CHAPTER-3.MD#🚦-bool)
+- Read [Chapter 4: Candid the language of the Internet Computer](../../manuals/CHAPTER-4.MD).
 - Complete the [project of the day](./project/README.MD).
 ## 🎯 Learning objectives
 > **Before you finish your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <br/> <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>

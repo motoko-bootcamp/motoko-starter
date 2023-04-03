@@ -37,7 +37,7 @@ You will work on 6 different projects:
 - [The Student wall 🎨](./days/day-3/project/README.MD)
 - [The Motoko encyclopedia 📓](./days/day-4/project/README.MD)
 - [MotoCoin 🪙](./days//day-5/project/README.MD)
-- [The verifier 🧑‍🏫](./days/day-6/project/README.MD)
+- [The verifier 🧐](./days/day-6/project/README.MD)
 ## 🎓 Graduation
 WIP
 ## 👦 Join our community
