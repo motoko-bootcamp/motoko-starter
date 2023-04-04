@@ -1,7 +1,7 @@
 # Day 2️⃣
-Welcome back for **day 2**. <br/>
-We're super excited to have you back and congratulations on making it through the first day. We also hope you had the chance to get to know your teammates and connect and you've appreciated the networking session. <br/>
-Today, we're diving into a bit more into the **Motoko** language with two dedicated lectures and a project that is one level above the one from yesterday. Let's jump in!
+Welcome back for **Day 2!** <br/>
+We're thrilled to see you again and congrats on completing the first day. We hope you've had the opportunity to connect with your teammates and enjoyed the networking session. <br/>
+Today, we'll delve deeper into the Motoko language with two specialized lectures and a new project. Let's dive in!
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.
 

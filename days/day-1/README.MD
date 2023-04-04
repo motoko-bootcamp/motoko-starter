@@ -1,6 +1,7 @@
 # Day 1️⃣
 Welcome to the elite [Motoko School](https://twitter.com/MotokoSchool), where talented minds like yours gather to learn and master the art of programming on the **Internet Computer**. ♾️ <br/>  
-This your very first day and it will be intense but take the opportunity to bond with your teammates and settle in for the journey ahead. Don't stress if you fall behind. Take the time needed to understand the material. Don't forget that **7 days** is a really short amount of days to learn everything there is to know about Web 3.0 and the Internet Computer. The most important aspect of the Bootcamp is to have fun and connect with others, let's  survive all of this together. 💪
+Today marks your exciting first day, and while it may be intense, take the chance to bond with your teammates and brace yourself for the adventure ahead. Don't worry if you fall behind; allow yourself the time needed to grasp the material. Keep in mind that 7 days is a brief period to learn everything there is to know about Web 3.0 and the Internet Computer. All resources will be available after the week is over, so you can catch-up on anything you've missed. <br/>
+Above all, the most vital aspect of the Bootcamp is to have fun and build connections - let's learn and grow together. 💪
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.
 
@@ -38,6 +39,6 @@ This your very first day and it will be intense but take the opportunity to bond
 - Understand that Motoko is a typed language and become familiar with the basic types: [Nat](../../manuals/CHAPTER-3.MD#🔢-nat), [Int](../../manuals/CHAPTER-3.MD#➖-int) & [Bool](../../manuals/CHAPTER-3.MD#🚦-bool).
 - Being comfortable deploying, managing and interacting with canisters through [dfx](../../manuals/CHAPTER-4/#📺-using-the-terminal-dfx).
 
-> The first edition of Motoko Bootcamp was run in 2022, fully online.
+>The first edition of Motoko Bootcamp was run in 2022, fully online.
 
 Good luck 🍀

@@ -1,8 +1,9 @@
 # Day 3️⃣
-Welcome to Day 4 of the Motoko Bootcamp! If you've been that far you're already an hero 🦸
-We hope you are all making progress, learning new skills and not suffering too much. In the next few days you should spend more & more time into the core project - that's why the coding challenges & questions will be less important in this guide and the followings.
+Welcome to **Day 3** of the Motoko Bootcamp. As we near the middle of the week, we hope you're all advancing, acquiring new skills, and enjoying the journey. <br/>
 
-Today, we'll be diving deeper into more advanced topics in Motoko such as discussing the issues when upgrading a canister. 🆙
+Today, we'll address the essential building blocks for creating an application on the Internet Computer: CRUD operations and authentication. <br/>
+
+It's vital to master the topics we'll explore today. If you need assistance, don't hesitate to reach out to your teammates or mentors. Remember, we're all here to learn, share a laugh, and support one another. 😉
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.
 

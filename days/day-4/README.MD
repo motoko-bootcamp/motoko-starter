@@ -1,8 +1,9 @@
 # Day 4️⃣
-Welcome to Day 4 of the Motoko Bootcamp! If you've been that far you're already an hero. 🦸
-We hope you are all making progress, learning new skills and not suffering too much. 
+Welcome to **Day 4** of the Motoko Bootcamp. Kudos to you for persevering through the first 3 days - you're a true hero! 🦸 <br/>
 
-Today, we'll be diving deeper into more advanced topics in Motoko discussing the issues when upgrading a canister. 🆙
+If you think you've missed something, feel free to revisit previous lessons. Today, our primary focus is on addressing potential challenges when upgrading your canister. This is essential for maintaining user engagement by introducing new features and functionalities. 🆙 <br/>
+
+Keep in mind, if coding is pushing your brain to its limit, take a break. Go for a walk or arrange a game session with your team to recharge. Try <a href="https://skribbl.io/" target="_blank">Skribbl.io</a>, a free online multiplayer drawing and guessing pictionary game, for some creative fun. 🖍️
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.
 

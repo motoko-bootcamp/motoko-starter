@@ -1,5 +1,6 @@
 # Day 5️⃣
-WIP
+**Day 5** - Time flies! You should be proud of yourself, as we're nearing the end of the week. <br/>
+Today, we'll delve into extremely crucial concepts: inter-canister calls, managing multiple canisters, and implementing payments on the Internet Computer. Mastering these key topics is essential for creating a scalable application and generating revenue to support your goals. Let's dive in!
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.
 
