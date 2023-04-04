@@ -7,7 +7,7 @@ Today, we're diving into a bit more into the **Motoko** language with two dedica
 
 | Title | Mentor |  Description |
 |-----------------|-----------------|-----------------|
- Motoko: Array, List & Buffer | <a href="https://twitter.com/seb_icp" target="_blank"> ? </a> | Welcome to Motoko Bootcamp 🎉
+ Motoko: Array, List & Buffer | <a href="https://twitter.com/cryptoschindler" target="_blank"> Moritz </a> | This lectures covers the datastructures `Array`, `List` & `Buffer` and how to use them. 
 | Motoko: Char, Text & Iter | <a href="https://twitter.com/seb_icp" target="_blank"> Seb  </a> | This lecture covers the types `Char` and `Text` in Motoko and explains how those are linked through the type `Iter`.
 ##  🧭 Tasks of the day
 > Use this list as a guide for your day, it contains all the material that you need to read and the challenges you need to tackle.
@@ -43,6 +43,6 @@ Today, we're diving into a bit more into the **Motoko** language with two dedica
 - Understand [what is DAO](../../manuals/appendix/APPENDIX-2.MD#🏛️-decentralized-autonomous-organization-a-new-model-of-governance), how it can be used and how the Internet Computer enables [new usecases](../../manuals/appendix/APPENDIX-2.MD#🚀-from-smart-contracts-to-canisters) for those organisations.
 - Being familiar with the [Network Nervous System](../../manuals/appendix/APPENDIX-4.MD#appendix-4-network-nervous-system-nns).
 
-> Did you know? Before deciding to call it **Motoko**, the language developed by DFINITY for programming actors on the Internet Computer was actually called **ActorScript**!
+> Did you know? Before deciding to call it **Motoko**, the language developed by **DFINITY** for programming actors on the Internet Computer was actually called **ActorScript**!
 
 Good luck 🍀

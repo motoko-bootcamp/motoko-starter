@@ -27,5 +27,6 @@ Today, we'll be diving deeper into more advanced topics in Motoko discussing the
 - Understand how to use the `stable` keyword and what are the stables types.
 - Getting familiar with potential issues when upgrading a canister.
 
-> 1234
+> Did you know? The name **Motoko** is a reference to **Motoko Kusanagi**, the main protagonist in the manga **Ghost in the Shell**. 
+
 Good luck 🍀

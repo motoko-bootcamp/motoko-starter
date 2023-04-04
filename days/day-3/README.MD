@@ -44,6 +44,6 @@ Today, we'll be diving deeper into more advanced topics in Motoko such as discus
 - Understand the concept of [Principal](../../manuals/CHAPTER-) and being able to manipulate the type `Principal`
 - Understand how to interact with a canister using the JavaScript agent and a frontend.  
 
-> 123
+> The Internet Computer reached 1 Billion blocks within 14 months of it's launch. It would take 18,0000 years for **Bitcoin** to get there. 
 
 Good luck 🍀

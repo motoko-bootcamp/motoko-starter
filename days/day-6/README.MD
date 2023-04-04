@@ -1,8 +1,8 @@
 # Day 3️⃣
-Welcome to Day 3 of the Motoko Bootcamp!
-We hope you're feeling like a coding ninja ready to take on even more advanced topics. Today, we'll learn how to interact with canisters from a front end using the JavaScript Agent. In addition, we'll also be introducing data structures such as HashMap/TrieMap and CRUD operations. These data structures will be really useful when working on the project of the day.
+Welcome to Day 3 of the Motoko Bootcamp.
+We hope you're feeling like a coding ninja ready to take on even more advanced topics. Today, we'll learn how to interact with canisters from a front end using the JavaScript Agent. In addition, we'll also be introducing data structures such as `HashMap`/ `TrieMap` and CRUD operations. These data structures will be really useful when working on the project of the day.
 
-Don't hesitate to ask for help from your teammates or mentors if you need it. Remember, we're all here to learn, laugh, and support each other. 😉
+Don't hesitate to ask for help from your teammates or mentors if you need it. Remember, we're all here to learn, have fun, and support each other. 😉
 
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.
@@ -43,7 +43,8 @@ Don't hesitate to ask for help from your teammates or mentors if you need it. Re
 - Understand the following concepts: 
 - Understand the concept of [Principal](../../manuals/CHAPTER-) and being able to manipulate the type `Principal`
 - Understand how to interact with a canister using the JavaScript agent and a frontend.  
+- Project is completed.
 
-> 123
+> Did you know? The name **DFINITY** comes from comes from Decentralized INFINITY.
 
-Good luck 🍀-
+Good luck 🍀

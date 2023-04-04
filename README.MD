@@ -6,7 +6,13 @@
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
 ## Introduction
 Welcome to the most awesome Bootcamp 👋 <br/>
-We believe that 7 days is all it should take to change your life. Learn Motoko, get started on the Internet Computer and meet others builders - <b> all in one week </b>. 
+We're thrilled to introduce the **Internet Computer**, a remarkable innovation combining cryptography, math, computer science, and blockchain technology. <br/> 
+Despite the incredible technology we believe that the true value of a network lies in a passionate community, and during this Bootcamp, you'll learn from diverse developer mentors and contributors that are active member of the community, giving their time to make this event possible. <br/>
+
+Our goal is to transmoit both technical knowledge and enthusiasm for the Internet Computer as a force for a better future. We believe in its potential to create a fairer, more hopeful world, and hope the insights and connections you make this week contribute to that goal. <br/>
+
+7 days is all it should take to change your life. Learn **Motoko**, get started on the **Internet Computer** and meet others builders - <b> all in one week </b>.
+## Overview
 ### 📚 Learn 
 **Motoko**, the **Internet Computer**, **canisters**, **Web3**, **DAOs**... at the end of the week you'll master all the fundamental concepts needeed in order to start building on the Internet Computer.
 ### 👷 Build 
@@ -15,9 +21,8 @@ During the week, you will work on different projects. Every project will be  be 
 Throughout the week you will participate in different activities such as mentorship hours, networking session and games sessions that will help you connect with people in the ecosystem and unlock access to opportunities. 
 ### 🌱 Your pace
 The educational resources can be used at **anytime** </b> - everything you need is here for free. 
-## Overview
-The Bootcamps is divided in 7 days. 
 ### 📜 Daily guides
+The Bootcamps is divided in 7 days. 
 For each day, you will find a dedicated guide - those guides will be your companions to navigate through all the available resources and challenges.
 - [Day 1️⃣](./days/day-1/README.MD) 
 - [Day 2️⃣](./days/day-2/README.MD) 
@@ -27,8 +32,10 @@ For each day, you will find a dedicated guide - those guides will be your compan
 - [Day 6️⃣](./days/day-6/README.MD) 
 - [Day 7️⃣](./days/day-7/README.MD) 
 ### 🍿 Lectures
+Lectures will be held live on Zoom Webinar by mentors each mentor is an experienced member of the community who is actively contributing to the ecosystem. Each lecture will cover one specific topic.
 Each lecture is approximately one hour long and covers a dedicated topic. It was held live by one of the Motoko Bootcamp mentors.
 You can consult the [list of all lectures on the dedicated page](./lectures/LECTURES.MD).
+> Each lecture will be recorded and published on YouTube so you can keep up even if you are not available to watch it live.
 ### 🏗️ Projects 
 Projects will help you build confidence and practical skills. You will be provided with instructions and a starting codebase to complete. 
 You will work on 6 different projects:
@@ -38,98 +45,24 @@ You will work on 6 different projects:
 - [The Motoko encyclopedia 📓](./days/day-4/project/README.MD)
 - [MotoCoin 🪙](./days//day-5/project/README.MD)
 - [The verifier 🧐](./days/day-6/project/README.MD)
-## 🎓 Graduation
+###  🫂 Teams 
+Each student will be assigned a team of around 15 students within a similar time zone and then get private voice & chat channels on Discord where they can get together and discuss progress. 
+
+We encourage each team to schedule a time each day to meet on the Discord voice channel to stay in touch! 
+### 🐥 Open mentorship hours 
+Throughout the week there are some Open Dev Mentor Hours scheduled, you should have at least 2 within your time zone.
+These meetings will be the opportunity for all students to troubleshoot issues live and ask questions directly with a dev mentor.
+This is open to everyone participating in the Bootcamp.
+It is highly recommended you attend at least one of these (or watch the recordings), even if you don't have any specific issues.
+> Each sessions will be recorded and published on YouTube so you can keep up even if you are not available to watch it live.
+### 📞 Assistance 
+WIP 
+### 🤹 Activities 
+WIP
+### 🎓 Graduation
 WIP
 ## 👦 Join our community
 - [Join our Discord](https://discord.gg/JS9g2ahtDs).
 - Follow [Motoko Bootcamp](https://twitter.com/MotokoSchool) and [Code & State](https://twitter.com/codeandstate) on Twitter. 
-- Check our [dedicated website](https://motokobootcamp.com/).
-## 💁 Additional informations
-WIP
-## Styling rules
-- Every term that is **strong** shouldn't be translated.
-    - **canister**
-    - **The Internet Computer**
-    - **actor**
-    - **query**
-    - **update**
-    - [All motoko keywords](https://internetcomputer.org/docs/current/motoko/main/language-manual#keywords)
-- Respect [Motoko style guidelines](https://internetcomputer.org/docs/current/motoko/main/style#:~:text=Motoko%20requires%20that%20all%20expressions,ignore%20when%20it's%20not%20needed.&text=Motoko%20allows%20to%20omit%20the,evaluates%20to%20its%20last%20expression.) for all code samples.
-## Todo
-### General
-- [ ] Add introduction for each day, backstory and context to each chapter.
-- [ ] Add a FAQ.
-- [ ] Add a troubleshooting guide.
-- [ ] Create and add missing illustrations.
-- [ ] Improve the README.
-- [ ] Verify styling rules & ortograph.
-- [ ] Add source code for each lecture.
-- [ ] Add feedback form for each day.
-- [ ] Cut lecture to not include the Q/A part but hold it live.
-### Book
-#### Chapter 1
-- [x] Section on cycles.
-- [ ] Review.
-#### Chapter 2
-- [x] Section on functions.
-- [x] Finish section of control flow.
-- [ ] Review.
-#### Chapter 3
-- [x] Section on Blob.
-- [x] Section on Nat8.
-- [ ] Section on Unit type.
-- [ ] Review.
-#### Chapter 4
-- [ ] Review.
-#### Chapter 5
-- [ ] Review.
-#### Chapter 6
-- [ ] Section on Experimental libraries.
-- [ ] Review.
-#### Chapter 7
-- [ ] Section on Arrays.
-- [ ] Section on Mutable Arrays.
-- [ ] Section on Iterators.
-- [ ] Review.
-#### Chapter 8
-- [ ] Section on Optional types.
-- [ ] Section on Recursive types
-- [ ] Section on Shared types.
-- [ ] Review
-#### Chapter 9
-- [ ] Section on Error type.
-- [ ] Section on Trap.
-- [ ] Section on Try/Catch.
-- [ ] Review
-#### Chapter 10
-- [ ] Section on Anonymous principal.
-- [ ] Section on PEM File
-- [ ] Review
-#### Chapter 11
-- [ ] Section on async values.
-- [ ] Section on calling an actor by reference.
-- [ ] Section on importing another canister.
-- [ ] Section on commit point and rollbacks.
-- [ ] Review.
-#### Chapter 12
-- [ ] Review
-#### Chapter 13
-- [ ] Section on RB Tree.
-- [ ] Section on Tree.
-- [ ] Section on converting a non-stable type to stable.
-- [ ] Review
-#### Chapter 14
-- [ ] Review
-#### Chapter 15
-- [ ] Review
-#### Chapter 16
-- [ ] Section on Actor Classes.
-- [ ] Section on the management canister
-- [ ] Section on a canister factory.
-- [ ] Review
-#### Chapter 17
-- [ ] Review
-## Lectures
-WIP
-## Projects
-WIP
+- Check the [dedicated website](https://motokobootcamp.com/).
+## ✨ Special thanks 

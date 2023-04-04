@@ -23,6 +23,6 @@ WIP
 - Know [how to make payments](../../manuals/appendix/APPENDIX-5.MD) and verify them on the Internet Computer.
 - Being familiar with the ICRC_1 standard, the Working Groups and the process for creating future ICRC standards.
 
-> 12345
+> [MOPS](https://mops.one/) is a package manager for Motoko with full on-chain package registry. Use it and publish your packages! 
 
 Good luck 🍀
