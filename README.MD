@@ -61,7 +61,7 @@ WIP
 WIP
 ### 🎓 Graduation
 WIP
-## 👦 Join our community
+## 👦 Join the community
 - [Join our Discord](https://discord.gg/JS9g2ahtDs).
 - Follow [Motoko Bootcamp](https://twitter.com/MotokoSchool) and [Code & State](https://twitter.com/codeandstate) on Twitter. 
 - Check the [dedicated website](https://motokobootcamp.com/).

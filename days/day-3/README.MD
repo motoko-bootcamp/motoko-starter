@@ -8,8 +8,8 @@ Today, we'll be diving deeper into more advanced topics in Motoko such as discus
 
 | Title | Mentor |  Description |
 |-----------------|-----------------|-----------------|
-|  | <a href="" target="_blank"> Matthew </a> | This lecture dives into the different types of memories and how to deal with upgrades.
-| Motoko: Cycle management, error handling & admin functionalities | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers different topics (cycles, errors and admin functionnalities) through examples and live coding.
+ Motoko: HashMap & CRUD | <a href="https://twitter.com/CapuzR" target="_blank"> Ricardo </a> | This lecture covers CRUD operations on canisters, which involve managing data through **Create**, **Read**, **Update**, and **Delete** operations.
+| Frontend, authentication and Internet Identity | <a href="https://twitter.com/kylpeacock" target="_blank"> Kyle  </a> | WIP
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
