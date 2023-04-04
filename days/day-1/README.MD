@@ -38,6 +38,6 @@ This your very first day and it will be intense but take the opportunity to bond
 - Understand that Motoko is a typed language and become familiar with the basic types: [Nat](../../manuals/CHAPTER-3.MD#🔢-nat), [Int](../../manuals/CHAPTER-3.MD#➖-int) & [Bool](../../manuals/CHAPTER-3.MD#🚦-bool).
 - Being comfortable deploying, managing and interacting with canisters through [dfx](../../manuals/CHAPTER-4/#📺-using-the-terminal-dfx).
 
-> The gift of knowledge is the highest gift in the world.
+> The first edition of Motoko Bootcamp was run in 2022, fully online.
 
 Good luck 🍀

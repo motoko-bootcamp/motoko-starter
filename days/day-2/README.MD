@@ -43,6 +43,6 @@ Today, we're diving into a bit more into the **Motoko** language with two dedica
 - Understand [what is DAO](../../manuals/appendix/APPENDIX-2.MD#🏛️-decentralized-autonomous-organization-a-new-model-of-governance), how it can be used and how the Internet Computer enables [new usecases](../../manuals/appendix/APPENDIX-2.MD#🚀-from-smart-contracts-to-canisters) for those organisations.
 - Being familiar with the [Network Nervous System](../../manuals/appendix/APPENDIX-4.MD#appendix-4-network-nervous-system-nns).
 
-> Did you know? Before deciding to call it **Motoko**, the language developed by **DFINITY** for programming actors on the Internet Computer was actually called **ActorScript**!
+> Before deciding to call it **Motoko**, the language developed by **DFINITY** for programming actors on the Internet Computer was actually called **ActorScript**.
 
 Good luck 🍀
