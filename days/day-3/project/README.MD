@@ -43,7 +43,7 @@ public type Content = {
 We define new types:
 - `Answer` is a tupple type that represents a choice in a survey. Each answer contains a `Text` field that describes the answer, and a var Nat field that represents the number of times the answer has been selected by respondents. 
 ```motoko
-type Answer = (Text, var Nat);
+type Answer = (Text, Nat);
 ``` 
 - `Survey` is a record type that represents a survey. Each survey contains a `title` field that describes the survey, and a `answers` field that is an array of `Answer` objects, each representing a possible answer in the survey.
 ```motoko
