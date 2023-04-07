@@ -1,8 +1,5 @@
-# Day 3️⃣
-Welcome to Day 3 of the Motoko Bootcamp.
-We hope you're feeling like a coding ninja ready to take on even more advanced topics. Today, we'll learn how to interact with canisters from a front end using the JavaScript Agent. In addition, we'll also be introducing data structures such as `HashMap`/ `TrieMap` and CRUD operations. These data structures will be really useful when working on the project of the day.
-
-Don't hesitate to ask for help from your teammates or mentors if you need it. Remember, we're all here to learn, have fun, and support each other. 😉
+# Day 3️
+Welcome to Day 6 of the Motoko Bootcamp.
 
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.

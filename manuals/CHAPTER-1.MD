@@ -200,4 +200,4 @@ Each operation perfomed on the network has a cost attached to it:
 - Computing a threshold ECDSA signature.
 
 The cost of those operations also depends on the subnet in which they are performed and the **replication factor** of this subnet. The replication factor corresponds to the number of nodes in a subnet, which can range from 13 to 40.
-## Resources and links
+## Going beyond 

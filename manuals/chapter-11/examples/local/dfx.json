@@ -1,0 +1,12 @@
+{
+    "canisters": {
+        "invoice": {
+          "main": "invoice.mo",
+          "type": "motoko"
+        },
+        "secret": {
+            "main": "secret.mo",
+            "type": "motoko"
+        }
+      }
+}
