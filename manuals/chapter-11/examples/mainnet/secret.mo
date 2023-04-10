@@ -4,6 +4,7 @@ import Principal "mo:base/Principal";
 import Nat "mo:base/Nat";
 import Prelude "mo:base/Prelude";
 import Time "mo:base/Time";
+import invoiceCanister "ic:sc5pp-ziaaa-aaaaj-qaz2q-cai";
 actor Secret {
 
     public type Time = Time.Time;
@@ -21,14 +22,6 @@ actor Secret {
         status : InvoiceStatus;
         id  : InvoiceId;
     };
-
-    // Calling by reference - this is a fake canister id for the sake of the example
-    let invoiceCanister = actor("rrkah-fqaaa-aaaaa-aaaaq-cai") : actor {
-        createInvoice : shared () -> async InvoiceId;
-        checkStatus : shared (id : InvoiceId) -> async ?InvoiceStatus;
-        payInvoice : shared (id : InvoiceId) -> async Result.Result<(), Text>;
-    };
-
 
     // Reveal the password only if the caller has paid 🤫
     public shared ({ caller }) func getPassword() : async Result.Result<Text, Text> {
@@ -56,8 +49,9 @@ actor Secret {
                 }
             };
         };
-    
     };
+
+    
 
 
 
