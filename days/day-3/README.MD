@@ -15,8 +15,8 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
 - Read [Chapter 3: Primitive Types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD)
-    - [Float](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#float)
-    - [Blob](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#blob)
+    - [Float](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-float)
+    - [Blob](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-blob)
     - [Bounded types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#%EF%B8%8F-bounded-types)
 - Read [Chapter 6: Storing data in data structures](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD) 
     - [HashMap & TrieMap](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD)
