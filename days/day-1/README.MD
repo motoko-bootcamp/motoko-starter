@@ -14,14 +14,14 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 > Use this list as a guide for your day, it contains all the material that you need to read and the challenges you need to tackle.
 - Read [Chapter 1 : Fundamental concepts](../../manuals/chapters/chapter-1/CHAPTER-1.MD) in full.
 - Read [Chapter 2: Common programming concepts](../../manuals/chapters/chapter-2/CHAPTER-2.MD).
-    - [Variables](../../manuals/chapters/chapter-2/CHAPTER-2.MD#📦-variables)
+    - [Variables](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#-variables)
     - [Comments](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#-comments)
-    - [Functions](../../manuals/chapters/chapter-2/CHAPTER-2.MD#⚙️-functions)
+    - [Functions](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#-functions)
 - Read [Chapter 3: Primitive Types in Motoko](../../manuals/chapters/chapter-3/CHAPTER-3.MD).
-    - [Nat](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🔢-nat)
-    - [Int](../../manuals/chapters/chapter-3/CHAPTER-3.MD#➖-int)
-    - [Bool](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🚦-bool)
-    - [Float](../../manuals/chapters/chapter-3/CHAPTER-3.MD#float)
+    - [Nat](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#-nat)
+    - [Int](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#-int)
+    - [Bool](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#-bool)
+    - [Float](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#-float)
 - Read [Chapter 4: Candid the language of the Internet Computer](../../manuals/chapters/chapter-4/CHAPTER-4.MD). in full.
 - Read [Appendix 1: Deploying & managing canisters](../../manuals/appendix/appendix-1/APPENDIX-1.MD#) in full.
 - Complete the [project of the day](./project/README.MD).
