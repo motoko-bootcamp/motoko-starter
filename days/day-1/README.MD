@@ -30,8 +30,8 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 
 - Understand what is a [canister](../../manuals/chapters/chapter-1/CHAPTER-1.MD#what-is-a-canister) and how it relates to the concept of an [actor](../../manuals/chapters/chapter-1/CHAPTER-1.MD#the-actor-model).
 - Understand the concept of [cycles](../../manuals/chapters/chapter-1/CHAPTER-1.MD#fuel-on-the-internet-computer-cycles) & being able to top-up a **canister**.
-- Understand the difference between [update](../../manuals/chapters/chapter-1/CHAPTER-1.MD#update-vs-query) & [query](../../manuals/chapters/chapter-1/CHAPTER-1#update-vs-query) calls.
-- Understand the differences between a variable declared with [let](../../manuals/chapters/chapter-2/CHAPTER-2.MD#📦-variables) & [var](../../manuals/chapters/chapter-2/CHAPTER-2.MD#📦-variables).
+- Understand the difference between [update and query](../../manuals/chapters/chapter-1/CHAPTER-1.MD#update-vs-query) calls.
+- Understand the differences between [a variable](../../manuals/chapters/chapter-2/CHAPTER-2.MD#📦-variables) declared with let & var.
 - Understand what is [Candid](../../manuals/chapters/chapter-4/CHAPTER-4.MD#chapter-4-candid-the-language-of-the-internet-computer) & how to use the [Candid UI](../../manuals/chapters/chapter-4/CHAPTER-4.MD#📲-candid-ui) to interact with your API.
 - Understand that Motoko is a typed language and become familiar with the basic types: [Nat](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🔢-nat), [Int](../../manuals/chapters/chapter-3/CHAPTER-3.MD#➖-int) & [Bool](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🚦-bool).
 - Being comfortable deploying, managing and interacting with canisters through [dfx](../../manuals/chapters/chapter-4/CHAPTER-4.MD/#📺-using-the-terminal-dfx).
