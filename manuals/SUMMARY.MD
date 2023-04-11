@@ -117,6 +117,7 @@
 - New possibilities for NFTs.
 ## Appendix 7: Debugging and testing with Motoko.
 ## Appendix 8: Common security issues and best practices.
+
 ## Appendix 9: HTTP Request to access a canister through a browser.
 - Difference between HTTP request & HTTP outcalls.
 - What are boundary nodes?

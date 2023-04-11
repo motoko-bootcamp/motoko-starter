@@ -1,5 +1,5 @@
 # Chapter 3: Primitive Types in Motoko.
-<p align="center"> <img src="./assets/chapter-3/motoko_primitives_types.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/motoko_primitives_types.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> A few primitive types</p>
 
 ## Introduction 
