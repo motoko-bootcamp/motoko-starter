@@ -1,8 +1,7 @@
 # Motoko Starter: 7 days to get started on the Internet Computer 🏁 
 ## Upcoming edition
 ### 📆 May 8-14th 2023
-### 🇺🇸  Miami 
-### Participate in the next edition of Motoko Starter. You can follow online from anywhere in the world or join us at the physical edition. 
+### Participate in the next edition of Motoko Starter. You can follow online from anywhere in the world or join us in one the numerous local gatherings. 
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
 ## Introduction
 Welcome to the most awesome Bootcamp 👋 <br/>
