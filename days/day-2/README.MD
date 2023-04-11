@@ -22,11 +22,11 @@ Today, we'll delve deeper into the Motoko language with two specialized lectures
     - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#%EF%B8%8F-array)
     - [Buffer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-buffer)
     - [List](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-list)
-- Read [Chapter 7: Non-primitives types](../../manuals/CHAPTER-7.MD).
+- Read [Chapter 7: Non-primitives types](../../manuals/chapters/chapter-7/CHAPTER-7.MD).
     - [Tuples](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-tuples)
     - [Objects](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-objects)
-- Read [Appendix 2: Unlocking the power of DAOs with canister](../../manuals/appendix/APPENDIX-2.MD) in full.
-- Read [Appendix 4: Overview of the NNS](../../manuals/appendix/APPENDIX-4.MD) in full.
+- Read [Appendix 2: Unlocking the power of DAOs with canister](../../manuals/appendix/appendix-2/APPENDIX-2.MD) in full.
+- Read [Appendix 4: Overview of the NNS](../../manuals/appendix/appendix-4/APPENDIX-4.MD) in full.
 - Read [Appendix 7: Debugging and testing with Motoko](../../manuals/appendix/appendix-7/APPENDIX-7.MD)
     - [Debugging](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-7/APPENDIX-7.MD#debugging)
 - Complete the [project of the day](./project/README.MD).
