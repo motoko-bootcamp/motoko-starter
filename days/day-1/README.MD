@@ -32,9 +32,9 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 - Understand the concept of [cycles](../../manuals/chapters/chapter-1/CHAPTER-1.MD#fuel-on-the-internet-computer-cycles) & being able to top-up a **canister**.
 - Understand the difference between [update and query](../../manuals/chapters/chapter-1/CHAPTER-1.MD#update-vs-query) calls.
 - Understand the differences between [a variable](../../manuals/chapters/chapter-2/CHAPTER-2.MD#📦-variables) declared with let & var.
-- Understand what is [Candid](../../manuals/chapters/chapter-4/CHAPTER-4.MD#chapter-4-candid-the-language-of-the-internet-computer) & how to use the [Candid UI](../../manuals/chapters/chapter-4/CHAPTER-4.MD#📲-candid-ui) to interact with your API.
+- Understand what is [Candid](../../manuals/chapters/chapter-4/CHAPTER-4.MD#chapter-4-candid-the-language-of-the-internet-computer) & how to use the [Candid UI](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-4/CHAPTER-4.MD#--candid-ui-) to interact with your API.
 - Understand that Motoko is a typed language and become familiar with the basic types: [Nat](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🔢-nat), [Int](../../manuals/chapters/chapter-3/CHAPTER-3.MD#➖-int) & [Bool](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🚦-bool).
-- Being comfortable deploying, managing and interacting with canisters through [dfx](../../manuals/chapters/chapter-4/CHAPTER-4.MD/#📺-using-the-terminal-dfx).
+- Being comfortable deploying, managing and interacting with canisters through [dfx](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-4/CHAPTER-4.MD#--using-the-terminal-dfx-).
 
 >The first edition of Motoko Bootcamp was run in 2022, fully online.
 
