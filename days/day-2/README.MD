@@ -15,7 +15,7 @@ Today, we'll delve deeper into the Motoko language with two specialized lectures
     - [Control flow](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-2/CHAPTER-2.MD#%EF%B8%8F-control-flow)
 - Read [Chapter 3: Primitive Types in Motoko](../../manuals/chapters/chapter-3/CHAPTER-3.MD).
     - [Text](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-text)
-    - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-text)
+    - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-char)
     - [Unit type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-unit-type)
 - Read [Chapter 5: Modules and the Base library](../../manuals/chapters/chapter-5/CHAPTER-5.MD)  in full.
 - Read [Chapter 6: Storing data in data structures](../../manuals/chapter-6/CHAPTER-6.MD)
