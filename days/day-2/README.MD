@@ -26,10 +26,9 @@ Today, we'll delve deeper into the Motoko language with two specialized lectures
     - [Tuples](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-tuples)
     - [Objects](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-objects)
 - Read [Appendix 2: Unlocking the power of DAOs with canister](../../manuals/appendix/APPENDIX-2.MD) in full.
-- Read [Appendix 4: Overview of the biggest DAO on the Internet Computer: the NNS](../../manuals/appendix/
-APPENDIX-4.MD) in full.
+- Read [Appendix 4: Overview of the NNS](../../manuals/appendix/APPENDIX-4.MD) in full.
 - Read [Appendix 7: Debugging and testing with Motoko](../../manuals/appendix/appendix-7/APPENDIX-7.MD)
-    - Debugging[https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-7/APPENDIX-7.MD#debugging]
+    - [Debugging](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-7/APPENDIX-7.MD#debugging)
 - Complete the [project of the day](./project/README.MD).
 ## 🎯 Learning objectives
 > **Before you finish your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <br/> <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>
