@@ -12,21 +12,18 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 | Motoko: variables, types, loops and functions. |  <a href="https://twitter.com/tedreinhardt" target="_blank"> Ted  </a> | This lecture explores the fundamentals of the Motoko language, including variables, types, functions, and loops.
 ##  🧭 Tasks of the day
 > Use this list as a guide for your day, it contains all the material that you need to read and the challenges you need to tackle.
-- Read [Chapter 1 : Fundamental concepts](../../manuals/CHAPTER-1.MD) in full.
-- Read [Chapter 2: Common programming concepts](../../manuals/CHAPTER-2.MD).
-    - [Variables](../../manuals/CHAPTER-2.MD#📦-variables)
-    - [Comments](../../manuals/CHAPTER-2.MD#💬-comments)
-    - [Functions](../../manuals/CHAPTER-2.MD#⚙️-functions)
-- Read [Chapter 3: Primitive Types in Motoko](../../manuals/CHAPTER-3.MD).
-    - [Nat](../../manuals/CHAPTER-3.MD#🔢-nat)
-    - [Int](../../manuals/CHAPTER-3.MD#➖-int)
-    - [Bool](../../manuals/CHAPTER-3.MD#🚦-bool)
-    - [Float](../../manuals/CHAPTER-3.MD#float)
-- Read [Chapter 4: Candid the language of the Internet Computer](../../manuals/CHAPTER-4.MD) in full.
-- Read [Appendix 1: Deploying & managing canisters](../../manuals/appendix/APPENDIX-1.MD#)
-    - [Generating a project](../../manuals/appendix/APPENDIX-1.MD#generating-the-project)
-    - [Using the terminal](../../manuals/appendix/APPENDIX-1.MD#using-the-terminal)
-    - [Using the Candid UI](../../manuals/appendix/APPENDIX-1.MD#using-the-candid-ui)
+- Read [Chapter 1 : Fundamental concepts](../../manuals/chapters/chapter-1/CHAPTER-1.MD) in full.
+- Read [Chapter 2: Common programming concepts](../../manuals/chapters/chapter-2/CHAPTER-2.MD).
+    - [Variables](../../manuals/chapters/chapter-2/CHAPTER-2.MD#📦-variables)
+    - [Comments](../../manuals/chapters/chapter-2/CHAPTER-2.MD#💬-comments)
+    - [Functions](../../manuals/chapters/chapter-2/CHAPTER-2.MD#⚙️-functions)
+- Read [Chapter 3: Primitive Types in Motoko](../../manuals/chapters/chapter-3/CHAPTER-3.MD).
+    - [Nat](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🔢-nat)
+    - [Int](../../manuals/chapters/chapter-3/CHAPTER-3.MD#➖-int)
+    - [Bool](../../manuals/chapters/chapter-3/CHAPTER-3.MD#🚦-bool)
+    - [Float](../../manuals/chapters/chapter-3/CHAPTER-3.MD#float)
+- Read [Chapter 4: Candid the language of the Internet Computer](../../manuals/chapters/chapter-4/CHAPTER-4.MD). in full.
+- Read [Appendix 1: Deploying & managing canisters](../../manuals/appendix/APPENDIX-1.MD#) in full.
 - Complete the [project of the day](./project/README.MD).
 ## 🎯 Learning objectives
 > **Before you finish your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <br/> <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>

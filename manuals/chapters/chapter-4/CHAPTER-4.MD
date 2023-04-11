@@ -12,7 +12,7 @@ We want to compute the square of our value `n`, but we are very lazy and we don'
 
 The problem is the following: `n` is of type `Nat` and the `square` function only accepts value of type `u128`. But, in **Motoko**, the type `u128` doesn't exist! It it is like trying to communicate in Spanish with someone that speaks Chinese.
 
-<p align="center"> <img src="./assets/chapter-4/rust_motoko_situation.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/rust_motoko_situation.png" width="600px" style="border: 2px solid black;"> </p>
 <p align="center"> Communication can be hard sometimes...</p>
 
 > Composing services (i.e canisters) written in different languages is central to the vision of the **Internet Computer**. How do we solve this fundamental communication issue between canisters?
@@ -24,7 +24,7 @@ We need to introduce an **Interface Description Language (IDL)**. An interface d
 
 Candid solves the problem we raised earlier by enabling a mapping between types in different languages. 
 
-<p align="center"> <img src="./assets/chapter-4/candid_mapping.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/candid_mapping.png" width="600px" style="border: 2px solid black;"> </p>
 ## Candid file (.did)
 A **Candid** file is a file with the .did extension - we can define the interface of the `square` canister with the following .did file:
 ```candid
@@ -35,14 +35,14 @@ service : {
 
 In this case, our service has a unique function named `square`. This function takes a `nat` and returns a `nat`. Notice that we also used the keyword `query`.
 
-<p align="center"> <img src="./assets/chapter-4/candid_solved.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/candid_solved.png" width="600px" style="border: 2px solid black;"> </p>
 <p align="center"> Candid is the common ground for all canisters to solve their misunderstanding!</p>
 
 The `nat` used here is not the same as the `Nat` type in **Motoko**, or any type in **Rust**. If the `square` canister was written in Motoko the Candid interface would be exactly the same. The description of the service is independent of the language it was written in - this is key!
 
 Candid solves the problem we've raised earlier by enabling a mapping between types in different languages.
 
-<p align="center"> <img src="./img/candid_mapping.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/candid_mapping.png" width="600px" style="border: 2px solid black;"> </p>
 
 The type `u128` will be converted to `nat` which is then converted to `Nat` in the **Motoko** canister. This makes it possible to write the following code:
 
@@ -134,7 +134,7 @@ In this case the URL to the Candid UI is http://127.0.0.1:4943/?canisterId=r7inp
 > It's possible that the URL for the Candid UI may be different on your machine. Make sure to adjust the URL accordingly based on the canister IDs in your own file.
 
 Simply click the **Query** buttons, and see the response in the Output Log.
-<p align="center"> <img src="assets/chapter-4/candid_ui_local.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="assets/candid_ui_local.png" width="600px" style="border: 2px solid black;"> </p>
 
 <b> Local or Live? </b> <br/>
 One important confusion to avoid is the difference between the local & live Candid UIs:

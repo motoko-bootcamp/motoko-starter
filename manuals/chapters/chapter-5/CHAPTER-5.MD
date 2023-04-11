@@ -11,7 +11,7 @@ The Base library is a set of modules that provide functions for commonly used ty
 The source code for this library is available on GitHub and is maintained by engineers from the DFINITY foundation and community members.
 Each module has its own documentation page, where you can learn about the available functions. For example, here is the documentation page for the `Nat` module.
 
-<p align="center"> <img src="./assets/chapter-6/base_library_nat.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="assets/base_library_nat.png" width="800px" style="border: 2px solid black;"></p>
 <p align="center">  </p>
 
 > The source code is meant to understand how a specific module was written, whereas the documentation is meant to understand how you can use a module.
@@ -20,6 +20,4 @@ Read [this section](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/base-library.htm
 ## Primitive types and the Base library.
 Read [this section](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/base-library/primitive-types.html) from the Motoko Book.
 ## Experimental libraries
-WIP
-## Resources and links
 WIP

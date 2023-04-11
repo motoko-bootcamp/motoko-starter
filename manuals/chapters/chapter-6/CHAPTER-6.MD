@@ -14,7 +14,7 @@ The following code will throw an error: `literal of type Text does not have expe
 ```motoko
 let array : [Nat] = [14, 16, 32, 25, "Motoko"];
 ```
-<p align="center"> <img src="assets/chapter-8/array.png" width="600px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="assets/array.png" width="600px" style="border: 2px solid black;"></p>
 To access a specific element within an array, we use its index. Keep in mind that arrays in Motoko are zero-indexed, which means that the first element is at position 0, the second element is at position 1, and so on. For example, to access the first element of an array named `myArray`, we would use `myArray[0]`, and to access the second element, we would use `myArray[1]`.
 ```motoko
 let myArray : [Nat] = [23, 16, 32, 25];
@@ -95,9 +95,9 @@ b.add(0);
 b.add(10);   
 Buffer.toArray<Nat>(b); // [0, 10];
 ```
-## List
+## 🔗 List
 WIP
-## HashMap & TrieMap
+## 💿 HashMap & TrieMap
 In Motoko, [HashMap](https://internetcomputer.org/docs/current/references/motoko-ref/HashMap) and [TrieMap](https://internetcomputer.org/docs/current/references/motoko-ref/HashMap) are both implemented as a Class and have the same interface. The only difference is that `TrieMap` is represented internaly by a `Trie` while `HashMap` is using `AssocList`. All examples that will follow use `HashMap` but it would be similar for `TrieMap`. 
 
 - K is the type of the key (`Nat`, `Text`, `Principal`...)

@@ -255,4 +255,3 @@ switch(day) {
 };
 ```
 In this example, we defined a variant type `Day`, declared a variable `day` with that type, and then used it as input in our `switch` expression. The switch expression is a powerful control flow construct that allows for pattern matching, providing a concise and readable way to handle multiple cases based on the input value.
-## 🔗 Resources and links

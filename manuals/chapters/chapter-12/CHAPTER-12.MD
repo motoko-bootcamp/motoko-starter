@@ -190,7 +190,7 @@ When you upgrade a canister, `dfx` will automatically download the metadata of t
 
 If you are making a breaking change you will receive a warning. 
 
-<p align="center"> <img src="assets/chapter-17/candid_warning.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="assets/candid_warning.png" width="800px" style="border: 2px solid black;"></p>
 <p align="center"> The type of warning you will encounter. </p>
 
 This verification doesn't guarantee that the upgrade will go through. A problem can still happen during the upgrade process. However, it does guarantee that if the upgrade goes through you won't break existing cliens or lose data that was marked as `stable`. 

@@ -14,20 +14,20 @@ The Internet Computer is a platform that hosts a large number of applications, a
     - When you read content on a website hosted on the Internet Computer.
     - And way more...
 
-<p align="center"> <img src="./assets/chapter-1/oc_message.png" height="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="./assets/oc_message.png" height="600px" style="border: 1px solid black;"/> </p>
 <p align="center"> OpenChat is a decentralized messaging application built on the Internet Computer. </p>
 
 ## WebAssembly
 Before we move on to Motoko - we actually need to explain another term: **WebAssembly**.
 
-<p align="center"> <img src="./assets/chapter-1/canister_overview.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/canister_overview.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> Overview of a canister.</p>
 
 If we zoom inside, a canister is composed of:
 - A **WebAssembly module** which is a piece of compiled code from languages such as Rust or Motoko. This is the code that is installed in the canister and is ultimately running. 
 - A **WebAssembly memory** - also called memory pages. This is where the state of the canister is stored and files are stored (photos, videos, tokens...). Code runs by the WebAssembly module will modify the memory.
 
-<p align="center"> <img src="./assets/chapter-1/webassembly.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/webassembly.png" width="600px" style="border: 2px solid black;"> </p>
 
 <p align="center"> What is <b> WebAssembly </b>? <p>
 WebAssembly is a low-level binary format for executing code in multitude environments (browsers, cloud platform, smart devices, virtual machine..). The main benefits of using WebAssembly are:
@@ -35,7 +35,7 @@ WebAssembly is a low-level binary format for executing code in multitude environ
 - **WebAssembly** supports code written in multiple languages (C, C++, Rust, Motoko) making it a versatile solution for developers.
 
 - **WebAssembly** code is portable and can run on almost any device. You write it once and you can run it everywhere!
-<p align="center"> <img src="./assets/chapter-1/webassembly_stack.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="./assets/webassembly_stack.png" width="500px" style="border: 1px solid black;"/> </p>
 <p align="center"> Write once and deploy on any platform. </p>
 
 - **WebAssembly** is fast. It's a language that is very close to machine language and has been optimised for speed and performance. You can use it for creating complex and intensive applications (Games, simulations, graphic)!
@@ -44,11 +44,11 @@ WebAssembly is a low-level binary format for executing code in multitude environ
 The only problem with **WebAssembly** is that it's a low-level language and it provides very little abstraction, making it difficult to use for writing complex applications like dApps (decentralized applications). 
 
 ## The Motoko language
-<p align="center"> <img src="./assets/chapter-1/motoko_banner.png" width="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="./assets/motoko_banner.png" width="600px" style="border: 1px solid black;"/> </p>
 
 That's why the [DFINITY Foundation](https://dfinity.org/) has introduced a new language called **Motoko**, which is a programming language specifically designed for creating decentralized applications (dApps) on the Internet Computer. Since Motoko code can directly be compiled into **WebAssembly**, it is an incredible language to build on the Internet Computer. Motoko is a high-level language, that is easy to use. You write in Motoko and then it compiles for you in WebAssembly.
 
-<p align="center"> <img src="./assets/chapter-1/motoko_to_wasm.png" width="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="./assets/motoko_to_wasm.png" width="600px" style="border: 1px solid black;"/> </p>
 <p align="center"> In Motoko the code is spun, Into WebAssembly it does run.</p>
 
 > It's worth noting that WebAssembly, was co-designed by [Andreas Rossberg](https://github.com/rossberg), who joined the DFINITY Foundation early in 2017 to work on its canister smart contract execution environment and is also the original designer of the Motoko language. The standard is maintained by the [World Wide Web Consortium](https://www.w3.org/). 
@@ -92,7 +92,7 @@ func factorial(n : Nat) : Nat {
 
 A Motoko file is a file with the extension `.mo`.
 
-<p align="center"> <img src="./assets/chapter-1/mo_extension.png" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/mo_extension.png" width="300px" style="border: 2px solid black;"> </p>
 
 **Motoko** is a high-level language such as **JavaScript** or **Python**. It is generally considered easier to learn than a lower level language like **Rust** or **C**. 
 
@@ -120,7 +120,7 @@ Since canisters have been implemented to follow the actor model - you won't be s
 - Can create other canisters.
 
 
-<p align="center"> <img src="./assets/chapter-1/actor_model.gif" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="./assets/actor_model.gif" width="800px" style="border: 2px solid black;"></p>
 <p align="center">A canister receives a message, execute it, and possibilty send other messages to other canisters (or even create new ones) in response. </p>
 
 Let's now consider the following actor:
@@ -184,7 +184,7 @@ To pay for computation & storage costs canisters have to be loaded with **cycles
 Each canister has it’s own **cycle** balance - this can be thought of as the battery life of a **canister**. 
 **Cycles** can be obtained by burning **ICPs**.
 
-<p align="center"> <img src="./assets/chapter-1/cycles_burned.gif" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/cycles_burned.gif" width="600px" style="border: 2px solid black;"> </p>
 <p align="center"> When processing a new message, cycles are deducted from the canister's balance and burned.</p>
 
 Unlike **gas** on **Ethereum**, **cycles** on the **Internet Computer** are not paid by the user. This means you can interact with canisters and browse websites without paying anything. This is known as the **reverse-gas model** and is a major improvement for the user's experience as it eliminates the need for creating wallets, holding tokens, and paying high fees.
@@ -200,4 +200,3 @@ Each operation perfomed on the network has a cost attached to it:
 - Computing a threshold ECDSA signature.
 
 The cost of those operations also depends on the subnet in which they are performed and the **replication factor** of this subnet. The replication factor corresponds to the number of nodes in a subnet, which can range from 13 to 40.
-## Going beyond 

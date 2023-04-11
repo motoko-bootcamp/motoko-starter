@@ -230,6 +230,3 @@ One important confusion to avoid is the difference between the local & live Cand
 - The local Candid UI that we tried earlier is only deployed on your local replica. It can only give you access to the canister that you've deployed locally.
 
 > The CandidUI (live or local) is running in a canister.
-## Using a frontend with the JavaScript Agent
-## 
-Check [the dedicated lecture]() on Day 2.
