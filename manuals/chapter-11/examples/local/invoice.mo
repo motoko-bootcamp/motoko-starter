@@ -30,7 +30,7 @@ actor Invoice {
         let invoice = invoices.get(id);
         return ?invoice.status;
     };
-
+    
     public func payInvoice(id : InvoiceId) : async Result.Result<(), Text> {
         if(id >= invoices.size()) {
             return #err("Invoice does not exist");

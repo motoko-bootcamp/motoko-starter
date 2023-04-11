@@ -3,7 +3,7 @@
 > During this week you will have the opportunity to build a prototype for a Decentralized Autonomous Organization (DAO). This is why we want to answer an important question: **What is a DAO?**
 ## 🏛️ Decentralized Autonomous Organization: a new model of governance?
 
-<p align="center"> <img src="assets/appendix-2/dao_icon.png" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/dao_icon.png" width="300px" style="border: 2px solid black;"> </p>
 
 Throughout history, humans have find different creative ways to organize in social groups and structures. They have done so different reasons such as safety, support, social identity, work, power or even economic. A few common groups include: family unit, tribes, clans, states, guilds, secrect societies, political parties...
 
@@ -45,16 +45,16 @@ Imagine that smart-contracts could:
 
 Does it sound interesting? Welcome to the fabulous world of **canisters**! <br/>
 
-<p align="center"> <img src="assets/appendix-2/canister.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="assets/canister.png" width="800px" style="border: 2px solid black;"></p>
 <p align="center"> Imagine what DAOs will be able to achieve using canisters!</p>
 By using canisters, DAOs are now able to control entire web applications.
 
 This means that future web services (social network, search engine, games, mail client, messaging application...) can run entirely on a set of canisters, where the governance of those canisters is ensured through a tokenized public governance canister.  <br/>
 
-<p align="center"> <img src="assets/appendix-2/ois.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="assets/ois.png" width="800px" style="border: 2px solid black;"> </p>
 
 This concept is called Open Internet Services. The aim is to end the current monopoly of BigTech companies (Facebook, Google, Apple, Twitter, Microsoft, Tiktok... ) that profits from the centralized aspect of the Internet. By aligning incentivizes between investors, users, and developers, those services are expected to operate in a more transparent, privacy-friendly and cooperative manner.
 
-<p align="center"> <img src="assets/appendix-2/web2_web3.jpeg" width="400px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="assets/web2_web3.jpeg" width="400px" style="border: 2px solid black;"> </p>
 
 > **A prediction?** <br/> Open Internet Services are powerful and won't stop with social networks or messaging apps. They are here to revolutionize the way we work and live together. With unprecedented scalability of collaborative work enabled by the combined power of DAOs and OISs, the sky's the limit! Imagine the positive impact on humanity with projects like environmental conservation, medical research, and education all being amplified by this new level of coordination and collaboration. And this is just the tip of the iceberg, as this new technology could open the door to even more innovative solutions to some of the world's most pressing problems. This is an opportunity to make real progress and change the world in ways we never thought possible before. **Get ready, the future is here!**
