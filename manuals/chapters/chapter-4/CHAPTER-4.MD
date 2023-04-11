@@ -25,6 +25,7 @@ We need to introduce an **Interface Description Language (IDL)**. An interface d
 Candid solves the problem we raised earlier by enabling a mapping between types in different languages. 
 
 <p align="center"> <img src="./assets/candid_mapping.png" width="600px" style="border: 2px solid black;"> </p>
+
 ## Candid file (.did)
 A **Candid** file is a file with the .did extension - we can define the interface of the `square` canister with the following .did file:
 ```candid
