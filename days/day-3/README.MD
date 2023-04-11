@@ -21,15 +21,15 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 - Read [Chapter 6: Storing data in data structures](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD) 
     - [HashMap & TrieMap](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-hashmap--triemap)
 - Read [Chapter 7: Non-primitives types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD).
-    - [Variants](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
-    - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
-    - [Mutable arrays](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
-    - [Iterators](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
+    - [Variants](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-variants).
+    - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-arrays).
+    - [Mutable arrays](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-mutable-arrays).
+    - [Iterators](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-iterators).
 - Read [Chapter 8: Advanced types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD)
-    - [Recursive types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD)
-    - [Shared types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD)
+    - [Recursive types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD#-recursive-types)
+    - [Shared types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD#-shared-types)
 - Read [Chapter 9: Handling errors](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-9/CHAPTER-9.MD)
-    - [The Result type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-9/CHAPTER-9.MD)
+    - [The Result type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-9/CHAPTER-9.MD#-the-result-type)
 - Read [Chapter 10: Identity on the Internet Computer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-10/CHAPTER-10.MD) in full.
 - Read [Appendix 3: A new chapter in digital identity: Internet Identity](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-3/APPENDIX-3.MD#internet-identity)
 - Complete the [project of the day](./project/README.MD).
