@@ -14,36 +14,34 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
-- Read [Chapter 3: Common programming concepts](../../manuals/CHAPTER-3.MD)
-    - [Float](../../manuals/CHAPTER-3.MD#float)
-    - [Blob](../../manuals/CHAPTER-3.MD#blob)
-    - [Bounded types](../../manuals/CHAPTER-3.MD#🎛️-bounded-types)
-- Read [Chapter 6: Storing data in data structures](../../manuals/CHAPTER-6.MD) 
-    - [HashMap & TrieMap](../../manuals/CHAPTER)
-- Read [Chapter 7: Non-primitives types](../../manuals/CHAPTER-7.MD).
-    - [Variants](../../manuals/CHAPTER-7.MD#🌈-variants).
-    - [Array](../../manuals/CHAPTER-7.MD#arrays).
-    - [Mutable arrays](../../manuals/CHAPTER-7.MD#mutable-arrays).
-    - [Iterators](../../manuals/CHAPTER-7.MD#iterators).
-- Read [Chapter 8: Advanced types](../../manuals/CHAPTER-8.MD#chapter-8-advanced-types)
-    - [Recursive types](../../manuals/CHAPTER-8.MD#recursive-types)
-    - [Shared types](../../manuals/CHAPTER-8.MD#shared-types)
-- Read [Chapter 9: Handling errors](../../manuals/CHAPTER-9.MD#chapter-9-handling-errors)
-    - [The Result type](../../manuals/CHAPTER-9.MD#🚥-the-result-type)
-- Read [Chapter 10: Identity on the Internet Computer](../../manuals/CHAPTER-10.MD) in full.
-- Read [Appendix 1: Deploying & managing canisters](../../manuals/appendix/APPENDIX-1.MD#)
-    - [Interacting with a JavaScript frontend](../../manuals/appendix/APPENDIX-1.MD#using-a-frontend-with-the-javascript-agent)
-- Read [Appendix 3: A new chapter in digital identity: Internet Identity](../../manuals/appendix/APPENDIX-3.MD#appendix-3-a-new-chapter-in-digital-identity-internet-identity)
+- Read [Chapter 3: Primitive Types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD)
+    - [Float](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#float)
+    - [Blob](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#blob)
+    - [Bounded types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#%EF%B8%8F-bounded-types)
+- Read [Chapter 6: Storing data in data structures](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD) 
+    - [HashMap & TrieMap](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD)
+- Read [Chapter 7: Non-primitives types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD).
+    - [Variants](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
+    - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
+    - [Mutable arrays](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
+    - [Iterators](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD).
+- Read [Chapter 8: Advanced types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD)
+    - [Recursive types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD)
+    - [Shared types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD)
+- Read [Chapter 9: Handling errors](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-9/CHAPTER-9.MD)
+    - [The Result type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-9/CHAPTER-9.MD)
+- Read [Chapter 10: Identity on the Internet Computer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-10/CHAPTER-10.MD) in full.
+- Read [Appendix 3: A new chapter in digital identity: Internet Identity](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-3/APPENDIX-3.MD#internet-identity)
 - Complete the [project of the day](./project/README.MD).
 ## 🎯 Learning objectives
 > **Before finishing your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>
 
-- Understand that mutable state cannot be shared between actors. 
-- Getting familiar with more [advanced types](../../manuals/CHAPTER-8.MD#chapter-8-advanced-types) such: [Optional](../../manuals/CHAPTER-8.MD#optional-types) & [Generic types](../../manuals/CHAPTER-8.MD#👤-generic-type).
-- Getting familiar with using data structures such as: [HashMap](../../manuals/CHAPTER-6.MD#hashmap--triemap) or [TrieMap](../../manuals/CHAPTER-6.MD#hashmap--triemap).
-- Understand the following concepts: 
-- Understand the concept of [Principal](../../manuals/CHAPTER-) and being able to manipulate the type `Principal`
-- Understand how to interact with a canister using the JavaScript agent and a frontend.  
+- Understanding that mutable state cannot be shared between actors. 
+- Getting familiar with more [advanced types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD) such: [Optional](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD#-optional-types) & [Generic types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD#-optional-types).
+- Getting familiar with using data structures such as: [HashMap and TrieMap](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD)/
+- Understanding the concept of [Principal](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD#-optional-types) and being able to manipulate the type `Principal`
+- Understanding how to interact with a canister using the **JavaScript** agent.
+- Understanding how to use [Internet Identity](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-3/APPENDIX-3.MD#internet-identity) as an authentication service and how it works.
 
 > The Internet Computer reached 1 Billion blocks within 14 months of it's launch. It would take 18,0000 years for **Bitcoin** to get there. 
 

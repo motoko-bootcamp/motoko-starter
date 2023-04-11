@@ -8,7 +8,7 @@ Welcome to the most awesome Bootcamp 👋 <br/>
 We're thrilled to introduce the **Internet Computer**, a remarkable innovation combining cryptography, math, computer science, and blockchain technology. <br/> 
 Despite the incredible technology we believe that the true value of a network lies in a passionate community, and during this Bootcamp, you'll learn from diverse developer mentors and contributors that are active member of the community, giving their time to make this event possible. <br/>
 
-Our goal is to transmoit both technical knowledge and enthusiasm for the Internet Computer as a force for a better future. We believe in its potential to create a fairer, more hopeful world, and hope the insights and connections you make this week contribute to that goal. <br/>
+Our goal is to transmit both technical knowledge and enthusiasm for the Internet Computer as a force for a better future. We believe in its potential to create a fairer, more hopeful world, and hope the insights and connections you make this week contribute to that goal. <br/>
 
 7 days is all it should take to change your life. Learn **Motoko**, get started on the **Internet Computer** and meet others builders - <b> all in one week </b>.
 ## Overview
