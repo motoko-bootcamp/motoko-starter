@@ -18,7 +18,7 @@ Today, we'll delve deeper into the Motoko language with two specialized lectures
     - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-char)
     - [Unit type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-3/CHAPTER-3.MD#-unit-type)
 - Read [Chapter 5: Modules and the Base library](../../manuals/chapters/chapter-5/CHAPTER-5.MD)  in full.
-- Read [Chapter 6: Storing data in data structures](../../manuals/chapter-6/CHAPTER-6.MD)
+- Read [Chapter 6: Storing data in data structures](../../manuals/chapters/chapter-6/CHAPTER-6.MD)
     - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#%EF%B8%8F-array)
     - [Buffer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-buffer)
     - [List](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-list)
