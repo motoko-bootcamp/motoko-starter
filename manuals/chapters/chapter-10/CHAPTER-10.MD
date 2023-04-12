@@ -12,7 +12,7 @@ $ dfx identity get-principal
 > There actually exist [two other types of principals](https://internetcomputer.org/docs/current/references/ic-interface-spec#id-classes) which you will never encounter. Those are used internally by the protocol or reserved for future potential usages. 
 
 Principals in Motoko are a primitive type called `Principal`. 
-## Accessign the user principal
+## Accessing the user principal
 Within your actor, you can access the principal of the person calling your function by adding the `shared (message)` syntax. This keyword needs to be placed immediately before the `func` keyword and after the `public` keyword. This allows you the inspect the message. 
 The message as a property `caller` that you can access by using `message.caller`. This property corresponds to the principal of the entity (user or canister) calling the function.
 
