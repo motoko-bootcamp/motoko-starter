@@ -3,9 +3,9 @@
 <p align="center"> A few primitive types</p>
 
 ## Introduction 
-Primitive types are fundamental core data types that are not composed of more fundamental types.
+Primitive types are fundamental core data types that are not composed of more fundamental types. <br/>
 
-Primitive types do not need to be imported before they can be used in type annotation. However, the Base Library does have modules for each primitive type to perform common tasks, like converting between the data types, transforming the data types, comparing the data types and other functionality.
+Primitive types are all the types that do not need to be imported before they can be used in type annotation.
 ## 🔢 Nat
 `Nat` is used for **unbounded** natural numbers (1,2,3,4,...♾️). By default all positive whole numbers are casted to `Nat`.
 ```motoko

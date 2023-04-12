@@ -39,7 +39,7 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 - Understanding that mutable state cannot be shared between actors. 
 - Getting familiar with more [advanced types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD) such: [Optional](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD#-optional-types) & [Generic types](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-8/CHAPTER-8.MD#-optional-types).
 - Getting familiar with using data structures such as: [HashMap and TrieMap](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-hashmap--triemap).
-- Understanding what is a [Principal](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-10/CHAPTER-10.MD#the-concept-of-principal), how it's used on the Internet Computer and being able to [manipulate the primitive type `Principal` in Motoko]().
+- Understanding what is a [Principal](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-10/CHAPTER-10.MD#the-concept-of-principal), how it's used on the Internet Computer and being able to [manipulate the primitive type `Principal` in Motoko](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-10/CHAPTER-10.MD#accessing-the-user-principal).
 - Understanding how to interact with a canister using the **JavaScript** agent.
 - Understanding how to use [Internet Identity](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-3/APPENDIX-3.MD#internet-identity) as an authentication service and how it works.
 
