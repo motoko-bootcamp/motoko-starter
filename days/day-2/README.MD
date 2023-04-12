@@ -41,7 +41,7 @@ Today, we'll delve deeper into the Motoko language with two specialized lectures
 - Getting familiar with simple data structures in Motoko: [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#%EF%B8%8F-array) , [List](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-list) & [Buffer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-6/CHAPTER-6.MD#-buffer).
 - Getting familiar with more advanced types: [Tuples](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-tuples) and [Objects](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/chapters/chapter-7/CHAPTER-7.MD#-objects).
 - Understanding [what is DAO](../../manuals/appendix/appendix-2/APPENDIX-2.MD), how it can be used and how the Internet Computer enables new innovative usecases for those organisations.
-- Becoming familiar with an important DAO on the Internet Computer: the [Network Nervous System](../../manuals/appendix/APPENDIX-4.MD#appendix-4-network-nervous-system-nns).
+- Becoming familiar with an important DAO on the Internet Computer: the [Network Nervous System](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-4/APPENDIX-4.MD).
 
 > Before deciding to call it **Motoko**, the language developed by **DFINITY** for programming actors on the Internet Computer was actually called **ActorScript**. 
 
