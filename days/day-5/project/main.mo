@@ -1,3 +1,3 @@
-actor MotoCoin {
+actor Verifier {
 
-}
+};

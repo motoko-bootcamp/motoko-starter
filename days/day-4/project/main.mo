@@ -1,3 +1,3 @@
-actor MotokoEncyclopedia {
+actor MotoCoin {
 
 }

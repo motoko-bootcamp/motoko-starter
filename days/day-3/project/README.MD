@@ -12,50 +12,54 @@ You quickly shared your idea with the two students and they loved it. They intro
 
 You all gathered in the computer lab and began brainstorming the features of your student wall. You wanted it to be more than just a bulletin board, so you came up with the idea to include images and surveys as well. You divided the work and got started coding.
 ## 🧑‍🏫 Requirements 
-Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the School community. Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other. 
-This wall will be the go-to destination for students looking to get the latest scoop on what's happening in the school community. 
+Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the community. Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other. 
+This wall will be the go-to destination for students looking to get the latest scoop on what's happening in the school. 
 ## 📺 Interface
 Your canister should implement the following interface:
 ```motoko
 actor {
-    write: shared (c : Content) -> async Nat;
-    clean: shared (messageId : Nat) -> async Result.Result<(), Text>;
-    vote: shared (messageId : Nat, answerId : Nat) -> async Result.Result<(), Text>;
+   
+    // Add a new message to the wall
+    addMessage: shared (m : Message) -> async Result.Result<Nat, Text>;
+
+    //Get a specific message by ID
     getMessage: shared query (messageId : Nat) -> async Result.Result<Message, Text>;
-    getAllMessages : shared query () -> async [Message];
-    getAllImages : shared query () -> async [Blob];
-    getAllSurveys : shared query () -> async [Survey];
+
+    // Update the content for a specific message by ID
+    updateMessage: shared (messageId : Nat, c : Content) -> async Result.Result<(), Text>;
+
+    //Delete a specific message by ID
+    deleteMessage: shared (messageId : Nat) -> async Result.Result<(), Text>;
+
+    // Voting
+    upVote: shared (messageId  : Nat) -> async Result.Result<(), Text>;
+    downVote: shared (messageId  : Nat) -> async Result.Result<(), Text>;
+
+    //Get all messages
+    getAllMessages : query () -> async [Message];
+
+    //Get all messages
+    getAllMessagesRanked : query () -> async [Message];
 };
 ```
 ## 📒 Steps
-We define a variant type called `Content` that represents the content of messages that can be published on the wall.
+We define a variant type called `Content` that represents the type of content of the messages that can be published on the wall.
 ```motoko
 public type Content = {
     #Text: Text;
     #Image: Blob;
+    #Video: Blob;
 };
 ```
-1. Define a new record type called `Message`. A message of type `Message` contains a field `id` of type `Nat` and a field `content` of type `Content`. 
-2. Define a variable called `wall` of type `Buffer` that will be used for storing messages.
-3. Implement `write`, which accepts a content `c` of type `Content`, creates a message from the content, adds the message to the wall and returns the id of the message. The id of the message should corresponds to the index of the message in `wall`. 
-4. Implement `clean`, which accepts an id of type `Nat` and removes the corresponding message from the wall. `clean` will returns a value of type `Result.Result<(),Text>` that corresponds to an error message if the message corresponding to the id doesn't exist.  
-
-We define new types:
-- `Answer` is a tupple type that represents a choice in a survey. Each answer contains a `Text` field that describes the answer, and a var Nat field that represents the number of times the answer has been selected by respondents. 
-```motoko
-type Answer = (Text, Nat);
-``` 
-- `Survey` is a record type that represents a survey. Each survey contains a `title` field that describes the survey, and a `answers` field that is an array of `Answer` objects, each representing a possible answer in the survey.
-```motoko
-type Survey = {
-    title : Text;
-    answers : [Answer];
-};
-``` 
-5. Modify the variant type `Content` to include `Survey`. 
-6. Implement `vote`, which accepts `messageId` of type `Nat` and `answerId` of type `Nat`, and updates the corresponding answer `count` in the survey associated with the message. This function will return a value of type `Result.Result<(), Text>` that corresponds to an error message if either the `messageId` or `answerId` is invalid.
-7. Implement the query function `getMessage`, which accepts `messageId` of type `Nat` and returns the message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an Err result.
-8. Implement the query function `getAllMessages`, which returns the list of all messages. 
-9. Implement the query function `getAllImages`, which returns the list of all images that have been added to the wall. 
-10. Implement the query function `getAllSurveys`, which returns the list of all surveys that have been added to the wall. To accomplish this, you can iterate over all the messages on the wall and add any surveys to a new list. Then, return this list of surveys.
-11. Deploy the student wall on the Internet Computer.
+1. Define a new record type called `Message`. A message of type `Message` contains a field `vote` of type `Int`, a field `content` of type `Content` and a field `creator` of type `Principal` that represents the creator of the message.
+2. Define a variable named `wall`, which is a `HashMap` for storing messages. The keys in this wall are of type `Nat` and represent the message IDs, while the values are of type `Message`. The message ID is a counter indicating the total number of messages ever posted.
+3. Implement `addMessage`, which accepts a message `m` of type `Message`, creates a message from the content, adds the message to the wall and returns the id of the message.
+4. Implement `getMessage`, which accepts an `messageId` of type `Nat` and returns the corresponding message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+5. Implement `updateMessage`, which accepts a `messageId` of type `Nat` and a concent `c` of type `Content` and updates the content of the corresponding message. This should only work if the caller is the `creator` of the message. If `messageId` is invalid or the caller is not the `creator` the function should return an error message wrapped in an `Err` result. If everything works, and the message is updated the function should return a simple unit value wrapped in an `Ok` result.
+6. Implement `deleteMessage`, which accepts a `messageId` of type `Nat`, removes the corresponding message from the `wall`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
+7. Implement `upVote`, which accepts a `messageId` of type `Nat` and adds one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+8. Implement `downVote`, which accepts a `messageId` of type `Nat` and removes one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+9. Implement the query function `getAllMessages`, which returns the list of all messages. 
+10. Implement the query function `getAllMessagesRanked`, which returns the list of all messages, where each message are ordered by the number of votes. The first message in the list should be the message with the most votes.
+11. Deploy the student Wall on the Internet Computer.
+12. (Bonus step) Build a frontend for the wall and integrate Internet Identity to authenticate users posting on the wall.
