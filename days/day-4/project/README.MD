@@ -54,4 +54,4 @@ Because, it's day 4, this time you'll have less guidance. But in order to comple
 - The symbol is **MOC**.
 - The decimal is 8.
 
-> You can find [some help](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/internet-computer-standards/icrc1.html) in the MotokoBook.
+> You can find [some help](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/internet-computer-standards/icrc1.html) in the Motoko Book.

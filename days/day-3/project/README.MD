@@ -63,3 +63,4 @@ public type Content = {
 10. Implement the query function `getAllMessagesRanked`, which returns the list of all messages, where each message are ordered by the number of votes. The first message in the list should be the message with the most votes.
 11. Deploy the student Wall on the Internet Computer.
 12. (Bonus step) Build a frontend for the wall and integrate Internet Identity to authenticate users posting on the wall.
+
