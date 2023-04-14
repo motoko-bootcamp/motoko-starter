@@ -37,7 +37,6 @@ actor {
     // Transfers tokens
     icrc1_transfer : shared (TransferArgs) -> async (Result<Nat, TransferError>);
 
-
     // Returns the list of metadata entries for this ledger. 
     icrc1_metadata : shared query () -> async ([(Text, Value)]);
 

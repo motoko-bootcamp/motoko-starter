@@ -148,18 +148,25 @@ The `public` keyword indicates that both functions can be called from the outsid
 Have you noticed the `query` keyword in the previous example? 
 <br/> When an user calls a canister, it is important to distinguish two types of calls:
 
-- **Update** calls: those calls are used when the user wants to modify the state of a canister. To ensure the integrity of the Internet Computer, these calls must be processed through consensus and by all nodes, which results in a delay of around 1-2 seconds. An update call would be used in the following situations:
-    - Posting on social media.
-    - Uploading a video.
-    - Liking or sharing a content.
-    - Transfering a token.
+### Update calls
+Update calls are used when the user wants to modify the state of a canister. To ensure the integrity of the Internet Computer, these calls must be processed through consensus and by all nodes, which results in a delay of around 1-2 seconds. An update call would be used in the following situations:
+- Posting on a social media, such as [DSCVR](https://dscvr.one/).
+- Sending a message on a messaging application, such as [OpenChat](https://oc.app/).
+- Liking or sharing a content on [Distrikt](https://az5sd-cqaaa-aaaae-aaarq-cai.ic0.app/).
+- Buying a NFT on [Entrepot](https://entrepot.app/).
 
-[TODO - ADD ILLUSTRATION]
-- **Query** calls: This type of call is used when a user wants to read data without modifying the state. These calls can be answered by a single node, making them very fast (around 200ms). The downside is that **query** calls are less secure as a malicious node could potentially provide false information. A query call would be used in the following situations:
-    - Reading an article.
-    - Checking your user profile.
-    - Loading a video or a picture.
-[TODO - ADD ILLUSTRATION]
+<p align="center"> <img src="./assets/update_call_gif.gif" width="800px" style="border: 2px solid black;"></p>
+
+### Query calls
+This type of call is used when a user wants to read data without modifying the state. These calls can be answered by a single node, making them very fast (at around 200ms). The downside is that **query** calls are less secure as a malicious node could potentially provide false information. A query call would be used in the following situations:
+- Reading an article on [Nuance](https://nuance.xyz/).
+- Checking your user profile picture on 
+- Loading a video or a picture on any platform.
+
+<p align="center"> <img src="./assets/query_call_gif.gif" width="800px" style="border: 2px solid black;"></p>
+
+> Since a query call bypasses consensus and relies on a single node, it's less secure than an update call.
+
 
 Let's go back to our previous actor
 ```motoko
@@ -179,6 +186,7 @@ actor {
 The `query` keyword tells us that `readMessage` function is only for reading information. On the other hand, `readMessage` can update the state (we don't need to add the `update` keyword as it is assumed by default). 
 
 > We have deployed the previous actor on the Internet Computer - and you can access <a href="https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=rhjue-eaaaa-aaaaj-qazra-cai" target="_blank"> his API. </a> Try the interface and test the speed difference between `changeMessage` & `readMessage`. Have fun and leave a kind message for the next student.
+
 ## Fuel on the Internet Computer: cycles.
 To pay for computation & storage costs canisters have to be loaded with **cycles**.
 Each canister has it’s own **cycle** balance - this can be thought of as the battery life of a **canister**. 
