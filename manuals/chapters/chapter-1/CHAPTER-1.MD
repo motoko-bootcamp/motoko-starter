@@ -5,9 +5,9 @@ It's... 🥁... **CANISTER**!
 
 The Internet Computer is a platform that hosts a large number of applications, all of those applications run smoothly within special containers called **canisters**. 
 
-- The Internet Computer is responsible to smoothly and safely run all the canisters deployed on the platform in parallel.
+- The Internet Computer is responsible for smoothly and safely run all the canisters deployed on the platform in parallel.
 - Developers build applications by writing the source code for those canisters. An application can be built into one or several canisters depending on the architecture.
-- Users will interact with applications by sending messages to canisters. This happen whenever you use an application on the Internet Computer and interact with it - a few examples of such interactions are:
+- Users will interact with applications by sending messages to canisters. This happens whenever you use an application on the Internet Computer and interact with it - a few examples of such interactions are:
     - When you post on a social network.
     - When you send a token to another address.
     - When you buy or sell an NFT.
@@ -30,16 +30,15 @@ If we zoom inside, a canister is composed of:
 <p align="center"> <img src="./assets/webassembly.png" width="600px" style="border: 2px solid black;"> </p>
 
 <p align="center"> What is <b> WebAssembly </b>? <p>
-WebAssembly is a low-level binary format for executing code in multitude environments (browsers, cloud platform, smart devices, virtual machine..). The main benefits of using WebAssembly are:
+WebAssembly is a low-level binary format for executing code in multiples environments (browsers, cloud platform, smart devices, virtual machine..). The main benefits of using WebAssembly are, 
 
 - **WebAssembly** supports code written in multiple languages (C, C++, Rust, Motoko) making it a versatile solution for developers.
-
 - **WebAssembly** code is portable and can run on almost any device. You write it once and you can run it everywhere!
 <p align="center"> <img src="./assets/webassembly_stack.png" width="500px" style="border: 1px solid black;"/> </p>
 <p align="center"> Write once and deploy on any platform. </p>
 
 - **WebAssembly** is fast. It's a language that is very close to machine language and has been optimised for speed and performance. You can use it for creating complex and intensive applications (Games, simulations, graphic)!
-- **WebAssembly** provides a secure execution environment, by putting the code in a special area called a sandbox. The sandbox makes sure that the program is only able to do things and access resources that is has been granted access to and doesn't allow it to access sensitive informaiton. This helps a lot when trying to write secure code or for users to make sure they won't get harmed by the code running on their machine!
+- **WebAssembly** provides a secure execution environment, by putting the code in a special area called a sandbox. The sandbox makes sure that the program is only able to do things and access resources that have been granted access to and doesn't allow it to access sensitive informaiton. This helps a lot when trying to write secure code or for users to make sure they won't get harmed by the code running on their machine!
 
 The only problem with **WebAssembly** is that it's a low-level language and it provides very little abstraction, making it difficult to use for writing complex applications like dApps (decentralized applications). 
 

@@ -1,6 +1,3 @@
 actor HomeworkDiary {
 
-
-
-
 };
