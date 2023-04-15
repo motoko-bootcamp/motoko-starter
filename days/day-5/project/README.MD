@@ -76,7 +76,11 @@ In this section we want to make sure that the owner of the verified canister is 
 In this sections the idea is to let students submit their work and automatically verify the canister. If the tests are passed then the `graduation` field of the student is automatically changed.
 1. Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field is updated accordingly.
 ## Part 5: List of graduates 🎓
-In this section the idea
+In this section the idea is to implement a function to handle HTTP requests within the verifier canister. Anyone should be able to go to 
+
+1. Create a an `Array` called `graduates` that stores the name of graduates.
+2. Implement a timer so that the array is updated every hour.
+3. Implement the `http_request` method.
 
 
 ## 📺 Interface
