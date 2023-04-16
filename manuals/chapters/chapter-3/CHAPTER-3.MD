@@ -184,7 +184,7 @@ Char.isUppercase('D');  // true
 ```motoko
 Char.isAlphabetic('|'); // false
 ```
-## Float.
+## 💥 Float.
 `Float` are numbers that have a decimal part.
 ```motoko
 let pi = 3.14;
@@ -237,4 +237,13 @@ Byte sequences are also often represented as `[Nat8]`, i.e. an array of bytes, b
 If you would like to manipulate Blobs, it is recommended that you convert `Blobs` to `[var Nat8]` or `Buffer<Nat8>`, do the manipulation, then convert back.
 
 ## 🫙 Unit type
-The last type we will mention in this chapter is the unit type `()`. This type is also called the empty tuple type. It's useful in several places, for example in functions to indicate that a function does not return any specific type. WIP
+The last type we will mention in this chapter is the unit type `()`. This type is also called the empty tuple type. It's useful in several places, for example in functions to indicate that a function does not return any specific type.
+```motoko
+import Debug "mo:base/Debug";
+actor {
+    public func printMessage(message : Text) : async () {
+        Debug.print(message);
+        return();
+    };
+}
+```

@@ -1,7 +1,7 @@
 # Chapter 2: Common programming concepts.
 ## 📦 Variables 
 A variable is a value that has an arbitrary name, defined by a declaration. <br/>
-In Motoko, variables can be declared using either `let` or `var` keyword, followed by the assignment operator `=`
+In Motoko, variables can be declared using either the `let` or `var` keyword, followed by the assignment operator `=`
 
 - Variables declared with `let` are immutable, meaning that their value cannot be changed once they are assigned. 
 ```motoko
@@ -23,7 +23,7 @@ n := 2;
 ```
 
 An attempt is made to reassign a value to an immutable variable - that's why an error will occur. The specific error message will be `type error [M0073], expected mutable assignment target`. This  message indicates that the variable being reassigned is immutable and cannot be changed.
-## Types
+## 🍎 Types
 The **Motoko** language places a strong emphasis on types and is more strict in enforcing them compared to other general-purpose languages like **JavaScript** or **Python**. This strictness serves a purpose, as it helps prevent errors and issues. 
 
 **Motoko** has static types, this means that each variable is assigned a specific type, which is determined before the program runs. The compiler checks each use of the variable to avoid errors that may occur during runtime. <br/>
