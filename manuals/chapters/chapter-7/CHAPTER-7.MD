@@ -108,8 +108,6 @@ public func start(v : Vehicle) : async Text {
     };
 };
 ```
-## 🪨 Arrays
-WIP
 ## ✍️ Mutable Arrays
 Read [this section](https://web3.motoko-book.dev/common-programming-concepts/types/mutable-arrays.html?highlight=Mutable%20arrays#mutable-arrays) from the Motoko Book. 
 ## ⏭️ Iterators
