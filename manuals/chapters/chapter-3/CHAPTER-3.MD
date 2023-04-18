@@ -1,11 +1,10 @@
 # Chapter 3: Primitive Types in Motoko.
-<p align="center"> <img src="./assets/motoko_primitives_types.png" width="800px" style="border: 2px solid black;"> </p>
-<p align="center"> A few primitive types</p>
-
-## Introduction 
 Primitive types are fundamental core data types that are not composed of more fundamental types. <br/>
 
 Primitive types are all the types that do not need to be imported before they can be used in type annotation.
+<p align="center"> <img src="./assets/motoko_primitives_types.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> A few primitive types in Motoko</p>
+
 ## 🔢 Nat
 `Nat` is used for **unbounded** natural numbers (1,2,3,4,...♾️). By default all positive whole numbers are casted to `Nat`.
 ```motoko
