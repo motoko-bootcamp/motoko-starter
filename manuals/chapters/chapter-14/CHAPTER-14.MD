@@ -62,4 +62,5 @@ let cancelTimer : TimerId -> ()
 func quitSchool() {
     cancelTimer(studyId);
 };
-## `Heartbeat`.
+```
+## 🫀 Heartbeat
