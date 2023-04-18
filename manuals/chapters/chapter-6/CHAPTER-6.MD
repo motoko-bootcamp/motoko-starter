@@ -15,6 +15,7 @@ The following code will throw an error: `literal of type Text does not have expe
 let array : [Nat] = [14, 16, 32, 25, "Motoko"];
 ```
 <p align="center"> <img src="assets/array.png" width="600px" style="border: 2px solid black;"></p>
+
 To access a specific element within an array, we use its index. Keep in mind that arrays in Motoko are zero-indexed, which means that the first element is at position 0, the second element is at position 1, and so on. For example, to access the first element of an array named `myArray`, we would use `myArray[0]`, and to access the second element, we would use `myArray[1]`.
 ```motoko
 let myArray : [Nat] = [23, 16, 32, 25];
@@ -52,10 +53,12 @@ let array2 = [4, 5, 6];
 Array.append<Nat>(array1, array2) // [1, 2, 3, 4, 5, 6];
 ```
 However, this function is **depreceated**. It is recommended to avoid it in production code. That's because as we've said before it is impossible to simply add elements to an array. Under the hood, `Array.append()` will create a new array and copy the values of the two existing arrays which is not efficient. 
+
+> For a complete overvies of the `Array` module, refer to the [Motoko Book](https://7po3j-syaaa-aaaal-qbqea-cai.ic0.app/base-library/data-structures/array.html).
 ## 🥞 Buffer
 A more adapted structure to dynamically add new elements is the type `Buffer`. 
-A `Buffer` can be instantiated using the [Buffer](https://internetcomputer.org/docs/current/motoko/main/base/Buffer) library. 
-One needs to provide the types of elements stored inside and the initial capacity. 
+A `Buffer` can be instantiated using the [Buffer](https://internetcomputer.org/docs/current/motoko/main/base/Buffer) library. <br/>
+To initiate a Buffer you need to provide the types of elements stored inside and the initial capacity. <br/>
 The initial capacity represents the length of the underyling array that backs this list. In most cases, you will not have to worry about the `capacity` since the Buffer will automatically grow or resize the underlying array that holds the elements.
 ```motoko
 import Buffer "mo:base/Buffer";
@@ -96,7 +99,7 @@ b.add(10);
 Buffer.toArray<Nat>(b); // [0, 10];
 ```
 ## 🔗 List
-WIP
+Read [this section](https://7po3j-syaaa-aaaal-qbqea-cai.ic0.app/advanced-types/recursive-types.html?highlight=List#list) from the Motoko Book.
 ## 💿 HashMap & TrieMap
 In Motoko, [HashMap](https://internetcomputer.org/docs/current/references/motoko-ref/HashMap) and [TrieMap](https://internetcomputer.org/docs/current/references/motoko-ref/HashMap) are both implemented as a Class and have the same interface. The only difference is that `TrieMap` is represented internaly by a `Trie` while `HashMap` is using `AssocList`. All examples that will follow use `HashMap` but it would be similar for `TrieMap`. 
 
@@ -191,3 +194,5 @@ It is possible to iterate over the map:
 - You can iterate over the keys with `.keys()`.
 - You can iterate over the values with `.vals()`.
 - You can iterate over both with `.entries()`.
+
+> For a complete overvies of the `HashMap` class, refer to the [Motoko Book](https://7po3j-syaaa-aaaal-qbqea-cai.ic0.app/base-library/data-structures/hashmap.html?highlight=HashMa#hashmapmap).
