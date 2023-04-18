@@ -167,6 +167,15 @@ This type of call is used when a user wants to read data without modifying the s
 > Since a query call bypasses consensus and relies on a single node, it's less secure than an update call.
 
 
+|  | Update call | Query call |
+|-----------------|-----------------|-----------------|
+Response Time | 2-5 seconds 🐢  | 200-400 ms ⚡️  |
+Consensus| Yes | No |  
+Read | Yes | Yes |
+Write| Yes | No |
+Cost | Cost cycles | Free (for now)
+
+
 Let's go back to our previous actor
 ```motoko
 actor {

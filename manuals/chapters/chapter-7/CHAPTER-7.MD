@@ -108,11 +108,9 @@ public func start(v : Vehicle) : async Text {
     };
 };
 ```
-
-Variants are extremly used and helpful! 
-## Arrays
+## 🪨 Arrays
 WIP
-## Mutable Arrays
-WIP
-## Iterators
-WIP
+## ✍️ Mutable Arrays
+Read [this section](https://web3.motoko-book.dev/common-programming-concepts/types/mutable-arrays.html?highlight=Mutable%20arrays#mutable-arrays) from the Motoko Book. 
+## ⏭️ Iterators
+Read [this section](https://web3.motoko-book.dev/base-library/utils/iter.html?highlight=Itera#iteriterate) from the Motoko Book. 

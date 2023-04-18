@@ -1,6 +1,66 @@
 # Chapter 8: Advanced Types.
-## ? Optional types
-WIP
+## ❓ Optional types
+In Motoko, as in many other programming languages, there is a special value called `null` used to represent the absence of a result. This is helpful when indicating that a function returns nothing. The value `null` is of type `Null`, which only contains one value: `null`.
+
+Consider an array of names called `names` and a function called `find_name` that takes a list of names as input and returns the index of the first occurrence of the name in the array. If the name is not found, the function should return `null` instead of an index. This way, the function indicates that it did not find the name without producing an error.
+
+The following code is not valid in Motoko:
+```motoko
+let names : [Text] = ["Motoko", "Rust", "JavaScript", "TypeScript"];
+public func find_name(name : Text) : async Nat {
+    var index : Nat = 0;
+    for(language in names.vals()){
+        if (language == name){
+            return index;
+        };
+        index +=1;
+    };
+    return null; // We haven't found any match so we return null.
+};
+````
+Motoko throws an error because `null` is not of type `Nat`. To indicate that a function may return either a `Nat` value or `null`, we need a way to express that the function's return type can be one of two possibilities. The specific return value of the function depends on the input, which is unknown in advance, so we cannot predict if the function will return a `Nat` or `null` until it is executed.
+
+We can use an optional type, `?T`, to express this. In our case, we would use `?Nat`. We can rewrite our code using this notation:
+```motoko
+let names : [Text] = ["Motoko", "Rust", "JavaScript", "TypeScript"];
+public func find_name(name : Text) : async ?Nat {
+    var index : Nat = 0;
+    for(language in names.vals()){
+        if (language == name){
+            return ?index;
+        };
+        index +=1;
+    };
+    return null; // We haven't found any match so we return null.
+};
+```
+
+The optional type, indicated by `?`, can be used with any other type, such as `?Text`, `?Int`, `?Bool`, and more.
+
+Also, the optional type is often used with the `switch/case` pattern in Motoko. This pattern allows you to handle an optional value and execute different parts of your code depending on whether the input value is `null` or not. You can use the `switch/case` pattern to check if an optional value is present and perform different actions based on that, resulting in more elegant and safer code.
+```motoko
+public func handle_null_value(n : ?Nat) : async Text {
+    switch(n) {
+        // Check if n is null 
+        case(null){
+            return ("The argument is null"); 
+        };
+        case(? something){
+            return ("The argument is : " # Nat.toText(something));
+        };
+    };
+};
+```
+Lastly, the Base library provides an **Option** module for operating on optional values. For example, you can use the `Option.get()` function to unwrap an optional value with a default value:
+```motoko
+import Option "mo:base/Option";
+actor {
+    public func always_return_a_nat(n : ?Nat) : async Nat {
+        return(Option.get(n, 0))
+    };
+}
+```
+This function takes a `?Nat` as input and returns a `Nat`. If you provide a `Nat` as input, it will return the same value. However, if you provide `null`, it will return the default value, set to 0.
 ## 👤 Generic Type
 A generic type, usually written as `T`, allows you to write functions and code that can adapt to different types. When we talk about `T`, it refers to **whatever type you want**. This means that you can create a single function or class that can handle multiple types of inputs or data, without having to write separate code for each type.
 
@@ -50,7 +110,6 @@ We've  already used generics when playing with `Buffer` & `Array` without talkin
     let array2 = [4, 5, 6];
     Array.append<Nat>(array1, array2) // [1, 2, 3, 4, 5, 6];
     ```
-## Recursive types.
-WIP
 ## Shared types.
-WIP
+## Recursive types.
+Read [this section](https://web3.motoko-book.dev/advanced-types/recursive-types.html) of the Motoko Book.

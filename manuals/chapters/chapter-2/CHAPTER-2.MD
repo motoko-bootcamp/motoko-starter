@@ -175,7 +175,7 @@ for (x in Iter.range(0, 10)) {
 ```
 In this example, `Iter.range(0, 10)` iterates through all natural numbers between 0 and 10, inclusive of both boundaries.
 
-Alternatively, you can use `while` loops, which execute as long as the specified condition remains true.
+Alternatively, you can use `while` loops, which executes as long as the specified conditions remains true.
 
 ```motoko
 var count : Nat = 0;
