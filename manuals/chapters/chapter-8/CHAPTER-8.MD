@@ -110,29 +110,7 @@ We've  already used generics when playing with `Buffer` & `Array` without talkin
     let array2 = [4, 5, 6];
     Array.append<Nat>(array1, array2) // [1, 2, 3, 4, 5, 6];
     ```
-## 🤫 Shared types
-When information is sent to or received from an `actor` in Motoko, it uses specific data types called **shared types**. These **shared types** are used in `public` functions that can be accessed by other actors. So, **shared types** are the kinds of data that can be used as input or output for these public functions, allowing different actors to communicate with each other. <br/>
+## Shared types.
 
-If we try to deploy [the following actor](https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=2185064550):
-```motoko
-actor {
-  var mutableArray : [var Nat] = [var 1, 3, 5, 7]; 
-
-  public func showArray() : async [var Nat] {
-    return mutableArray
-  };
-}
-```
-We will encounter the following error: `Error in file Main.mo:3:28 shared function has non-shared return type [var Nat] type [var Nat] is or contains non-shared type var Nat`.
-
-A very important rule to remember: **every mutable state is always private to an actor.**
-
-To put it short - anything that you can modify in your the state of your canister should be consider private and you won't be able to share it with other actors. <br/
-
-<p align="center"> <img src="./assets/mutable_state_actor.png" width="800px" style="border: 2px solid black;"></p>
-<p align="center"> If it's a var your can't share it outside!</p>
-
-
-> For a complete overview of all the shared types, [refer to the Motoko Book](https://web3.motoko-book.dev/internet-computer-programming-concepts/async-data/shared-types.html?highlight=Shared%20types#shared-types).
-## 🔃 Recursive types
+## Recursive types.
 Read [this section](https://web3.motoko-book.dev/advanced-types/recursive-types.html) of the Motoko Book.
