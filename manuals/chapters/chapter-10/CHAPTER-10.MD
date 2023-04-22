@@ -73,7 +73,6 @@ actor {
 Use object destructuring to access the caller directly for shorter syntax:
 ```motoko
 actor {
-
     public shared ({ caller }) func returnCallerPrincipal() : async Principal {
         return caller;
     };
@@ -88,12 +87,13 @@ let standardRepresentation : Principal = Principal.fromText(textualRepresentatio
 ```
 
 ## The Anonymous identity
-As mentioned earlier, the anonymous identity is associated with a specific principal and is used for unauthenticated calls to the Internet Computer. To determine if a caller is authenticated, use the Principal.isAnonymous function, which returns a Bool indicating the user's anonymity.
+As mentioned earlier, the anonymous identity is associated with a specific principal and is used for unauthenticated calls to the Internet Computer. To determine if a caller is authenticated, use the `Principal.isAnonymous()` function, which returns a `Bool` indicating the user's anonymity.
 ```motoko
 let p : Principal = message.caller;
 let isAnonymous : Bool = Principal.isAnonymous(p);
 if(isAnonymous){
     return ("Sorry only authenticated users can access this app!");
 };
+```
 
 > The textual representation of the anonymous principal is `2vxsx-fae`. Make sure to remember it as you will often come accross it.
