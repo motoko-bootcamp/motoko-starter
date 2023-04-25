@@ -1,4 +1,4 @@
-# Day 3️
+# Day 6
 Welcome to Day 6 of the Motoko Bootcamp.
 
 ## 🍿 Lectures & events
@@ -15,5 +15,10 @@ Welcome to Day 6 of the Motoko Bootcamp.
 > **Before finishing your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>
 
 > Did you know? The name **DFINITY** comes from comes from Decentralized INFINITY.
+
+## How to graduate? 🎓
+WIP
+## After the Bootcamp 🚀
+WIP
 
 Good luck 🍀

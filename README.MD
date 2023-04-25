@@ -1,8 +1,11 @@
 # Motoko Starter: 7 days to get started on the Internet Computer 🏁 
 ## Upcoming edition
 ### 📆 May 8-14th 2023
-### Participate in the next edition of Motoko Starter. You can follow online from anywhere in the world or join us in one the numerous local gatherings. 
+### Participate in the next edition of Motoko Starter. You can follow online from anywhere in the world or join one of numerous community hub. 
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V25vIprv16c" frameborder="0" allowfullscreen></iframe>
+
 ## Introduction
 Welcome to the most awesome Bootcamp 👋 <br/>
 We're thrilled to introduce the **Internet Computer**, a remarkable innovation combining cryptography, math, computer science, and blockchain technology. <br/> 
@@ -21,7 +24,7 @@ Throughout the week you will participate in different activities such as mentors
 ### 🌱 Your pace
 The educational resources can be used at **anytime** </b> - everything you need is here for free. 
 ### 📜 Daily guides
-The Bootcamps is divided in 7 days. 
+The Bootcamps is divided in 6 days. 
 For each day, you will find a dedicated guide - those guides will be your companions to navigate through all the available resources and challenges.
 - [Day 1️⃣](./days/day-1/README.MD) 
 - [Day 2️⃣](./days/day-2/README.MD) 
@@ -29,7 +32,6 @@ For each day, you will find a dedicated guide - those guides will be your compan
 - [Day 4️⃣](./days/day-4/README.MD) 
 - [Day 5️⃣](./days/day-5/README.MD) 
 - [Day 6️⃣](./days/day-6/README.MD) 
-- [Day 7️⃣](./days/day-7/README.MD) 
 ### 🍿 Lectures
 Lectures will be held live on Zoom Webinar by mentors each mentor is an experienced member of the community who is actively contributing to the ecosystem. Each lecture will cover one specific topic.
 Each lecture is approximately one hour long and covers a dedicated topic. It was held live by one of the Motoko Bootcamp mentors.
@@ -41,9 +43,8 @@ You will work on 6 different projects:
 - [The Calculator ➕](./days/day-1/project/README.MD)
 - [The Homework diary 📔](./days/day-2/project/README.MD)
 - [The Student wall 🎨](./days/day-3/project/README.MD)
-- [The Motoko encyclopedia 📓](./days/day-4/project/README.MD)
 - [MotoCoin 🪙](./days//day-5/project/README.MD)
-- [The verifier 🧐](./days/day-6/project/README.MD)
+- [The Verifier 👨‍🏫](./days/day-5/project/README.MD)
 ###  🫂 Teams 
 Each student will be assigned a team of around 15 students within a similar time zone and then get private voice & chat channels on Discord where they can get together and discuss progress. 
 
@@ -64,4 +65,8 @@ WIP
 - [Join our Discord](https://discord.gg/JS9g2ahtDs).
 - Follow [Motoko Bootcamp](https://twitter.com/MotokoSchool) and [Code & State](https://twitter.com/codeandstate) on Twitter. 
 - Check the [dedicated website](https://motokobootcamp.com/).
-## ✨ Special thanks 
+## 🏕️ Community basecamp: your Motoko adventure starts in your own backyard!
+<p align="center"> <img src="./assets/community-hub.png" width="300px" style="border: 2px solid black;"> </p>
+
+
+Interested in connecting with other enthusiasts? <br/> Join students in your area to follow the week and work on challenges, lectures, and projects together.For a complete list of community hubs consult [🏕️ Community basecamp](https://discord.gg/JS9g2ahtDs)
