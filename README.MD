@@ -1,5 +1,5 @@
 # Motoko Starter: 7 days to get started on the Internet Computer 🏁 
-<p align="center"> <img src="./assets/may-poster.png"  style="border: 2px solid black;"> </p>
+<p align="center"> <img src="./assets/may-poster.png"  height="400px" style="border: 2px solid black;"> </p>
 
 ## Upcoming edition
 ### 📆 May 8-14th 2023
