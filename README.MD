@@ -1,15 +1,17 @@
 # Motoko Starter: 7 days to get started on the Internet Computer 🏁 
+<p align="center"> <img src="./assets/may-poster.png"  style="border: 2px solid black;"> </p>
+
 ## Upcoming edition
 ### 📆 May 8-14th 2023
 ### Participate in the next edition of Motoko Starter. You can follow online from anywhere in the world or join one of numerous community hub. 
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
 
+
+
 ## Introduction
 Welcome to the most awesome Bootcamp 👋 <br/>
 We're thrilled to introduce the **Internet Computer**, a remarkable innovation combining cryptography, math, computer science, and blockchain technology. <br/> 
 Despite the incredible technology we believe that the true value of a network lies in a passionate community, and during this Bootcamp, you'll learn from diverse developer mentors and contributors that are active member of the community, giving their time to make this event possible. <br/>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V25vIprv16c" frameborder="0" allowfullscreen></iframe>
 
 Our goal is to transmit both technical knowledge and enthusiasm for the Internet Computer as a force for a better future. We believe in its potential to create a fairer, more hopeful world, and hope the insights and connections you make this week contribute to that goal. <br/>
 
@@ -67,6 +69,5 @@ WIP
 - Check the [dedicated website](https://motokobootcamp.com/).
 ## 🏕️ Community basecamp: your Motoko adventure starts in your own backyard!
 <p align="center"> <img src="./assets/community-hub.png" width="300px" style="border: 2px solid black;"> </p>
-
 
 Interested in connecting with other enthusiasts? <br/> Join students in your area to follow the week and work on challenges, lectures, and projects together.For a complete list of community hubs consult [🏕️ Community basecamp](https://discord.gg/JS9g2ahtDs)
