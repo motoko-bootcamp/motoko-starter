@@ -7,7 +7,6 @@
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
 
 
-
 ## Introduction
 Welcome to the most awesome Bootcamp 👋 <br/>
 We're thrilled to introduce the **Internet Computer**, a remarkable innovation combining cryptography, math, computer science, and blockchain technology. <br/> 
@@ -51,12 +50,11 @@ You will work on 6 different projects:
 Each student will be assigned a team of around 15 students within a similar time zone and then get private voice & chat channels on Discord where they can get together and discuss progress. 
 
 We encourage each team to schedule a time each day to meet on the Discord voice channel to stay in touch! 
-### 🐥 Open mentorship hours 
-Throughout the week there are some Open Dev Mentor Hours scheduled, you should have at least 2 within your time zone.
-These meetings will be the opportunity for all students to troubleshoot issues live and ask questions directly with a dev mentor.
-This is open to everyone participating in the Bootcamp.
-It is highly recommended you attend at least one of these (or watch the recordings), even if you don't have any specific issues.
-> Each sessions will be recorded and published on YouTube so you can keep up even if you are not available to watch it live.
+### 🐥 Mentorship hours 
+You have acces to mentorships hours throughout the week. These meetings are your chance to troubleshoot any issues you're facing and ask your burning questions directly to one of our mentors. They're open to everyone in the Bootcamp, so don't miss out! Even if you don't have any specific issues, we highly recommend you attend some of these.
+
+> Each session will be recorded and published on YouTube.
+
 ### 📞 Assistance 
 WIP 
 ### 🤹 Activities 
