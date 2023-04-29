@@ -51,7 +51,7 @@ Each student will be assigned a team of around 15 students within a similar time
 
 We encourage each team to schedule a time each day to meet on the Discord voice channel to stay in touch! 
 ### 🐥 Mentorship hours 
-You have acces to mentorships hours throughout the week. These meetings are your chance to troubleshoot any issues you're facing and ask your burning questions directly to one of our mentors. They're open to everyone in the Bootcamp, so don't miss out! Even if you don't have any specific issues, we highly recommend you attend some of these.
+You have access to mentorships hours throughout the week. These meetings are your chance to troubleshoot any issues you're facing and ask your burning questions directly to one of our mentors. They're open to everyone in the Bootcamp, so don't miss out! Even if you don't have any specific issues, we highly recommend you attend some of these.
 
 > Each session will be recorded and published on YouTube.
 

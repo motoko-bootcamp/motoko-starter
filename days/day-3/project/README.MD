@@ -52,15 +52,16 @@ public type Content = {
 };
 ```
 1. Define a new record type called `Message`. A message of type `Message` contains a field `vote` of type `Int`, a field `content` of type `Content` and a field `creator` of type `Principal` that represents the creator of the message.
-2. Define a variable named `wall`, which is a `HashMap` for storing messages. The keys in this wall are of type `Nat` and represent the message IDs, while the values are of type `Message`. The message ID is a counter indicating the total number of messages ever posted.
-3. Implement `addMessage`, which accepts a message `m` of type `Message`, creates a message from the content, adds the message to the wall and returns the id of the message.
-4. Implement `getMessage`, which accepts an `messageId` of type `Nat` and returns the corresponding message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-5. Implement `updateMessage`, which accepts a `messageId` of type `Nat` and a concent `c` of type `Content` and updates the content of the corresponding message. This should only work if the caller is the `creator` of the message. If `messageId` is invalid or the caller is not the `creator` the function should return an error message wrapped in an `Err` result. If everything works, and the message is updated the function should return a simple unit value wrapped in an `Ok` result.
-6. Implement `deleteMessage`, which accepts a `messageId` of type `Nat`, removes the corresponding message from the `wall`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
-7. Implement `upVote`, which accepts a `messageId` of type `Nat` and adds one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-8. Implement `downVote`, which accepts a `messageId` of type `Nat` and removes one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-9. Implement the query function `getAllMessages`, which returns the list of all messages. 
-10. Implement the query function `getAllMessagesRanked`, which returns the list of all messages, where each message are ordered by the number of votes. The first message in the list should be the message with the most votes.
-11. Deploy the student Wall on the Internet Computer.
-12. (Bonus step) Build a frontend for the wall and integrate Internet Identity to authenticate users posting on the wall.
+2. Define a variable called `messageId` that serves as a continuously increasing counter, maintaining a record of the total number of messages posted.
+3. Create a variable named `wall`, which is a `HashMap` designed to store messages. In this wall, the keys are of type `Nat` and represents message IDs, whereas the values are of type `Message`. 
+4. Implement `writeMessage`, which accepts a content `c` of type `Content`, creates a message from the content, adds the message to the wall and returns the id of the message.
+5. Implement `getMessage`, which accepts an `messageId` of type `Nat` and returns the corresponding message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+6. Implement `updateMessage`, which accepts a `messageId` of type `Nat` and a concent `c` of type `Content` and updates the content of the corresponding message. This should only work if the caller is the `creator` of the message. If `messageId` is invalid or the caller is not the `creator` the function should return an error message wrapped in an `Err` result. If everything works, and the message is updated the function should return a simple unit value wrapped in an `Ok` result.
+7. Implement `deleteMessage`, which accepts a `messageId` of type `Nat`, removes the corresponding message from the `wall`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
+8. Implement `upVote`, which accepts a `messageId` of type `Nat` and adds one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+9. Implement `downVote`, which accepts a `messageId` of type `Nat` and removes one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+10. Implement the query function `getAllMessages`, which returns the list of all messages. 
+11. Implement the query function `getAllMessagesRanked`, which returns the list of all messages, where each message are ordered by the number of votes. The first message in the list should be the message with the most votes.
+12. Deploy the student Wall on the Internet Computer.
+13. (Bonus step) Build a frontend for the wall and integrate Internet Identity to authenticate users posting on the wall.
 
