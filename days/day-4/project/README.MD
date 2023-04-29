@@ -7,50 +7,52 @@ At the same time, you overhear a conversation about the school's financial strug
 
 Inspired by the alumni stories, you envision a digital token that connects the past, present, and future of the **Motoko School** – the **MotoCoin**. This token would allow alumni and other investors to invest in the school's future while supporting its present needs. 🌱
 
-You share your idea with a group of enthusiastic students, and together, you begin working tirelessly to bring **MotoCoin** to life. Built on the Internet Computer, following the latest **ICRC_1** standard, the **MotoCoin** would be a decentralized and transparent ledger enabling investors, students, contributors to contribute to the school's growth and success. 🚀
+You share your idea with a group of enthusiastic students, and together, you begin working tirelessly to bring **MotoCoin** to life. Built on the Internet Computer, the **MotoCoin** would enable investors, students, contributors to participate to the school's growth and success. 🚀
 ## 🧑‍🏫 Requirements 
-Your task is to create a ledger for a token that can be used as a currency for the school. The ledger is implemented as a canister and must follow the [ICRC_1](https://internetcomputer.org/docs/current/developer-docs/integrations/icrc-1/) standard.
+Your task is to create a ledger for a token that can be used as a currency for the school. The ledger is implemented as a canister.
 ## 📺 Interface
+We define the following types:
+```motoko
+type Subaccount = Blob;
+type Account = {
+    owner : Principal;
+    subaccount : ?Subaccount;
+};
+```
+Your canister should implement the following interface:
 ```motoko
 actor {
     // Returns the name of the token 
-    icrc1_name : shared query () -> async (Text);
+    name : shared query () -> async Text;
 
     // Returns the symbol of the token 
-    icrc1_symbol : shared query () -> async (Text);
+    symbol : shared query () -> async Text;
 
-    // Returns the number of decimals the token uses
-    icrc1_decimals : shared query () -> async (Nat8);
+    // Returns the the total number of tokens on all accounts
+    totalSupply : shared query () -> async Nat;
 
     // Returns the default transfer fee
-    icrc1_fee : shared query () -> async (Nat);
+    balanceOf : shared query (account : Account) -> async (Nat);
 
-    // Returns the total number of tokens on all accounts 
-    icrc1_total_supply : shared query () -> async (Nat);
+    // Transfer tokens to another account
+    transfer : shared (to : Account, amount : Nat) -> async Result.Result<(), Text>;
 
-    // Returns the minting account if this ledger supports minting and burning tokens.
-    icrc1_minting_account : shared query () -> async (?Account);
-
-    // Returns the balance of the account given as an argument.
-    icrc1_balance_of : shared query (Account) -> async (Nat);
-
-    // Transfers tokens
-    icrc1_transfer : shared (TransferArgs) -> async (Result<Nat, TransferError>);
-
-    // Returns the list of metadata entries for this ledger. 
-    icrc1_metadata : shared query () -> async ([(Text, Value)]);
-
-    // Returns the list of supported_standards
-    icrc1_supported_standards : shared query () -> async ([{
-        name : Text;
-        url : Text;
-    }]);
+    // Airdrop 1000 MotoCoin to any student that is part of the Bootcamp.
+    airdrop : shared () -> async Result.Result<(),Text>;
 }
 ```
 ## 📒 Steps
-Because, it's day 4, this time you'll have less guidance. But in order to complete the project you'll need to respect the following instructions: 
-- The name of the token is **MotoCoin**.
-- The symbol is **MOC**.
-- The decimal is 8.
+1. Define a variable called `ledger`, which is a `TrieMap`. In this datastructure, the keys are of type `Account` and the values are of type `Nat` and represent the balance of each account. You can use the helper functions in `account.mo` to help you.
+2. Implement `name` which returns the name of the token as a `Text`. The name of the token is `MotoCoin`.
+3. Implement `symbol` which returns the symbol of the token as a `Text`. The symbol of the token is `MOC`.
+4. Implement `totalSupply` which returns the total number of `MOC` token in circulation.
+5. Implement `balanceOf` which takes an `account` and returns the balance of this account.
+6. Implement `transfer` which takes two parameters: `to` of type `Account` and amount of type `Nat` and transfer the amount of tokens to the specified account from the main account of the caller. This function should return an error message wrapped in an `Err` result if the caller has not enough token in it's main account.
+7. Implement `airdrop` which adds 1000 MotoCoin to the main account of all students participating in the Bootcamp.
 
-> You can find [some help](https://olm72-siaaa-aaaal-qbtpa-cai.ic0.app/internet-computer-standards/icrc1.html) in the Motoko Book.
+
+To implement airdrop - use the function `getAllStudentsPrincipal` on the canister with id `rww3b-zqaaa-aaaam-abioa-cai`, this returns the list of all principals of the students participating in the Bootcamp.
+```motoko
+getAllStudentsPrincipal : shared () -> async [Principal];
+```
+

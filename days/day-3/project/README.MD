@@ -20,7 +20,7 @@ Your canister should implement the following interface:
 actor {
    
     // Add a new message to the wall
-    addMessage: shared (m : Message) -> async Result.Result<Nat, Text>;
+    writeMessage: shared (c : Content) -> async Nat;
 
     //Get a specific message by ID
     getMessage: shared query (messageId : Nat) -> async Result.Result<Message, Text>;
