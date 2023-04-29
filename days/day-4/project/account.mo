@@ -26,13 +26,8 @@ module {
         Principal.hash(lhs.owner) + Blob.hash(lhsSubaccount);  
     };
 
-
-    
-
-
-
-
-
-
+    public func accountBelongToPrincipal(account : Account, principal : Principal) : Bool {
+        Principal.equal(account.owner, principal);
+    };
 
 };

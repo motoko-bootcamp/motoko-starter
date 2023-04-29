@@ -35,7 +35,7 @@ actor {
     balanceOf : shared query (account : Account) -> async (Nat);
 
     // Transfer tokens to another account
-    transfer : shared (to : Account, amount : Nat) -> async Result.Result<(), Text>;
+    transfer : shared (from: Account, to : Account, amount : Nat) -> async Result.Result<(), Text>;
 
     // Airdrop 1000 MotoCoin to any student that is part of the Bootcamp.
     airdrop : shared () -> async Result.Result<(),Text>;
@@ -47,9 +47,8 @@ actor {
 3. Implement `symbol` which returns the symbol of the token as a `Text`. The symbol of the token is `MOC`.
 4. Implement `totalSupply` which returns the total number of `MOC` token in circulation.
 5. Implement `balanceOf` which takes an `account` and returns the balance of this account.
-6. Implement `transfer` which takes two parameters: `to` of type `Account` and amount of type `Nat` and transfer the amount of tokens to the specified account from the main account of the caller. This function should return an error message wrapped in an `Err` result if the caller has not enough token in it's main account.
-7. Implement `airdrop` which adds 1000 MotoCoin to the main account of all students participating in the Bootcamp.
-
+6. Implement `transfer` that accepts three parameters: an `Account` object for the sender (`from`), an `Account` object for the recipient (`to`), and a `Nat` value for the amount to be transferred. This function should transfer the specified amount of tokens from the sender's account to the recipient's account. This function should return an error message wrapped in an `Err` result if the caller has not enough token in it's main account.
+7. Implement `airdrop` which adds 100 MotoCoin to the main account of all students participating in the Bootcamp.
 
 To implement airdrop - use the function `getAllStudentsPrincipal` on the canister with id `rww3b-zqaaa-aaaam-abioa-cai`, this returns the list of all principals of the students participating in the Bootcamp.
 ```motoko
