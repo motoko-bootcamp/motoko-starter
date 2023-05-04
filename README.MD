@@ -14,8 +14,8 @@ With engaging lectures, hands-on projects, and a supportive community, you’ll 
 
 <p align="center"> <img src="./assets/mb_2023.png" height="300px" width="auto" style="border: 2px solid black;"> </p>
 
-Upon completion, you'll be awarded a diploma, unlocking the door to an exclusive community of creators and amazing full-time job opportunities within the vibrant ICP ecosystem!
-
+Upon completion, you'll be awarded a diploma, unlocking the door to an exclusive community and amazing full-time job opportunities within the vibrant ICP ecosystem! 
+ 
 ---
 We're thrilled to introduce the Internet Computer, a remarkable innovation combining cryptography, math, computer science, and blockchain technology.
 Despite the incredible technology we believe that the true value of a network lies in a passionate community, and during this Bootcamp, you'll learn from diverse developer mentors and contributors that are active member of the community, giving their time to make this event possible.
@@ -92,11 +92,11 @@ Interested in connecting with other enthusiasts? Join students in your area to f
 - Check the [dedicated website](https://motokobootcamp.com/).
 
 ### 📝 Feedback
-Motoko Bootcamp is constantly evolving, and we strive to make each edition better than the last.  Whether you are a student, mentor, contributor, or following online or in person, we value your feedback and suggestions for improving future editions. You can post your thoughts, ideas, and feedback in the dedicated feedback channel by [clicking here](https://discord.gg/x6uSTzDS5c). <br/>
+Motoko Bootcamp is constantly evolving, and we strive to make each edition better than the last.  Whether you are a student, mentor, contributor, or joining online or in person, we value your feedback and suggestions for improvements. <br/> 
 
-You can post your thoughts, ideas, and feedback in the dedicated feedback channel by clicking here. Alternatively, if you prefer to have a more personal conversation, feel free to send me a direct message. I am always eager to receive feedback and chat with you about your ideas and suggestions.
+You can post your thoughts, ideas, and feedback in the dedicated feedback channel by [clicking here](https://discord.gg/x6uSTzDS5c). <br/>
 
->If you prefer to have a more personal conversation, feel free to send [me](https://twitter.com/seb_icp) a direct message. I am always eager to receive feedback and chat about new ideas and suggestions.
+> If you prefer to have a more personal conversation, feel free to send [me](https://twitter.com/seb_icp) a direct message. I am always eager to receive feedback and chat about new ideas and suggestions.
 
 ## ✨ Special thanks
 
