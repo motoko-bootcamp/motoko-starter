@@ -2,10 +2,10 @@
 
 <p align="center"> <img src="./assets/motoko_bootcamp_8-14.png"  height="400px" width="auto" style="border: 2px solid black;"> </p> 
 
-### Participate in the next edition of Motoko Bootcamp: Starter edition. You can follow online from anywhere in the world or join one of [community basecamp](https://discord.gg/FWQszm86cj). 
+### Participate in Motoko Bootcamp: Starter edition. You can follow online from anywhere in the world or join one of [community basecamp](https://discord.gg/FWQszm86cj). 
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
 ## Introduction
-Welcome to **Motoko Bootcamp: starter edition** — the most amazing free one-week program to learn how to develop on the Internet Computer. 
+Welcome to **Motoko Bootcamp: Starter edition** — the most amazing free one-week program to learn how to develop on the Internet Computer. 
 7 days is all it should take to change your life. Learn Motoko, get started on the Internet Computer and meet others builders - **all in one week**. <br/>
 
 No prior experience is required — you’ll learn everything from how the ICP works to programming in Motoko. <br/>
@@ -23,7 +23,7 @@ Despite the incredible technology we believe that the true value of a network li
 Our goal is to transmit both technical knowledge and enthusiasm for the Internet Computer as a force for a better future. We believe in its potential to create a fairer, more hopeful world, and hope the insights and connections you make this week contribute to that goal.
 
 ## Overview
-Motoko Bootcamp is an online event, you can follow the entire week online or join other enthusiasts in a [community basecamp](https://discord.gg/FWQszm86cj) to follow the week together! 
+Motoko Bootcamp is an online event, you can follow the entire week online or join other enthusiasts in a [community basecamp](https://discord.gg/FWQszm86cj) to follow the week together.
 
 ### 🎉 Kick Off Ceremony
 Make sure to register for the Kick-Off Ceremony 👉 [Register](https://zoom.us/webinar/register/WN_lFvM-NU4QIWP3-xq6JNSag).
