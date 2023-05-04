@@ -45,9 +45,6 @@ WIP
 ### How can I contribute to this event?
 WIP
 
-
-
-
 ## Diploma 🎓
 ### Is the diploma a real NFT?
 Yes.
