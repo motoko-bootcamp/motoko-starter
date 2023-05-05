@@ -120,5 +120,5 @@ You can post your thoughts, ideas, and feedback in the dedicated feedback channe
 - [TalentDB](https://twitter.com/talentdb_icp), a recruiting agency on the Internet Computer is partnering with this Bootcamp, helping graduates find opportunities in start-ups of the ICP ecosystem.
 - [Inspire3](https://twitter.com/inspire3_icp), is hosting a community gathering in Germany. 🇩🇪
 - [Inside Dark Studio](https://twitter.com/idarkstudio) is hosting a community gathering in Argentina. 🇦🇷
-## Let's f♾️cking build 
+## 🚀 Let's f♾️cking build 
 <p align="center"> <img src="./assets/may-poster.png"  height="600px" style="border: 2px solid black;"> </p>
