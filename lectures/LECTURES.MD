@@ -8,8 +8,8 @@
 |   Frontend, authentication & Internet Identity | <a href="https://twitter.com/kylpeacock" target="_blank"> Kyle </a> | Day 3 | This lecture covers how to interact with your canisters using the **JavaScript** and authenticate your users, essential for most applications.
 |   Motoko: HashMap & CRUD  | <a href="https://twitter.com/CapuzR" target="_blank"> Ricardo </a> | Day 3 | This lecture will cover how to perform **CRUD** operations on canisters. **CRUD** stands for Create, Read, Update and Delete; those are basic operations that can be performed on a database, and are used to manage data.
 |   Motoko: Cycle management, Error handling & Admin functionalities | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | Day 4 | This lecture covers different topics (cycles, errors and admin functionnalities) through examples and live coding.
-|  Motoko: Heap, Stable memory & upgrades | Matthew | Day 4 | This lecture dives into the different types of memories of a canister and how to best deal with upgrades.
-| Motoko: Intercanister calls  | <a href="https://twitter.com/cryptoschindler" target="_blank"> Moritz </a> | Day 5 | This lecture showcase how to perform **inter-canister calls** and how to use the **timer** & **heartbeat** functionnalities to plan recurring or sporadic tasks.
+|   Motoko: Heap, Stable memory & upgrades | Matthew | Day 4 | This lecture dives into the different types of memories of a canister and how to best deal with upgrades.
+|   Motoko: Intercanister calls  | <a href="https://twitter.com/cryptoschindler" target="_blank"> Moritz </a> | Day 5 | This lecture showcase how to perform **inter-canister calls** and how to use the **timer** & **heartbeat** functionnalities to plan recurring or sporadic tasks.
 |  Presentation of the final project | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | Day 5 | This lecture will present the final project of the Bootcamp and give recommendations and guidelines to complete it and access **graduation**.
 
 # Presentations 🎙️

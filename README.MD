@@ -65,18 +65,35 @@ Presentations are a crucial component of the Motoko Bootcamp program, and attend
 ### 🐥 Mentorship 
 You have access to mentorship sessions, where you can troubleshoot any challenges you're facing and get answers to all your questions directly from the experts. These sessions are open to everyone in the Bootcamp, so make sure you take advantage of this incredible opportunity.
 
->  You can consult the [list of all mentorship sessions on the dedicated page](./lectures/LECTURES.MD#mentorship).
-
 ### 🤹 Activities 
 In addition to the main program, we've got some awesome activities lined up for you, like networking and gaming sessions! These are totally optional, but we've planned them to add a little extra excitement to your week. So come and join the fun! 
 
 > Activities will be held on Discord. You can consult the [list of all activities on the dedicated page](./lectures/LECTURES.MD#activities-🤹).
 ###  🫂 Teams 
 WIP
+### 📞 Assistance 
+This event is being run by volunteers and we have limited resources, we won't be able to answer all questions at all times considering that we have hundreds of students, please understand this fact and make sure to follow all instructions in the order provided. <br/>
+
+When you need help, follow these steps in this order:
+
+1. Dig into the list of resources, documentation and channels on Discord. Most likely the answer you need will be in here if you dig enough, and the more practice you get navigating the more effective and self-sufficient you'll be able to be as an Internet Computer developer.
+2. Ask your team for help on Discord: collaboration is the key to the succcess.
+3. Post in #ask-questions channel on Discord and ask your question by creating a new topic. Make sure your issue hasn't already been answered in another topic.
+If you decide to create a new topic, please provide as much information as possible:
+    - When did you encounter the issue?
+    - What is the exact error message?
+    - What have you already tried to deal with the problem?
+    - Provide some screenshots to illustrate your request.
+4. Join the next mentorship sessions.
+5. You can ask for a Motoko Angel to assist you.
+
+> 🚫 Do not spam the main channel of Discord with your issue, and avoid directly DM-ing organizers (expect Motoko-angels). Disruptive behavior that hinders the learning of other students will put you at risk of getting kicked out of the Bootcamp. We've never had to do this before, don't be the first.
+
 ### 👼 Motoko Angel
+Our Motoko-Angels are a squad of totally awesome, super knowledgeable past graduates from the Motoko Bootcamp who have volunteered some of their time to save the week for any student in need! 
+They're like your personal superheroes, here to guide you through the challenges that are waiting for you during the week 🦸
 
-
-> You can consult the list of all Motoko Angel 
+> You can consult the list of all Motoko Angel in [the dedicated channel](https://discord.gg/nRxUph88fX).
 ### 🎓 Graduation
 WIP
 ### 🎁 Prizes
@@ -98,9 +115,10 @@ You can post your thoughts, ideas, and feedback in the dedicated feedback channe
 
 > If you prefer to have a more personal conversation, feel free to send [me](https://twitter.com/seb_icp) a direct message. I am always eager to receive feedback and chat about new ideas and suggestions.
 
-## ✨ Special thanks
-
+## 🤝 Partners 
+- [Code & State](https://twitter.com/codeandstate), a ICP-focused venture studio, is making this event possible. 
+- [TalentDB](https://twitter.com/talentdb_icp), a recruiting agency on the Internet Computer is partnering with this Bootcamp, helping graduates find opportunities in start-ups of the ICP ecosystem.
+- [Inspire3](https://twitter.com/inspire3_icp), is hosting a community gathering in Germany. 🇩🇪
+- [Inside Dark Studio](https://twitter.com/idarkstudio) is hosting a community gathering in Argentina. 🇦🇷
+## Let's f♾️cking build 
 <p align="center"> <img src="./assets/may-poster.png"  height="600px" style="border: 2px solid black;"> </p>
-WIP
-
-## 🙋 FAQ
