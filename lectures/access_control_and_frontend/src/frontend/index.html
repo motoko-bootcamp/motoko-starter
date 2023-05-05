@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Access Control</title>
+  </head>
+  <body>
+    <main>
+      <h1>Access Control</h1>
+      <p>
+        This is an interactive website. Use the form below to get a
+        password-based identity, or login using the login button. You will then
+        be able to check your identity, or you can increment your principal's
+        counter! Can you get the high score?
+      </p>
+      <form id="form">
+        <label for="secret">Secret:</label>
+        <input type="password" id="secret" name="secret" />
+      </form>
+      <div id="output"></div>
+      <ii-login-button></ii-login-button>
+
+      <button type="button" id="increment" disabled>Increment</button>
+      <section id="click-counter">
+        <p>Your clicks:</p>
+        <div id="count"></div>
+      </section>
+
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Principal</th>
+            <th>count</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
