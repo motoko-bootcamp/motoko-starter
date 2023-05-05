@@ -70,7 +70,12 @@ In addition to the main program, we've got some awesome activities lined up for 
 
 > Activities will be held on Discord. You can consult the [list of all activities on the dedicated page](./lectures/LECTURES.MD#activities-🤹).
 ###  🫂 Teams 
-WIP
+At Motoko Bootcamp, we believe in the power the collaborative. That's why you will be put into teams of around 20 students that corresponds to your timezone. <br/>
+Although you'll be working on your project independently, we want to ensure you have others to share your journey with and help keep you motivated.
+We encourage you to schedule a daily meeting with your team on the Discord voice channel to stay in touch and discuss any challenges you face.
+
+**Remember, you're not alone on this journey!**
+
 ### 📞 Assistance 
 This event is being run by volunteers and we have limited resources, we won't be able to answer all questions at all times considering that we have hundreds of students, please understand this fact and make sure to follow all instructions in the order provided. <br/>
 
@@ -90,7 +95,7 @@ If you decide to create a new topic, please provide as much information as possi
 > 🚫 Do not spam the main channel of Discord with your issue, and avoid directly DM-ing organizers (expect Motoko-angels). Disruptive behavior that hinders the learning of other students will put you at risk of getting kicked out of the Bootcamp. We've never had to do this before, don't be the first.
 
 ### 👼 Motoko Angel
-Our Motoko-Angels are a squad of totally awesome, super knowledgeable past graduates from the Motoko Bootcamp who have volunteered some of their time to save the week for any student in need! 
+Our Motoko-Angels are a squad of awesome, super knowledgeable past graduates from the Motoko Bootcamp who have volunteered some of their time to save the week for any student in need!
 They're like your personal superheroes, here to guide you through the challenges that are waiting for you during the week 🦸
 
 > You can consult the list of all Motoko Angel in [the dedicated channel](https://discord.gg/nRxUph88fX).
@@ -116,8 +121,8 @@ You can post your thoughts, ideas, and feedback in the dedicated feedback channe
 > If you prefer to have a more personal conversation, feel free to send [me](https://twitter.com/seb_icp) a direct message. I am always eager to receive feedback and chat about new ideas and suggestions.
 
 ## 🤝 Partners 
-- [Code & State](https://twitter.com/codeandstate), a ICP-focused venture studio, is making this event possible. 
-- [TalentDB](https://twitter.com/talentdb_icp), a recruiting agency on the Internet Computer is partnering with this Bootcamp, helping graduates find opportunities in start-ups of the ICP ecosystem.
+- [Code & State](https://twitter.com/codeandstate), a ICP-focused venture studio, is the organization making this event possible. 
+- [TalentDB](https://twitter.com/talentdb_icp), a recruiting agency specialized for the Internet Computer will assist graduates in finding employment opportunities within the start-ups of the ecosystem.
 - [Inspire3](https://twitter.com/inspire3_icp), is hosting a community gathering in Germany. 🇩🇪
 - [Inside Dark Studio](https://twitter.com/idarkstudio) is hosting a community gathering in Argentina. 🇦🇷
 ## 🚀 Let's f♾️cking build 
