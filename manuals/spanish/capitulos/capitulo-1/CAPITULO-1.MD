@@ -13,27 +13,27 @@ El Internet Computer es una plataforma que aloja una gran cantidad de aplicacion
     - Cuando lees contenido en un sitio web alojado en el Internet Computer.
     - ¡Y muchos más!
 
-<p align="center"> <img src="../../../capitulos/capitulo-1/assets/oc_message.png" height="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../chapters/chapter-1/assets/oc_message.png" height="600px" style="border: 1px solid black;"/> </p>
 <p align="center"> OpenChat es una aplicación de mensajería descentralizada construida en el Internet Computer. </p>
 
 ## WebAssembly
 Antes de pasar a Motoko, en realidad necesitamos explicar otro término: **WebAssembly**.
 
-<p align="center"> <img src="../../../capitulos/capitulo-1/assets/canister_overview.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../chapters/chapter-1/assets/canister_overview.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> Vista general de un canister.</p>
 
 Si profundizamos en un canister, está compuesto por:
 - Un **módulo WebAssembly** que es un fragmento de código compilado a partir de lenguajes como Rust o Motoko. Este es el código que se instala en el canister y que finalmente se ejecuta.
 - Una **memoria WebAssembly** - también llamada páginas de memoria. Aquí es donde se almacena el estado del canister y se almacenan archivos (fotos, videos, tokens...). El código que se ejecuta en el módulo WebAssembly modificará la memoria.
 
-<p align="center"> <img src="../../../capitulos/capitulo-1/assets/webassembly.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../chapters/chapter-1/assets/webassembly.png" width="600px" style="border: 2px solid black;"> </p>
 
 <p align="center"> ¿Qué es <b>WebAssembly</b>? </p>
 WebAssembly es un formato binario de bajo nivel para ejecutar código en múltiples entornos (navegadores, plataformas en la nube, dispositivos inteligentes, máquinas virtuales...). Los principales beneficios de usar WebAssembly son:
 
 - **WebAssembly** admite código escrito en varios lenguajes (C, C++, Rust, Motoko), lo que lo convierte en una solución versátil para los desarrolladores.
 - El código de **WebAssembly** es portable y puede ejecutarse en casi cualquier dispositivo. ¡Lo escribes una vez y lo ejecutas en cualquier lugar!
-<p align="center"> <img src="../../../capitulos/capitulo-1/assets/webassembly_stack.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../chapters/chapter-1/assets/webassembly_stack.png" width="500px" style="border: 1px solid black;"/> </p>
 <p align="center"> Escribe una vez, implementa en cualquier plataforma. </p>
 
 - **WebAssembly** es rápido. Es un lenguaje muy cercano al lenguaje de máquina y ha sido optimizado para la velocidad y el rendimiento. ¡Puedes usarlo para crear aplicaciones complejas e intensivas (juegos, simulaciones, gráficos)!
@@ -42,11 +42,11 @@ WebAssembly es un formato binario de bajo nivel para ejecutar código en múltip
 El único problema con **WebAssembly** es que es un lenguaje de bajo nivel y proporciona muy poca abstracción, lo que dificulta su uso para escribir aplicaciones complejas como dApps (aplicaciones descentralizadas).
 
 ## El Lenguaje Motoko
-<p align="center"> <img src="../../../capitulos/capitulo-1/assets/motoko_banner.png" width="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../chapters/chapter-1/assets/motoko_banner.png" width="600px" style="border: 1px solid black;"/> </p>
 
 Es por eso que la [Fundación DFINITY](https://dfinity.org/) ha introducido un nuevo lenguaje llamado **Motoko**, que es un lenguaje de programación específicamente diseñado para crear dApps en el Internet Computer. Dado que el código de Motoko se puede compilar directamente en **WebAssembly**, es un lenguaje increíble para construir en el Internet Computer. Motoko es un lenguaje de alto nivel y fácil de usar. Escribes en Motoko y luego se compila en WebAssembly.
 
-<p align="center"> <img src="../../../capitulos/capitulo-1/assets/motoko_to_wasm.png" width="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../chapters/chapter-1/assets/motoko_to_wasm.png" width="600px" style="border: 1px solid black;"/> </p>
 <p align="center"> En Motoko escribes el código, en WebAssembly se ejecuta.</p>
 
 > Vale la pena señalar que WebAssembly fue co-diseñado por [Andreas Rossberg](https://github.com/rossberg), quien se unió a la Fundación DFINITY a principios de 2017 para trabajar en su entorno de ejecución de contratos inteligentes de canister y también es el diseñador original del lenguaje Motoko. El estándar es mantenido por el [World Wide Web Consortium](https://www.w3.org/).
@@ -83,7 +83,7 @@ En el siguiente ejemplo, aquí hay una función `factorial` ilustrada en **Motok
 
 Un archivo de Motoko es un archivo con la extensión `.mo`.
 
-<p align="center"> <img src="./assets/mo_extension.png" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../chapters/chapter-1/assets/mo_extension.png" width="300px" style="border: 2px solid black;"> </p>
 
 **Motoko** es un lenguaje de alto nivel como **JavaScript** o **Python**. En general, se considera más fácil de aprender que un lenguaje de nivel inferior como **Rust** o **C**. 
 
@@ -162,7 +162,7 @@ Este tipo de llamada se utiliza cuando un usuario desea leer datos sin modificar
 |  | Llamada de actualización | Llamada de consulta |
 |-----------------|-----------------|-----------------|
 Tiempo de respuesta | 2-5 segundos 🐢  | 200-400 ms ⚡️  |
-Consenso| Sí | No |  
+Consenso| Sí | No |  
 Leer | Sí | Sí |
 Escribir| Sí | No |
 Costo | Ciclos de costo | Gratis (por ahora)
