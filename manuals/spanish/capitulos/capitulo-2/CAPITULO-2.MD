@@ -21,10 +21,10 @@ n := 2;
 
 Se intenta reasignar un valor a una variable inmutable, por eso se producirá un error. El mensaje de error específico será `type error [M0073], expected mutable assignment target`. Este mensaje indica que la variable que se está reasignando es inmutable y no se puede cambiar.
 
-## 🍎 Tipos
-El lenguaje **Motoko** hace mucho énfasis en los tipos y es más estricto en su aplicación en comparación con otros lenguajes de propósito general como **JavaScript** o **Python**. Esta rigurosidad sirve a un propósito, ya que ayuda a prevenir errores e problemas.
+## 🍎 Types
+El lenguaje **Motoko** hace mucho énfasis en los types y es más estricto en su aplicación en comparación con otros lenguajes de propósito general como **JavaScript** o **Python**. Esta rigurosidad sirve a un propósito, ya que ayuda a prevenir errores e problemas.
 
-**Motoko** tiene tipos estáticos, lo que significa que a cada variable se le asigna un tipo específico, que se determina antes de que se ejecute el programa. El compilador verifica cada uso de la variable para evitar errores que puedan ocurrir durante la ejecución del programa. <br/>
+**Motoko** tiene types estáticos, lo que significa que a cada variable se le asigna un tipo específico, que se determina antes de que se ejecute el programa. El compilador verifica cada uso de la variable para evitar errores que puedan ocurrir durante la ejecución del programa. <br/>
 
 Para asignar un tipo a una variable, utilizamos el símbolo `:`, esto se llama **anotación de tipo**.
 ```motoko
@@ -36,7 +36,7 @@ let open : Bool = false;
 Por lo general, se puede omitir la declaración de tipo - el compilador de **Motoko** adivinará automáticamente el tipo de la variable en función del primer valor que proporciones, esto se llama **inferencia de tipo**.```
 let age = 20;   // Will be assigned type Nat
 ```
-> Durante la duración del Bootcamp, se recomienda mantener todas las declaraciones de tipo para hacer las cosas más claras, especialmente si eres nuevo en los lenguajes con tipos.
+> Durante la duración del Bootcamp, se recomienda mantener todas las declaraciones de tipo para hacer las cosas más claras, especialmente si eres nuevo en los lenguajes con types.
 
 ## 💬 Comentarios.
 Un comentario de una sola línea se escribe iniciando la línea con `//`.
@@ -69,12 +69,12 @@ actor Counter {
 
 La palabra clave `func` se utiliza para declarar funciones, seguida del nombre que se le da a la función, en este caso `increaseCount`. Al igual que con las variables, la convención de sintaxis es utilizar `lowerCamelCase` para los nombres de las funciones.  <br/>
 
-### Tipo de función
+### Type de función
 Al definir una función en Motoko, los argumentos y el tipo de retorno tipados se utilizan para determinar el tipo de la función en su conjunto. Por ejemplo, la función `setCount` tiene el siguiente tipo:
 ```motoko
 setCount : (n : Nat) -> async Nat;
 ```
-Para declarar una función en Motoko, debes especificar los tipos de los argumentos y los valores de retorno. Los argumentos de la función se encierran entre paréntesis `()`, y en este caso, la función toma un argumento `n` de tipo `Nat`. Después de los argumentos de la función, se especifica el tipo de retorno: `async Nat`.
+Para declarar una función en Motoko, debes especificar los types de los argumentos y los valores de retorno. Los argumentos de la función se encierran entre paréntesis `()`, y en este caso, la función toma un argumento `n` de tipo `Nat`. Después de los argumentos de la función, se especifica el tipo de retorno: `async Nat`.
 
 > Es posible que te preguntes por qué el tipo de retorno de la función `setCount` es `async Nat` en lugar de simplemente `Nat`. <br/> El término `async` significa asíncrono, lo que significa que, en el modelo de actores que discutimos anteriormente, los canisters o actores se comunican entre sí de manera asíncrona. Cuando un canister envía una solicitud a otro (o cuando un usuario llama a una función), habrá un breve período de espera antes de que el llamante reciba una respuesta. <br/> 
 La programación asíncrona te permite ejecutar tu código de forma no bloqueante. El tipo de retorno `async Nat` para la función `setCount` indica que el llamante debe esperar unos momentos antes de recibir el valor de retorno. Eventualmente, la respuesta será un valor de tipo `Nat`, pero con un retraso debido a la naturaleza asíncrona de la comunicación entre canisters. **Todas las funciones públicas declaradas en el cuerpo de un actor deben tener un tipo de retorno `async`**. 
@@ -164,7 +164,7 @@ En otros casos, se pueden agregar bloques `else if` para verificar condiciones a
 Ten en cuenta que las sentencias `else if` se utilizan después de la sentencia `if` inicial para verificar condiciones adicionales, y solo se ejecutará el bloque de código asociado a la primera condición que se evalúe como verdadera.
 
 ### Bucles
-Los bucles permiten la ejecución repetida de un bloque de código hasta que se cumpla una condición específica. Hay varios tipos de bucles, como los bucles `for` y los bucles `while`:
+Los bucles permiten la ejecución repetida de un bloque de código hasta que se cumpla una condición específica. Hay varios types de bucles, como los bucles `for` y los bucles `while`:
 - Los bucles `for` en Motoko utilizan un iterador del tipo `Iter`. Profundizaremos en el tipo `Iter` en un capítulo posterior, pero para resumir, los objetos `Iter` facilitan el bucle a través de colecciones de datos.
 ```motoko
 var count : Nat = 0;
