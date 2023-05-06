@@ -14,7 +14,7 @@ actor {
     Debug.print("Hello!");
 };
 ```
-<p align="center"> <img src="./assets/chapter-7/debug_print.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="./assets/debug_print.png" width="800px" style="border: 2px solid black;"></p>
 <p align="center"> The text will be printed in the same tab that is running your replica. Make sure to check out the correct place!</p>
 
 > Unfortunately, `print` can only be used locally. On the mainnet or when using Motoko Playground there is no concept of output stream so `Debug.print` has no effect.
@@ -37,4 +37,17 @@ actor {
 ```motoko
 func trap(errorMessage : Text) : None
 ```
-WIP
+`Debug.trap()` will stop the execution and return an error message with it.
+```motoko
+import Debug "mo:base/Debug";
+actor {
+    Debug.trap({errorMessage = "Unexpected reach"});
+};
+```
+
+This could be useful as the error message will be visible in the return of the canister call, and not on a separate terminal. Also the behavior will be the same either in Local or Mainnet.
+
+You can use it with debug_show() to output any variable you might deem relevant.
+
+<p align="center"> <img src="./assets/debug_trap.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> In this example the variable is printed in the same tab as you made the call.</p>
