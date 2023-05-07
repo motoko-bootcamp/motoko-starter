@@ -72,10 +72,9 @@ In addition to the main program, we've got some awesome activities lined up for 
 
 > Activities will be held on Discord. You can consult the [list of all activities on the dedicated page](./lectures/LECTURES.MD#activities-🤹).
 ###  🫂 Teams 
-At Motoko Bootcamp, we believe in the power the collaborative. That's why you will be put into teams of around 20 students that corresponds to your timezone. <br/>
+At Motoko Bootcamp, we believe in the power the collaborative. That's why you will be put into teams and each team will have a score. The score of the team depends on the progress of **all** members.<br/>
 Although you'll be working on your project independently, we want to ensure you have others to share your journey with and help keep you motivated.
 We encourage you to schedule a daily meeting with your team on the Discord voice channel to stay in touch and discuss any challenges you face.
-
 **Remember, you're not alone on this journey!**
 
 ### 📞 Assistance 
