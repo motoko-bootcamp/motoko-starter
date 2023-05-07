@@ -1,0 +1,4 @@
+[dependencies]
+base = "0.8.7"
+map = "8.1.0"
+json = "https://github.com/aviate-labs/json.mo#main"

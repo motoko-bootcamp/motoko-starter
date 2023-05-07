@@ -1,0 +1,37 @@
+{
+    "canisters": {
+        "frontend": {
+            "dependencies": [
+                "backend",
+                "internet_identity"
+            ],
+            "type": "assets",
+            "source": [
+                "src/frontend/dist"
+            ]
+        },
+        "backend": {
+            "type": "motoko",
+            "main": "src/backend/main.mo"
+        },
+        "internet_identity": {
+            "type": "custom",
+            "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+            "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz",
+            "shrink": false,
+            "remote": {
+                "candid": "internet_identity.did",
+                "id": {
+                    "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+                }
+            }
+        }
+    },
+    "defaults": {
+        "build": {
+            "args": "",
+            "packtool": "npm run --silent sources"
+        }
+    },
+    "output_env_file": ".env"
+}
