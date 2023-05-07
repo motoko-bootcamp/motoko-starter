@@ -4,6 +4,8 @@
 
 ### Participate in Motoko Bootcamp: Starter edition. You can follow online from anywhere in the world or join one of [community basecamp](https://discord.gg/FWQszm86cj). 
 ### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
+
+<i> La traducción al español puedes encontrarla [aquí](./spanish/README.MD). <i>
 ## Introduction
 Welcome to **Motoko Bootcamp: Starter edition** — the most amazing free one-week program to learn how to develop on the Internet Computer. 
 7 days is all it should take to change your life. Learn Motoko, get started on the Internet Computer and meet others builders - **all in one week**. <br/>
