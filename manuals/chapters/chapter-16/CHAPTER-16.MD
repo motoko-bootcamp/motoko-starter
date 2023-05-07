@@ -1,39 +1,42 @@
-# Chapter 16: Managing multiple canisters with actor classes.
-## Actor classes.
-## The management canister 👨‍💼
-The management canister is used on the IC to perform the following operations:
-- Create canisters from another canister.
-- Install code inside other canisters (that you have control over!).
-- Get informations on canister such as:
-    - The status of a canister (running, stopping, stopped).
-    - A SHA256 hash of the module installed on the canister.
-    - The controllers of the canister.
-    - The memory size taken by the canister.
-    - The cycle balance of the canister.
-- Create [ECDSA](https://internetcomputer.org/docs/current/references/ic-interface-spec#ic-sign_with_ecdsa) signatures derived from the canister.
-- Create [http_request](https://internetcomputer.org/docs/current/references/ic-interface-spec#ic-sign_with_ecdsa) 
-- Interact with [the Bitcoin API](https://internetcomputer.org/docs/current/references/ic-interface-spec#ic-bitcoin-api)
-- And way more! 
-
-> The IC management canister doesn't actually exists as a "canister". It doesn't contain a wasm module or memory - it's only an interface to make it easier to communicate with a management API on the IC. The IC management canister address is aaaaa-aa.  
-
-Here is an example of how to use the managament canister inside an other actor.
+# Chapter 17: Binary operations in Motoko
+## 🧮 Binary operations
+Motoko supports Bitwise operations (manipulation of the bits) through bounded integers (`Nat8`,`Nat16`, `Nat32`, `Nat64` & `Int8`,`Int16`, `Int32`, `Int64`).
+- AND (Symbol `&`): This operation takes two binary values and performs a logical AND operation on each pair of corresponding bits. The result is a binary value where each bit is set to 1 only if the corresponding bits in both operands are set to 1.
 ```motoko
-actor {
-    let managementCanister = actor {
-        create_canister : {} -> async {canister_id : Principal};
-        stop_canister : { canister_id : Principal } -> async ();
-        delete_canister : { canister_id : Principal } -> async ();
-    };
-
-// Create - Stop - Burn 🥲
-    public func createStopBurn() : async () {
-        let cid = await mangagementCanister.create_canister;
-        await IC.stop(cid);
-        await IC.delete_canister(cid) 
-    };
-};
+let a = 31 : Nat8;  // Binary 0011111
+let b = 33  : Nat8; // Binary 0100001
+let c = a & b (1)  // Binary 0000001 
+assert(c == 1) // true
 ```
-
-Once you've created other canisters from within your canister you can install a wasm module inside of them. This requires that the module is already loaded inside your main canister. This pattern is used by a lot of applications on the IC to create multicanister dApps (OpenChat...)! 
-## Creating a canister factory.
+- OR (Symbol `|` ): This operation takes two binary values and performs a logical OR operation on each pair of corresponding bits. The result is a binary value where each bit is set to 1 if either or both corresponding bits in the operands are set to 1.
+```motoko
+let a = 31 : Nat8;  // Binary 0011111
+let b = 33  : Nat8; // Binary 0100001
+let c = a | b (63)  // Binary  0111111
+```
+- XOR (Symbol `^`): This operation takes two binary values and performs a logical XOR (exclusive OR) operation on each pair of corresponding bits. The result is a binary value where each bit is set to 1 if only one of the corresponding bits in the operands is set to 1.
+```motoko
+let a = 31 : Nat8;  // Binary 0011111
+let b = 33  : Nat8; // Binary 0100001
+let c = a ^ b (62)  // Binary  0111110
+```
+- Shift Left (Symbol `<<`): This operations moves the bits to the left by a specified number of positions, adding zeros to the right.
+```motoko
+let a = 64 : Nat8; //    binary 01000000
+let c = a << 1 (128) //  binary 10000000 
+```
+- Shift right (Symbol `>>`): This operations moves the bits to the right by a specified number of positions, adding zeros to the left.
+```motoko
+let a = 64 : Nat8; //    binary  01000000
+let c = a << 1 (32) //   binary  00100000
+```
+- Rotation left (Symbol `<<>`): This operations shifts the bits of a binary value to the left by a specified number of positions, and then rotating the shifted bits back to the right end of the value.
+```motoko
+let a = 128 : Nat8;     //  binary  1000000
+a <<> 1 (1)             //  binary  0000001 
+```
+- Rotation right (Symbol `<>>`): This operations shifts the bits of a binary value to the right by a specified number of positions, and then rotates the shifted bits back to the left end of the value. 
+```motoko
+let a = 64 : Nat8;      // binary 001000000
+a <>> 1 (32)            // binary 000100000
+```

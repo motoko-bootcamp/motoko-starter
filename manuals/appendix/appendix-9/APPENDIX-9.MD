@@ -1,4 +1,4 @@
-# Chapter 22: HTTP Request to access a canister through a browser.
+# Appendix 9: HTTP Request to access a canister through a browser.
 ## Difference between HTTP request & HTTP outcalls.
 In this chapter, we will cover how canisters can be accessed through HTTP requests. This is a separate topic from **HTTP Outcalls**:
 
