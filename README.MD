@@ -52,7 +52,7 @@ You will work on 5 different projects:
 - [The Calculator ➕](./days/day-1/project/README.MD)
 - [The Homework diary 📔](./days/day-2/project/README.MD)
 - [The Student wall 🎨](./days/day-3/project/README.MD)
-- [MotoCoin 🪙](./days//day-5/project/README.MD)
+- [MotoCoin 🪙](./days//day-4/project/README.MD)
 - [The Verifier 👨‍🏫](./days/day-5/project/README.MD)
 
 > Once completed, submit your project through the dashboard. It will check if you've met the requirements.
