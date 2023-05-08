@@ -1,60 +1,61 @@
-# Capítulo 2: Conceptos de programación comunes.
+# Capítulo 2: Conceptos comunes de programación.
 ## 📦 Variables 
 Una variable es un valor que tiene un nombre arbitrario, definido por una declaración. <br/>
-En Motoko, las variables se pueden declarar usando la palabra clave `let` o `var`, seguida del operador de asignación `=`.
+En Motoko, variables pueden ser declaradas usando la palabra clave `let` o `var`, seguido del operador de asignación `=`
 
-- Las variables declaradas con `let` son inmutables, lo que significa que su valor no puede cambiarse una vez que se asignan.```motoko
+- Las variables declaradas con `let`son inmutables, lo que significa que su valor no puede ser cambiado una vez asignado. 
+```motoko
 let n = 1;
 ```
-- Las variables declaradas con `var` son mutables, lo que significa que su valor se puede reasignar a un nuevo valor en cualquier momento utilizando el operador de reasignación `:=`.
+- Las variables declaradas con `var` son mutables, su valor puede ser reasignado a un valor nuevo en cualquier momento usando el operador de reasignación `:=`.
+
 ```motoko
 var n = 1;
 n := 2;
 ```
-La convención de sintaxis es utilizar `lowerCamelCase` para los nombres de las variables y utilizar espacios alrededor del signo `=`. Además, una declaración de variable termina con un punto y coma `;`. Cuando declares una variable, no olvides terminar la declaración con `;`, de lo contrario Motoko mostrará un error.
 
-Si intentamos el siguiente código:
+La sintaxis convencional es usar `lowerCamelCase` para el nombre de variables y usar espacios alrededor del signo `=`. Además, la declaración de una variable termina con un semicolon `;` Cuando declaramos una variable no olvides acabar la declaración con `;` de otra manera Motoko se quejara.
+
+Si probamos el siguiente código:
 ```motoko
 let n = 1;
 n := 2;
 ```
 
-Se intenta reasignar un valor a una variable inmutable, por eso se producirá un error. El mensaje de error específico será `type error [M0073], expected mutable assignment target`. Este mensaje indica que la variable que se está reasignando es inmutable y no se puede cambiar.
+En el código anterior podemos ver que se produce un intento de reasignación del valor de una variable inmutable - lo que resulta en un error. El mensaje de error en este caso será `type error [M0073], expected mutable assignment target`. Este mensaje indica que la variable a la cual se le intentó asignar un valor es inmutable por lo cual no puede ser modificada.
+## 🍎 Tipos
+El lenguaje  **Motoko** hace un gran énfasis en los tipos y es mas estricto respecto a estos comparado con otros lenguajes de propósito-general como **JavaScript** o **Python**. Esta dureza tiene su fin, ya que esto ayuda a prevenir errores y problemas. 
 
-## 🍎 Types
-El lenguaje **Motoko** hace mucho énfasis en los types y es más estricto en su aplicación en comparación con otros lenguajes de propósito general como **JavaScript** o **Python**. Esta rigurosidad sirve a un propósito, ya que ayuda a prevenir errores e problemas.
+**Motoko** tiene tipos estáticos, lo que significa que cada variable es asignada con un tipo específico, el cual es determinado antes de que el programa se ejecute. El compilador revisa cada uso de las variables para evitar errores que se puedan dar en la ejecución. <br/>
 
-**Motoko** tiene types estáticos, lo que significa que a cada variable se le asigna un tipo específico, que se determina antes de que se ejecute el programa. El compilador verifica cada uso de la variable para evitar errores que puedan ocurrir durante la ejecución del programa. <br/>
-
-Para asignar un tipo a una variable, utilizamos el símbolo `:`, esto se llama **anotación de tipo**.
+Para asignar un tipo a una variable usamos el símbolo `:` , esto es llamado **type annotation**.
 ```motoko
 let age : Nat = 20;
 let message : Text = "Of all the acts, the most complete is that of building";
 let open : Bool = false;
 ```
 
-Por lo general, se puede omitir la declaración de tipo - el compilador de **Motoko** adivinará automáticamente el tipo de la variable en función del primer valor que proporciones, esto se llama **inferencia de tipo**.```
+Por lo general puedes omitir la declaración de tipo - el compilador de  **Motoko** automáticamente adivinara el tipo de la variable basándose en el primer valor que le hayas otorgado, esto se llama **type inference**.
+```
 let age = 20;   // Will be assigned type Nat
 ```
-> Durante la duración del Bootcamp, se recomienda mantener todas las declaraciones de tipo para hacer las cosas más claras, especialmente si eres nuevo en los lenguajes con types.
-
+> Para la duración del Bootcamp  es recomendable declarar todas las variables para hacer las cosas más claras, especialmente si eres nuevo en los lenguajes tipados.
 ## 💬 Comentarios.
-Un comentario de una sola línea se escribe iniciando la línea con `//`.
+Un comentario de solo una línea es escrito empezando la línea con `//`.
 ```motoko
 // Hello! It is recommended to use comments to make your code more readable.
 ```
 
-Un comentario puede abarcar varias líneas, en ese caso deberás agregar `//` en cada línea.
+Un comentario puede ser de líneas múltiples, en ese caso necesitarás añadir `//` en cada línea.
 ```motoko
 //  Sometimes you'll have a lot to say
 //  In those cases 
 //  You can use more than one line
 ```
 ## ⚙️ Funciones
-Esta sección se centra únicamente en las funciones que se definen dentro del cuerpo de un actor utilizando la sintaxis `actor {}`. Cualquier función que esté fuera de la sintaxis `actor {}` se cubrirá en capítulos futuros.
-
-### Un ejemplo sencillo
-Para introducir las funciones, veamos un ejemplo: aquí hay un actor que es responsable de llevar un contador.
+Esta sección se centra en funciones que son definidas en el cuerpo de un actor usando la sintaxis `actor {}`. Cualquier función que está fuera de la sintaxis `actor {}` será cubierta en futuros capítulos.
+### Un ejemplo simple
+Para introducir funciones - revisemos un ejemplo: aquí tenemos un actor que es responsable de llevar un registro de un counter. 
 ```motoko
 actor Counter {
     var count : Nat = 0;
@@ -67,41 +68,43 @@ actor Counter {
 };
 ```
 
-La palabra clave `func` se utiliza para declarar funciones, seguida del nombre que se le da a la función, en este caso `increaseCount`. Al igual que con las variables, la convención de sintaxis es utilizar `lowerCamelCase` para los nombres de las funciones.  <br/>
+La palabra clave `func` es usada para declarar funciones, seguido por el nombre dado a la función, en este caso `increaseCount`. Igual que con las variables As for variables, la sintaxis convencional es usar `lowerCamelCase` para el nombre de las funciones.  <br/>
 
-### Type de función
-Al definir una función en Motoko, los argumentos y el tipo de retorno tipados se utilizan para determinar el tipo de la función en su conjunto. Por ejemplo, la función `setCount` tiene el siguiente tipo:
+### Function type
+Cuando se define una función en Motoko, los tipos de argumentos y el tipo de retorno son usados para determinar el tipo de la función. Por ejemplo, la función setCount tiene el siguiente tipo:
 ```motoko
 setCount : (n : Nat) -> async Nat;
 ```
-Para declarar una función en Motoko, debes especificar los types de los argumentos y los valores de retorno. Los argumentos de la función se encierran entre paréntesis `()`, y en este caso, la función toma un argumento `n` de tipo `Nat`. Después de los argumentos de la función, se especifica el tipo de retorno: `async Nat`.
+Para declarar una función en Motoko, debes especificar los tipos de los argumentos y de los valores de retorno. Los argumentos de la función se encuentran entre paréntesis `()`, y en este caso, la función toma un argumento  `n` de tipo `Nat`. Después de los argumentos de la función, el valor del retorno es especificado : `async Nat`.
 
-> Es posible que te preguntes por qué el tipo de retorno de la función `setCount` es `async Nat` en lugar de simplemente `Nat`. <br/> El término `async` significa asíncrono, lo que significa que, en el modelo de actores que discutimos anteriormente, los canisters o actores se comunican entre sí de manera asíncrona. Cuando un canister envía una solicitud a otro (o cuando un usuario llama a una función), habrá un breve período de espera antes de que el llamante reciba una respuesta. <br/> 
-La programación asíncrona te permite ejecutar tu código de forma no bloqueante. El tipo de retorno `async Nat` para la función `setCount` indica que el llamante debe esperar unos momentos antes de recibir el valor de retorno. Eventualmente, la respuesta será un valor de tipo `Nat`, pero con un retraso debido a la naturaleza asíncrona de la comunicación entre canisters. **Todas las funciones públicas declaradas en el cuerpo de un actor deben tener un tipo de retorno `async`**. 
+> Te preguntarás porque el tipo de retorno de la función `setCount` es `async Nat` en vez de simplemente`Nat`? <br/> El término`async` significa asíncrono,  lo que significa que en el **Actor model** que vimos anteriormente, canisters o actors se comunican entre sí asíncronamente. Cuando un canister envía una solicitud a otro (o cuando usuarios llaman a una función), habrá un breve periodo de espera antes de que se reciba una respuesta
+. <br/> 
+Programación asíncrona te permite ejecutar tu código en una manera non-blocking. El tipo de retorno`async Nat` para la función `setCount` indica que el caller deberá esperar por unos momentos antes de recibir el valor de retorno. Eventualmente, la respuesta será tendrá un tipo de valor `Nat`, pero con un retraso debido a la naturaleza asíncrona de la comunicación entre canisters. **Todas las funciones públicas declaradas en el cuerpo de un actor deben tener un tipo de retorno `async`**. 
 
 ### Cuerpo y retorno
-- Las llaves `{}` se utilizan para el cuerpo de la función. El cuerpo de la función es un conjunto de instrucciones que se ejecutan cuando se llama a la función.
+- Las llaves `{}` son usadas para el cuerpo de la función. El cuerpo de la función es un conjunto de instrucciones que son ejecutadas cuando la función es llamada.
 En nuestro ejemplo, para `setCount` tenemos 2 instrucciones:
-1. Asignar el valor de `count` al valor de `n`. 
-2. Devolver el valor actual de `count`.
+1. Asignar el valor de  `count` al valor de `n`. 
+2. Retornar el valor de `count`.
 
-Motoko permite omitir el `return` al final del cuerpo de la función, porque un bloque siempre se evalúa como su última expresión. Lo que significa que podríamos reescribir el código de la siguiente manera y seguiría siendo válido:
+Motoko permite omitir el `return` al final del cuerpo de la función, ya que un bloque siempre es evaluado a su última expresión. Lo que significa que podríamos reescribir el código de la siguiente forma y seguirá siendo válido:
 ```motoko
 public func setCount(n : Nat) : async Nat {
     count := n;
     count;
 };
 ```
-### Público vs Privado
-Hasta ahora solo hemos visto funciones `públicas`. Sin embargo, en Motoko también puedes definir funciones `privadas`.
+### Public vs Private
+Hasta ahora solo hemos visto las funciones `public`. Sin embargo, en Motoko también puedes definir funciones `private`. 
 ```motoko
 private func add(n : Nat, m : Nat) : Nat {
     return (n + m)
 };
 ```
-La función ahora está marcada como `privada`, lo que significa que solo puede ser utilizada por el actor y no puede ser llamada directamente por usuarios o canisters externos.
+Ahora la función está marcada como `private`, lo que significa que esta solo puede ser usada por el actor y no puede ser llamada directamente por usuarios o canisters externos.
 
-Por lo general, las funciones `privadas` se usan como ayudantes en otras funciones, que generalmente se definen como `públicas`. Por ejemplo, podríamos escribir lo siguiente.
+Normalmente las funciones `private` son usadas como ayudantes de otras funciones, que generalmente son definidas como `public`. Por lo que podríamos escribir el siguiente código.
+
 ```motoko
 actor {
     var count : Nat = 0;
@@ -118,14 +121,14 @@ actor {
 }
 ```
 
-> Podemos eliminar la palabra clave `private`, una declaración de función se define como `privada` por defecto en Motoko a menos que se declare lo contrario (es decir, a menos que se declare `public`).
+> Podemos remover la palabra clave `private` ,una función en Motoko por defecto es declarada private a no ser que se especifique lo contrario (i.e a menos que se declare `public`).
 
-## 🕹️ Control de flujo.
-El control de flujo se refiere al orden en que se ejecuta un programa y el orden que sigue. Decide qué declaraciones, instrucciones o llamadas de función se ejecutan y en qué orden, en función de las condiciones o decisiones tomadas durante la ejecución. <br/>
+## 🕹️ Control flow.
+Control flow se refiere al orden en el cual el programa es ejecutado y el orden que sigue. Este decide que declaraciones, instrucciones o llamadas de funciones son ejecutadas y en qué orden, basándose en decisiones hechas en el momento de ejecución. <br/>
 
-Discutimos tres constructos de control de flujo comunes en Motoko: expresiones `if else`, expresiones `loops` y expresiones `switch`.
+Podemos distinguir tres constructores comunes de control flow en Motoko: dichas expresiones son `if else` , `loops` y `switch`.
 ### If/else
-La instrucción `if` permite que el programa tome una decisión y ejecute un bloque de código específico solo si se cumple una condición específica. La instrucción opcional `else` proporciona una alternativa si no se cumple la condición. 
+La declaración `if` permite al programa tomar decisiones y ejecutar un bloque de código específico solo si la condición se cumple. La declaración opcional  `else` permite una alternativa si la condición no se cumple. 
 ```motoko
     func isEven(n : Nat) : Bool {
         if(n % 2 == 0){
@@ -135,8 +138,8 @@ La instrucción `if` permite que el programa tome una decisión y ejecute un blo
         };
     };
 ```
-En este caso, se probará la condición `n % 2` en tiempo de ejecución y, según el valor de `n`, devolverá `true` o `false`.
-En muchos casos, el bloque `else` se puede eliminar sin modificar el comportamiento del bloque de código.
+En este caso, la condición `n % 2` será probada en la ejecución y dependiendo del valor de `n` devolverá `true` o `false`.
+En algunos casos el bloque `else`puede ser removido sin modificar el comportamiento del código.
 ```motoko
     func isEven(n : Nat) : Bool {
         if(n % 2 == 0){
@@ -145,7 +148,7 @@ En muchos casos, el bloque `else` se puede eliminar sin modificar el comportamie
         return false;
     };
 ```
-En otros casos, se pueden agregar bloques `else if` para verificar condiciones adicionales.
+En otros casos, se puede agregar los bloques `else if` para comprobar condiciones adicionales.
 ```motoko
     func checkNumber(i : Int) : Text {
         if(n < 0) {
@@ -161,20 +164,19 @@ En otros casos, se pueden agregar bloques `else if` para verificar condiciones a
         }
     };
 ```
-Ten en cuenta que las sentencias `else if` se utilizan después de la sentencia `if` inicial para verificar condiciones adicionales, y solo se ejecutará el bloque de código asociado a la primera condición que se evalúe como verdadera.
-
-### Bucles
-Los bucles permiten la ejecución repetida de un bloque de código hasta que se cumpla una condición específica. Hay varios types de bucles, como los bucles `for` y los bucles `while`:
-- Los bucles `for` en Motoko utilizan un iterador del tipo `Iter`. Profundizaremos en el tipo `Iter` en un capítulo posterior, pero para resumir, los objetos `Iter` facilitan el bucle a través de colecciones de datos.
+Debes recordar que la declaración `else if` es usada después de la declaración `if` inicial  para comprobar condiciones adicionales, y solo el bloque de código relacionado con la primera condición que devuelva true será ejecutado.
+### Loops (bucles)
+Loops permite la ejecución de un código hasta que cierta condición se cumpla. Se pueden encontrar distintos tipos de bucles ,como bucles`for`y bucles `while`:
+- Bucles `for` en Motoko usan un iterador del tipo `Iter`. Discutiremos sobre el tipo `Iter` más Adelante en otro capítulo, pero para resumir, los objetos `Iter` facilitan el recorrer un bucle y la colección de datos.
 ```motoko
 var count : Nat = 0;
 for (x in Iter.range(0, 10)) {
     count += 1;
 };
 ```
-En este ejemplo, `Iter.range(0, 10)` itera a través de todos los números naturales entre 0 y 10, inclusive de ambos límites.
+En este ejemplo, `Iter.range(0, 10)` recorre todos los números naturales entre 0 y 10, incluyendo ambos números.
 
-Alternativamente, puedes usar bucles `while`, que se ejecutan mientras se cumpla la condición especificada.
+Alternativamente, puedes usar los bucles `while`, los cuales se ejecutan siempre y cuando una condición se cumpla y devuelva true.
 
 ```motoko
 var count : Nat = 0;
@@ -182,16 +184,16 @@ while (count < 10) {
     count += 1;
 };
 ```
-En este caso, el bucle continuará ejecutándose hasta que la variable `count` ya no sea menor que 10.
+En este caso, el bucle se seguirá ejecutando hasta que la variable `count` siga siendo menor que 10.
 ### Switch/case
-La expresión `switch` en Motoko es un constructo de control de flujo que coincide con patrones basados en su entrada. Comienza con la palabra clave `switch`, seguida de la expresión de entrada encerrada entre paréntesis `()`, y un bloque de código encerrado entre llaves `{}`.
+La expresión `switch` en Motoko es un constructor que controla el flujo del código basándose en el  input. Comienza con la palabra clave `switch` , seguido del input entre paréntesis `()`, y un bloque de código encerrado entre llaves `{}`.
 ```motoko
 let x = 3;
 switch(x) {
     //
 };
 ```
-Dentro del bloque de código, se utiliza la palabra clave `case` para definir patrones y expresiones encerradas entre llaves `{}`. La entrada se compara con los patrones especificados en cada caso, y si se encuentra una coincidencia, se ejecuta la expresión dentro del bloque correspondiente de `case`.
+Dentro de este bloque de código, la palabra clave `case` es usada para definir patrones y expresiones encerradas dentro de llaves `{}`. El input es comparado a cada valor especificado en cada caso, y si se encuentra una coincidencia, la expresión correspondiente a cada  `case` es ejecutada.
 ```motoko
 let x = 3;
 switch(x) {
@@ -213,7 +215,7 @@ switch(x) {
     };
 };
 ```
-En Motoko, es obligatorio incluir una declaración `case(_)` para cada valor de entrada posible en una expresión `switch`. Es por eso que a veces se utiliza el patrón `case(_)` como un caso comodín para manejar cualquier valor de entrada que no coincida con ninguno de los otros casos. El símbolo de guión bajo (`_`) es un comodín que coincide con cualquier valor, por lo que el patrón `case(_)` coincidirá con cualquier valor de entrada.
+En Motoko, es obligado incluir una declaración  `case(_)` para cada posible valor del input en una expresión `switch`. Es por eso que case(`_`) a veces es usado como un catch-all case para manejar cualquier valor de un input que no coincide con ningún otro case. El símbolo de raya baja (`_`) es un comodín que coincide con cualquier valor, por lo que `case(_)` coincidirá con cualquier valor del input.
 
 La expresión `switch/case` se usa mejor con variantes.
 
@@ -253,4 +255,4 @@ switch(day) {
     };
 };
 ```
-En este ejemplo, definimos un tipo variante `Day`, declaramos una variable `day` con ese tipo y luego lo usamos como entrada en nuestra expresión `switch`. La expresión `switch` es un constructo de control de flujo poderoso que permite el patrón de coincidencia, proporcionando una forma concisa y legible de manejar múltiples casos basados en el valor de entrada.
+En este ejemplo, definimos una variante de tipo `Day`, declarando una variable `day` con dicho tipo , y después esta será usada como nuestro input para la expresión `switch`. La expresión switch es un poderoso controlador de flujo que permite la coincidencia de patrones, proporcionando una concisa y leíble manera de manejar múltiples casos basados en el valor del input.
