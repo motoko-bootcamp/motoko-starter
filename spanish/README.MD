@@ -1,4 +1,4 @@
-# Motoko Bootcamp: edición de inicio - 7 días para iniciarse en Internet Computer 🏁
+# Motoko Bootcamp: starter - 7 días para iniciarse en Internet Computer 🏁
 
 <p align="center"> <img src="./assets/motoko_bootcamp_8-14.png"  height="400px" width="auto" style="border: 2px solid black;"> </p> 
 
