@@ -138,7 +138,7 @@ Caused by: Failed update call.
 An important thing to note, is that the canister persits it's state by default. If we send another command:
 
 ```bash
-$ dfx canister call Counter add '(5)
+$ dfx canister call Counter add '(5)'
 (8 : int)
 ```
 We can see that the value of `counter` is 8 - which corresponds to the two commands we've run so far. 
@@ -194,7 +194,7 @@ $ dfx canister install Counter --mode upgrade
 
 Now that we have upgraded our canister, if we look at the value of `counter` (
 ```motoko
-$ dfx canister call aCounter show 
+$ dfx canister call Counter show 
 (0 : int)
 ```
 
