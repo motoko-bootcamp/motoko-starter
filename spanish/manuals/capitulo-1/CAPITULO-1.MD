@@ -1,4 +1,4 @@
-# Chapter 1: Fundamental concepts.
+# Capítulo 1: Conceptos Fundamentales.
 ##  ¿Qué es un canister?
 Hay una palabra que necesitas dominar absolutamente de toda esta semana. ¿Estás listo? 
 Es... 🥁... **CANISTER**! 
