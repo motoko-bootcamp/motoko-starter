@@ -1,4 +1,4 @@
-# Chapter 3:  Tipos primitivos en Motoko.
+# Capítulo 3:  Tipos primitivos en Motoko.
 Los tipos primitivos son tipos de datos fundamentales que no están compuestos de más tipos fundamentales. <br/>
 
 Los tipos de datos primitivos son todos los tipos de datos que no necesitan ser importados antes de ser usados en type annotation.
