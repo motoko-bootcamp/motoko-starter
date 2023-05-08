@@ -37,7 +37,7 @@ Make sure to add the calendar to follow the week 👉 [Add the Motoko Bootcamp c
 ### 🎮 Dashboard 
 WIP
 ### 📜 Daily guides
-The Bootcamps is divided in 7 days. 
+The Bootcamps is divided in 6 days. (Sunday is for rest 😴)
 For each day, you will find a dedicated guide - those guides will be your companions to navigate through all the available resources and challenges.
 - [Day 1️⃣](./days/day-1/README.MD) 
 - [Day 2️⃣](./days/day-2/README.MD) 
@@ -45,7 +45,6 @@ For each day, you will find a dedicated guide - those guides will be your compan
 - [Day 4️⃣](./days/day-4/README.MD) 
 - [Day 5️⃣](./days/day-5/README.MD) 
 - Day 6️⃣ [To be released] 
-- Day 7️⃣ [To be released]
 ### 🏗️ Projects 
 Projects will help you build confidence and practical skills. You will be provided with clear instructions and a starting codebase to complete. 
 You will work on 5 different projects:
@@ -101,9 +100,7 @@ They're like your personal superheroes, here to guide you through the challenges
 
 > You can consult the list of all Motoko Angel in [the dedicated channel](https://discord.gg/nRxUph88fX).
 ### 🎓 Graduation
-WIP
-### 🎁 Prizes
-WIP
+To graduate, you need to complete the 5 projects and submit them through the dashboard. 🧑‍🎓
 ### 🏕️ Community basecamp
 Interested in connecting with other enthusiasts? Join students in your area to follow the week and work on challenges, lectures, and projects together. [Click here to join a community basecamp](https://discord.gg/JS9g2ahtDs).
 <p align="center"> <img src="./assets/community-hub.png" width="300px" style="border: 2px solid black;"> </p>
