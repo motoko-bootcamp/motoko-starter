@@ -1,0 +1,7 @@
+type anon_class_8_1 = 
+ service {
+   getCounts: () -> (text) query;
+   increment: () -> (nat);
+   myCount: () -> (nat) query;
+ };
+service : () -> anon_class_8_1

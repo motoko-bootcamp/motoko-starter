@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "admin_single": {
+      "main": "admin_single.mo",
+      "type": "motoko"
+    },
+    "admin_multiples": {
+      "main": "admin_multiples.mo",
+      "type": "motoko"
+    },
+    "errors": {
+      "main": "errors.mo",
+      "type": "motoko"
+    },
+    "cycles_send": {
+      "main": "cycles_send.mo",
+      "type": "motoko"
+    },
+    "cycles_receive": {
+      "main": "cycles_receive.mo",
+      "type": "motoko"
+    }
+  },
+  "dfx": "0.12.0",
+  "version": 1
+}

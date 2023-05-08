@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "canisters": {
+        "crud": {
+            "type": "motoko",
+            "main": "./main.mo"
+        }
+    }
+}

@@ -2,7 +2,7 @@
 Los tipos primitivos son tipos de datos fundamentales que no están compuestos de más tipos fundamentales. <br/>
 
 Los tipos de datos primitivos son todos los tipos de datos que no necesitan ser importados antes de ser usados en type annotation.
-<p align="center"> <img src="./assets/motoko_primitives_types.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-3/assets//motoko_primitives_types.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> Unos cuantos tipos de datos primitivos en Motoko</p>
 
 ## 🔢 Nat

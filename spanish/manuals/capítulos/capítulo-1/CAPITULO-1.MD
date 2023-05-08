@@ -14,27 +14,27 @@ El Internet Computer es una plataforma que aloja un gran número de aplicaciones
     - Cuando lees contenido en un sitio web alojado en el Internet Computer.
     - Y muchas más...
 
-<p align="center"> <img src="./assets/oc_message.png" height="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets/oc_message.png" height="600px" style="border: 1px solid black;"/> </p>
 <p align="center"> OpenChat es una aplicación de mensajes descentralizada desarrollada en el Internet Computer. </p>
 
 ## WebAssembly
 Antes de empezar con Motoko - necesitamos explicar otro término: **WebAssembly**.
 
-<p align="center"> <img src="./assets/canister_overview.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//canister_overview.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> Vista general de un canister.</p>
 
 Si hacemos zoom dentro de un canister podemos observar que esta compuesto de:
 - Un **WebAssembly module** el cual es una pieza de código compilado de lenguajes como Rust o Motoko. Este es el código que es instalado en el canister y en última instancia es ejecutado. 
 -  **WebAssembly memory** - también llamadas páginas de memoria. Aquí es donde el estado del canister es almacenado y los documentos son almacenados (fotos, videos, tokens...). El código ejecutado por el WebAssembly module modificara la memoria.
 
-<p align="center"> <img src="./assets/webassembly.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//webassembly.png" width="600px" style="border: 2px solid black;"> </p>
 
 <p align="center"> ¿Qué es <b> WebAssembly </b>? <p>
 WebAssembly es un formato binario de bajo nivel para ejecutar código de múltiples entornos  (browsers, cloud platform, smart devices, virtual machine..). Los beneficios principales de usar WebAssembly son, 
 
 - **WebAssembly** admite código escrito en múltiples lenguajes (C, C++, Rust, Motoko) haciendo de esta una solución versátil para los desarrolladores.
 - **WebAssembly** code es  portable y se puede ejecutar en casi cualquier dispositivo.Lo escribes una vez y puedes ejecutarlo en cualquier lugar!
-<p align="center"> <img src="./assets/webassembly_stack.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//webassembly_stack.png" width="500px" style="border: 1px solid black;"/> </p>
 <p align="center"> Escribe una vez y se despliega en cualquier plataforma. </p>
 
 - **WebAssembly** es rápido. Es un lenguaje que es cercano al  lenguaje de la máquina y ha sido optimizado para aumentar la velocidad y el rendimiento. Puedes usarlo para crear aplicaciones complejas e intensivas (Juegos,simulaciones, gráficos)!
@@ -44,11 +44,11 @@ WebAssembly es un formato binario de bajo nivel para ejecutar código de múltip
 El único problema con **WebAssembly** es que es un lenguaje de bajo nivel  y este provee muy poca abstracción, haciendo difícil su uso para escribir aplicaciones complejas como dApps (aplicaciones descentralizadas).
 
 ## El lenguaje Motoko
-<p align="center"> <img src="./assets/motoko_banner.png" width="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//motoko_banner.png" width="600px" style="border: 1px solid black;"/> </p>
 
 Este es el porque  [DFINITY Foundation](https://dfinity.org/) ha creado un nuevo lenguaje llamado **Motoko**, el cual es un lenguaje de programación diseñado específicamente para crear aplicaciones descentralizadas (dApps) en el  Internet Computer. Desde que el código de Motoko puede ser directamente compilado en **WebAssembly**, es un lenguaje increíble para construir en el Internet Computer. Motoko es un lenguaje de alto nivel, que es fácil de usar. Escribes en Motoko y luego es compilado para ti en WebAssembly.
 
-<p align="center"> <img src="./assets/motoko_to_wasm.png" width="600px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//motoko_to_wasm.png" width="600px" style="border: 1px solid black;"/> </p>
 <p align="center">En Motoko el código se hila , En WebAssembly se ejecuta.</p>
 
 > Vale la pena señalar que WebAssembly, fue co-diseñado por [Andreas Rossberg](https://github.com/rossberg), quien se unio a la  DFINITY Foundation a principios de 2017 para trabajar en el entorno de ejecución canister smart contract y es además el diseñador original del lenguaje Motoko. La norma es mantenida por  [World Wide Web Consortium](https://www.w3.org/). 
@@ -92,7 +92,7 @@ func factorial(n : Nat) : Nat {
 
 Un documento Motoko es un documento con la extensión `mo`.
 
-<p align="center"> <img src="./assets/mo_extension.png" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//mo_extension.png" width="300px" style="border: 2px solid black;"> </p>
 
 **Motoko** es un lenguaje de alto nivel como **JavaScript** o **Python**. Generalmente es considerado más fácil de aprender que un lenguaje de más bajo nivel como **Rust** o **C**. 
 
@@ -121,7 +121,7 @@ Ya que los canisters han sido implementados para seguir el actor model - no te s
 - Pueden crear otros canisters.
 
 
-<p align="center"> <img src="./assets/actor_model.gif" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//actor_model.gif" width="800px" style="border: 2px solid black;"></p>
 <p align="center">Un canister recibe un mensaje, lo ejecuta y posiblemente envía otro mensaje a otros canisters (o incluso crea uno nuevo) en respuesta. </p>
 
 Consideremos el siguiente actor:
@@ -156,7 +156,7 @@ Update calls son usadas cuando el usuario quiere modificar el estado de un canis
 - Enlazar o compartir contenido en [Distrikt](https://az5sd-cqaaa-aaaae-aaarq-cai.ic0.app/).
 - Comprar un NFT en [Entrepot](https://entrepot.app/).
 
-<p align="center"> <img src="./assets/update_call_gif.gif" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//update_call_gif.gif" width="800px" style="border: 2px solid black;"></p>
 
 ### Query calls
 Este tipo de call es usada cuando un usuario quiere leer datos sin modificar su estado.       Estas calls pueden ser respondidas por un solo node, haciendo que estas sean más rápidas (alrededor de 200ms). La parte negativa es que **query** calls son menos seguras ya que un un node malicioso potencialmente puede proveer información falsa. Una query call será usada en las siguientes situaciones:
@@ -164,7 +164,7 @@ Este tipo de call es usada cuando un usuario quiere leer datos sin modificar su 
 - Revisar tu foto de perfil en 
 - Cargar un video o una foto en cualquier plataforma.
 
-<p align="center"> <img src="./assets/query_call_gif.gif" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//query_call_gif.gif" width="800px" style="border: 2px solid black;"></p>
 
 >Ya que una query call elude el consenso y recae en un único node, esta es menos segura que una update call.
 
@@ -202,7 +202,7 @@ Para pagar el coste de computación y almacenamiento los canisters deben ser car
 Cada canister tiene su propio balance de **cycles**  - esto se puede entender como la bateria vital de un **canister**. 
 **Cycles** pueden obtenerse mediante el quemado de **ICPs**.
 
-<p align="center"> <img src="./assets/cycles_burned.gif" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-1/assets//cycles_burned.gif" width="600px" style="border: 2px solid black;"> </p>
 <p align="center"> Cuando se procesa un nuevo mensaje, los cycles son restados del balance del canister y son quemados.</p>
 
 A diferencia de **gas** en **Ethereum**, **cycles** en el **Internet Computer** no son pagados por los usuarios. Esto significa que puedes interactuar con los canisters y navegar por sitios web sin pagar nada. Esto se conoce como el  **modelo reverse-gas** y es una gran mejora para la experiencia de los usuarios ya que elimina la necesidad de crear wallets, poseer tokens y pagar altas tasas.
