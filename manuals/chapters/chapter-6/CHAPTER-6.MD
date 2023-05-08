@@ -97,11 +97,14 @@ Buffer.toArray<Nat>(b); // [0, 10];
 ```
 ## 🔗 List
 Purely-functional, singly-linked lists. A list of type List<T> is either null or an optional pair of a value of type T and a tail, itself of type List<T>. 
+
 [List library](https://internetcomputer.org/docs/current/motoko/main/base/List/)
 ```motoko
 type List<T> = ?(T, List<T>);
 ```
-"The difference between a list and an array is that an array is stored as one contiguous block of bytes in memory and a list is 'scattered' around without the elements having to be adjacent to each other. The advantage is that we can use memory more efficiently by filling the memory more flexibly. The downside is that for operations on the whole list, we have to visit each element one by one which may be computationally expensive." -(source)[https://web3.motoko-book.dev/base-library/data-structures/list.html]
+"The difference between a list and an array is that an array is stored as one contiguous block of bytes in memory and a list is 'scattered' around without the elements having to be adjacent to each other. The advantage is that we can use memory more efficiently by filling the memory more flexibly. The downside is that for operations on the whole list, we have to visit each element one by one which may be computationally expensive."
+[source](https://web3.motoko-book.dev/base-library/data-structures/list.html)
+
 Read about Lists and Recursive types [here](https://web3.motoko-book.dev/advanced-types/recursive-types.html).
 
 Here is an example of a function that retrieves the last element of a particular list.
