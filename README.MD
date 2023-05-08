@@ -3,7 +3,6 @@
 <p align="center"> <img src="./assets/motoko_bootcamp_8-14.png"  height="400px" width="auto" style="border: 2px solid black;"> </p> 
 
 ### Participate in Motoko Bootcamp: Starter edition. You can follow online from anywhere in the world or join one of [community basecamp](https://discord.gg/FWQszm86cj). 
-### <h3 align="center" style="font-size: 60px;text-decoration: underline;">  <a style="font-weight: bold; " href="https://forms.gle/E6L7dytdzhVJ5bVK8"> 👉 Apply </a> </h3>
 
 <i> La traducción al español puedes encontrarla [aquí](./spanish/README.MD). </i>
 ## Introduction
@@ -24,6 +23,54 @@ Despite the incredible technology we believe that the true value of a network li
 
 Our goal is to transmit both technical knowledge and enthusiasm for the Internet Computer as a force for a better future. We believe in its potential to create a fairer, more hopeful world, and hope the insights and connections you make this week contribute to that goal.
 
+## How to get started? 🏁
+
+### Step 0: Make sure you are qualified ✅
+Only students that have qualified and received the "Motoko Bootcamp 2023" role are able to join. If 
+### Step 1: Register on the dashboard.
+1. Connect to: [Motoko Bootcamp Dashboard](https://24ytc-bqaaa-aaaan-qdl7q-cai.ic0.app/)
+
+<p align="center"> <img src="./assets/mbc_dashboard.png" width="600px" style="border: 2px solid black;"> </p>
+
+2. Make sure to **Login**.
+3. Register
+
+<p align="center"> <img src="./assets/mbc_register.png" width="400px" style="border: 2px solid black;"> </p>
+
+- Your handle is your name - feel free to choose whatever you want.
+- Your principal ID should correspond to the identity you are planning to use for the week, to obtain your principal id run : `dfx identity get-principal` in your terminal.
+- Select if a you are a Spanish speaker.
+### Step 2: Find your team.
+Once you are registered, go into the **Profile** section.
+
+<p align="center"> <img src="./assets/mbc_profile.png" width="400px" style="border: 2px solid black;"> </p>
+
+This where you will your team. Then you'll need to go into Discord and access the **Team** channel.
+
+<p align="center"> <img src="./assets/mbc_teams.png" width="400px" style="border: 2px solid black;"> </p>
+
+React to the message with the emoji corresponding to your team. You'll automatically receive the role corresponding to your team.
+### Step 3: Go to Day 1
+For each day, you will find a dedicated guide - those guides will be your companions to navigate through all the available resources and challenges.
+- [Click to access to Day 1️⃣ ](./days/day-1/README.MD) 
+
+### Step 4: Submit your canister once you are done.
+1. Assuming you have deployed the canister corresponding to project of day 1. Note the **canister ID**.
+2. Connect to: [Motoko Bootcamp Dashboard](https://24ytc-bqaaa-aaaan-qdl7q-cai.ic0.app/) - go the **Submit Code** section.
+3. Add your canister id and select "**Day 1**". 
+4. Click on submit. If your submission is valid, you'll see the update in **Submission Status**.
+
+<p align="center"> <img src="./assets/mbc_submit_code.png" width="600px" style="border: 2px solid black;"> </p>
+
+### Step 5: Complete all other days.
+
+- [Day 1️⃣](./days/day-1/README.MD) 
+- [Day 2️⃣](./days/day-2/README.MD) 
+- [Day 3️⃣](./days/day-3/README.MD) 
+- [Day 4️⃣](./days/day-4/README.MD) 
+- [Day 5️⃣](./days/day-5/README.MD) 
+
+
 ## Overview
 Motoko Bootcamp is an online event, you can follow the entire week online or join other enthusiasts in a [community basecamp](https://discord.gg/FWQszm86cj) to follow the week together.
 
@@ -34,8 +81,6 @@ Make sure to add the calendar to follow the week 👉 [Add the Motoko Bootcamp c
 
 > Events should appear in your time zone. If they don't, add the calendar to your personal agenda by clicking "+Google Calendar" in the bottom right to update it to your time zone.
 
-### 🎮 Dashboard 
-WIP
 ### 📜 Daily guides
 The Bootcamps is divided in 6 days. (Sunday is for rest 😴)
 For each day, you will find a dedicated guide - those guides will be your companions to navigate through all the available resources and challenges.
@@ -73,8 +118,7 @@ In addition to the main program, we've got some awesome activities lined up for 
 ###  🫂 Teams 
 At Motoko Bootcamp, we believe in the power the collaborative. That's why you will be put into teams and each team will have a score. The score of the team depends on the progress of **all** members.<br/>
 Although you'll be working on your project independently, we want to ensure you have others to share your journey with and help keep you motivated.
-We encourage you to schedule a daily meeting with your team on the Discord voice channel to stay in touch and discuss any challenges you face.
-**Remember, you're not alone on this journey!**
+We encourage you to schedule a daily meeting with your team on the Discord voice channel to stay in touch and discuss any challenges you face. **Remember, you're not alone on this journey!**
 
 ### 📞 Assistance 
 This event is being run by volunteers and we have limited resources, we won't be able to answer all questions at all times considering that we have hundreds of students, please understand this fact and make sure to follow all instructions in the order provided. <br/>
