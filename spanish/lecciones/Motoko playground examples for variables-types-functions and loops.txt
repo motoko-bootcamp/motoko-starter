@@ -1,16 +1,16 @@
 
 
-Lecture:  Variables, loops, functions and types lecture.
+Lectura: Variables, loops, funciones y types.
 
-Code examples can be found here:
+Ejemplos de códigos puedes encontrar aquí:
 
-a.  Estimator example:  https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=2983368476
+a.  Estimador: https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=2983368476
 
-b.  Loop example: https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=2235013981
+b.  Loop: https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=2235013981
 
-c.  while loop example: https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=1492349980
+c.  while loop: https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=1492349980
 
-d.  Optional types example https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=4079654588
+d.  Types opcionales: https://m7sm4-2iaaa-aaaab-qabra-cai.ic0.app/?tag=4079654588
 
 
 

@@ -1,48 +1,48 @@
 import Int "mo:base/Int";
 actor Calculator {
-    // Step 1 -  Define a mutable variable called `counter`.
+    // Paso 1 -  Define una variable mutable llamada `counter`.
     
-    // Step 2 - Implement add
+    // Paso 2 - Implementa el add
     public func add(x : Float) : async Float {
         // 
     };
     
-    // Step 3 - Implement sub 
+    // Paso 3 - Implementa el sub 
     public func sub(x : Float) : async Float {
         // 
     };
     
-    // Step 4 - Implement mul 
+    // Paso 4 - Implementa el mul 
     public func mul(x : Float) : async Float {
         // 
     };
     
-    // Step 5 - Implement div 
+    // Paso 5 - Implementa el div 
     public func div(x : Float) : async ?Float {
         // 
     };
     
-    // Step 6 - Implement reset 
+    // Paso 6 - Implementa el reset 
     public func reset(): async () {
         // 
     };
     
-    // Step 7 - Implement query 
+    // Paso 7 - Implementa el query 
     public query func see() : async Float {
         // 
     };
     
-    // Step 8 - Implement power 
+    // Paso 8 - Implementa el power 
     public func power(x : Float) : async Float {
         // 
     };
     
-    // Step 9 - Implement sqrt 
+    // Paso 9 - Implementa el sqrt 
     public func sqrt() : async Float {
         // 
     };
     
-    // Step 10 - Implement floor 
+    // Paso 10 - Implementa el floor 
     public func floor() : async Int {
         
     }

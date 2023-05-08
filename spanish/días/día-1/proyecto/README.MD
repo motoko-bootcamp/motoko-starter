@@ -1,26 +1,32 @@
-# Calculator ➕✖️➖➗
-On your first day of class, you enter the halls, eager to embark on the journey of a lifetime. Little do you know that you have forgotten to bring one essential tool to class — a **calculator**. 😳 <br/> 
+# Calculadora ➕✖️➖➗
 
-Your professor, a renowned expert in the community, begins the day's lesson by presenting a series of complex mathematical problems that require the use of a calculator. The students around you huddle together, pulling out their calculators to tackle the challenge. 💪 <br/>
+En tu primer día de clase, entras en las aulas con ansias de embarcarte en la aventura de tu vida. Pero sin saberlo, has olvidado traer una herramienta esencial para la clase: una **calculadora**. 😳
 
-As you search your bag in vain for your calculator, you realize that you have inadvertently left it behind. Instead of panicking or admitting defeat, your resourceful nature kicks in. You decide to rely on your intelligence and aptitude in Motoko to create your own calculator. 🧑‍💻
-## 🧑‍🏫 Requirements 
-Your task is to create the code for a **calculator**, which is implemented as a canister. 
-<br/> The canister should have a public interface that allows users to perform calculations. The canister has a memory variable called `counter` which represents the result of the most recent calculation.
-## 📒 Steps
-1. Define a mutable variable called `counter` of type `Float` that will be used to store the result of the most recent calculation.
-2. Implement `add`, which accepts a value `x` of type `Float` and performs addition. 
-3. Implement `sub`, which accepts a value `x` of type `Float` and performs subtraction.
-4. Implement `mul`, which accepts a value `x` of type `Float` and performs multiplication.
-5. Implement `div`, which accepts a value `x` of type `Float` and performs division. Make sure to guard against division by 0.
-6. Implement `reset`, which reset the value of  `counter` by setting its value to zero.
-7. Implement a `query` function `see` that returns the value of `counter`.
-8. Implement `power`, which accepts a value `x` of type `Float` and returns the value of `counter` to the power of `x`.
-9. Implement `sqrt`, which  returns the square root of `counter`.
-10. Implement `floor`, which returns the largest integer less than or equal to `counter`.
-11. Deploy the `Calculator` on the Internet Computer.
-## 📺 Interface
-> At the end of the project, your canister should implement the following interface.
+Tu profesor, un experto de renombre en la comunidad, comienza la lección del día presentando una serie de problemas matemáticos complejos que requieren el uso de una calculadora. Los estudiantes a tu alrededor se agrupan, sacando sus calculadoras para enfrentar el desafío. 💪
+
+Mientras buscas en vano en tu bolsa tu calculadora, te das cuenta de que la has dejado inadvertidamente. En lugar de entrar en pánico o admitir la derrota, tu naturaleza ingeniosa entra en acción. Decides confiar en tu inteligencia y aptitud en Motoko para crear tu propia calculadora. 🧑‍💻
+
+## Requisitos 
+Tu tarea es crear el código para una **calculadora**, que se implementa como un canister.
+
+El canister debe tener una interfaz pública que permita a los usuarios realizar cálculos. El canister tiene una variable de memoria llamada `counter`, que representa el resultado del cálculo más reciente.
+
+## Pasos
+1. Define una variable mutable llamada `counter` de tipo `Float` que se utilizará para almacenar el resultado del cálculo más reciente.
+2. Implementa `add`, que acepta un valor `x` de tipo `Float` y realiza la suma.
+3. Implementa `sub`, que acepta un valor `x` de tipo `Float` y realiza la resta.
+4. Implementa `mul`, que acepta un valor `x` de tipo `Float` y realiza la multiplicación.
+5. Implementa `div`, que acepta un valor `x` de tipo `Float` y realiza la división. Asegúrate de proteger contra la división por 0.
+6. Implementa `reset`, que restablece el valor de `counter` estableciendo su valor en cero.
+7. Implementa una función de consulta `see` que devuelve el valor de `counter`.
+8. Implementa `power`, que acepta un valor `x` de tipo `Float` y devuelve el valor de `counter` elevado a la potencia de `x`.
+9. Implementa `sqrt`, que devuelve la raíz cuadrada de `counter`.
+10. Implementa `floor`, que devuelve el entero más grande menor o igual que `counter`.
+11. Despliega la `Calculadora` en el Internet Computer.
+
+## Interfaz
+> Al final del proyecto, tu canister debe implementar la siguiente interfaz.
+
 ```motoko
 actor {
     add : shared(x : Float) -> async Float;
@@ -29,8 +35,8 @@ actor {
     div : shared(x : Float) -> async Float;
     reset: shared () -> async ();
     see: shared query () -> async Float;
-    power: shared (x : Float) -> async Float;
-    sqrt: shared () -> async Float;
-    floor: shared () -> async Int;
+    power: shared(x : Float) -> async Float;
+    sqrt: shared() -> async Float;
+    floor: shared() -> async Int;
 };
 ```
