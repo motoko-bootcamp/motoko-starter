@@ -23,7 +23,7 @@ We import the type `Time` for the `Time` library.
 6. Implement `markAsComplete`, which accepts a homeworkId of type `Nat` and updates the completed field of the corresponding homework to `true`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
 6. Implement `deleteHomework`, which accepts a `homeworkId` of type `Nat`, removes the corresponding homework from the `homeworkDiary`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
 7. Implement `getAllHomework`, which returns the list of all homework tasks in `homeworkDiary`.
-8. Implement `getPendingHomework` which returns the list of all homework tasks in homeworkDiary.
+8. Implement `getPendingHomework` which returns the list of all uncompleted homework tasks in `homeworkDiary`.
 9. Implement a `searchHomework` query function that accepts a `searchTerm` of type `Text` and returns a list of homework tasks that have the given `searchTerm` in their title or description.
 10. Deploy the howework diary on the Internet Computer.
 ## 📺 Interface
