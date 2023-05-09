@@ -31,7 +31,7 @@ actor {
     // Returns the the total number of tokens on all accounts
     totalSupply : shared query () -> async Nat;
 
-    // Returns the default transfer fee
+    // Returns the balance of an account
     balanceOf : shared query (account : Account) -> async (Nat);
 
     // Transfer tokens to another account
