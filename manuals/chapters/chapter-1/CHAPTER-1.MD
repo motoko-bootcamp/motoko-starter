@@ -191,7 +191,7 @@ actor {
 };
 ```
 
-The `query` keyword tells us that `readMessage` function is only for reading information. On the other hand, `readMessage` can update the state (we don't need to add the `update` keyword as it is assumed by default). 
+The `query` keyword tells us that `readMessage` function is only for reading information. On the other hand, `changeMessage` can update the state (we don't need to add the `update` keyword as it is assumed by default). 
 
 > We have deployed the previous actor on the Internet Computer - and you can access <a href="https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=rhjue-eaaaa-aaaaj-qazra-cai" target="_blank"> his API. </a> Try the interface and test the speed difference between `changeMessage` & `readMessage`. Have fun and leave a kind message for the next student.
 
