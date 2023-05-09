@@ -4,7 +4,7 @@
 
 ## 🏛️ ¿Una nueva forma de gobernanza? Organización Autónoma Descentralizada
 
-<p align="center"> <img src="./assets/dao_icon.png" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-2/assets/dao_icon.png" width="300px" style="border: 2px solid black;"> </p>
 
 A lo largo de la historia, los humanos han encontrado diferentes formas creativas de organizarse en grupos y estructuras sociales. Lo han hecho por diferentes razones, como la seguridad, el apoyo, la identidad social, el trabajo, el poder o incluso lo económico. Algunos grupos comunes incluyen: la unidad familiar, las tribus, los clanes, los estados, los gremios, las sociedades secretas, los partidos políticos...
 
