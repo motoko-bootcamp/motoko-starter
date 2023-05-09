@@ -6,7 +6,7 @@ Los módulos son un grupo de variables, funciones y tipos con nombre que sirven 
 El código fuente de esta biblioteca está disponible en GitHub y es mantenido por ingenieros de la fundación DFINITY y miembros de la comunidad.
 Cada módulo tiene su propia página de documentación, donde se pueden aprender sobre las funciones disponibles. Por ejemplo, aquí está [la página de documentación para el módulo `Nat`](https://internetcomputer.org/docs/current/motoko/main/base/Nat).
 
-<p align="center"> <img src="../../../chapters/chapter-5/assets/base_library_nat.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../chapters/chapter-5/assets/base_library_nat.png" width="800px" style="border: 2px solid black;"></p>
 <p align="center">  </p>
 
 ## 🧩 Módulos 
