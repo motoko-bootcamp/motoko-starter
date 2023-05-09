@@ -25,23 +25,23 @@ Hoy nos dedicaremos en profundidad al lenguaje Motoko con dos clases personaliza
 - Leer [capítulo 7: Tipos de datos no primitivos](../../manuals/capítulos/capítulo-7/capitulo-7.MD).
     - [Tuplas](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/CAPITULO-7.MD#-tuples)
     - [Objetos](https://github.com/motoko-bootcamp/motoko-starter/blob/main/spanish/manuals/capítulos/CAPITULO-7/capitulo-7.MD#-objects)
-- Leer [Apéndice 2: Desbloqueando el poder de los DAOs con los canister](../../manuals/apéndices/apéndice-2/APENDICE-2.MD) completo.
-- Leer [Apéndice 4: Visión general del NNS](../../manuals/appendix/appendix-4/APPENDIX-4.MD) completo.
-- Leer[Apéndice 7: Depuración and testeo con Motoko](../../manuals/appendix/appendix-7/APPENDIX-7.MD)
-    - [Depuración](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-7/APPENDIX-7.MD#debugging)
+- Leer [Apéndice 2: Desbloqueando el poder de los DAOs con los canister](../../manuals/apéndices/apéndice-2/APÉNDICE-2.MD) completo.
+- Leer [Apéndice 4: Visión general del NNS](../../manuals/apéndices/apéndice-4/APÉNDICE-4.MD) completo.
+- Leer[Apéndice 7: Depuración and testeo con Motoko](../../manuals/apéndices/apéndice-7/APÉNDICE-7.MD)
+    - [Depuración](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/apéndices/apéndice-7/APÉNDICE-7.MD#debugging)
 - Completa el [proyecto del día](./project/README.MD).
 ## 🎯 Objetivos de aprendizaje
 > **Antes de terminar tu día**, revisa la siguiente lista y asegúrate de que has profundizado en cada elemento de ella. Es importante que tengas un claro entendimiento de todos estos conceptos. <br/> <i> ¿Por qué no intentas explicárselos a uno de tus compañeros para medir el nivel de comprensión que tienes de ellos? </i>
 
-- Entiende qué es un [módulo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-5/capítulo-5.MD#-modules).
-- Entiende qué es la [librería base](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-5/capítulo-5.MD#-the-base-library), [cómo usarla](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-5/capítulo-5.MD#importing-from-the-base-library) y dónde encontrar el [código fuente](https://github.com/dfinity/motoko-base). 
+- Entiende qué es un [módulo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-5/CAPITULO-5.MD#-modules).
+- Entiende qué es la [librería base](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-5/CAPITULO-5.MD#-the-base-library), [cómo usarla](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-5/CAPITULO-5.MD#importing-from-the-base-library) y dónde encontrar el [código fuente](https://github.com/dfinity/motoko-base). 
 - Entiende cómo usar el [módulo de Depuración]](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-7/APPENDIX-7.MD#debugging) para testear tu código localmente.
-- Entiende cómo manipular con los [operadores de control de flujo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-2/capítulo-2.MD#%EF%B8%8F-control-flow) en Motoko: `if`, `else`, `for`, `while`, `switch/case`
+- Entiende cómo manipular con los [operadores de control de flujo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-2/CAPITULO-2.MD#%EF%B8%8F-control-flow) en Motoko: `if`, `else`, `for`, `while`, `switch/case`
 - Familiarizarse con más tipos de datos primitivos en Motoko: `Text`, `Char` y el tipo de unidad .
-- Familiarizarse con estructuras de datos simples en Motoko: [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capítulo-6.MD#%EF%B8%8F-array) , [Lista](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capítulo-6.MD#-list) & [Búfer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capítulo-6.MD#-buffer).
-- Familiarizarse con tipos de datos más avanzados: [Tuplas](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/capítulo-7.MD#-tuples) and [Objetos](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/capítulo-7.MD#-objects).
-- Entendiendo [qué es DAO](../../manuals/appendix/appendix-2/APPENDIX-2.MD), cómo puede ser usado y como el ‘Internet Computer’ te posibiliate nuevos usos innovadores para esas organizaciones.
-- Familiarizarse con un importante DAO en el ‘Internet Computer’: el [Sistema Nervioso de Red](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-4/APPENDIX-4.MD).
+- Familiarizarse con estructuras de datos simples en Motoko: [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/CAPITULO-6.MD#%EF%B8%8F-array) , [Lista](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/CAPITULO-6.MD#-list) & [Búfer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/CAPITULO-6.MD#-buffer).
+- Familiarizarse con tipos de datos más avanzados: [Tuplas](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/CAPITULO-7.MD#-tuples) and [Objetos](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/CAPITULO-7.MD#-objects).
+- Entendiendo [qué es DAO](../../manuals/apéndices/apéndice-2/APÉNDICE-2.MD), cómo puede ser usado y como el ‘Internet Computer’ te posibiliate nuevos usos innovadores para esas organizaciones.
+- Familiarizarse con un importante DAO en el ‘Internet Computer’: el [Sistema Nervioso de Red](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/apéndices/apéndice-4/APÉNDICE-4.MD).
 
 > Antes de tomar la decisión de llamarlo **Motoko**, el lenguaje desarrollado por  **DFINITY** fue inicialmente llamado **ActorScript**. 
 
