@@ -1,57 +1,58 @@
-# Homework diary 📔
-On the second day at school, you and your classmates find yourselves diving into your first collaborative assignment. Though working together is stimulating, the challenge of managing responsibilities and progress for each team member becomes quickly apparent... 😩 <br/>
+# Diario de tareas 📔
+En el segundo día de clases, tú y tus compañeros se encuentran inmersos en su primera tarea colaborativa. Aunque trabajar juntos es estimulante, el desafío de administrar responsabilidades y avances para cada miembro del equipo se hace evidente rápidamente... 😩 <br/>
 
-During a lunch break, your group brainstorms solutions for a better system to organize the tasks and assignments. <br/>
+Durante un descanso para almorzar, el grupo hace una lluvia de ideas para encontrar soluciones para un mejor sistema de organización de tareas y asignaciones. <br/>
 
-One of your classmates proposes the idea of creating a homework diary on the famous **Joogle Cloud**, where each member can update tasks and monitor progress. The group quickly agrees and starts building the diary. As you observe the project taking shape, you notice a sly smile forming on the face of one student. 😼 <br/>
+Uno de tus compañeros propone la idea de crear un diario de tareas en la famosa **Joogle Cloud**, donde cada miembro puede actualizar tareas y monitorear el progreso. El grupo está de acuerdo y comienza a construir el diario. Mientras observas el proyecto tomando forma, notas una sonrisa astuta en el rostro de un estudiante. 😼 <br/>
 
-The next day, you discover that this cunning student has exploited their access to the API keys, altering the diary to mark all their homework as completed. 🫢 <br/>
+Al día siguiente, descubres que este astuto estudiante ha explotado su acceso a las claves API, alterando el diario para marcar todas las tareas como completadas. 🫢 <br/>
 
-Shocked and disappointment spread through the group, and you realize that the centralized solution has failed to provide the transparency and security you all craved for. 
+La sorpresa y la desilusión se extienden por el grupo, y te das cuenta de que la solución centralizada no ha proporcionado la transparencia y seguridad que todos anhelaban.
 
-Determined to find a better way, the group gathers once more, and you share the idea of building the collaborative homework diary on the **Internet Computer**. <br/>
-Your classmates' eyes light up as they understand the potential of a decentralized platform to foster transparency, unity, and trust among your classmates. 🫂
-## 🧑‍🏫 Requirements 
-Your task is to create a collaborative homework diary, implement as a canister. The homework diary will allow students to create, edit, delete, and view their homework tasks.
-## 📒 Steps
-We import the type `Time` for the `Time` library. 
-1. Define a record type `Homework` that represents a homework task. A Homework has a title field of type `Text`, a description field of type `Text`, a dueDate field of type `Time`, and a completed field of type `Bool`.
-2. Define a variable called `homeworkDiary` that will be used to store the homework tasks. Use a suitable data structure (such as `Buffer` or `Array`) for this variable.
-3. Implement `addHomework`, which accepts a homework of type `Homework`, adds the homework to the `homeworkDiary`, and returns the id of the homework. The id should correspond to the index of the homework in `homeworkDiary`.
-4. Implement `getHomework`, which accepts a homeworkId of type `Nat`, and returns the corresponding homework wrapped in an Ok result. If the homeworkId is invalid, the function should return an error message wrapped in an `Err` result.
-5. Implement `updateHomework`, which accepts a homeworkId of type `Nat` and a homework of type `Homework`, updates the corresponding homework in `homeworkDiary`, and returns a unit value wrapped in an `Ok` result. If the homeworkId is invalid, the function should return an error message wrapped in an `Err` result.
-6. Implement `markAsComplete`, which accepts a homeworkId of type `Nat` and updates the completed field of the corresponding homework to `true`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
-6. Implement `deleteHomework`, which accepts a `homeworkId` of type `Nat`, removes the corresponding homework from the `homeworkDiary`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
-7. Implement `getAllHomework`, which returns the list of all homework tasks in `homeworkDiary`.
-8. Implement `getPendingHomework` which returns the list of all homework tasks in homeworkDiary.
-9. Implement a `searchHomework` query function that accepts a `searchTerm` of type `Text` and returns a list of homework tasks that have the given `searchTerm` in their title or description.
-10. Deploy the howework diary on the Internet Computer.
-## 📺 Interface
-> At the end of the project, your canister should implement the following interface.
+Decididos a encontrar una mejor manera, el grupo se reúne una vez más, y tú compartes la idea de construir el diario colaborativo de tareas en el **Internet Computer**. <br/>
+Los ojos de tus compañeros se iluminan al comprender el potencial de una plataforma descentralizada para fomentar la transparencia, la unidad y la confianza entre tus compañeros. 🫂
+
+## 🧑‍🏫 Requisitos 
+Tu tarea es crear un diario de tareas colaborativo, implementado como un canister. El diario de tareas permitirá a los estudiantes crear, editar, eliminar y ver sus tareas.
+## 📒 Pasos
+Importamos el tipo `Time` para la biblioteca `Time`. 
+1. Define un tipo de registro `Homework` que represente una tarea. Un `Homework` tiene un campo de título de tipo `Text`, un campo de descripción de tipo `Text`, un campo de fecha de vencimiento de tipo `Time` y un campo de completado de tipo `Bool`.
+2. Define una variable llamada `homeworkDiary` que se utilizará para almacenar las tareas. Utiliza una estructura de datos adecuada (como `Buffer` o `Array`) para esta variable.
+3. Implementa `addHomework`, que acepta una tarea de tipo `Homework`, agrega la tarea al `homeworkDiary` y devuelve el ID de la tarea. El ID debe corresponder al índice de la tarea en `homeworkDiary`.
+4. Implementa `getHomework`, que acepta un `homeworkId` de tipo `Nat` y devuelve la tarea correspondiente envuelta en un resultado Ok. Si `homeworkId` no es válido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+5. Implementa `updateHomework`, que acepta un `homeworkId` de tipo `Nat` y una tarea de tipo `Homework`, actualiza la tarea correspondiente en `homeworkDiary` y devuelve un valor unitario envuelto en un resultado `Ok`. Si `homeworkId` no es válido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+6. Implementa `markAsComplete`, que acepta un `homeworkId` de tipo `Nat` y actualiza el campo `completed` de la tarea correspondiente a `true` y devuelve un valor unitario envuelto en un resultado `Ok`. Si `homeworkId` no es válido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+7. Implementa `deleteHomework`, que acepta un `homeworkId` de tipo `Nat`, elimina la tarea correspondiente de `homeworkDiary` y devuelve un valor unitario envuelto en un resultado `Ok`. Si `homeworkId` no es válido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+8. Implementa `getAllHomework`, que devuelve la lista de todas las tareas en `homeworkDiary`.
+9. Implementa `getPendingHomework`, que devuelve la lista de todas las tareas en `homeworkDiary`.
+10. Implementa una función de consulta `searchHomework` que acepta un `searchTerm` de tipo `Text` y devuelve una lista de tareas que tienen el `searchTerm` dado en su título o descripción.
+11. Despliega el diario de tareas en Internet Computer.
+## 📺 Interfaz
+> Al final del proyecto, tu canister debería implementar la siguiente interfaz.
 ```motoko
 actor {
-    // Add a new homework task
+    // Agregar nueva tarea.
     addHomework: shared (homework: Homework) -> async Nat;
 
-    // Get a specific homework task by id
+    // Obtener una tarea específica por id.
     getHomework: shared query (id: Nat) -> async Result.Result<Homework, Text>;
 
-    // Update a homework task's title, description, and/or due date
+    // Actualizar el título, descripción y/o fecha de vencimiento de una tarea.
     updateHomework: shared (id: Nat, homework: Homework) -> async Result.Result<(), Text>;
 
-    // Mark a homework task as completed 
+    // Marcar tarea como completada.
     markAsCompleted: shared (id: Nat) -> async Result.Result<(), Text>;
 
-    // Delete a homework task by id
+    // Eliminar tarea por id.
     deleteHomework: shared (id: Nat) -> async Result.Result<(), Text>;
 
-    // Get the list of all homework tasks
+    // Obtener lista de todas las tareas.
     getAllHomework: shared query () -> async [Homework];
 
-    // Get the list of pending (not completed) homework tasks
+    // Obtener lista de tarea listas (No completadas).
     getPendingHomework: shared query () -> async [Homework];
 
-    // Search for homework tasks based on a search terms
+    // Buscar tareas en base a términos de búsqueda.
     searchHomework: shared query (searchTerm: Text) -> async [Homework];
 }
 ```
