@@ -52,7 +52,7 @@ actor {
     let n : Nat = 5;
 
     //Definimos el otro canister en nuestro propio código.
-    let rustActor : actor = {
+    let rustActor = actor(<rust-canister-id>) : actor {
         square : Nat -> Nat;    // Aqui usamos tipos de Motoko  
     };
 
@@ -62,7 +62,7 @@ actor {
 
 };
 ```
-> Candid en ocasiones es llamado "** el lenguaje del Internet Computer**" ya que así es como los canisters se comunican entre ellos. Raramente deberás escribir Candid pero es importante entender porque Candid fue creado, como leer lo, y como funciona a que encontrarás documentos Candid en los proyectos que trabajes. 
+> Candid en ocasiones es llamado "**el lenguaje del Internet Computer**" ya que así es como los canisters se comunican entre ellos. Raramente deberás escribir Candid pero es importante entender porque Candid fue creado, como leer lo, y como funciona a que encontrarás documentos Candid en los proyectos que trabajes. 
 ## Interactuar con un canister
 Para seguir esta parte, es muy recomendado que despliegues localmente el ejemplo llamado greet application que es entregado con `dfx`.
 Genera el código para este ejemplo ejecutando
