@@ -1,42 +1,43 @@
-## Apéndice 4: Sistema Nervioso de Red (NNS)
-<p align="center"> <img src="../../../appendix/appendix-4/assets/nns_home.png" width="800px" style="border: 2px solid black;"> </p>
-<p align="center"> Página principal del NNS</p>
+## Appendix 4: Network Nervous System (NNS)
+<p align="center"> <img src="assets/nns_home.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> Home page of the NNS</p>
 
-El DAO más desarrollado que opera en IC (¡hasta ahora!) es el que administra la propia red. Este DAO se llama **Sistema Nervioso de Red** y es responsable de tomar decisiones sobre el futuro de la red, coordinar varias partes y organizar la estructura de la red.
+The most developed DAO operating on the IC (so far!) is the one that manages the network itself. This DAO is called the **Network Nervous System** and it is responsible for making decisions about the future of the network, coordinating various parties, and arranging the network's structure.
 
-Típicamente, cuando se necesita actualizar una cadena de bloques, el proceso tarda unas pocas semanas o meses en completarse. Esto requiere que los operadores de nodos actualicen su software. Si algunos operadores de nodos se niegan a actualizar o si un grupo de ellos instala una versión diferente, puede resultar en un "fork", donde la cadena de bloques se divide en dos cadenas separadas, creando dos redes completamente diferentes de menor tamaño.
+Typically, when a blockchain needs to be upgraded, it takes a few weeks or months to complete the process. This requires node operators to upgrade their software. If some node operators refuse to upgrade or if a group of them install a different version, it can result in a "fork," where the blockchain splits into two separate chains - creating two completely different network of lower sizes.
 
-<p align="center"> <img src="../../../appendix/appendix-4/assets/hard_fork.png" width="800px" style="border: 2px solid black;"> </p>
-<p align="center"> El fork de Bitcoin de 2017 dividió la comunidad, algunos abogando por un aumento en el tamaño de los bloques, lo que llevó a la creación de dos versiones: el Bitcoin original y Bitcoin Cash con nuevas reglas.</p>
+<p align="center"> <img src="assets/hard_fork.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> The 2017 Bitcoin fork split the community, with some advocating for increased block size, leading to the creation of two versions: the original Bitcoin and Bitcoin Cash with new rules</p>
 
-En Internet Computer, las actualizaciones son votadas por el **Sistema Nervioso de Red** (NNS, por sus siglas en inglés). Si las actualizaciones son aceptadas, el software de los nodos se actualiza directamente, lo que mitiga la posibilidad de un fork.
+On the Internet Computer, upgrades are voted on by the **Network Nervous System** (NNS). If the upgrades are accepted, the software of the nodes is directly upgraded, which mitigates the possibility of a fork. 
 <br/>
-El NNS está gobernado por una democracia líquida, en la que los titulares de ICP apuestan sus ICP para crear neuronas. El poder de voto de estas neuronas se basa en:
-- La cantidad de ICP apostados.
-- La duración de la apuesta.
-- La antigüedad de la neurona.
+The NNS is governed by a liquid democracy, in which ICP holders stake their ICPs to create neurons. 
+The voting power of these neurons is based on :
+- The amount of staked ICPs.
+- The duration of the staking.
+- The age of the neuron.
 
-<p align="center"> <img src="../../../appendix/appendix-4/assets/neuron_recap.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="assets/neuron_recap.png" width="800px" style="border: 2px solid black;"> </p>
 
-Las propuestas que pueden ser votadas por el **NNS** (**Sistema Nervioso de Red**) se agrupan en diferentes categorías, como:
+The proposals that can be voted on by the **NNS** (**Network Nervous System**) are grouped into different categories, such as:
 
-- 💸 Economía de la red: propuestas relacionadas con la determinación de las recompensas pagadas a los operadores de nodos.
-- 👨‍💼 Administración de nodos: propuestas relacionadas con la administración de las máquinas de nodos, incluyendo la actualización o configuración del sistema operativo, el marco de la máquina virtual o el software de réplica del nodo.
-- 🌏 Administración de subredes: propuestas relacionadas con la administración de subredes de la red, como la creación de nuevas subredes, la adición y eliminación de nodos de subred o la división de subredes.
-- 🧑‍⚖️ Gobernanza: propuestas relacionadas con la administración de la gobernanza, como mociones y la configuración de ciertos parámetros.
+- 💸 Network economics: proposals related to determining the rewards paid to node operators.
+- 👨‍💼 Node administration: proposals related to administering node machines, including upgrading or configuring the operating system, virtual machine framework, or node replica software.
+- 🌏 Subnet management: proposals related to administering network subnets, such as creating new subnets, adding and removing subnet nodes, or splitting subnets.
+- 🧑‍⚖️ Governance: proposals related to administering governance, such as motions and configuring certain parameters.
 
-Para obtener más información sobre el increíble poder del NNS, consulte la [Wiki de Internet Computer](https://wiki.internetcomputer.org/wiki/Network_Nervous_System).
+To learn more about the incredible power of the NNS, check out the [Internet Computer Wiki](https://wiki.internetcomputer.org/wiki/Network_Nervous_System).
 
-El NNS está constituido por **diferentes canisters**. Cada canister se implementa en la misma subred que también se llama la [subred NNS](https://dashboard.internetcomputer.org/subnet/tdb26-jop6k-aogll-7ltgs-eruif-6kk7m-qpktf-gdiqx-mxtrf-vb5e6-eqe).
+The NNS is constitued of **different canisters**. Each canister is deployed on the same subnet which is also called the [NNS subnet](https://dashboard.internetcomputer.org/subnet/tdb26-jop6k-aogll-7ltgs-eruif-6kk7m-qpktf-gdiqx-mxtrf-vb5e6-eqe).
 
-<p align="center"> <img src="../../../appendix/appendix-4/assets/nns_recap.png" width="800px" style="border: 2px solid black;"> </p>
-<p align="center"> Resumen de los canisters que ejecutan el NNS</p>
+<p align="center"> <img src="assets/nns_recap.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> Overview of the canisters running the NNS</p>
 
--  🏦 [Ledger](https://icscan.io/canister/ryjl3-tyaaa-aaaaa-aaaba-cai): Este canister es responsable de controlar el balance de ICP para todos los usuarios, procesar transacciones, acuñar y quemar ICP.
-- 🏛️ [Gobernanza](https://icscan.io/canister/rrkah-fqaaa-aaaaa-aaaaq-cai): Este canister es responsable de hacer un seguimiento de las neuronas, propuestas y votos y, en última instancia, tomar acciones cuando las propuestas son aceptadas o rechazadas.
-- 🏭[Registro](https://icscan.io/canister/rwlgt-iiaaa-aaaaa-aaaaa-cai): Este canister es responsable de almacenar y modificar la configuración de Internet Computer (Agregar o eliminar nodos, agregar o eliminar subredes, almacenar claves públicas de subredes, asignar nodos a subredes, almacenar identificadores de canisters y a qué subred pertenecen...)
-- 🪟 [NNS-UI](https://icscan.io/canister/qoctq-giaaa-aaaaa-aaaea-cai): Este canister es responsable de almacenar la interfaz oficial que proporciona a los usuarios una forma de interactuar con los otros 3 canisters. 
+-  🏦 [Ledger](https://icscan.io/canister/ryjl3-tyaaa-aaaaa-aaaba-cai): This canister is responsible for controlling the balance of ICPs for all users, processing transactions, minting & burning ICPs.
+- 🏛️ [Governance](https://icscan.io/canister/rrkah-fqaaa-aaaaa-aaaaq-cai): This canister is responsible for keeping track of neurons, proposals & votes and ultimately taking actions when the proposals are accepted or rejected.
+- 🏭[Registry](https://icscan.io/canister/rwlgt-iiaaa-aaaaa-aaaaa-cai): This canister is responsible for storing and modifying the configuration of the Internet Computer (Adding or removing nodes, adding or removing subnets, storing public keys of subnets, assign nodes to subnets, storing canister ids and which subnet they belong to....)
+- 🪟 [NNS-UI](https://icscan.io/canister/qoctq-giaaa-aaaaa-aaaea-cai): This canister is responsible for storing the official interface that gives users a way to interact with the 3 others canisters. 
 
-> **NNS-UI** es la interfaz principal para interactuar con el **NNS**, pero se pueden crear otras interfaces amigables para el usuario. La comunidad ya ha creado una [interfaz que permite la creación de propuestas sin usar una terminal](https://nnsproposal.icp.xyz/), una función faltante en la interfaz principal del **NNS-UI**.
+> **NNS-UI** is the main interface for interacting with the **NNS**, but other user-friendly interfaces can be created. The community has already created an [interface that allows proposal creation without using a terminal](https://nnsproposal.icp.xyz/), a missing feature in the main **NNS-UI**.
 
-Como hemos visto con el ejemplo del **NNS**, construir un **DAO** puede implicar la implementación y gestión de varios canisters.
+As we seen with the example of the **NNS** - building a **DAO** can involve deploying and managing multiple canisters.
