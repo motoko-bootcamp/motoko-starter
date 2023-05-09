@@ -16,16 +16,16 @@ Hoy nos dedicaremos en profundidad al lenguaje Motoko con dos clases personaliza
 - Leer [Capítulo 3: Tipos de datos primitivos en Motoko](../../manuals/capítulos/capítulo-3/CAPITULO-3.MD).
     - [Text](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/CAPITULO-3.MD#-text)
     - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/CAPITULO-3.MD#-char)
-    - [Unit type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capitulo-3.MD#-unit-type)
-- Leer [Capítulo 5: Módulos y la librería Base](../../manuals/capítulos/capítulo-5/capitulo-5.MD)  completo.
-- Leer [Capítulo 6: Almacenando datos en estructuras de datos](../../manuals/capítulos/capítulo-6/capitulo-6.MD)
-    - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capitulo-6.MD#%EF%B8%8F-array)
-    - [Búfer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capitulo-6.MD#-buffer)
-    - [Lista](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capitulo-6.MD#-list)
+    - [Unit type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/CAPITULO-3.MD#-unit-type)
+- Leer [Capítulo 5: Módulos y la librería Base](../../manuals/capítulos/capítulo-5/CAPITULO-5.MD)  completo.
+- Leer [Capítulo 6: Almacenando datos en estructuras de datos](../../manuals/capítulos/capítulo-6/CAPITULO-6.MD)
+    - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/CAPITULO-6.MD#%EF%B8%8F-array)
+    - [Búfer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/CAPITULO-6.MD#-buffer)
+    - [Lista](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/CAPITULO-6.MD#-list)
 - Leer [capítulo 7: Tipos de datos no primitivos](../../manuals/capítulos/capítulo-7/capitulo-7.MD).
-    - [Tuplas](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/capitulo-7.MD#-tuples)
-    - [Objetos](https://github.com/motoko-bootcamp/motoko-starter/blob/main/spanish/manuals/capítulos/capítulo-7/capitulo-7.MD#-objects)
-- Leer [Apéndice 2: Desbloqueando el poder de los DAOs con los canister](../../manuals/appendix/appendix-2/APPENDIX-2.MD) completo.
+    - [Tuplas](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/CAPITULO-7.MD#-tuples)
+    - [Objetos](https://github.com/motoko-bootcamp/motoko-starter/blob/main/spanish/manuals/capítulos/CAPITULO-7/capitulo-7.MD#-objects)
+- Leer [Apéndice 2: Desbloqueando el poder de los DAOs con los canister](../../manuals/apéndices/apéndice-2/APENDICE-2.MD) completo.
 - Leer [Apéndice 4: Visión general del NNS](../../manuals/appendix/appendix-4/APPENDIX-4.MD) completo.
 - Leer[Apéndice 7: Depuración and testeo con Motoko](../../manuals/appendix/appendix-7/APPENDIX-7.MD)
     - [Depuración](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/appendix/appendix-7/APPENDIX-7.MD#debugging)
