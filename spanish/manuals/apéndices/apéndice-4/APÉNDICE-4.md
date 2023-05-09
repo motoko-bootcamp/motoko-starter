@@ -1,12 +1,12 @@
 ## Apéndice 4: Sistema Nervioso de Red (NNS)
-<p align="center"> <img src="../../../../appendix/appendix-4/assets/nns_home.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-4/assets/nns_home.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> Página principal del NNS</p>
 
 El DAO más desarrollado que opera en IC (¡hasta ahora!) es el que administra la propia red. Este DAO se llama **Sistema Nervioso de Red** y es responsable de tomar decisiones sobre el futuro de la red, coordinar varias partes y organizar la estructura de la red.
 
 Típicamente, cuando se necesita actualizar una cadena de bloques, el proceso tarda unas pocas semanas o meses en completarse. Esto requiere que los operadores de nodos actualicen su software. Si algunos operadores de nodos se niegan a actualizar o si un grupo de ellos instala una versión diferente, puede resultar en un "fork", donde la cadena de bloques se divide en dos cadenas separadas, creando dos redes completamente diferentes de menor tamaño.
 
-<p align="center"> <img src="../../../../appendix/appendix-4/assets/hard_fork.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-4/assets/hard_fork.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> El fork de Bitcoin de 2017 dividió la comunidad, algunos abogando por un aumento en el tamaño de los bloques, lo que llevó a la creación de dos versiones: el Bitcoin original y Bitcoin Cash con nuevas reglas.</p>
 
 En Internet Computer, las actualizaciones son votadas por el **Sistema Nervioso de Red** (NNS, por sus siglas en inglés). Si las actualizaciones son aceptadas, el software de los nodos se actualiza directamente, lo que mitiga la posibilidad de un fork.
@@ -16,7 +16,7 @@ El NNS está gobernado por una democracia líquida, en la que los titulares de I
 - La duración de la apuesta.
 - La antigüedad de la neurona.
 
-<p align="center"> <img src="../../../../appendix/appendix-4/assets/neuron_recap.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-4/assets/neuron_recap.png" width="800px" style="border: 2px solid black;"> </p>
 
 Las propuestas que pueden ser votadas por el **NNS** (**Sistema Nervioso de Red**) se agrupan en diferentes categorías, como:
 
@@ -29,7 +29,7 @@ Para obtener más información sobre el increíble poder del NNS, consulte la [W
 
 El NNS está constituido por **diferentes canisters**. Cada canister se implementa en la misma subred que también se llama la [subred NNS](https://dashboard.internetcomputer.org/subnet/tdb26-jop6k-aogll-7ltgs-eruif-6kk7m-qpktf-gdiqx-mxtrf-vb5e6-eqe).
 
-<p align="center"> <img src="../../../../appendix/appendix-4/assets/nns_recap.png" width="800px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-4/assets/nns_recap.png" width="800px" style="border: 2px solid black;"> </p>
 <p align="center"> Resumen de los canisters que ejecutan el NNS</p>
 
 -  🏦 [Ledger](https://icscan.io/canister/ryjl3-tyaaa-aaaaa-aaaba-cai): Este canister es responsable de controlar el balance de ICP para todos los usuarios, procesar transacciones, acuñar y quemar ICP.
