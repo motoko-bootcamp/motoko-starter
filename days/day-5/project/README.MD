@@ -26,7 +26,7 @@ addMyProfile: shared (profile : StudentProfile) -> async Result.Result<(), Text>
 ```
 3. Implement the `seeAProfile` query function, which accepts a principal `p` of type `Principal` and returns the optional corresponding student profile.
 ```motoko
-seeAProfile : query (p : Principal) -> async ?StudentProfile;
+seeAProfile : query (p : Principal) -> async Result.Result<StudentProfile, Text>;
 ```
 4. Implement the `updateMyProfile` function which allows a student to perform a modification on its student profile. If everything works, and the profile is updated the function should return a simple unit value wrapped in an `Ok` result. If the `caller` doesn't have a student profile the function should return an error message wrapped in an `Err` result. 
 ```motoko
@@ -34,7 +34,7 @@ updateMyProfile : shared (profile : StudentProfile) -> async Result.Result<(), T
 ```
 5. Implement the `deleteMyProfile` function which allows a student to delete its student profile. If everything works, and the profile is deleted the function should return a simple unit value wrapped in an `Ok` result. If the `caller` doesn't have a student profile the function should return an error message wrapped in an `Err` result. 
 ```motoko
-deleteMyProfile : shared (profile : StudentProfile) -> async Result.Result<(), Text>;
+deleteMyProfile : shared () -> async Result.Result<(), Text>;
 ```
 6. Make sure that `studentProfileStore` is resistant to upgrades, which means that all student profiles will be preserved even if the canister undergoes an upgrade. Implement this by utilizing the `pre_upgrade` and `post_upgrade` hooks.
 ## Part 2: Testing of the simple calculator.
