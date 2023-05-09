@@ -14,11 +14,11 @@ Keep in mind, if reading and coding is pushing your brain to its limit, take a b
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
-- Read [Chapter 9: Handling errors](../../manuals/CHAPTER-9.MD)
-    - [The `Error` type](../../manuals/CHAPTER-9.MD#the-error-type)
-    - [Trap](../../manuals/CHAPTER-9.MD#trap)
-    - [Try/Catch](../../manuals/CHAPTER-9.MD#trycatch)
-- Read [Chapter 12: Upgrading a canister](../../manuals/CHAPTER-12.MD) in full.
+- Read [Chapter 9: Handling errors](../../manuals/chapters/chapter-9/CHAPTER-9.MD)
+    - [The `Error` type](../../manuals/chapters/chapter-9/CHAPTER-9.MD#the-error-type)
+    - [Trap](../../manuals/chapters/chapter-9/CHAPTER-9.MD#trap)
+    - [Try/Catch](../../manuals/chapters/chapter-9/CHAPTER-9.MD#trycatch)
+- Read [Chapter 12: Upgrading a canister](../../manuals/chapters/chapter-12/CHAPTER-12.MD) in full.
 - Complete the [project of the day](./project/README.MD).
 
 ## 🎯 Learning objectives
