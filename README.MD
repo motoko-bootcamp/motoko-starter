@@ -25,9 +25,11 @@ Our goal is to transmit both technical knowledge and enthusiasm for the Internet
 
 ## How to get started? 🏁
 
-### Step 0: Make sure you are qualified ✅
-Only students that have qualified and received the "Motoko Bootcamp 2023" role are able to join. If 
-### Step 1: Register on the dashboard.
+### Step 0: Make sure you are ready to go ✅
+- You should join the [Motoko Bootcamp Discord](https://discord.gg/JS9g2ahtDs).
+- You should have `dfx` installed on your machine, check [this tutorial](https://www.youtube.com/watch?v=DTDP7WYU07w) if you need help to install it.
+
+### Step 1: Register on the Bootcamp dashboard.
 1. Connect to: [Motoko Bootcamp Dashboard](https://24ytc-bqaaa-aaaan-qdl7q-cai.ic0.app/)
 
 <p align="center"> <img src="./assets/mbc_dashboard.png" width="600px" style="border: 2px solid black;"> </p>
@@ -37,9 +39,9 @@ Only students that have qualified and received the "Motoko Bootcamp 2023" role a
 
 <p align="center"> <img src="./assets/mbc_register.png" width="400px" style="border: 2px solid black;"> </p>
 
-- Your handle is your name - feel free to choose whatever you want.
-- Your principal ID should correspond to the identity you are planning to use for the week, to obtain your principal id run : `dfx identity get-principal` in your terminal.
-- Select if a you are a Spanish speaker.
+- Your handle corresponds to your name - feel free to choose whatever you want.
+- Your principal ID should correspond to the identity you are planning to use for the week, to obtain your principal id run : `dfx identity get-principal` in your terminal. Once set, it cannot be changed make sure to choose the principal corresponding to the identity you are planning to use.
+- Check the box if a you are a Spanish speaker.
 ### Step 2: Find your team.
 Once you are registered, go into the **Profile** section.
 
@@ -62,14 +64,12 @@ For each day, you will find a dedicated guide - those guides will be your compan
 
 <p align="center"> <img src="./assets/mbc_submit_code.png" width="600px" style="border: 2px solid black;"> </p>
 
-### Step 5: Complete all other days.
+### Step 5: Complete all other days, join the lectures and have fun with all of us!
 
-- [Day 1️⃣](./days/day-1/README.MD) 
 - [Day 2️⃣](./days/day-2/README.MD) 
 - [Day 3️⃣](./days/day-3/README.MD) 
 - [Day 4️⃣](./days/day-4/README.MD) 
 - [Day 5️⃣](./days/day-5/README.MD) 
-
 
 ## Overview
 Motoko Bootcamp is an online event, you can follow the entire week online or join other enthusiasts in a [community basecamp](https://discord.gg/FWQszm86cj) to follow the week together.
