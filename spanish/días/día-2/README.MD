@@ -11,20 +11,20 @@ Hoy nos dedicaremos en profundidad al lenguaje Motoko con dos clases personaliza
 | Motoko: Char, Text & Iter | <a href="https://twitter.com/seb_icp" target="_blank"> Seb  </a> | Esta clase trata los tipos de datos `Char` y `Text` en Motoko y explica cómo están relacionados mediante el tipo ‘Iter’.
 ##  🧭 Tareas del día
 > Usa esta lista como guía para tu día, contiene todo el material que necesitas leer y los desafíos que debes afrontar.
-- Leer [Capítulo 2: Conceptos comunes en programación](../../manuals/capítulos/capítulo-2/capítulo-2.MD).
-    - [Control de flujo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-2/capítulo-2.MD#%EF%B8%8F-control-flow)
-- Leer [Capítulo 3: Tipos de datos primitivos en Motoko](../../manuals/capítulos/capítulo-3/capítulo-3.MD).
-    - [Text](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capítulo-3.MD#-text)
-    - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capítulo-3.MD#-char)
-    - [Unit type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capítulo-3.MD#-unit-type)
-- Leer [Capítulo 5: Módulos y la librería Base](../../manuals/capítulos/capítulo-5/capítulo-5.MD)  completo.
-- Leer [Capítulo 6: Almacenando datos en estructuras de datos](../../manuals/capítulos/capítulo-6/capítulo-6.MD)
-    - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capítulo-6.MD#%EF%B8%8F-array)
-    - [Búfer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capítulo-6.MD#-buffer)
-    - [Lista](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capítulo-6.MD#-list)
-- Leer [capítulo 7: Tipos de datos no primitivos](../../manuals/capítulos/capítulo-7/capítulo-7.MD).
-    - [Tuplas](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/capítulo-7.MD#-tuples)
-    - [Objetos](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/capítulo-7.MD#-objects)
+- Leer [Capítulo 2: Conceptos comunes en programación](../../manuals/capítulos/capítulo-2/capitulo-2.MD).
+    - [Control de flujo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-2/capitulo-2.MD#%EF%B8%8F-control-flow)
+- Leer [Capítulo 3: Tipos de datos primitivos en Motoko](../../manuals/capítulos/capítulo-3/capitulo-3.MD).
+    - [Text](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capitulo-3.MD#-text)
+    - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capitulo-3.MD#-char)
+    - [Unit type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capitulo-3.MD#-unit-type)
+- Leer [Capítulo 5: Módulos y la librería Base](../../manuals/capítulos/capítulo-5/capitulo-5.MD)  completo.
+- Leer [Capítulo 6: Almacenando datos en estructuras de datos](../../manuals/capítulos/capítulo-6/capitulo-6.MD)
+    - [Array](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capitulo-6.MD#%EF%B8%8F-array)
+    - [Búfer](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capitulo-6.MD#-buffer)
+    - [Lista](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-6/capitulo-6.MD#-list)
+- Leer [capítulo 7: Tipos de datos no primitivos](../../manuals/capítulos/capítulo-7/capitulo-7.MD).
+    - [Tuplas](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-7/capitulo-7.MD#-tuples)
+    - [Objetos](https://github.com/motoko-bootcamp/motoko-starter/blob/main/spanish/manuals/capítulos/capítulo-7/capitulo-7.MD#-objects)
 - Leer [Apéndice 2: Desbloqueando el poder de los DAOs con los canister](../../manuals/appendix/appendix-2/APPENDIX-2.MD) completo.
 - Leer [Apéndice 4: Visión general del NNS](../../manuals/appendix/appendix-4/APPENDIX-4.MD) completo.
 - Leer[Apéndice 7: Depuración and testeo con Motoko](../../manuals/appendix/appendix-7/APPENDIX-7.MD)
