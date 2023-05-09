@@ -11,11 +11,11 @@ Hoy nos dedicaremos en profundidad al lenguaje Motoko con dos clases personaliza
 | Motoko: Char, Text & Iter | <a href="https://twitter.com/seb_icp" target="_blank"> Seb  </a> | Esta clase trata los tipos de datos `Char` y `Text` en Motoko y explica cómo están relacionados mediante el tipo ‘Iter’.
 ##  🧭 Tareas del día
 > Usa esta lista como guía para tu día, contiene todo el material que necesitas leer y los desafíos que debes afrontar.
-- Leer [Capítulo 2: Conceptos comunes en programación](../../manuals/capítulos/capítulo-2/capitulo-2.MD).
-    - [Control de flujo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-2/capitulo-2.MD#%EF%B8%8F-control-flow)
-- Leer [Capítulo 3: Tipos de datos primitivos en Motoko](../../manuals/capítulos/capítulo-3/capitulo-3.MD).
-    - [Text](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capitulo-3.MD#-text)
-    - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capitulo-3.MD#-char)
+- Leer [Capítulo 2: Conceptos comunes en programación](../../manuals/capítulos/capítulo-2/CAPITULO-2.MD).
+    - [Control de flujo](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-2/CAPITULO-2.MD#%EF%B8%8F-control-flow)
+- Leer [Capítulo 3: Tipos de datos primitivos en Motoko](../../manuals/capítulos/capítulo-3/CAPITULO-3.MD).
+    - [Text](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/CAPITULO-3.MD#-text)
+    - [Char](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/CAPITULO-3.MD#-char)
     - [Unit type](https://github.com/motoko-bootcamp/motoko-starter/blob/main/manuals/capítulos/capítulo-3/capitulo-3.MD#-unit-type)
 - Leer [Capítulo 5: Módulos y la librería Base](../../manuals/capítulos/capítulo-5/capitulo-5.MD)  completo.
 - Leer [Capítulo 6: Almacenando datos en estructuras de datos](../../manuals/capítulos/capítulo-6/capitulo-6.MD)
