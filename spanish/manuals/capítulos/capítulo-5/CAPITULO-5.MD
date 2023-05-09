@@ -10,6 +10,6 @@ Cada módulo tiene su propia página de documentación, donde se pueden aprender
 <p align="center">  </p>
 
 ## 🧩 Módulos 
-Lea [esta sección](https://web3.motoko-book.dev/common-programming-concepts/modules.html) del Motoko Book.
+Lea [esta sección](https://web3.motoko-book.dev/common-programming-concepts/modules.html) del Motoko Book. Recuerden que haciendo click derecho y "Traducir a Español" obtendrán el texto en Español del Motoko Book.
 ## 📚 La biblioteca Base 
 Lea [esta sección](https://web3.motoko-book.dev/base-library.html) del Motoko Book.
