@@ -130,7 +130,7 @@ Una regla muy importante a recordar: **todo estado mutable siempre es privado de
 
 En resumen, todo lo que puedas modificar en el estado de tu contenedor debe considerarse privado y no podrás compartirlo con otros actores. <br/>
 
-<p align="center"> <img src="./assets/mutable_state_actor.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../..manuals/chapters/chapter-8/assets/mutable_state_actor.png" width="800px" style="border: 2px solid black;"></p>
 <p align="center"> Si es una variable, ¡no puedes compartirlo fuera del actor!</p>
 
 
