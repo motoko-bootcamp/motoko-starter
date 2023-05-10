@@ -119,7 +119,7 @@ func last<T>(l : List<T>) : ?T {
 ```
 
 ## 💿 HashMap & TrieMap
-In Motoko, [HashMap](https://internetcomputer.org/docs/current/references/motoko-ref/HashMap) and [TrieMap](https://internetcomputer.org/docs/current/references/motoko-ref/HashMap) are both implemented as a Class and have the same interface. The only difference is that `TrieMap` is represented internaly by a `Trie` while `HashMap` is using `AssocList`. All examples that will follow use `HashMap` but it would be similar for `TrieMap`. 
+In Motoko, [HashMap](https://internetcomputer.org/docs/current/references/motoko-ref/HashMap) and [TrieMap](https://internetcomputer.org/docs/current/references/motoko-ref/TrieMap) are both implemented as a Class and have the same interface. The only difference is that `TrieMap` is represented internaly by a `Trie` while `HashMap` is using `AssocList`. All examples that will follow use `HashMap` but it would be similar for `TrieMap`. 
 
 - K is the type of the key (`Nat`, `Text`, `Principal`...)
 - V is type of the value that will be stored (User data, Token balance...)
