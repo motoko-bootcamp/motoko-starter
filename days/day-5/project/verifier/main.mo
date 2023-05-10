@@ -1,3 +1,3 @@
-actor {
+actor Verifier {
     
 }
