@@ -1,21 +1,22 @@
-# Student wall 🎨
-It was your third day at Motoko School, and you were determined to start making some good friends. <br/>
-Being a big fan of music, you thought organizing a little music concert could be a great way to meet other like-minded students. 🎶
+# Muro de estudiantes 🎨
 
-As you wandered the halls during lunchtime, you overheard two students discussing how they wished there was a better way to stay informed about school events and activities. They complained about how they had missed out on attending the previous year's [ICP Community Conference](https://twitter.com/icp_cc) because they weren't aware of it in time, and how they were determined not to let that happen again this year. 💪
+Era tu tercer día en Motoko School y estabas decidido a empezar a hacer buenos amigos. Siendo un gran fanático de la música, pensaste que organizar un pequeño concierto podría ser una excelente manera de conocer a otros estudiantes con intereses similares. 🎶
 
-This sparked an idea in your mind.  <br/>
+Mientras paseabas por los pasillos durante la hora del almuerzo, escuchaste a dos estudiantes discutiendo cómo desearían que hubiera una mejor manera de mantenerse informados sobre los eventos y actividades escolares. Se quejaron de cómo se habían perdido la Conferencia de la Comunidad de ICP del año anterior porque no estaban al tanto a tiempo, y de cómo estaban decididos a no dejar que eso vuelva a suceder este año. 💪
 
-What if you could create a digital platform where students share upcoming events and activities. It would be the perfect way to advertise your music concert and help other students stay informed about everything happening on campus. 📅
+Esto despertó una idea en tu mente. <br/>
 
-You quickly shared your idea with the two students and they loved it. They introduced you to a few others who were also interested in the idea, and before you knew it, you had a group of motivated students ready to bring your idea to life. 🚀
+¿Qué tal si pudieras crear una plataforma digital donde los estudiantes compartieran los eventos y actividades próximas? Sería la manera perfecta de publicitar tu concierto de música y ayudar a otros estudiantes a mantenerse informados sobre todo lo que sucede en el campus. 📅
 
-You all gathered in the computer lab and began brainstorming the features of your student wall. You wanted it to be more than just a bulletin board, so you came up with the idea to include images and surveys as well. You divided the work and got started coding.
-## 🧑‍🏫 Requirements 
-Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the community. Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other. 
-This wall will be the go-to destination for students looking to get the latest scoop on what's happening in the school. 
-## 📺 Interface
-Your canister should implement the following interface:
+Compartiste rápidamente tu idea con los dos estudiantes y les encantó. Te presentaron a otros interesados en la idea, y antes de que te dieras cuenta, tenías un grupo de estudiantes motivados listos para dar vida a tu idea. 🚀
+
+Todos se reunieron en el laboratorio de computación y comenzaron a pensar en las características de su muro de estudiantes. Querían que fuera algo más que un tablero de anuncios, así que se les ocurrió la idea de incluir imágenes y encuestas también. Dividieron el trabajo y comenzaron a codificar.
+## 🧑‍🏫 Requisitos
+Tu tarea es desarrollar el código para un muro de estudiantes, implementado como un canister, una plataforma digital que revolucionará la forma en que los estudiantes se comunican y se mantienen informados sobre eventos, clubes y actividades de la comunidad. Imagina un espacio dinámico e interactivo donde los estudiantes puedan compartir sus pensamientos, ideas y eventos próximos entre ellos.
+
+Este muro será el destino principal para los estudiantes que buscan obtener la información más reciente sobre lo que está sucediendo en la escuela.
+## 📺 Interfaz
+Tu canister debe implementar la siguiente interfaz:
 ```motoko
 actor {
    
@@ -42,8 +43,8 @@ actor {
     getAllMessagesRanked : query () -> async [Message];
 };
 ```
-## 📒 Steps
-We define a variant type called `Content` that represents the type of content of the messages that can be published on the wall.
+## 📒 Pasos
+Definimos un tipo de variante llamado `Content` que representa el tipo de contenido de los mensajes que pueden ser publicados en el muro.
 ```motoko
 public type Content = {
     #Text: Text;
@@ -51,17 +52,17 @@ public type Content = {
     #Video: Blob;
 };
 ```
-1. Define a new record type called `Message`. A message of type `Message` contains a field `vote` of type `Int`, a field `content` of type `Content` and a field `creator` of type `Principal` that represents the creator of the message.
-2. Define a variable called `messageId` that serves as a continuously increasing counter, maintaining a record of the total number of messages posted.
-3. Create a variable named `wall`, which is a `HashMap` designed to store messages. In this wall, the keys are of type `Nat` and represents message IDs, whereas the values are of type `Message`. 
-4. Implement `writeMessage`, which accepts a content `c` of type `Content`, creates a message from the content, adds the message to the wall and returns the id of the message.
-5. Implement `getMessage`, which accepts an `messageId` of type `Nat` and returns the corresponding message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-6. Implement `updateMessage`, which accepts a `messageId` of type `Nat` and a concent `c` of type `Content` and updates the content of the corresponding message. This should only work if the caller is the `creator` of the message. If `messageId` is invalid or the caller is not the `creator` the function should return an error message wrapped in an `Err` result. If everything works, and the message is updated the function should return a simple unit value wrapped in an `Ok` result.
-7. Implement `deleteMessage`, which accepts a `messageId` of type `Nat`, removes the corresponding message from the `wall`, and returns a unit value wrapped in an `Ok` result. If the `homeworkId` is invalid, the function should return an error message wrapped in an `Err` result.
-8. Implement `upVote`, which accepts a `messageId` of type `Nat` and adds one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-9. Implement `downVote`, which accepts a `messageId` of type `Nat` and removes one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-10. Implement the query function `getAllMessages`, which returns the list of all messages. 
-11. Implement the query function `getAllMessagesRanked`, which returns the list of all messages, where each message are ordered by the number of votes. The first message in the list should be the message with the most votes.
-12. Deploy the student Wall on the Internet Computer.
-13. (Bonus step) Build a frontend for the wall and integrate Internet Identity to authenticate users posting on the wall.
+1. Define un nuevo tipo de registro llamado `Message`. Un mensaje de tipo `Message` contiene un campo `vote` de tipo `Int`, un campo `content` de tipo `Content` y un campo `creator` de tipo `Principal` que representa al creador del mensaje.
+2. Define una variable llamada `messageId` que sirve como un contador continuamente creciente, manteniendo un registro del total de mensajes publicados.
+3. Crea una variable llamada `wall`, que es un `HashMap` diseñado para almacenar mensajes. En este muro, las claves son de tipo `Nat` y representan los ID de los mensajes, mientras que los valores son de tipo `Message`.
+4. Implementa la función `writeMessage`, que acepta un contenido `c` de tipo `Content`, crea un mensaje a partir del contenido, lo agrega al muro y devuelve el ID del mensaje.
+5. Implementa la función `getMessage`, que acepta un `messageId` de tipo `Nat` y devuelve el mensaje correspondiente envuelto en un resultado `Ok`. Si el `messageId` es inválido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+6. Implementa la función `updateMessage`, que acepta un `messageId` de tipo `Nat` y un contenido `c` de tipo `Content`, y actualiza el contenido del mensaje correspondiente. Esto solo debe funcionar si el llamador es el `creator` del mensaje. Si el `messageId` es inválido o el llamador no es el `creator`, la función debe devolver un mensaje de error envuelto en un resultado `Err`. Si todo funciona y el mensaje se actualiza, la función debe devolver un valor de unidad simple envuelto en un resultado `Ok`.
+7. Implementa la función `deleteMessage`, que acepta un `messageId` de tipo `Nat`, elimina el mensaje correspondiente del `wall` y devuelve un valor de unidad envuelto en un resultado `Ok`. Si el `messageId` es inválido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+8. Implementa la función `upVote`, que acepta un `messageId` de tipo `Nat`, agrega un voto al mensaje y devuelve un valor de unidad envuelto en un resultado `Ok`. Si el `messageId` es inválido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+9. Implementa la función `downVote`, que acepta un `messageId` de tipo `Nat`, resta un voto al mensaje y devuelve un valor de unidad envuelto en un resultado `Ok`. Si el `messageId` es inválido, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
+10. Implementa la función de consulta `getAllMessages`, que devuelve la lista de todos los mensajes.
+11. Implementa la función de consulta `getAllMessagesRanked`, que devuelve la lista de todos los mensajes, donde cada mensaje está ordenado por el número de votos. El primer mensaje de la lista debe ser el mensaje con más votos.
+12. Despliega el muro de estudiantes en Internet Computer.
+13. (Paso de bonificación) Construye una interfaz de usuario para el muro e integra Internet Identity para autenticar a los usuarios que publiquen en el muro.
 
