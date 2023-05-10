@@ -1,10 +1,10 @@
 # The Verifier 👨‍🏫
 ## Introduction
-Imagine that you are an now an instructor at [Motoko School](https://twitter.com/MotokoSchool), where you are currently overseeing a cohort of more than 200 dedicated students!  🤯 <br/>
+Imagine that you are now an instructor at [Motoko School](https://twitter.com/MotokoSchool), where you are currently overseeing a cohort of more than 200 dedicated students!  🤯 <br/>
 As part of the program, you have assigned these ambitious learners to tackle 4 distinct projects, each designed to challenge their skills and knowledge. Upon completion, it falls on your shoulders to meticulously review and evaluate their work, ultimately determining whether they have met the criteria for [graduation](../../../README.MD#🎓-graduation). <br/>
 Fortunately, as an adept Motoko developer yourself, you possess the expertise and confidence to streamline this verification process by leveraging automation. This innovative approach will not only save you valuable time but also pave the way for the future of **Motoko Bootcamp**. Let's get started!
 ## 🧑‍🏫 Requirements 
-Your task is to create the code for a **instructor**, which is implemented as a canister. The idea is for the student to input his canister id and get automatically verified by the canister. If the canister id submitted fulfill the requirements then the students will automatically graduate; just imagine the hours of work you will save! <br/>
+Your task is to create the code for an **instructor**, which is implemented as a canister. The idea is for the student to input his canister id and get automatically verified by the canister. If the canister id submitted fulfill the requirements then the students will automatically graduate; just imagine the HOURS of work you will save! <br/>
 
 > For the purpose of this Bootcamp, we will not attempt to build a verifier that test all 4 previous projects. We will only attempts to verify a simple version of the calculator you've implemented during Day 1. The code for this simple calculator has already been implemented, and can be found [here](../project/calculator/main.mo).
 
@@ -62,31 +62,28 @@ The type `TestResult` is defined as follows:
 ```motoko
 test: shared (canisterId : Principal) -> async TestResult;
 ```
-
 ## Part 3: Verifying the controller of the calculator.
 In this section we want to make sure that the owner of the verified canister is actually the student that registered it. Otherwise, a student could use the canister of another one.
 ### Step-by-step
-1. Implement the `verifyOwnership` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and returns a boolean indicating if the `principalId` is among the controllers of the canister corresponding to the `canisterId` provided.
+Implement the `verifyOwnership` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and returns a boolean indicating if the `principalId` is among the controllers of the canister corresponding to the `canisterId` provided.
 
-> Unfortunately, as of today, the `canister_status` method of the management canister can only be used when the canister calling it is also one of the controller of the canister you are trying to check the status. [Read the dedicated topic for more information](https://forum.dfinity.org/t/how-to-find-out-the-controllers-of-a-canister/14345/3). 
+> As of today, the `canister_status` method of the management canister can only be used when the canister calling it is also one of the controller of the canister you are trying to check the status. Fortunately there is a trick to still get the controller! [Read the dedicated topic for more information](https://forum.dfinity.org/t/getting-a-canisters-controller-on-chain/7531/17). 
 
-## Part 4: Graduation! 
+## Part 4: Graduation! 🎓
 In this sections the idea is to let students submit their work and automatically verify the canister. If the tests are passed then the `graduation` field of the student is automatically changed.
-1. Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field is updated accordingly.
-
-## Part 5: List of graduates 🎓
-In this section the idea is to implement a function to handle HTTP requests within the verifier canister. Anyone should be able to go to 
-
-1. Create a an `Array` called `graduates` that stores the name of graduates.
-2. Implement a timer so that the array is updated every hour.
-3. Implement the `http_request` method.
-
+### Step-by-step
+Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field is updated accordingly.
 
 ## 📺 Interface
 > At the end of the project your canister should implement the following interface:
 ```motoko
 actor Verifier {
-
+    addMyProfile: (StudentProfile) -> (Result_1);
+    deleteMyProfile: () -> (Result_1);
+    seeAProfile: (principal) -> (Result_2);
+    test: (principal) -> (TestResult);
+    updateMyProfile: (StudentProfile) -> (Result_1);
+    verifyOwnership: (principal, principal) -> (Result);
+    verifyWork: (principal, principal) -> (Result);
 };
 ```
-
