@@ -23,7 +23,7 @@ module {
 
     public func accountsHash(lhs : Account) : Nat32 {
         let lhsSubaccount : Subaccount = Option.get<Subaccount>(lhs.subaccount, _getDefaultSubaccount());
-        Principal.hash(lhs.owner) + Blob.hash(lhsSubaccount);  
+        Text.hash(Nat32.toText(Principal.hash(lhs.owner)) # Nat32.toText(Blob.hash(lhsSubaccount)));
     };
 
     public func accountBelongToPrincipal(account : Account, principal : Principal) : Bool {
