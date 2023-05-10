@@ -69,21 +69,36 @@ Implement the `verifyOwnership` function that takes a `canisterId` of type `Prin
 
 > As of today, the `canister_status` method of the management canister can only be used when the canister calling it is also one of the controller of the canister you are trying to check the status. Fortunately there is a trick to still get the controller! [Read the dedicated topic for more information](https://forum.dfinity.org/t/getting-a-canisters-controller-on-chain/7531/17). 
 
+```motoko
+verifyOwnership : shared (Principal, Principal) -> async Bool;
+```
+
 ## Part 4: Graduation! 🎓
 In this sections the idea is to let students submit their work and automatically verify the canister. If the tests are passed then the `graduation` field of the student is automatically changed.
 ### Step-by-step
-Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field is updated accordingly.
+Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field is updated accordingly. This function will returns  a `Ok` result indicating if the submitted project has been successfuly verified. This function will return a text message wrapped in an `Err` message in case the verification fails or something unexpected happens.
+
+```motoko
+verifyWork: shared (Principal, Principal) -> async Result.Result<(), Text>;
+```
 
 ## 📺 Interface
 > At the end of the project your canister should implement the following interface:
 ```motoko
 actor Verifier {
-    addMyProfile : shared StudentProfile -> async Result.Result<(), Text>;
-    deleteMyProfile : shared () ->  async Result.Result<(), Text>;
+    // Part 1
+    addMyProfile : shared StudentProfile -> async Result.Result<(),Text>;
+    updateMyProfile : shared StudentProfile -> async Result.Result<(),Text>;
+    deleteMyProfile : shared () -> async Result.Result<(),Text>;
     seeAProfile : shared Principal -> async Result.Result<StudentProfile, Text>;
+
+    //Part 2
     test : shared Principal -> async TestResult;
-    updateMyProfile : shared StudentProfile -> async Result.Result<(), Text>;
+
+    //Part 3
     verifyOwnership : shared (Principal, Principal) -> async Bool;
-    verifyWork : shared (Principal, Principal) -> async Result;
+
+    //Part 4
+    verifyWork : shared (Principal, Principal) -> async Result.Result<(), Text>;
 };
 ```
