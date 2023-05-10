@@ -3,7 +3,7 @@
 La identidad es fundamental en nuestra vida digital. En el mundo en constante evolución de Internet, se ha vuelto más importante que nunca contar con métodos seguros y confiables para acceder a nuestras cuentas y espacios personales. <br/>
 Durante años, la forma tradicional de iniciar sesión en sitios web ha sido con contraseñas y nombres de usuario.
 
-<p align="center"> <img src="assets/password_username.jpeg" width="400px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/password_username.jpeg" width="400px" style="border: 2px solid black;"></p>
 <p align="center"> Seguramente estés familiarizado con este tipo de interfaz.</p>
 
 Para crear contraseñas efectivas y seguras se debe:
