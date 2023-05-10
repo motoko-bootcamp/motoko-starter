@@ -6,7 +6,7 @@ Fortunately, as an adept Motoko developer yourself, you possess the expertise an
 ## 🧑‍🏫 Requirements 
 Your task is to create the code for an **instructor**, which is implemented as a canister. The idea is for the student to input his canister id and get automatically verified by the canister. If the canister id submitted fulfill the requirements then the students will automatically graduate; just imagine the HOURS of work you will save! <br/>
 
-> For the purpose of this Bootcamp, we will not attempt to build a verifier that test all 4 previous projects. We will only attempts to verify a simple version of the calculator you've implemented during Day 1. The code for this simple calculator has already been implemented, and can be found [here](../project/calculator/main.mo).
+> For the purpose of this Bootcamp, we will not attempt to build a verifier that test all 4 previous projects. We will only attempts to verify a simple version of the calculator you've implemented during Day 1. The code for this simple calculator has already been implemented for you, and can be found [here](../project/calculator/main.mo).
 
 ## Part 1: Storing the students information.
 The idea in this section is to build the code for storing informations about students. 
@@ -78,12 +78,12 @@ Implement the `verifyWork` function that takes a `canisterId` of type `Principal
 > At the end of the project your canister should implement the following interface:
 ```motoko
 actor Verifier {
-    addMyProfile: (StudentProfile) -> (Result_1);
-    deleteMyProfile: () -> (Result_1);
-    seeAProfile: (principal) -> (Result_2);
-    test: (principal) -> (TestResult);
-    updateMyProfile: (StudentProfile) -> (Result_1);
-    verifyOwnership: (principal, principal) -> (Result);
-    verifyWork: (principal, principal) -> (Result);
+    addMyProfile : shared StudentProfile -> async Result.Result<(), Text>;
+    deleteMyProfile : shared () ->  async Result.Result<(), Text>;
+    seeAProfile : shared Principal -> async Result.Result<StudentProfile, Text>;
+    test : shared Principal -> async TestResult;
+    updateMyProfile : shared StudentProfile -> async Result.Result<(), Text>;
+    verifyOwnership : shared (Principal, Principal) -> async Bool;
+    verifyWork : shared (Principal, Principal) -> async Result;
 };
 ```
