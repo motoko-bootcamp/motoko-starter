@@ -1,35 +1,37 @@
-# Day 4️⃣
-Welcome to **Day 4** of the Motoko Bootcamp. Kudos to you for persevering through the first 3 days - you're a true hero! 🦸 <br/>
+# Día 4️⃣
+Bienvenido al **Día 4** del Bootcamp de Motoko. ¡Felicidades por perseverar durante los primeros 3 días, eres un verdadero héroe! 🦸 <br/>
 
-If you think you've missed something, feel free to revisit previous lessons. Today, our primary focus is on addressing potential challenges when upgrading your canister. This is essential for maintaining user engagement by introducing new features and functionalities. 🆙 <br/>
+Si crees que te has perdido algo, siéntete libre de revisar las lecciones anteriores. Hoy, nuestro enfoque principal es abordar los posibles desafíos al actualizar tu canister, lo cual es esencial para mantener el compromiso del usuario al presentar nuevas características y funcionalidades. 🆙 <br/>
 
-Keep in mind, if reading and coding is pushing your brain to its limit, take a break. Go for a walk or arrange a game session with your teammates to recharge. Try <a href="https://skribbl.io/" target="_blank">Skribbl.io</a>, a free online multiplayer drawing and guessing pictionary game, for some creative fun. 🖍️
-## 🍿 Lectures & events
-> Be sure to consult the calendar for the precise schedule of each lecture.
+Recuerda, si leer y programar está agotando tu cerebro, tómate un descanso. Sal a caminar o organiza una sesión de juegos con tus compañeros de equipo para recargar energías. Prueba <a href="https://skribbl.io/" target="_blank">Skribbl.io</a>, un juego de dibujo y adivinanza gratuito y multijugador en línea, para divertirte creativamente. 🖍️
 
-| Title | Mentor |  Description |
+## 🍿 Conferencias y eventos
+> Asegúrate de consultar el calendario para el horario preciso de cada conferencia.
+
+| Título | Mentor |  Descripción |
 |-----------------|-----------------|-----------------|
-| Motoko: Heap, stable memory & updates | <a href="" target="_blank"> Matthew </a> | This lecture dives into the two different types of memories (stable vs heap) and how to deal with upgrades.
-| Motoko: Cycle management, error handling & admin functionalities | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers different topics (cycle management, errors and admin functionnalities) through examples and live coding.
-##  🧭 Tasks of the day
-> **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
+| Motoko: Heap, memoria estable y actualizaciones | <a href="" target="_blank">Matthew</a> | Esta conferencia profundiza en los dos tipos diferentes de memorias (estable vs heap) y cómo manejar las actualizaciones.
+| Motoko: Gestión de ciclos, manejo de errores y funcionalidades de administración | <a href="https://twitter.com/seb_icp" target="_blank">Seb</a> | Esta conferencia cubre diferentes temas (gestión de ciclos, errores y funcionalidades de administración) a través de ejemplos y codificación en vivo.
 
-- Read [Chapter 9: Handling errors](../../manuals/CHAPTER-9.MD)
-    - [The `Error` type](../../manuals/CHAPTER-9.MD#the-error-type)
-    - [Trap](../../manuals/CHAPTER-9.MD#trap)
+## 🧭 Tareas del día
+> **Al iniciar tu día,** usa esta lista como guía, contiene todo el material que necesitas leer y los desafíos que debes enfrentar.
+
+- Leer [Capítulo 9: Manejo de errores](../../manuals/CHAPTER-9.MD)
+    - [El tipo `Error`](../../manuals/CHAPTER-9.MD#el-tipo-error)
+    - [Trampa](../../manuals/CHAPTER-9.MD#trampa)
     - [Try/Catch](../../manuals/CHAPTER-9.MD#trycatch)
-- Read [Chapter 12: Upgrading a canister](../../manuals/CHAPTER-12.MD) in full.
-- Complete the [project of the day](./project/README.MD).
+- Leer [Capítulo 12: Actualización de un canister](../../manuals/CHAPTER-12.MD) completo.
+- Completar el [proyecto del día](./project/README.MD).
 
-## 🎯 Learning objectives
-> **Before finishing your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>
+## 🎯 Objetivos de aprendizaje
+> **Antes de finalizar tu día**, revisa la siguiente lista y asegúrate de haber abordado cada elemento en ella. Es importante que tengas una comprensión clara de todos estos conceptos. <i>¿Por qué no intentar explicarlos a uno de tus compañeros de equipo para evaluar tu nivel de comprensión?</i>
 
-- Understand the difference between stable & heap memory.
-- Understand how to use the `stable` keyword and what are the stables types.
-- Getting familiar with potential issues when upgrading a canister.
-- Getting familiar with error management and the different types of errors in Motoko.
-- Completing the project of the day.
+- Comprender la diferencia entre memoria estable y heap.
+- Comprender cómo usar la palabra clave `stable` y cuáles son los tipos estables.
+- Familiarizarse con posibles problemas al actualizar un canister.
+- Familiarizarse con la gestión de errores y los diferentes tipos de errores en Motoko.
+- Completar el proyecto del día.
 
-> Did you know? The name **Motoko** is a reference to **Motoko Kusanagi**, the main protagonist in the manga **Ghost in the Shell**. 
+> ¿Sabías que? El nombre **Motoko** es una referencia a **Motoko Kusanagi**, la protagonista principal en el manga **Ghost in the Shell**.
 
-Good luck 🍀
+¡Buena suerte! 🍀
