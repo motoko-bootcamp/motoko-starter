@@ -15,7 +15,7 @@ A student profile is defined as follows:
 ```motoko
 public type StudentProfile = {
     name : Text;
-    Team : Text;
+    team : Text;
     graduate : Bool;
 };
 ```
