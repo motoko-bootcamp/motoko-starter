@@ -31,7 +31,7 @@ actor {
     // Returns the the total number of tokens on all accounts
     totalSupply : shared query () -> async Nat;
 
-    // Returns the default transfer fee
+    // Returns the balance of the account
     balanceOf : shared query (account : Account) -> async (Nat);
 
     // Transfer tokens to another account
@@ -46,7 +46,7 @@ actor {
 2. Implement `name` which returns the name of the token as a `Text`. The name of the token is `MotoCoin`.
 3. Implement `symbol` which returns the symbol of the token as a `Text`. The symbol of the token is `MOC`.
 4. Implement `totalSupply` which returns the total number of `MOC` token in circulation.
-5. Implement `balanceOf` which takes an `account` and returns the balance of this account.
+5. Implement `balanceOf` which takes an `account` and returns the balance of this account. If the account has never interacted with the ledger before, you will return 0.
 6. Implement `transfer` that accepts three parameters: an `Account` object for the sender (`from`), an `Account` object for the recipient (`to`), and a `Nat` value for the amount to be transferred. This function should transfer the specified amount of tokens from the sender's account to the recipient's account. This function should return an error message wrapped in an `Err` result if the caller has not enough token in it's main account.
 7. Implement `airdrop` which adds 100 MotoCoin to the main account of all students participating in the Bootcamp.
 
