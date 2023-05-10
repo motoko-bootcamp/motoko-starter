@@ -3,7 +3,7 @@
 
 Ya sea que interactúes con Internet Computer utilizando [Internet Identity](https://internetcomputer.org/docs/current/tokenomics/identity-auth/what-is-ic-identity), `dfx`, o incluso [Plug wallet](https://plugwallet.ooo/), tu identidad está representada por un par de claves que consta de:
 
-<p align="center"> <img src="../../../..manuals/chapters/chapter-10/assets/identity_recap.png" width="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-10/assets/identity_recap.png" width="600px" style="border: 2px solid black;"> </p>
 
 - Una **clave privada**, que te otorga acceso a todos los ICP que posees, te permite administrar contenedores y te permite acceder a tu identidad en varias aplicaciones.
 - Una **clave pública**, a partir de la cual se deriva tu **principal**.
