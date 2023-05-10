@@ -85,7 +85,7 @@ let b = Buffer.Buffer<Nat>(2);
 b.add(0);   
 b.add(10);   
 b.add(100);  
-b.get(2);   // 10
+b.get(2);   // 100
 ```
 
 A buffer can easily be converted to an array using the `toArray()` function from the [Buffer library](https://internetcomputer.org/docs/current/motoko/main/base/Buffer#function-toarray-1).
