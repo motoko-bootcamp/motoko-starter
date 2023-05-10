@@ -1,0 +1,16 @@
+{
+    "canisters": {
+      "array": {
+        "main": "src/array/main.mo",
+        "type": "motoko"
+      },
+      "buffer": {
+        "main": "src/buffer/main.mo",
+        "type": "motoko"
+      },
+      "list": {
+        "main": "src/list/main.mo",
+        "type": "motoko"
+      }
+    }
+}
