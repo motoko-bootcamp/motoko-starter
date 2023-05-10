@@ -18,6 +18,7 @@ Keep in mind, if reading and coding is pushing your brain to its limit, take a b
     - [The `Error` type](../../manuals/chapters/chapter-9/CHAPTER-9.MD#the-error-type)
     - [Trap](../../manuals/chapters/chapter-9/CHAPTER-9.MD#trap)
     - [Try/Catch](../../manuals/chapters/chapter-9/CHAPTER-9.MD#trycatch)
+- Read [Chapter 11: Intercanister calls](../../manuals/chapters/chapter-11/CHAPTER-11.MD) in full
 - Read [Chapter 12: Upgrading a canister](../../manuals/chapters/chapter-12/CHAPTER-12.MD) in full.
 - Complete the [project of the day](./project/README.MD).
 
