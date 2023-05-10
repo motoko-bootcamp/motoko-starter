@@ -26,8 +26,8 @@ Objects are more readable than tuples since each field has a name. The  differen
 let student = {
     name = "John";
     age = 35;
-    favoriteLanguage: "Motoko":
-    graduate : true;
+    favoriteLanguage = "Motoko";
+    graduate = true;
 };
 ```
 Similar to other variables in Motoko, objects can be mutable or immutable. The object we've just defined is immutable, once the fields have been assigned a value they cannot be modified. 
@@ -36,8 +36,8 @@ Similar to other variables in Motoko, objects can be mutable or immutable. The o
 let student = {
     name = "John";
     age = 35;
-    favoriteLanguage: "Motoko":
-    graduate : true;
+    favoriteLanguage = "Motoko";
+    graduate = true;
 };
 student.age += 1;  
 ```
@@ -48,8 +48,8 @@ To create an object that can be modified, we must use the `var` keyword in the f
 let student = {
     name = "John";
     var age = 35;
-    favoriteLanguage: "Motoko":
-    graduate : true;
+    favoriteLanguage = "Motoko";
+    graduate = true;
 };
 student.age += 1; 
 ```
