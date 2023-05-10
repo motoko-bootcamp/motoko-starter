@@ -20,11 +20,11 @@ Sin embargo, incluso al respetar reglas básicas de seguridad, este método de i
 ## Inicio de sesión con BigTech
 Como resultado, el uso de gestores de contraseñas y el inicio de sesión a través de grandes empresas tecnológicas como Apple, Facebook, Google o Microsoft se ha vuelto más común. Sin embargo, este método de inicio de sesión también tiene sus inconvenientes. Requiere que las personas confíen en estas grandes empresas tecnológicas con su información personal y acceso a otros sitios web.
 
-<p align="center"> <img src="./assets/login_bigtech.png" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/login_bigtech.png" width="300px" style="border: 2px solid black;"> </p>
 
 Con el aumento de la información que ponemos en línea, ¿realmente queremos confiar en un puñado de empresas privadas?
 
-<p align="center"> <img src="./assets/facebook_meme.jpeg" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/facebook_meme.jpeg" width="300px" style="border: 2px solid black;"> </p>
 
 ## Firmas digitales
 Las firmas digitales son una alternativa más segura a la autenticación tradicional de nombre de usuario y contraseña. Las firmas digitales utilizan una técnica criptográfica para verificar la autenticidad de un mensaje o documento, asegurándose de que no haya sido manipulado y que provenga de un remitente verificado. Se utilizan ampliamente en transacciones electrónicas, como banca en línea y comercio electrónico, ya que proporcionan un nivel más alto de seguridad y protección contra el fraude.
@@ -38,12 +38,12 @@ Un esquema de firma digital se basa en 3 algoritmos:
 
 3. **Verificación**: este algoritmo se utiliza para verificar la firma digital con la clave pública. Aplica una fórmula matemática a los datos firmados, la firma digital y la clave pública. Si la salida de la fórmula coincide con los datos originales, la firma digital se considera válida y los datos se consideran auténticos.
 
-<p align="center"> <img src="./assets/digital_signatures.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/digital_signatures.png" width="800px" style="border: 2px solid black;"></p>
 
 Por supuesto, ¡las firmas digitales ya se han utilizado intensivamente en el mundo de la criptografía! Todo el mundo debería conocer el famoso dicho: [Not your keys not your crypto](https://www.ledger.com/academy/not-your-keys-not-your-coins-why-it-matters). 
 Los usuarios que poseen y administran sus claves son excelentes para la seguridad y la descentralización, sin embargo, no es tan fácil. <br/> El principal problema es mantenerlas seguras y accesibles.
 
-<p align="center"> <img src="./assets/lost_bitcoins.jpeg" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/lost_bitcoins.jpeg" width="800px" style="border: 2px solid black;"></p>
 <p align="center"> Si pierdes tus claves, ¡no hay copia de seguridad! </p>
 
 Si queremos administrar nuestras identidades digitales completas utilizando claves criptográficas mientras integramos a millones de personas en la Web3, parece que hay un proyecto desafiante que resolver aquí. ¿Cómo podemos mantener los beneficios de las firmas digitales mientras lo hacemos más fácil de usar para todos?
@@ -56,7 +56,7 @@ Si queremos administrar nuestras identidades digitales completas utilizando clav
     2. La clave privada se almacena de forma segura en tu dispositivo.
     3. La clave pública se envía al servicio y se asocia con la cuenta del usuario.
 
-<p align="center"> <img src="./assets/webAuthn_registration.png" width="400px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/webAuthn_registration.png" width="400px" style="border: 2px solid black;"></p>
 
 - Cuando el mismo usuario quiere iniciar sesión nuevamente:
     1. Se genera un desafío por el servicio.
@@ -64,7 +64,7 @@ Si queremos administrar nuestras identidades digitales completas utilizando clav
     3. Si la verificación es correcta, el dispositivo firmará el desafío y enviará la firma de vuelta al servicio.
     4. Si la firma es correcta, el servicio otorgará acceso.
 
-<p align="center"> <img src="./assets/webAuthn_signature.png" width="400px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/webAuthn_signature.png" width="400px" style="border: 2px solid black;"></p>
 
 El dispositivo generalmente integra un chip seguro que almacena la clave privada. Esos chips están diseñados para **nunca filtrar la clave privada**, solo pueden crear una firma cuando se solicita.
 
@@ -72,7 +72,7 @@ WebAuthentication es seguro y conveniente.
 ## Mensajes en el Internet Computer
 Como mencionamos en el día 1, todas las solicitudes enviadas al Internet Computer pasan a través de mensajes. Todos esos mensajes están firmados.
 
-<p align="center"> <img src="./assets/message_authenticated.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/message_authenticated.png" width="800px" style="border: 2px solid black;"></p>
 
 Un mensaje contiene la siguiente información:
 - ID del canister objetivo.
@@ -91,7 +91,7 @@ Imaginemos que nuestro usuario quiere hacer las siguientes 3 acciones:
 2. Actualizar su perfil de usuario.
 3. Publicar un mensaje.
 
-<p align="center"> <img src="./assets/withoutII_hell.png" width="800px" style="border: 2px solid black;"></p>
+<p align="center"> <img src="../../../../manuals/appendix/appendix-3/assets/withoutII_hell.png" width="800px" style="border: 2px solid black;"></p>
 <p align="center"> ¡Cada interacción con la red requeriría una validación del usuario! 🤦‍♂️ </p>
 
 Como todos los mensajes están firmados en Internet Computer, significaría que tendríamos que confirmar nuestra identidad cada vez que interactuamos con cualquier canister. Eso sería rápidamente molesto para los usuarios. <br/>
