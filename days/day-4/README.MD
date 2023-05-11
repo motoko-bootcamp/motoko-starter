@@ -9,8 +9,8 @@ Keep in mind, if reading and coding is pushing your brain to its limit, take a b
 
 | Title | Mentor |  Description |
 |-----------------|-----------------|-----------------|
+| Motoko: Shareables types, handling errors & admin functionalities | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers different topics (cycle management, errors and admin functionnalities) through examples and live coding.
 | Motoko: Heap, stable memory & updates | <a href="" target="_blank"> Matthew </a> | This lecture dives into the two different types of memories (stable vs heap) and how to deal with upgrades.
-| Motoko: Cycle management, error handling & admin functionalities | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers different topics (cycle management, errors and admin functionnalities) through examples and live coding.
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
