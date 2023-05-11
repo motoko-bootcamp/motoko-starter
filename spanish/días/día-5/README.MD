@@ -1,29 +1,29 @@
-# Day 5️⃣
-**Day 5** - Time flies! You should be proud of yourself, as we're nearing the end of the week. <br/>
-Today, we'll delve into extremely crucial concepts: inter-canister calls, managing multiple canisters, and implementing payments on the Internet Computer. Mastering these key topics is essential for creating a scalable application and generating revenue to support your goals. Let's dive in!
-## 🍿 Lectures & events
-> Be sure to consult the calendar for the precise schedule of each lecture.
+# Día 5️⃣
+**Día 5** - ¡El tiempo vuela! Deberías estar orgulloso de ti mismo, ya que nos acercamos al final de la semana. <br/>
+Hoy profundizaremos en conceptos extremadamente cruciales: llamadas inter-canister, administración de múltiples canisters e implementación de pagos en Internet Computer. Dominar estos temas clave es esencial para crear una aplicación escalable y generar ingresos para apoyar tus objetivos. ¡Vamos a sumergirnos!
+## 🍿 Conferencias y eventos
+> Asegúrate de consultar el calendario para conocer el horario preciso de cada conferencia.
 
-| Title | Mentor |  Description |
+| Título | Mentor |  Descripción |
 |-----------------|-----------------|-----------------|
- Motoko: Intercanister calls, timers and multi-canister architecture. | <a href="" target="_blank">  </a> | This lecture explains how to perfom intercanister calls and how to use the timer functionnality to schedule recurring tasks.
+ Motoko: llamadas intercanister, temporizadores y arquitectura de múltiples canisters. | <a href="" target="_blank">  </a> | Esta conferencia explica cómo realizar llamadas intercanister y cómo utilizar la funcionalidad de temporizador para programar tareas recurrentes.
 |  WIP | <a href="https://twitter.com/q_uint8" target="_blank"> Quint  </a> | WIP 
-##  🧭 Tasks of the day
-> **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
+##  🧭 Tareas del día
+> **Al comenzar tu día**, usa esta lista como guía, contiene todo el material que necesitas leer y los desafíos que debes abordar.
 
-- Read [Chapter 11: Intercanister calls](../../manuals/CHAPTER-11.MD) in full
-- Read [Chapter 16: Managing multiple canisters](../../manuals/CHAPTER-16.MD) in full.
-- Read [Appendix 5: Handling payments on the Internet Computer](../../manuals/appendix/APPENDIX-5.MD) in full.
-- Complete the [project of the day](../day-5/project/README.MD)
+- Lee [Capítulo 11: Llamadas intercanister](../../manuals/capítulos/capítulo-11/CAPITULO-11.MD) completo
+- Lee [Capítulo 16: Administración de múltiples canisters](../../manuals/capítulos/capítulo-16/CAPITULO-16.MD) completo.
+- Lee [Apéndice 5: Manejo de pagos en Internet Computer](../../manuals/apéndices/apéndice-5/APÉNDICE-5.MD) completo.
+- Completa el [proyecto del día](./project/README.MD)
 
-## 🎯 Learning objectives
-> **Before finishing your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>
+## 🎯 Objetivos de aprendizaje
+> **Antes de terminar tu día**, revisa la siguiente lista y asegúrate de haber abordado cada elemento en ella. Es importante que tengas una comprensión clara de todos estos conceptos. <i> ¿Por qué no intentas explicarlos a uno de tus compañeros de equipo para evaluar tu nivel de comprensión? </i>
 
-- Know how to import actors and perform [intercanister-calls](../../manuals/CHAPTER-11.MD#chapter-11-intercanister-calls).
-- Understand what are commit points, rollbacks and the main issues with intercanister-calls.
-- Know [how to make payments](../../manuals/appendix/APPENDIX-5.MD) and verify them on the Internet Computer.
-- Being familiar with the ICRC_1 standard, the Working Groups and the process for creating future ICRC standards.
+- Saber cómo importar actores y realizar [llamadas intercanister](../../manuals/capítulos/capítulo-11/CAPITULO-11.MD).
+- Comprender qué son los puntos de compromiso, las anulaciones y los principales problemas con las llamadas intercanister.
+- Saber [cómo hacer pagos](../../manuals/apéndices/apéndice-5/APÉNDICE-5.MD) y verificarlos en Internet Computer.
+- Estar familiarizado con el estándar ICRC_1, los Grupos de Trabajo y el proceso para crear futuros estándares ICRC.
 
-> [MOPS](https://mops.one/) is a package manager for Motoko with full on-chain package registry. Use it and publish your packages! 
+> [MOPS](https://mops.one/) es un administrador de paquetes para Motoko con registro completo de paquetes en la cadena. ¡Úsalo y publica tus paquetes! 
 
-Good luck 🍀
+Buena suerte 🍀
