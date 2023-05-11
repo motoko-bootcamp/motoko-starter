@@ -1,6 +1,6 @@
 # Motoko Bootcamp: starter - 7 días para iniciarse en Internet Computer 🏁
 
-<p align="center"> <img src="./assets/motoko_bootcamp_8-14.png"  height="400px" width="auto" style="border: 2px solid black;"> </p> 
+<p align="center"> <img src="../assets/motoko_bootcamp_8-14.png"  height="400px" width="auto" style="border: 2px solid black;"> </p> 
 
 ### Participa en el Motoko Bootcamp: edición de inicio. Puedes seguirlo en línea desde cualquier parte del mundo o unirte a uno de los [campamentos base de la comunidad](https://discord.gg/FWQszm86cj). 
 
@@ -43,7 +43,7 @@ Reacciona al mensaje con el emoji correspondiente a tu equipo. Recibirás autom�
 
 ### Paso 3: ve al Día 1
 Para cada día, encontrarás una guía dedicada para navegar por todos los recursos y desafíos disponibles.
-- [Haz clic para acceder al Día 1️⃣ ](./days/day-1/README.MD) 
+- [Haz clic para acceder al Día 1️⃣ ](./días/día-1/README.MD) 
 
 ### Paso 4: envía tu canister
 ¡El último paso para completar el Bootcamp es enviar tu canister! 
@@ -103,7 +103,7 @@ Para cada día, encontrarás una guía dedicada para navegar por todos los recur
 
 ## Licencia 📜
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para obtener más información.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](../LICENSE) para obtener más información.
 
 ## Créditos 💳
 
@@ -126,20 +126,20 @@ Asegúrate de agregar el calendario de Motoko Bootcamp para seguir la semana �
 ### 📜 Guías diarias
 El Bootcamp está dividido en 6 días. (¡El domingo es para descansar! 😴)
 Para cada día, encontrarás una guía dedicada: estas guías serán tus compañeras para navegar por todos los recursos y desafíos disponibles.
-- [Día 1️⃣](./days/day-1/README.MD) 
-- [Día 2️⃣](./days/day-2/README.MD) 
-- [Día 3️⃣](./days/day-3/README.MD) 
-- [Día 4️⃣](./days/day-4/README.MD) 
-- [Día 5️⃣](./days/day-5/README.MD) 
+- [Día 1️⃣](./días/día-1/README.MD) 
+- [Día 2️⃣](./días/día-2/README.MD) 
+- [Día 3️⃣](./días/día-3/README.MD) 
+- [Día 4️⃣](./días/día-4/README.MD) 
+- [Día 5️⃣](./días/día-5/README.MD) 
 - Día 6️⃣ [Por publicar] 
 ### 🏗️ Proyectos
 Los proyectos te ayudarán a desarrollar habilidades prácticas y confianza. Se te proporcionarán instrucciones claras y una base de código inicial para completar. 
 Trabajarás en 5 proyectos diferentes:
-- [La calculadora ➕](./days/day-1/project/README.MD)
-- [El diario de tareas 📔](./days/day-2/project/README.MD)
-- [El muro de estudiantes 🎨](./days/day-3/project/README.MD)
-- [MotoCoin 🪙](./days/day-4/project/README.MD)
-- [El verificador 👨‍🏫](./days/day-5/project/README.MD)
+- [La calculadora ➕](./días/día-1/project/README.MD)
+- [El diario de tareas 📔](./días/día-2/project/README.MD)
+- [El muro de estudiantes 🎨](./días/día-3/project/README.MD)
+- [MotoCoin 🪙](./días/día-4/project/README.MD)
+- [El verificador 👨‍🏫](./días/día-5/project/README.MD)
 
 > Una vez completados, envía tu proyecto a través del dashboard. Comprobará si has cumplido con los requisitos.
 ### 👨‍🏫 Conferencias
@@ -149,14 +149,14 @@ Una conferencia dura aproximadamente una hora y cubre un tema técnico. Es prese
 ### 🎙️ Presentaciones
 Las presentaciones son un componente crucial del programa de Motoko Bootcamp, y se recomienda encarecidamente asistir a ellas. A diferencia de las conferencias, que se centran en el conocimiento técnico básico de Motoko, las presentaciones brindan la oportunidad de aprender sobre varias herramientas y oportunidades disponibles para los desarrolladores de Motoko.
 
-> Al igual que con las conferencias, las presentaciones se llevan a cabo en vivo en Zoom, pero no te preocupes si no puedes asistir: también se grabarán y se subirán a YouTube para que las veas más tarde. Solo echa un vistazo a la lista de todas las presentaciones en [la página dedicada](./lectures/LECTURES#presentations-🎙️).
+> Al igual que con las conferencias, las presentaciones se llevan a cabo en vivo en Zoom, pero no te preocupes si no puedes asistir: también se grabarán y se subirán a YouTube para que las veas más tarde. Solo echa un vistazo a la lista de todas las presentaciones en [la página dedicada](../lectures/LECTURES#presentations-🎙️).
 ### 🐥 Mentoría
 Tienes acceso a sesiones de mentoría, donde puedes solucionar cualquier desafío que enfrentes y obtener respuestas a todas tus preguntas directamente de los expertos. Estas sesiones están abiertas a todos en el Bootcamp, así que asegúrate de aprovechar esta increíble oportunidad.
 
 ### 🤹 Actividades
 Además del programa principal, ¡tenemos algunas actividades increíbles planeadas para ti, como sesiones de networking y juegos! Estas son totalmente opcionales, pero las hemos planificado para agregar un poco de emoción adicional a tu semana. ¡Así que ven y únete a la diversión!
 
-> Las actividades se llevarán a cabo en Discord. Puedes consultar la [lista de todas las actividades en la página dedicada](./lectures/LECTURES.MD#activities-🤹).
+> Las actividades se llevarán a cabo en Discord. Puedes consultar la [lista de todas las actividades en la página dedicada](../lectures/LECTURES.MD#activities-🤹).
 ### 🫂 Equipos
 En Motoko Bootcamp, creemos en el poder de la colaboración. Por eso, se te asignará a equipos y cada equipo tendrá una puntuación. La puntuación del equipo depende del progreso de **todos** los miembros.<br/>
 Aunque trabajarás en tu proyecto de forma independiente, queremos asegurarnos de que tengas a otros con quienes compartir tu viaje y ayudarte a mantenerte motivado.
@@ -190,7 +190,7 @@ Para graduarte, debes completar los 5 proyectos y enviarlos a través del dashbo
 
 ### 🏕️ Basecamp de la comunidad
 ¿Interesado en conectarte con otros entusiastas? Únete a otros estudiantes en tu área para seguir la semana y trabajar juntos en desafíos, conferencias y proyectos. [Haz clic aquí para unirte a un basecamp de la comunidad](https://discord.gg/JS9g2ahtDs).
-<p align="center"> <img src="./assets/community-hub.png" width="300px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../assets/community-hub.png" width="300px" style="border: 2px solid black;"> </p>
 <p align="center"> Tu aventura de Motoko comienza en tu propio patio trasero 🏕️</> 
 
 ### 👦 Únete a la comunidad
@@ -212,4 +212,4 @@ Puedes publicar tus pensamientos, ideas y comentarios en el canal dedicado de co
 - [Inside Dark Studio](https://twitter.com/idarkstudio) está organizando una reunión comunitaria en Argentina. 🇦🇷
 
 ## 🚀 ¡Let's Foocking BUILD! 
-<p align="center"> <img src="./assets/may-poster.png"  height="600px" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../assets/may-poster.png"  height="600px" style="border: 2px solid black;"> </p>
