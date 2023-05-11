@@ -17,7 +17,7 @@ Today, we'll delve into extremely crucial concepts: inter-canister calls, managi
 ## 🎯 Learning objectives
 > **Before finishing your day**, review the following list and ensure that you have addressed each item on it. It's important that you have a clear understanding of all these concepts. <i> Why not try explaining them to one of your teammate to gauge your level of understanding? </i>
 
-- Know how to import actors and perform [intercanister-calls](../../manuals/chapters/chapter-11CHAPTER-11.MD#chapter-11-intercanister-calls).
+- Know how to import actors and perform [intercanister-calls](../../manuals/chapters/chapter-11/CHAPTER-11.MD#chapter-11-intercanister-calls).
 - Understand what are commit points, rollbacks and the main issues with intercanister-calls.
 - Know [how to make payments](../../manuals/appendix/appendix-5/APPENDIX-5.MD) and verify them on the Internet Computer.
 - Being familiar with the ICRC_1 standard, the Working Groups and the process for creating future ICRC standards.
