@@ -36,7 +36,7 @@ updateMyProfile : shared (profile : StudentProfile) -> async Result.Result<(), T
 ```motoko
 deleteMyProfile : shared () -> async Result.Result<(), Text>;
 ```
-6. Make sure that `studentProfileStore` is resistant to upgrades, which means that all student profiles will be preserved even if the canister undergoes an upgrade. Implement this by utilizing the `pre_upgrade` and `post_upgrade` hooks.
+6. Make sure that `studentProfileStore` is resistant to upgrades, which means that all student profiles will be preserved even if the canister undergoes an upgrade. Implement this by utilizing the `preupgrade` and `postupgrade` hooks.
 ## Part 2: Testing of the simple calculator.
 The idea in this section is to implement the code that perfoms the test on the simple calculator.
 We are going to test: 
