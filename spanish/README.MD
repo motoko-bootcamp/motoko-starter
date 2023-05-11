@@ -13,7 +13,7 @@ No se requiere experiencia previa - aprenderás todo, desde cómo funciona ICP h
 
 Con conferencias interesantes, proyectos prácticos y una comunidad de apoyo, obtendrás una comprensión profunda del potencial ilimitado de Internet Computer. La ayuda técnica está disponible las 24 horas del día en Discord.
 
-<p align="center"> <img src="./assets/mb_2023.png" height="300px" width="auto" style="border: 2px solid black;"> </p>
+<p align="center"> <img src="../assets/mb_2023.png" height="300px" width="auto" style="border: 2px solid black;"> </p>
 
 ¡Al completar el curso, recibirás un diploma que desbloqueará la puerta a una comunidad exclusiva y oportunidades de trabajo increíbles dentro del vibrante ecosistema de ICP!
 
