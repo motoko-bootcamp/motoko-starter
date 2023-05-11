@@ -6,7 +6,7 @@ Fortunately, as an adept Motoko developer yourself, you possess the expertise an
 ## 🧑‍🏫 Requirements 
 Your task is to create the code for an **instructor**, which is implemented as a canister. The idea is for the student to input his canister id and get automatically verified by the canister. If the canister id submitted fulfill the requirements then the students will automatically graduate; just imagine the HOURS of work you will save! <br/>
 
-> For the purpose of this Bootcamp, we will not attempt to build a verifier that test all 4 previous projects. We will only attempts to verify a simple version of the calculator you've implemented during Day 1. The code for this simple calculator has already been implemented for you, and can be found [here](../project/calculator/main.mo).
+> For the purpose of this Bootcamp, we will not attempt to build a verifier that test all 4 previous projects. We will only attempts to verify a simple version of the calculator you've implemented during Day 1. The code for this simple calculator has already been implemented for you, and can be found [here](../project/calculator/calculator.mo).
 
 ## Part 1: Storing the students information.
 The idea in this section is to build the code for storing informations about students. 
