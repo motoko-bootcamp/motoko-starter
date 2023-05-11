@@ -103,20 +103,20 @@ Cuando estás trabajando localmente, suponiendo que tu canister está definido e
 Antes de llamar a otros canisters, es posible que desees verificar su interfaz. Para encontrar la interfaz de cualquier canister, puedes usar el [Internet Computer Dashboard](https://dashboard.internetcomputer.org/).
 
 1. Navega hasta [el dashboard](https://dashboard.internetcomputer.org/).
-<p align="center"> <img src="./assets/main-dashboard.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-11/assets/main-dashboard.png" width="500px" style="border: 1px solid black;"/> </p>
 
 2. En la barra de búsqueda, ingresa el ID del canister que deseas examinar.
-<p align="center"> <img src="./assets/ledger-dashboard.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-11/assets/ledger-dashboard.png" width="500px" style="border: 1px solid black;"/> </p>
 
 3. Desplázate hacia abajo por la lista de métodos hasta llegar a la sección **Canister Interface**.
-<p align="center"> <img src="./assets/canister-interface.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-11/assets/canister-interface.png" width="500px" style="border: 1px solid black;"/> </p>
 
 4. Aquí, puedes ver una lista de todos los tipos públicos utilizados y la interfaz del servicio, que lista todos los métodos públicos.
-<p align="center"> <img src="./assets/service-interface.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-11/assets/service-interface.png" width="500px" style="border: 1px solid black;"/> </p>
 
 5. Puedes usar las diferentes pestañas para ver la interfaz en diferentes lenguajes (**Candid**, **Motoko**, **Rust**, **JavaScript**, **Typescript**).
 
-<p align="center"> <img src="./assets/motoko-interface.png" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-11/assets/motoko-interface.png" width="500px" style="border: 1px solid black;"/> </p>
 
 ## Valores asincrónicos
 Un canister procesa sus mensajes secuencialmente (uno a la vez), siendo cada mensaje una llamada a una función pública.
@@ -127,7 +127,7 @@ Supongamos que eres **canister A** y estás llamando a **canister B**. La siguie
 - El canister A continúa recibiendo y procesando mensajes adicionales, mientras que el canister B procesa sus mensajes uno a la vez.
 - El canister B eventualmente envía una respuesta al canister A. El mensaje se agrega a la cola del canister A.
 
-<p align="center"> <img src="./assets/inter-canister-example.gif" width="500px" style="border: 1px solid black;"/> </p>
+<p align="center"> <img src="../../../../manuals/chapters/chapter-11/assets/inter-canister-example.gif" width="500px" style="border: 1px solid black;"/> </p>
 
 Como se puede ver, entre el momento en que llamas a un canister y el momento en que recibes una respuesta, pueden ocurrir varios eventos, como un usuario llamando a una función, una respuesta de un mensaje anterior que regresa o otro canister que llama a una de las funciones públicas. Estos eventos pueden resultar en que el estado interno del canister sea significativamente diferente de lo que inicialmente anticipaste. **¡Siempre ten eso en cuenta!**
 
