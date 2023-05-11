@@ -20,6 +20,8 @@ Recuerda, si leer y programar está agotando tu cerebro, tómate un descanso. Sa
     - [El tipo `Error`](../../manuals/CHAPTER-9.MD#el-tipo-error)
     - [Trampa](../../manuals/CHAPTER-9.MD#trampa)
     - [Try/Catch](../../manuals/CHAPTER-9.MD#trycatch)
+- Leer [Capítulo 11: Llamadas intercanister](../../manuals/chapters/chapter-11/CHAPTER-11.MD)
+    - Leer [Llamando a un actor por referencia](../../manuals/chapters/chapter-11/CHAPTER-11.MD#llamando-a-un-actor-por-referencia)
 - Leer [Capítulo 12: Actualización de un canister](../../manuals/CHAPTER-12.MD) completo.
 - Completar el [proyecto del día](./project/README.MD).
 
