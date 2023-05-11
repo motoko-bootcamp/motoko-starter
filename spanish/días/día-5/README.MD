@@ -13,7 +13,7 @@ Hoy profundizaremos en conceptos extremadamente cruciales: llamadas inter-canist
 
 - Lee [Capítulo 11: Llamadas intercanister](../../manuals/capítulos/capítulo-11/CAPITULO-11.MD) completo
 - Lee [Capítulo 16: Administración de múltiples canisters](../../manuals/capítulos/capítulo-16/CAPITULO-16.MD) completo.
-- Lee [Apéndice 5: Manejo de pagos en Internet Computer](../../manuals/apéndices/apéndice-5/APÉNDICE-5.MD) completo.
+- Lee [Apéndice 5: Manejo de pagos en Internet Computer](../../manuals/apéndices/apéndice-5/APÉNDICE-5.md) completo.
 - Completa el [proyecto del día](./project/README.MD)
 
 ## 🎯 Objetivos de aprendizaje
