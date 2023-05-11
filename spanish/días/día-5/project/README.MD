@@ -1,19 +1,19 @@
-# The Verifier 👨‍🏫
-## Introduction
-Imagine that you are an now an instructor at [Motoko School](https://twitter.com/MotokoSchool), where you are currently overseeing a cohort of more than 200 dedicated students!  🤯 <br/>
-As part of the program, you have assigned these ambitious learners to tackle 4 distinct projects, each designed to challenge their skills and knowledge. Upon completion, it falls on your shoulders to meticulously review and evaluate their work, ultimately determining whether they have met the criteria for [graduation](../../../README.MD#🎓-graduation). <br/>
-Fortunately, as an adept Motoko developer yourself, you possess the expertise and confidence to streamline this verification process by leveraging automation. This innovative approach will not only save you valuable time but also pave the way for the future of **Motoko Bootcamp**. Let's get started!
-## 🧑‍🏫 Requirements 
-Your task is to create the code for a **instructor**, which is implemented as a canister. The idea is for the student to input his canister id and get automatically verified by the canister. If the canister id submitted fulfill the requirements then the students will automatically graduate; just imagine the hours of work you will save! <br/>
+# El Verificador 👨‍🏫
+## Introducción
+Imagina que eres un instructor en [Motoko School](https://twitter.com/MotokoSchool), donde actualmente supervisas a una cohorte de más de 200 estudiantes dedicados. 🤯 <br/>
+Como parte del programa, has asignado a estos ambiciosos aprendices a abordar 4 proyectos distintos, cada uno diseñado para desafiar sus habilidades y conocimientos. Al completarlos, recae sobre tus hombros revisar y evaluar meticulosamente su trabajo, determinando en última instancia si han cumplido con los criterios para [graduarse](../../../README.MD#🎓-graduation). <br/>
+Afortunadamente, como desarrollador experto en Motoko tú mismo, posees la experiencia y la confianza para simplificar este proceso de verificación mediante la automatización. Este enfoque innovador no solo te ahorrará tiempo valioso, sino que también pavimentará el camino para el futuro del **Motoko Bootcamp**. ¡Comencemos!
+## 🧑‍🏫 Requisitos
+Tu tarea es crear el código para un **instructor**, que se implementa como un canister. La idea es que el estudiante ingrese su id de canister y se verifique automáticamente por el canister. Si el id de canister enviado cumple con los requisitos, los estudiantes se graduarán automáticamente; ¡imagina las horas de trabajo que ahorrarás! <br/>
 
-[ADD ILLUSTRATION]
+[AGREGAR ILUSTRACIÓN]
 
-> For the purpose of this Bootcamp, we will not attempt to build a verifier that test all 4 previous projects. We will only attempts to verify a simple version of the calculator you've implemented during Day 1. The code for this simple calculator has already been implemented, and can be found [here](../project/calculator/main.mo).
+> Para el propósito de este Bootcamp, no intentaremos construir un verificador que pruebe los 4 proyectos anteriores. Solo intentaremos verificar una versión simple de la calculadora que implementaste durante el Día 1. El código para esta calculadora simple ya ha sido implementado y se puede encontrar [aquí](../project/calculator/main.mo).
 
-## Part 1: Storing the students information.
-The idea in this section is to build the code for storing informations about students. 
-### Step-by-step
-A student profile is defined as follows:
+## Parte 1: Almacenar información de los estudiantes.
+La idea en esta sección es construir el código para almacenar información sobre los estudiantes.
+### Paso a paso
+Un perfil de estudiante se define de la siguiente manera:
 ```motoko
 public type StudentProfile = {
     name : Text;
@@ -21,35 +21,36 @@ public type StudentProfile = {
     graduate : Bool;
 };
 ```
-1. Define a variable named `studentProfileStore`, which is a `HashMap` for storing student profile. The keys in this wall are of type `Principal` and represent the identity of students, while the values are of type `StudentProfile`. 
-2. Implement the `addMyProfile` function which accepts a `profile` of type `StudentProfile` and adds it into the `studentProfileStore`. This function assumes that the `caller` is the student corresponding to the profile.
+1. Define una variable llamada `studentProfileStore`, que es un `HashMap` para almacenar el perfil de los estudiantes. Las claves en este mapa son de tipo `Principal` y representan la identidad de los estudiantes, mientras que los valores son de tipo `StudentProfile`.
+2. Implementa la función `addMyProfile` que acepta un `perfil` de tipo `StudentProfile` y lo agrega al `studentProfileStore`. Esta función asume que el `caller` es el estudiante correspondiente al perfil.
 ```motoko
 addMyProfile: shared (profile : StudentProfile) -> async Result.Result<(), Text>;
 ```
-3. Implement the `seeAProfile` query function, which accepts a principal `p` of type `Principal` and returns the optional corresponding student profile.
+3. Implementa la función de consulta `seeAProfile`, que acepta un principal `p` de tipo `Principal` y devuelve el perfil del estudiante correspondiente (si existe) como un valor opcional.
 ```motoko
 seeAProfile : query (p : Principal) -> async ?StudentProfile;
 ```
-4. Implement the `updateMyProfile` function which allows a student to perform a modification on its student profile. If everything works, and the profile is updated the function should return a simple unit value wrapped in an `Ok` result. If the `caller` doesn't have a student profile the function should return an error message wrapped in an `Err` result. 
+4. Implementa la función `updateMyProfile` que permite a un estudiante realizar una modificación en su perfil de estudiante. Si todo funciona, y el perfil se actualiza, la función debe devolver un valor unitario simple envuelto en un resultado `Ok`. Si el `caller` no tiene un perfil de estudiante, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
 ```motoko
 updateMyProfile : shared (profile : StudentProfile) -> async Result.Result<(), Text>;
 ```
-5. Implement the `deleteMyProfile` function which allows a student to delete its student profile. If everything works, and the profile is deleted the function should return a simple unit value wrapped in an `Ok` result. If the `caller` doesn't have a student profile the function should return an error message wrapped in an `Err` result. 
+5. Implementa la función `deleteMyProfile` que permite a un estudiante eliminar su perfil de estudiante. Si todo funciona y el perfil se elimina, la función debe devolver un valor unitario simple envuelto en un resultado `Ok`. Si el `caller` no tiene un perfil de estudiante, la función debe devolver un mensaje de error envuelto en un resultado `Err`.
 ```motoko
 deleteMyProfile : shared (profile : StudentProfile) -> async Result.Result<(), Text>;
 ```
-6. Make sure that `studentProfileStore` is resistant to upgrades, which means that all student profiles will be preserved even if the canister undergoes an upgrade. Implement this by utilizing the `pre_upgrade` and `post_upgrade` hooks.
-## Part 2: Testing of the simple calculator.
-The idea in this section is to implement the code that perfoms the test on the simple calculator.
-We are going to test: 
-- The `reset` function.
-- The `add` function.
-- The `sub` function.
+6. Asegúrate de que `studentProfileStore` sea resistente a las actualizaciones, lo que significa que todos los perfiles de estudiantes se conservarán incluso si el canister se actualiza. Implementa esto utilizando los ganchos `pre_upgrade` y `post_upgrade`.
 
-If those 3 functions are correctly implemented, then the test is positive and the canister is validated.
+## Parte 2: Pruebas de la calculadora simple.
+La idea en esta sección es implementar el código que realiza la prueba en la calculadora simple.
+Vamos a probar:
+- La función `reset`.
+- La función `add`.
+- La función `sub`.
 
-### Step-by-step
-The type `TestResult` is defined as follows:
+Si esas tres funciones se implementan correctamente, entonces la prueba es positiva y se valida el canister.
+
+### Paso a paso
+El tipo `TestResult` se define de la siguiente manera:
 ```motoko
     public type TestResult = Result.Result<(), TestError>;
     public type TestError = {
@@ -57,34 +58,34 @@ The type `TestResult` is defined as follows:
         #UnexpectedError : Text;
     };
 ```
+1. Implementa la función `test` que toma un `canisterId` de tipo `Principal` y devuelve el resultado de la prueba de tipo `TestResult`. Asegúrate de distinguir entre los dos tipos de errores.
 
-1. Implement the `test` function that takes a `canisterId` of type `Principal` and returns the result of the test of type `TestResult`. Make sure to distringuish between the two types of erros.
-- UnexpectedValue should be returned whenever the calculator returns a wrong value. For instance, if a call to `reset` followed by `add(1)` returns 2.
-- UnexpectedError should be returned for all other types of errors. For instance, if the function `add` is not even implemented as part of the canister's interface.
+- Se debe devolver `UnexpectedValue` cada vez que la calculadora devuelve un valor incorrecto. Por ejemplo, si una llamada a `reset` seguida de `add(1)` devuelve 2.
+- Se debe devolver `UnexpectedError` para todos los demás tipos de errores. Por ejemplo, si la función `add` ni siquiera está implementada como parte de la interfaz del canister.
 ```motoko
 test: shared (canisterId : Principal) -> async TestResult;
 ```
 
-## Part 3: Verifying the controller of the calculator.
-In this section we want to make sure that the owner of the verified canister is actually the student that registered it. Otherwise, a student could use the canister of another one.
-### Step-by-step
-1. Implement the `verifyOwnership` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and returns a boolean indicating if the `principalId` is among the controllers of the canister corresponding to the `canisterId` provided.
+## Parte 3: Verificar el controlador de la calculadora.
+En esta sección queremos asegurarnos de que el propietario del canister verificado sea realmente el estudiante que lo registró. De lo contrario, un estudiante podría usar el canister de otro.
+### Paso a paso
+1. Implementa la función `verifyOwnership` que toma un `canisterId` de tipo `Principal` y un `principalId` de tipo `Principal` y devuelve un booleano que indica si el `principalId` está entre los controladores del canister correspondiente al `canisterId` proporcionado.
 
-> Unfortunately, as of today, the `canister_status` method of the management canister can only be used when the canister calling it is also one of the controller of the canister you are trying to check the status. [Read the dedicated topic for more information](https://forum.dfinity.org/t/how-to-find-out-the-controllers-of-a-canister/14345/3). 
+> Desafortunadamente, a partir de hoy, el método `canister_status` del canister de administración solo se puede usar cuando el canister que lo llama también es uno de los controladores del canister que estás intentando verificar. [Lee el tema dedicado para obtener más información](https://forum.dfinity.org/t/how-to-find-out-the-controllers-of-a-canister/14345/3).
 
-## Part 4: Graduation! 
-In this sections the idea is to let students submit their work and automatically verify the canister. If the tests are passed then the `graduation` field of the student is automatically changed.
-1. Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field is updated accordingly.
-## Part 5: List of graduates 🎓
-In this section the idea is to implement a function to handle HTTP requests within the verifier canister. Anyone should be able to go to 
+## Parte 4: ¡Graduación!
+En esta sección, la idea es permitir que los estudiantes envíen su trabajo y verifiquen automáticamente el canister. Si se aprueban las pruebas, el campo `graduation` del estudiante se cambia automáticamente.
+1. Implementa la función `verifyWork` que toma un `canisterId` de tipo `Principal` y realiza las verificaciones necesarias en el canister. Si se validan todos los criterios para la graduación, entonces el campo `graduation` se actualiza en consecuencia.
 
-1. Create a an `Array` called `graduates` that stores the name of graduates.
-2. Implement a timer so that the array is updated every hour.
-3. Implement the `http_request` method.
+## Parte 5: Lista de graduados 🎓
+En esta sección, la idea es implementar una función para manejar solicitudes HTTP dentro del canister verificador. Cualquiera debería poder ir a ...
 
+1. Crea un `Array` llamado `graduates` que almacena el nombre de los graduados.
+2. Implementa un temporizador para que el array se actualice cada hora.
+3. Implementa el método `http_request`.
 
-## 📺 Interface
-> At the end of the project your canister should implement the following interface:
+## 📺 Interfaz
+> Al final del proyecto, tu canister debe implementar la siguiente interfaz:
 ```motoko
 actor Verifier {
 
