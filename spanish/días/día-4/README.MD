@@ -16,13 +16,13 @@ Recuerda, si leer y programar está agotando tu cerebro, tómate un descanso. Sa
 ## 🧭 Tareas del día
 > **Al iniciar tu día,** usa esta lista como guía, contiene todo el material que necesitas leer y los desafíos que debes enfrentar.
 
-- Leer [Capítulo 9: Manejo de errores](../../../spanish/manuals/capítulos/capítulo-9/CAPITULO-9.MD)
-    - [El tipo `Error`](../../../spanish/manuals/capítulos/capítulo-9/CAPITULO-9.MD#el-tipo-error)
-    - [Trampa](../../../spanish/manuals/capítulos/capítulo-9/CAPITULO-9.MD#trampa)
-    - [Try/Catch](../../../spanish/manuals/capítulos/capítulo-9/CAPITULO-9.MD#trycatch)
-- Leer [Capítulo 11: Llamadas intercanister](../../../spanish/manuals/capítulos/capítulo-11/CAPITULO-11.MD)
-    - Leer [Llamando a un actor por referencia](../../../spanish/manuals/capítulos/capítulo-11/CAPITULO-11.MD#llamando-a-un-actor-por-referencia)
-- Leer [Capítulo 12: Actualización de un canister](../../../spanish/manuals/capítulos/capítulo-12/CAPITULO-12.MD) completo.
+- Leer [Capítulo 9: Manejo de errores](../../manuals/capítulos/capítulo-9/CAPITULO-9.MD)
+    - [El tipo `Error`](../../manuals/capítulos/capítulo-9/CAPITULO-9.MD#el-tipo-error)
+    - [Trampa](../../manuals/capítulos/capítulo-9/CAPITULO-9.MD#trampa)
+    - [Try/Catch](../../manuals/capítulos/capítulo-9/CAPITULO-9.MD#trycatch)
+- Leer [Capítulo 11: Llamadas intercanister](../../manuals/capítulos/capítulo-11/CAPITULO-11.MD)
+    - Leer [Llamando a un actor por referencia](../../manuals/capítulos/capítulo-11/CAPITULO-11.MD#llamando-a-un-actor-por-referencia)
+- Leer [Capítulo 12: Actualización de un canister](../../manuals/capítulos/capítulo-12/CAPITULO-12.MD) completo.
 - Completar el [proyecto del día](./project/README.MD).
 
 ## 🎯 Objetivos de aprendizaje
