@@ -37,7 +37,7 @@ actor {
     // Transfer tokens to another account
     transfer : shared (from: Account, to : Account, amount : Nat) -> async Result.Result<(), Text>;
 
-    // Airdrop 1000 MotoCoin to any student that is part of the Bootcamp.
+    // Airdrop 100 MotoCoin to any student that is part of the Bootcamp.
     airdrop : shared () -> async Result.Result<(),Text>;
 }
 ```
