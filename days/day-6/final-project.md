@@ -10,11 +10,11 @@ As a newly **Motoko developer** the expertise and skills you aquired allow you t
 _This project is free to do, and will not count towards your graduation!_
 
 ### Step 1: A choice
-Choose one of the previous projects from this week.
-[Calculator](../../day-1/project/README.MD)
-[Homework Diary](../../day-2/project/README.MD)
-[StudentWall](../../day-3/project/README.MD)
-[MotoCoin](../../day-4/project/README.MD)
+Choose one of the previous projects from this week.<br/>
+[Calculator](../../day-1/project/README.MD)<br/>
+[Homework Diary](../../day-2/project/README.MD)<br/>
+[StudentWall](../../day-3/project/README.MD)<br/>
+[MotoCoin](../../day-4/project/README.MD)<br/>
 [The Verifier](../../day-5/project/README.MD)
 
 ### Step 2: Motoko
