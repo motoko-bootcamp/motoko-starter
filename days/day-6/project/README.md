@@ -35,3 +35,5 @@ You will deploy both your backend and frontend canister on the IC network. Share
 Publish your project and make it public on GitHub, you'll need to submit the repository link in the graduation form.
 
 Now, you can finally take a break and enjoy! ☀️ 
+
+> Thanks to your fellow student Wannes for contributing to this Day 6 challenge 😎
