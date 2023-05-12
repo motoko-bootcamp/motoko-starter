@@ -14,6 +14,54 @@ You all gathered in the computer lab and began brainstorming the features of you
 ## 🧑‍🏫 Requirements 
 Your task is to develop the code for a student wall, implemented as a canister - a digital platform that will revolutionize how students communicate and stay informed about events, clubs, and activities in the community. Imagine a dynamic and interactive space where students can share their thoughts, ideas, and upcoming events with each other. 
 This wall will be the go-to destination for students looking to get the latest scoop on what's happening in the school. 
+## 📒 Steps
+We define a variant type called `Content` that represents the type of content of the messages that can be published on the wall.
+```motoko
+public type Content = {
+    #Text: Text;
+    #Image: Blob;
+    #Video: Blob;
+};
+```
+1. Define a new type called `Message` which consists of three fields: `vote` of type `Int`, `content` of type `Content`, and `creator` of type `Principal`. 
+
+2. Declare a variable named `messageId` to serve as a continuously increasing counter, keeping track of the total number of messages posted.
+
+3. Create a variable called `wall`, which is a HashMap designed to store messages. The keys in the wall are of type `Nat` and represent message IDs, while the values are of type `Message`.
+
+4. Implement the `writeMessage` function, which accepts a content `c` of type `Content`, creates a new message from the content, adds the message to the wall, and returns the ID of the message.
+```motoko
+writeMessage: shared (c : Content) -> async Nat;
+```
+5. Implement the `getMessage` function, which accepts a `messageId` of type `Nat` and returns the corresponding message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+```motoko
+getMessage: shared query (messageId: Nat) -> async Result.Result<Message, Text>;
+```
+6. Implement the `updateMessage` function, which accepts a `messageId` of type `Nat` and a content `c` of type `Content`. This function updates the content of the corresponding message only if the caller is the creator of the message. If the `messageId` is invalid or the `caller` is not the creator, the function should return an error message wrapped in an `Err` result. If the update is successful, the function should return a unit value wrapped in an `Ok` result.
+```motoko
+updateMessage: shared (messageId : Nat, c : Content) -> async Result.Result<(), Text>;
+```
+7. Implement the `deleteMessage` function, which accepts a `messageId` of type `Nat`, removes the corresponding message from the wall, and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+```motoko
+deleteMessage: shared (messageId : Nat) -> async Result.Result<(), Text>;
+```
+8. Implement the `upVote` function, which accepts a `messageId` of type `Nat`, increments the vote count of the corresponding message by one, and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+```motoko
+upVote: shared (messageId  : Nat) -> async Result.Result<(), Text>;
+```
+9. Implement the `downVote` function, which accepts a `messageId` of type `Nat`, decrements the vote count of the corresponding message by one, and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
+```motoko
+downVote: shared (messageId  : Nat) -> async Result.Result<(), Text>;
+```
+10. Implement the query function `getAllMessages`, which returns a list of all messages stored in the wall.
+```motoko
+getAllMessages : query () -> async [Message];
+```
+11. Implement the query function `getAllMessagesRanked`, which returns a list of all messages from the wall, ordered by the number of votes in descending order.
+```motoko
+getAllMessagesRanked : query () -> async [Message];
+```
+12. Deploy the student wall on the Internet Computer.
 ## 📺 Interface
 Your canister should implement the following interface:
 ```motoko
@@ -42,26 +90,3 @@ actor {
     getAllMessagesRanked : query () -> async [Message];
 };
 ```
-## 📒 Steps
-We define a variant type called `Content` that represents the type of content of the messages that can be published on the wall.
-```motoko
-public type Content = {
-    #Text: Text;
-    #Image: Blob;
-    #Video: Blob;
-};
-```
-1. Define a new record type called `Message`. A message of type `Message` contains a field `vote` of type `Int`, a field `content` of type `Content` and a field `creator` of type `Principal` that represents the creator of the message.
-2. Define a variable called `messageId` that serves as a continuously increasing counter, maintaining a record of the total number of messages posted.
-3. Create a variable named `wall`, which is a `HashMap` designed to store messages. In this wall, the keys are of type `Nat` and represents message IDs, whereas the values are of type `Message`. 
-4. Implement `writeMessage`, which accepts a content `c` of type `Content`, creates a message from the content, adds the message to the wall and returns the id of the message.
-5. Implement `getMessage`, which accepts an `messageId` of type `Nat` and returns the corresponding message wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-6. Implement `updateMessage`, which accepts a `messageId` of type `Nat` and a concent `c` of type `Content` and updates the content of the corresponding message. This should only work if the caller is the `creator` of the message. If `messageId` is invalid or the caller is not the `creator` the function should return an error message wrapped in an `Err` result. If everything works, and the message is updated the function should return a simple unit value wrapped in an `Ok` result.
-7. Implement `deleteMessage`, which accepts a `messageId` of type `Nat`, removes the corresponding message from the `wall`, and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-8. Implement `upVote`, which accepts a `messageId` of type `Nat` and adds one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-9. Implement `downVote`, which accepts a `messageId` of type `Nat` and removes one vote to the message and returns a unit value wrapped in an `Ok` result. If the `messageId` is invalid, the function should return an error message wrapped in an `Err` result.
-10. Implement the query function `getAllMessages`, which returns the list of all messages. 
-11. Implement the query function `getAllMessagesRanked`, which returns the list of all messages, where each message are ordered by the number of votes. The first message in the list should be the message with the most votes.
-12. Deploy the student Wall on the Internet Computer.
-13. (Bonus step) Build a frontend for the wall and integrate Internet Identity to authenticate users posting on the wall.
-

@@ -3,14 +3,15 @@ Welcome to **Day 4** of the Motoko Bootcamp. Kudos to you for persevering throug
 
 If you think you've missed something, feel free to revisit previous lessons. Today, our primary focus is on addressing potential challenges when upgrading your canister. This is essential for maintaining user engagement by introducing new features and functionalities. 🆙 <br/>
 
-Keep in mind, if reading and coding is pushing your brain to its limit, take a break. Go for a walk or arrange a game session with your teammates to recharge. Try <a href="https://skribbl.io/" target="_blank">Skribbl.io</a>, a free online multiplayer drawing and guessing pictionary game, for some creative fun. 🖍️
+Keep in mind, if reading and coding is pushing your brain to its limit, take a break. 
+Go for a walk or arrange a game session with your teammates to recharge. Try <a href="https://skribbl.io/" target="_blank">Skribbl.io</a>, a free online multiplayer drawing and guessing pictionary game, for some creative fun. 🖍️
 ## 🍿 Lectures & events
 > Be sure to consult the calendar for the precise schedule of each lecture.
 
 | Title | Mentor |  Description |
 |-----------------|-----------------|-----------------|
 | Motoko: Shareables types, handling errors & admin functionalities | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers different topics (cycle management, errors and admin functionnalities) through examples and live coding.
-| Motoko: Heap, stable memory & updates | <a href="" target="_blank"> Matthew </a> | This lecture dives into the two different types of memories (stable vs heap) and how to deal with upgrades.
+| Motoko: Heap, stable memory & updates |  Matthew | This lecture dives into the two different types of memories (stable vs heap) and how to deal with upgrades.
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
