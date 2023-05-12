@@ -1,4 +1,4 @@
-# The Dapp 💪 
+# The Dapp 🚀
 ## Introduction
 Congratulations! 🏆 You have verified all projects and got 100% on the [bootcamp dashboard](https://24ytc-bqaaa-aaaan-qdl7q-cai.ic0.app/). 
 <br/>
