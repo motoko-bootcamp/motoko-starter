@@ -5,7 +5,8 @@ If you are reading this, it means you have successfully completed the 5 previous
 
 This diploma will give you access to the Motoko School, where you'll be able to keep learning and building connexion within the next wave of builders 🦸‍♂️
 
-This is a big milestone, but **remember**, it's just the start. There will be a lot of additional challenges waiting for you on the road to achieving your dreams. And...yes, there will be more Bootcamps. ✨
+This is a big milestone, but **remember**, it's just the start. There will be a lot of additional challenges waiting for you on the road to achieving your dreams. 
+And...yes, in case you're wondering, there will be more Bootcamps!
 
 > This project is not a requirement for graduation, but it is essential if you wish to **graduate with honors**. Completing this project will enhance your chances of finding an opportunity within the ecosystem by showcasing your skills. This is also a way to leave your mark at the school, because your project will be added to our prestigious repository, showcasing students achievements.
 
