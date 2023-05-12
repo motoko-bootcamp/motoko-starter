@@ -19,7 +19,7 @@ public type StudentProfile = {
     graduate : Bool;
 };
 ```
-1. Define a variable named `studentProfileStore`, which is a `HashMap` for storing student profile. The keys in this wall are of type `Principal` and represent the identity of students, while the values are of type `StudentProfile`. 
+1. Define a variable named `studentProfileStore`, which is a `HashMap` for storing student profile. The keys in this map are of type `Principal` and represent the identity of students, while the values are of type `StudentProfile`. 
 2. Implement the `addMyProfile` function which accepts a `profile` of type `StudentProfile` and adds it into the `studentProfileStore`. This function assumes that the `caller` is the student corresponding to the profile.
 ```motoko
 addMyProfile: shared (profile : StudentProfile) -> async Result.Result<(), Text>;
@@ -56,7 +56,7 @@ The type `TestResult` is defined as follows:
     };
 ```
 
-1. Implement the `test` function that takes a `canisterId` of type `Principal` and returns the result of the test of type `TestResult`. Make sure to distringuish between the two types of erros.
+1. Implement the `test` function that takes a `canisterId` of type `Principal` and returns the result of the test of type `TestResult`. Make sure to distringuish between the two types of errors.
 - UnexpectedValue should be returned whenever the calculator returns a wrong value. For instance, if a call to `reset` followed by `add(1)` returns 2.
 - UnexpectedError should be returned for all other types of errors. For instance, if the function `add` is not even implemented as part of the canister's interface.
 ```motoko
