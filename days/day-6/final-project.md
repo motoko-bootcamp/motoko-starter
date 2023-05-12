@@ -22,7 +22,8 @@ Add or modify features and try give the project a unique and creative twist. �
 You are completely free to do as you please, but keep the project theme alive.
 
 ### Step 3: Front-End
-1. Create a front-end structure with [dfx new](https://internetcomputer.org/docs/current/references/cli-reference/dfx-new/#examples). (Tip: [MioQuispe](https://github.com/MioQuispe/create-ic-app) is a very useful ready-to-go framework setup for IC, supports Svelte/React/Vue) 
+1. Create a front-end structure with [create-ic](https://github.com/peterpeterparker/create-ic). 
+(Tip: [MioQuispe](https://github.com/MioQuispe/create-ic-app) is a very useful ready-to-go framework setup for IC, supports Svelte/React/Vue) 
 2. Allow users to login with atleast an Internet Identity account, you can also add more wallet support if you want.
 3. Connect the back-end so people can interact with your Motoko code.
 4. Add an [ICP banner](https://dfinity.frontify.com/d/XzkdhhDptijE/dfinity-brand-guide#/internet-computer/powered-by-crypto-badges) to showcase what great technology you have used. 
@@ -38,5 +39,7 @@ We will pick out some of the best ones and showcase them during [TODO: ADD SCHED
 <br/>
 Now take a break, you deserved it!
 <br/>
-_This challenge has been kindly last minute setup by your fellow graduate Wannes_ 😸 
+
+[TODO: this line can be removed if you want] _This challenge has been kindly last minute setup by your fellow graduate Wannes_ 😸 
+
 [TODO: MAKE FOLDER CALLED PROJECT AND CHANGE THIS FILENAME TO README.MD]
