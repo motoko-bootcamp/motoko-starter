@@ -1,4 +1,4 @@
-# Chapter 14: Playing with time in Motoko.
+# Chapter 13: Playing with time in Motoko.
 ## 🕣 Time
 A challenge that comes with a distributed system such as the Internet Computer is the notion of time. Each node has it's own internal horloge. To respected determinisn, the time provided to the canister is the **system time** - a value agreed upon by the subnet. The **system time** is represented as nanoseconds since 1970-01-01.
 

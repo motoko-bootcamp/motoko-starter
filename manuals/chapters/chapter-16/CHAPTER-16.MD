@@ -1,4 +1,4 @@
-# Chapter 17: Binary operations in Motoko
+# Chapter 16: Binary operations in Motoko
 ## 🧮 Binary operations
 Motoko supports Bitwise operations (manipulation of the bits) through bounded integers (`Nat8`,`Nat16`, `Nat32`, `Nat64` & `Int8`,`Int16`, `Int32`, `Int64`).
 - AND (Symbol `&`): This operation takes two binary values and performs a logical AND operation on each pair of corresponding bits. The result is a binary value where each bit is set to 1 only if the corresponding bits in both operands are set to 1.

@@ -1,4 +1,4 @@
-# Chapter 16: Managing multiple canisters with actor classes.
+# Chapter 15: Managing multiple canisters with actor classes.
 ## Actor classes.
 ## The management canister 👨‍💼
 The management canister is used on the IC to perform the following operations:
