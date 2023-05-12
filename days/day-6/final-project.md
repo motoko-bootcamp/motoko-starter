@@ -39,7 +39,3 @@ We will pick out some of the best ones and showcase them during [TODO: ADD SCHED
 <br/>
 Now take a break, you deserved it!
 <br/>
-
-[TODO: this line can be removed if you want] _This challenge has been kindly last minute setup by your fellow graduate Wannes_ 😸 
-
-[TODO: MAKE FOLDER CALLED PROJECT AND CHANGE THIS FILENAME TO README.MD]
