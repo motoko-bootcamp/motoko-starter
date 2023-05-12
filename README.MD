@@ -145,6 +145,22 @@ They're like your personal superheroes, here to guide you through the challenges
 > You can consult the list of all Motoko Angel in [the dedicated channel](https://discord.gg/nRxUph88fX).
 ### 🎓 Graduation
 To graduate, you need to complete the 5 projects and submit them through the dashboard. 🧑‍🎓
+To graduate **with honors**, you additionally need [to complete the final project](./days/day-6/project/README.md).
+
+### 🎁 Prizes
+The prize pool is worth **200 ICP (around 1000$)**.
+
+By completing this week, not only will you receive the prestigious **Motoko Bootcamp Diploma**, but if you participate in the final project, you'll also have the opportunity to compete for additional prizes:
+
+- 1st place: The absolute best submission will seize a generous 100 ICP reward.
+- 2nd place: The second-best entry will claim an impressive 50 ICP prize.
+- 3rd place: The third-place contender will be rewarded with a notable 25 ICP.
+
+The remaining portion of the prize pool will be distributed as follows:
+- 20 ICP for the best video submission of the week - see #video-contest for more information.
+- 5 ICP for the best meme of the week - see #meme-contest for more information.
+
+> To compete for prizes, you first need to complete the 5 projects and validate them through the dashboard.
 ### 🏕️ Community basecamp
 Interested in connecting with other enthusiasts? Join students in your area to follow the week and work on challenges, lectures, and projects together. [Click here to join a community basecamp](https://discord.gg/JS9g2ahtDs).
 <p align="center"> <img src="./assets/community-hub.png" width="300px" style="border: 2px solid black;"> </p>
@@ -154,6 +170,7 @@ Interested in connecting with other enthusiasts? Join students in your area to f
 - [Join our Discord](https://discord.gg/JS9g2ahtDs).
 - Follow [Motoko Bootcamp](https://twitter.com/MotokoSchool) and [Code & State](https://twitter.com/codeandstate) on Twitter. 
 - Check the [dedicated website](https://motokobootcamp.com/).
+
 
 ### 📝 Feedback
 Motoko Bootcamp is constantly evolving, and we strive to make each edition better than the last.  Whether you are a student, mentor, contributor, or joining online or in person, we value your feedback and suggestions for improvements. <br/> 
