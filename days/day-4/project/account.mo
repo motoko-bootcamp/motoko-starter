@@ -24,7 +24,7 @@ module {
     };
 
     public func accountsHash(lhs : Account) : Nat32 {
-         let lhsSubaccount : Subaccount = Option.get<Subaccount>(lhs.subaccount, _getDefaultSubaccount());
+        let lhsSubaccount : Subaccount = Option.get<Subaccount>(lhs.subaccount, _getDefaultSubaccount());
         let hashSum = Nat.add(Nat32.toNat(Principal.hash(lhs.owner)), Nat32.toNat(Blob.hash(lhsSubaccount)));
         Nat32.fromNat(hashSum % (2**32 - 1));
     };
