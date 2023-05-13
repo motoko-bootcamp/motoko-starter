@@ -24,7 +24,7 @@ Feel free to add, remove, modify any functionality of the project you are workin
 ### Step 3: Building the frontend 🧑‍🎨
 What would be a successful project without a beautiful interface?  
 
-1. Create a front-end structure with [create-ic](https://github.com/peterpeterparker/create-ic). 
+1. Create a front-end structure with for example [dfx new](https://internetcomputer.org/docs/current/references/cli-reference/dfx-new/). 
 2. Allow users to login with at least an Internet Identity account, you can also add more wallet support if you want.
 3. Connect the front-end with the back-end so people can interact with your Motoko code.
 4. Add an [ICP banner](https://dfinity.frontify.com/d/XzkdhhDptijE/dfinity-brand-guide#/internet-computer/powered-by-crypto-badges) to showcase what great technology you have used. 
