@@ -36,26 +36,26 @@ updateMyProfile : shared (profile : StudentProfile) -> async Result.Result<(), T
 ```motoko
 deleteMyProfile : shared () -> async Result.Result<(), Text>;
 ```
-6. Make sure that `studentProfileStore` is resistant to upgrades, which means that all student profiles will be preserved even if the canister undergoes an upgrade. Implement this by utilizing the `preupgrade` and `postupgrade` hooks.
 ## Part 2: Testing of the simple calculator.
-The idea in this section is to implement the code that perfoms the test on the simple calculator.
-We are going to test: 
+The goal of this section is to write the code for testing the functionality of the simple calculator (you don't need to write the code for this one! I've already done it). We will will test threee functions:
 - The `reset` function.
 - The `add` function.
 - The `sub` function.
 
-If those 3 functions are correctly implemented, then the test is positive and the canister is validated.
+If these three functions are correctly implemented, it indicates a successful test, validating the canister. During the calculator testing, we will perform inter-canister calls, considering three different scenarios:
 
-### Step-by-step
-The type `TestResult` is defined as follows:
+- Scenario 1: The calls to the calculator are executed correctly, but the returned results are not as expected. For example, if calling reset followed by add(1) returns 2 instead of the expected result.
+- Scenario 2: The calls to the calculator are executed correctly, and the returned results match our expectations.
+- Scenario 3: The calls to the calculator fail. This could be due to reasons such as the calculator not implementing the add function, not being deployed on the network, or running out of computation cycles.
+
+To handle the different scenario, we define the `TestResult` type as follows:
 ```motoko
-    public type TestResult = Result.Result<(), TestError>;
-    public type TestError = {
-        #UnexpectedValue : Text;
-        #UnexpectedError : Text;
-    };
+public type TestResult = Result.Result<(), TestError>;
+public type TestError = {
+    #UnexpectedValue : Text;
+    #UnexpectedError : Text;
+};
 ```
-
 1. Implement the `test` function that takes a `canisterId` of type `Principal` and returns the result of the test of type `TestResult`. Make sure to distringuish between the two types of errors.
 - UnexpectedValue should be returned whenever the calculator returns a wrong value. For instance, if a call to `reset` followed by `add(1)` returns 2.
 - UnexpectedError should be returned for all other types of errors. For instance, if the function `add` is not even implemented as part of the canister's interface.
@@ -66,20 +66,32 @@ test: shared (canisterId : Principal) -> async TestResult;
 In this section we want to make sure that the owner of the verified canister is actually the student that registered it. Otherwise, a student could use the canister of another one.
 ### Step-by-step
 Implement the `verifyOwnership` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and returns a boolean indicating if the `principalId` is among the controllers of the canister corresponding to the `canisterId` provided.
-
-> As of today, the `canister_status` method of the management canister can only be used when the canister calling it is also one of the controller of the canister you are trying to check the status. Fortunately there is a trick to still get the controller! [Read the dedicated topic for more information](https://forum.dfinity.org/t/getting-a-canisters-controller-on-chain/7531/17). 
-
 ```motoko
 verifyOwnership : shared (Principal, Principal) -> async Bool;
 ```
 
+> Tip: To implement step 3, you'll need to make an intercanister call to the management canister by using the `canister_status` method, which will return information on the canister among which are the list of controllers. The management canister is defined in the [ic.mo](./verifier/ic.mo). However, currently, the `canister_status` method can only be accessed when the calling canister is also the controller of the canister whose status you want to check. To overcome this limitation, you'll need to use a `try/catch` block to catch the error returned by the management, access the error message with `Error.message(e)` and then parse the message using the `parseControllersFromCanisterStatusErrorIfCallerNotController` method. I recommend reading the 
+
+```motoko
+func parseControllersFromCanisterStatusErrorIfCallerNotController(errorMessage : Text) : [Principal] {
+    let lines = Iter.toArray(Text.split(errorMessage, #text("\n")));
+    let words = Iter.toArray(Text.split(lines[1], #text(" ")));
+    var i = 2;
+    let controllers = Buffer.Buffer<Principal>(0);
+    while (i < words.size()) {
+      controllers.add(Principal.fromText(words[i]));
+      i += 1;
+    };
+    Buffer.toArray<Principal>(controllers);
+  };
+```
 ## Part 4: Graduation! 🎓
 In this sections the idea is to let students submit their work and automatically verify the canister. If the tests are passed then the `graduation` field of the student is automatically changed.
 ### Step-by-step
-Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field is updated accordingly. This function will returns  a `Ok` result indicating if the submitted project has been successfuly verified. This function will return a text message wrapped in an `Err` message in case the verification fails or something unexpected happens.
+Implement the `verifyWork` function that takes a `canisterId` of type `Principal` and a `principalId` of type `Principal` that corresponds to the identity of the student and perfoms the necessary verifications on the canister. If all the criteria for graduations are validated; then the `graduation` field of the student is updated accordingly. This function will returns  a `Ok` result indicating if the submitted project has been successfuly verified. This function will return a text message wrapped in an `Err` message in case the verification fails or something unexpected happens.
 
 ```motoko
-verifyWork: shared (Principal, Principal) -> async Result.Result<(), Text>;
+verifyWork: shared (canisterId : Principal, principalId: Principal) -> async Result.Result<(), Text>;
 ```
 
 ## 📺 Interface
