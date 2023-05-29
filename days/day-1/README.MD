@@ -9,7 +9,7 @@ Above all, the most vital aspect of the Bootcamp is to have fun and build connec
 |-----------------|-----------------|-----------------|
  Kick Off 🎉| <a href="https://twitter.com/seb_icp" target="_blank"> Seb  </a> | Welcome to Motoko Bootcamp! 
 | <a href="https://www.youtube.com/watch?v=_T7GgPxxSKo" target="_blank"> Anatomy of a Motoko project </a> | <a href="https://twitter.com/seb_icp" target="_blank"> Seb  </a> | This lecture covers the sample project deployed with `dfx`, and provides guidance on how to navigate its structure and use each file effectively, as well as how to deploy and manage canisters.
-| Variables, types, loops and functions. |  <a href="https://twitter.com/tedreinhardt" target="_blank"> Ted  </a> | This lecture explores the fundamentals of the Motoko language, including variables, types, functions, and loops.
+| <a href="https://www.youtube.com/watch?v=0JVGWkd4tgQ" target="_blank"> Variables, types, loops and functions. </a> | <a href="https://twitter.com/tedreinhardt" target="_blank"> Ted  </a> | This lecture explores the fundamentals of the Motoko language, including variables, types, functions, and loops.
 ##  🧭 Tasks of the day
 > Use this list as a guide for your day, it contains all the material that you need to read and the challenges you need to tackle.
 - Read [Chapter 1 : Fundamental concepts](../../manuals/chapters/chapter-1/CHAPTER-1.MD) in full.
