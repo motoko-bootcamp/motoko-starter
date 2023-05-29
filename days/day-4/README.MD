@@ -10,8 +10,8 @@ Go for a walk or arrange a game session with your teammates to recharge. Try <a 
 
 | Title | Mentor |  Description |
 |-----------------|-----------------|-----------------|
-| Motoko: Shareables types, handling errors & admin functionalities | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers different topics (cycle management, errors and admin functionnalities) through examples and live coding.
-| Motoko: Heap, stable memory & updates |  Matthew | This lecture dives into the two different types of memories (stable vs heap) and how to deal with upgrades.
+| <a href="https://www.youtube.com/watch?v=mhaAwtHyc-A" target="_blank"> Motoko: Shareables types, handling errors & admin functionalities </a> | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers different topics (cycle management, errors and admin functionnalities) through examples and live coding.
+| <a href="https://www.youtube.com/watch?v=BafCxFj8o2U" target="_blank"> Motoko: Heap, stable memory & updates </a> | Matthew | This lecture dives into the two different types of memories (stable vs heap) and how to deal with upgrades.
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
