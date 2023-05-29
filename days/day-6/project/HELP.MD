@@ -10,4 +10,4 @@
 ## Documentation
 - [Building a web frontend on the IC](https://internetcomputer.org/docs/current/developer-docs/frontend/)
 ## Articles
-- [Building a Front-End Dapp on the Internet Computer](https://medium.com/dfinity/building-a-front-end-dapp-on-the-internet-computer-55985f0a595b)
+- [Building a Front-End Dapp on the Internet Computer](https://medium.com/dfinity/building-a-front-end-dapp-on-the-internet-computer-55985f0a595b)
