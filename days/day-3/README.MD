@@ -9,8 +9,8 @@ It's vital to master the topics we'll explore today. If you need assistance, don
 
 | Title | Mentor |  Description |
 |-----------------|-----------------|-----------------|
- Motoko: HashMap & CRUD | <a href="https://twitter.com/CapuzR" target="_blank"> Ricardo </a> | This lecture covers CRUD operations on canisters, which involve managing data through **Create**, **Read**, **Update**, and **Delete** operations.
-| Frontend, authentication and Internet Identity | <a href="https://twitter.com/kylpeacock" target="_blank"> Kyle  </a> | In this lecture you'll understand how to connect your canister to a frontend using the JavaScript agent.
+<a href="https://www.youtube.com/watch?v=akI_IuzCHgE" target="_blank"> Motoko: HashMap & CRUD </a> | <a href="https://twitter.com/CapuzR" target="_blank"> Ricardo </a> | This lecture covers CRUD operations on canisters, which involve managing data through **Create**, **Read**, **Update**, and **Delete** operations.
+| <a href="https://www.youtube.com/watch?v=PDoKUlEkKsI" target="_blank"> Frontend, authentication and Internet Identity </a>| <a href="https://twitter.com/kylpeacock" target="_blank"> Kyle  </a> | In this lecture you'll understand how to connect your canister to a frontend using the JavaScript agent.
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
