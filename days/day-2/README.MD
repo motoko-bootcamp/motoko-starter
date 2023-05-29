@@ -7,8 +7,8 @@ Today, we'll delve deeper into the Motoko language with two specialized lectures
 
 | Title | Mentor |  Description |
 |-----------------|-----------------|-----------------|
- Motoko: Array, List & Buffer | <a href="https://twitter.com/mariano_stoll" target="_blank"> Stoll </a> | This lectures covers the datastructures `Array`, `List` & `Buffer` and how to use them. 
-| Motoko: Char, Text & Iter | <a href="https://twitter.com/seb_icp" target="_blank"> Seb  </a> | This lecture covers the types `Char` and `Text` in Motoko and explains how those are linked through the type `Iter`.
+ <a href="https://www.youtube.com/watch?v=mOZFOoffYqk" target="_blank"> Motoko: Array, List & Buffer </a>| <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lectures covers the datastructures `Array`, `List` & `Buffer` and how to use them. 
+| <a href="https://www.youtube.com/watch?v=sE5Nf7aDYpA" target="_blank"> Motoko: Char, Text & Iter </a> | <a href="https://twitter.com/seb_icp" target="_blank"> Seb </a> | This lecture covers the types `Char` and `Text` in Motoko and explains how those are linked through the type `Iter`.
 ##  🧭 Tasks of the day
 > Use this list as a guide for your day, it contains all the material that you need to read and the challenges you need to tackle.
 - Read [Chapter 2: Common programming concepts](../../manuals/chapters/chapter-2/CHAPTER-2.MD).
