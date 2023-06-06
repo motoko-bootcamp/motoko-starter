@@ -4,6 +4,8 @@
 
 ### Participate in Motoko Bootcamp: Starter edition. You can follow online from anywhere in the world or join one of [community basecamp](https://discord.gg/FWQszm86cj). 
 
+⚠️ This event is over, but you can still use the content at your own path and follow the program. Make sure to watch [the dedicated video](). 
+
 <i> La traducción al español puedes encontrarla [aquí](./spanish/README.MD). </i>
 ## Introduction
 Welcome to **Motoko Bootcamp: Starter edition** — the most amazing free one-week program to learn how to develop on the Internet Computer. 
