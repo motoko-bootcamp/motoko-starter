@@ -1,4 +1,4 @@
-# Motoko Bootcamp: starter edition - 7 days to get started on the Internet Computer 🏁
+# Motoko Starter - 7 days to get started on the Internet Computer 🏁
 <i> La traducción al español puedes encontrarla [aquí](./spanish/README.MD). </i>
 
 ## Introduction
