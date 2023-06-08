@@ -17,17 +17,16 @@ Today is somewhat unique - instead of our usual lectures, we'll be hosting prese
 - [Complete the final project](./project/README.md)
 
 ## How to graduate? 🎓
-Step 1: Complete and validate projects 1-5 throught the Motoko Bootcamp dashboard.
-Those projects will be automatically verified by the dashboard.
-
-Step 2: Complete project 6 (the dApp)
+### Step 1
+Complete and validate projects 1-5 throught the Motoko Bootcamp dashboard. Those projects will be automatically verified by the dashboard.
+### Step 2
+Build the application (the dApp)
 For this project, it can't be submitted through the dashboard, so you'll need to include all relevants in the graduation form:
-
-URL for the frontend of the dApp.
-Canister ID for the backend.
-GitHub URL of the repository (publicly viewable).
-Step 3: Complete the [graduation form]( https://forms.gle/rmiYABHd7ojPLgJZ8)
-
+- URL for the frontend of the dApp.
+- Canister ID for the backend.
+- GitHub URL of the repository (publicly viewable).
+## Step 3
+Complete the [graduation form]( https://forms.gle/rmiYABHd7ojPLgJZ8) <br/>
 Our team will review your submission within 2 weeks, and let you know if you've graduated!
 
 Good luck 🍀
