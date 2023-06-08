@@ -2,6 +2,7 @@
 <i> La traducción al español puedes encontrarla [aquí](./spanish/README.MD). </i>
 
 ## Introduction
+> Motoko Starter was an event held in May 2023. Although the event is over, you can still benefit from the content in this repository to progress on your own path and successfully complete the program!
 Welcome to **Motoko Bootcamp: Starter edition** — the most amazing free program to learn how to develop on the Internet Computer. 
 
 7 days is all it should take to change your life. Learn Motoko, get started on the Internet Computer and meet others builders - **all in one week**. <br/>
@@ -12,7 +13,7 @@ With engaging lectures, hands-on projects, and a supportive community, you’ll 
 
 Upon completion, you'll be awarded a diploma, unlocking the door to an exclusive community and amazing full-time job opportunities within our vibrant ICP ecosystem! 
 
-> Motoko Starter was an event held in May 2023. Although the event is over, you can still benefit from the content in this repository to progress on your own path and successfully complete the program!
+
 
 To graduate from the program, you need to complete 6 projects and submit them using our graduation form. To assist you in this process, we provide comprehensive guides and lectures. 
 
