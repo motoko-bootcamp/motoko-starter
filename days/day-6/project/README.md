@@ -1,24 +1,10 @@
 # The Dapp 🚀
-## Introduction
-Congratulation! <br/>
-If you are reading this, it means you have successfully completed the 5 previous projects and you are now officialy a graduate from the **Motoko Bootcamp: Starter edition** 🧑‍🎓 👏
-
-This diploma will give you access to the Motoko School, where you'll be able to keep learning and building connexion within the next wave of builders 🦸‍♂️
-
-This is a big milestone, but **remember**, it's just the start. There will be a lot of additional challenges waiting for you on the road to achieving your dreams. 
-And...yes, in case you're wondering, there will be more Bootcamps!
-
-> This project is not a requirement for graduation, but it is essential if you wish to **graduate with honors**. Completing this project will enhance your chances of finding an opportunity within the ecosystem by showcasing your skills. This is also a way to leave your mark at the school, because your project will be added to our prestigious repository, showcasing students achievements.
-
 ## 🧑‍🏫 Requirements
 The idea is to transform of one few sample project you've been working on into a full fledged IC application! 
 For instance: 
 - You can decide to add a visual interface (website) for the calculator and deploy it on the network. 
 - You could decide to deploy the MotoCoin and transform into a real-world token, following the [ICRC_1 standard](https://github.com/dfinity/ICRC-1).
 - You could create an incredible animated website for the Student Wall and deploy it on the network.
-
-Or anything else!
-
 ### Step 1: A choice 🤔
 You'll need to select one of the previous project. Feel free to choose the one that inspires you the most.
 - [Calculator](../../day-1/project/README.MD)<br/>
