@@ -14,15 +14,20 @@ Today is somewhat unique - instead of our usual lectures, we'll be hosting prese
 ##  🧭 Tasks of the day
 > **When starting your day** use this list as a guide, it contains all the material that you need to read and the challenges you need to tackle.
 
-> All the tasks of today are optional!
-
 - [Complete the final project](./project/README.md)
-- [Read the appendix: after Motoko Starter - TO ADD](../../manuals/appendix/)
-- [Consult advanced resources from previous Bootcamps - TO ADD]()
 
 ## How to graduate? 🎓
-1. Make sure you have completed all 5 projects.
-2. If you wish to graduate with honors, you'll need to complete the project of Day 6.
-3. Complete the graduation form: [TO ADD]()
+Step 1: Complete and validate projects 1-5 throught the Motoko Bootcamp dashboard.
+Those projects will be automatically verified by the dashboard.
+
+Step 2: Complete project 6 (the dApp)
+For this project, it can't be submitted through the dashboard, so you'll need to include all relevants in the graduation form:
+
+URL for the frontend of the dApp.
+Canister ID for the backend.
+GitHub URL of the repository (publicly viewable).
+Step 3: Complete the [graduation form]( https://forms.gle/rmiYABHd7ojPLgJZ8)
+
+Our team will review your submission within 2 weeks, and let you know if you've graduated!
 
 Good luck 🍀
