@@ -1,8 +1,6 @@
 # Motoko Bootcamp: starter edition - 7 days to get started on the Internet Computer 🏁
-
-<p align="center"> <img width="75%" src="https://github.com/motoko-bootcamp/.github/blob/main/03.png" style="border: 1px solid black;"> </p>
-
 <i> La traducción al español puedes encontrarla [aquí](./spanish/README.MD). </i>
+
 ## Introduction
 Welcome to **Motoko Bootcamp: Starter edition** — the most amazing free program to learn how to develop on the Internet Computer. 
 
@@ -103,7 +101,7 @@ For this project, it can't be submitted through the dashboard, so you'll need to
 - Canister ID for the backend.
 - GitHub URL of the repository (publicly viewable).
 ### Step 3: Complete the graduation form
-Complete the graduation form: https://forms.gle/rmiYABHd7ojPLgJZ8 
+Complete the graduation form: https://forms.gle/rmiYABHd7ojPLgJZ8  <br/>
 Our team will review your submission within 2 weeks, and let you know if you've graduated! 
 
 ## 👦 Join the community
