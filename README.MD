@@ -85,9 +85,8 @@ You will work on 6 different projects:
 - [The Student wall 🎨](./days/day-3/project/README.MD)
 - [MotoCoin 🪙](./days//day-4/project/README.MD)
 - [The Verifier 👨‍🏫](./days/day-5/project/README.MD)
-- [The dApp 🚀](./days/day-6/project/README.MD)
 
-> Once completed, submit your project through the dashboard (expect for the last project). It will check if you've met the requirements. 
+> Once completed, submit your project through the dashboard. It will automatically check if you've met the requirements. 
 ### 👨‍🏫 Lectures
 A lecture is approximately one hour long and covers a technical subject. It is was presneted by one of the Motoko Bootcamp mentor. 
 
@@ -96,8 +95,10 @@ A lecture is approximately one hour long and covers a technical subject. It is w
 ## How to graduate? 🎓
 ### Step 1: Complete and validate projects 1-5 throught the Motoko Bootcamp dashboard.
 Those projects will be automatically verified by the dashboard.
-### Step 2: Complete project 6 (the dApp)
-For this project, it can't be submitted through the dashboard, so you'll need to include all relevants in the graduation form:
+### Step 2: Create a fullstack application 
+Make sure to take a look at [the detailled requirements](./days/day-6/README.ME)
+
+For this project, it can't be submitted through the dashboard, so you'll need to include all relevants information in the graduation form:
 - URL for the frontend of the dApp.
 - Canister ID for the backend.
 - GitHub URL of the repository (publicly viewable).
