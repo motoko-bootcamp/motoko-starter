@@ -56,13 +56,7 @@ For each day, you will find a dedicated guide - those guides will be your compan
 
 <p align="center"> <img src="./assets/mbc_submit_code.png" width="600px" style="border: 2px solid black;"> </p>
 
-### Step 5: Complete all other days, follow the lectures and have fun!
-
-- [Day 2️⃣](./days/day-2/README.MD) 
-- [Day 3️⃣](./days/day-3/README.MD) 
-- [Day 4️⃣](./days/day-4/README.MD) 
-- [Day 5️⃣](./days/day-5/README.MD) 
-- [Day 6️⃣](./days/day-6/README.MD)
+### Step 5: Complete all other days, follow the lectures, read the content and have fun!
 
 ## How to navigate the repository? 🧭
 This repository contains a variety of resources, each serving a specific purpose. Here is a comprehensive list of the resources available, along with a brief explanation of each:
@@ -79,7 +73,7 @@ For each day, you will find a dedicated guide - those guides will be your compan
 
 ### 🏗️ Projects 
 Projects will help you build confidence and practical skills. You will be provided with clear instructions and a starting codebase to complete. 
-You will work on 6 different projects:
+You will work on 5 different projects:
 - [The Calculator ➕](./days/day-1/project/README.MD)
 - [The Homework diary 📔](./days/day-2/project/README.MD)
 - [The Student wall 🎨](./days/day-3/project/README.MD)
