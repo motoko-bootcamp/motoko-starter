@@ -87,7 +87,7 @@ A lecture is approximately one hour long and covers a technical subject. It is w
 > Lectures were originally held live on Zoom, but they have been recorded and uploaded to YouTube. Just check out the list of all lectures on [the dedicated page](./lectures/LECTURES.MD).
 
 ## How to graduate? 🎓
-### Step 1: Complete and validate projects 1-5 throught the Motoko Bootcamp dashboard.
+### Step 1: Complete and validate projects 1-5 through the Motoko Bootcamp dashboard.
 Those projects will be automatically verified by the dashboard.
 ### Step 2: Create a fullstack application 
 Make sure to take a look at [the detailled requirements](./days/day-6/README.ME)
